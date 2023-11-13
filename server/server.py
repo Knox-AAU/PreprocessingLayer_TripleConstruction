@@ -24,7 +24,7 @@ class handler(BaseHTTPRequestHandler):
             self.send_header('Content-type','text/html')
             self.end_headers()
 
-            message = "POST to group-d data: " + post_data
+            message = "TEST123 POST to group-d data: " + post_data
             
         else:
             self.send_response(404)

@@ -1506,7 +1506,7 @@
 :AcademicJournal
     a owl:Class ;
     rdfs:comment "اتعلیمی جریدہ زیادہ تر ہم مرتبہ نظرثانی شدہ جریدہ ہے جس میں کسی خاص تعلیمی ادب سے متعلق وظیفہ شائع کیا جاتا ہے۔ تعلیمی جرائد نئی تحقیق کی جانچ پڑتال اور موجودہ تحقیق کی تنقید کے تعارف اور پیشکش کے لیے عوامی جرگہ کے طور پر کام کرتے ہیں۔ مواد عام طور پر مضامین کی شکل اختیار کرتا ہے جو اصل تحقیق، جائزہ مضامین، اور کتاب کے جائزے پیش کرتے ہیں۔"@ur ;
-    rdfs:label "Wissenschaftliche Fachzeitschrift"@de, "academic journal"@en, "czasopismo naukowe"@pl, "giornale accademico"@it, "iris acadúil"@ga, "journal académique"@fr, "revista académica"@gl, "wetenschappelijk tijdschrift"@nl, "ακαδημαϊκό περιοδικό"@el, "تعلیمی جریدہ"@ur, "学術雑誌"@ja, "學術期刊"@zh, "학� 지"@ko ;
+    rdfs:label "Wissenschaftliche Fachzeitschrift"@de, "academic journal"@en, "czasopismo naukowe"@pl, "giornale accademico"@it, "iris acadúil"@ga, "journal académique"@fr, "revista académica"@gl, "wetenschappelijk tijdschrift"@nl, "ακαδημαϊκό περιοδικό"@el, "تعلیمی جریدہ"@ur, "学術雑誌"@ja, "學術期刊"@zh, "학� 지"@ko ;
     rdfs:subClassOf :PeriodicalLiterature ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:AcademicJournal> .
 
@@ -1520,7 +1520,7 @@
 
 :Activity
     a owl:Class ;
-    rdfs:label "Aktivität"@de, "actividad"@es, "actividade"@gl, "activiteit"@nl, "activity"@en, "activité"@fr, "aktivitet"@da, "aktywność"@pl, "atividade"@pt, "attivit� "@it, "gníomhaíocht"@ga, "Δραστηριότητα"@el, "سرگرمی"@ur, "活動"@ja, "活動"@zh, "활동"@ko ;
+    rdfs:label "Aktivität"@de, "actividad"@es, "actividade"@gl, "activiteit"@nl, "activity"@en, "activité"@fr, "aktivitet"@da, "aktywność"@pl, "atividade"@pt, "attivit� "@it, "gníomhaíocht"@ga, "Δραστηριότητα"@el, "سرگرمی"@ur, "活動"@ja, "活動"@zh, "활동"@ko ;
     rdfs:subClassOf owl:Thing ;
     owl:disjointWith :Person ;
     owl:equivalentClass d0:Activity, wikidata:Q1914636 ;
@@ -1552,8 +1552,8 @@
 
 :Agent
     a owl:Class ;
-    rdfs:comment "Analogous to a foaf:Agent, an agent is an entity that acts. This is intended to be the super class of Person and Organisation."@en, "Análogo a foaf:Agent, un axente é unha entidade que actúa. Destínase a ser a super clase de Persoa e Organización."@gl, "Equivaut �  foaf:Agent, un agent est une entité qui agit. C'est supposé être la super classe de Person et de Organisation."@fr, "Ανάλογα με την κλάση foaf:Agent, ένας πράκτορας είναι μια οντότητα που ενεργεί. Αυτό προορίζεται να είναι μια υπερκλάση της κλάσης Άτόμο και Οργανισμός."@el, "ایک (ایجنٹ) ایک ایسا ادارہ ہے جو کام کرتا ہے۔ اس کا مقصد شخص اور تنظیم کا فوق درجہ ہونا ہے ۔"@ur ;
-    rdfs:label "Agent"@de, "agent"@da, "agent"@en, "agent"@fr, "agent"@nl, "agente"@es, "agente"@it, "axente"@gl, "gníomhaire"@ga, "πράκτορας"@el, "نمائندہ"@ur, "エージェント"@ja, "에이� �트"@ko ;
+    rdfs:comment "Analogous to a foaf:Agent, an agent is an entity that acts. This is intended to be the super class of Person and Organisation."@en, "Análogo a foaf:Agent, un axente é unha entidade que actúa. Destínase a ser a super clase de Persoa e Organización."@gl, "Equivaut �  foaf:Agent, un agent est une entité qui agit. C'est supposé être la super classe de Person et de Organisation."@fr, "Ανάλογα με την κλάση foaf:Agent, ένας πράκτορας είναι μια οντότητα που ενεργεί. Αυτό προορίζεται να είναι μια υπερκλάση της κλάσης Άτόμο και Οργανισμός."@el, "ایک (ایجنٹ) ایک ایسا ادارہ ہے جو کام کرتا ہے۔ اس کا مقصد شخص اور تنظیم کا فوق درجہ ہونا ہے ۔"@ur ;
+    rdfs:label "Agent"@de, "agent"@da, "agent"@en, "agent"@fr, "agent"@nl, "agente"@es, "agente"@it, "axente"@gl, "gníomhaire"@ga, "πράκτορας"@el, "نمائندہ"@ur, "エージェント"@ja, "에이� �트"@ko ;
     rdfs:subClassOf owl:Thing ;
     owl:disjointWith :Place ;
     owl:equivalentClass dul:Agent, wikidata:Q24229398 ;
@@ -1582,14 +1582,14 @@
 
 :Airport
     a owl:Class ;
-    rdfs:label "Flughafen"@de, "aerfort"@ga, "aeroporto"@gl, "aeroporto"@it, "aeroporto"@pt, "aeropuerto"@es, "airport"@en, "aéroport"@fr, "lotnisko"@pl, "luchthaven"@nl, "lufthavn"@da, "αεροδρόμιο"@el, "аэропорт"@ru, "ہوائی اڈہ"@ur, "機� �"@zh, "空港"@ja, "공항"@ko ;
+    rdfs:label "Flughafen"@de, "aerfort"@ga, "aeroporto"@gl, "aeroporto"@it, "aeroporto"@pt, "aeropuerto"@es, "airport"@en, "aéroport"@fr, "lotnisko"@pl, "luchthaven"@nl, "lufthavn"@da, "αεροδρόμιο"@el, "аэропорт"@ru, "ہوائی اڈہ"@ur, "機� �"@zh, "空港"@ja, "공항"@ko ;
     rdfs:subClassOf :Infrastructure ;
     owl:equivalentClass <http://schema.org/Airport>, wikidata:Q1248784 ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:Airport> .
 
 :Album
     a owl:Class ;
-    rdfs:label "Album"@de, "albam"@ga, "album"@da, "album"@el, "album"@en, "album"@es, "album"@fr, "album"@it, "album"@nl, "album (wydawnictwo muzyczne)"@pl, "álbum"@gl, "álbum"@pt, "تصویروں اور دستخط کی کتاب"@ur, "アルバ� "@ja, "照片集"@zh, "앨범"@ko ;
+    rdfs:label "Album"@de, "albam"@ga, "album"@da, "album"@el, "album"@en, "album"@es, "album"@fr, "album"@it, "album"@nl, "album (wydawnictwo muzyczne)"@pl, "álbum"@gl, "álbum"@pt, "تصویروں اور دستخط کی کتاب"@ur, "アルバ� "@ja, "照片集"@zh, "앨범"@ko ;
     rdfs:subClassOf :MusicalWork ;
     owl:equivalentClass <http://schema.org/MusicAlbum>, wikidata:Q482994 ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:Album> .
@@ -1612,7 +1612,7 @@
 
 :AmateurBoxer
     a owl:Class ;
-    rdfs:label "Amateurboxer"@de, "amateur boxer"@en, "amateur boxer"@nl, "boxeador afeccionado"@gl, "boxeur amateur"@fr, "dornálaí amaitéarach"@ga, "pugile amatoriale"@it, "ερασιτέχνης μποξέρ"@el, "شوقیہ مکے باز"@ur, "アマチュアボクサー"@ja, "아마추어 권투 � 수"@ko ;
+    rdfs:label "Amateurboxer"@de, "amateur boxer"@en, "amateur boxer"@nl, "boxeador afeccionado"@gl, "boxeur amateur"@fr, "dornálaí amaitéarach"@ga, "pugile amatoriale"@it, "ερασιτέχνης μποξέρ"@el, "شوقیہ مکے باز"@ur, "アマチュアボクサー"@ja, "아마추어 권투 � 수"@ko ;
     rdfs:subClassOf :Boxer ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:AmateurBoxer> .
 
@@ -1639,14 +1639,14 @@
 
 :AmericanFootballPlayer
     a owl:Class ;
-    rdfs:label "American Footballspieler"@de, "American footballspeler"@nl, "american football player"@en, "giocatore di football americano"@it, "joueur de football américain"@fr, "jugador de fútbol americano"@es, "xogador de fútbol americano"@gl, "παίκτης αμερικανικού ποδοσφαίρου"@el, "امریکی فٹ بال کھلاڑی"@ur, "アメリカンフットボール選手"@ja, "미식 축구 � 수"@ko ;
+    rdfs:label "American Footballspieler"@de, "American footballspeler"@nl, "american football player"@en, "giocatore di football americano"@it, "joueur de football américain"@fr, "jugador de fútbol americano"@es, "xogador de fútbol americano"@gl, "παίκτης αμερικανικού ποδοσφαίρου"@el, "امریکی فٹ بال کھلاڑی"@ur, "アメリカンフットボール選手"@ja, "미식 축구 � 수"@ko ;
     rdfs:subClassOf :GridironFootballPlayer ;
     owl:equivalentClass wikidata:Q14128148 ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:AmericanFootballPlayer> .
 
 :AmericanFootballTeam
     a owl:Class ;
-    rdfs:label "American-Football-Team"@de, "Amerikaans football team"@nl, "american football Team"@en, "equipo de fútbol americano"@gl, "squadra di football americano"@it, "équipe américaine de football américain"@fr, "ομάδα αμερικανικού ποδοσφαίρου"@el, "امریکی فٹ بال ٹیم"@ur, "アメリカン・フットボール・チー� "@ja, "미식 축구 팀"@ko ;
+    rdfs:label "American-Football-Team"@de, "Amerikaans football team"@nl, "american football Team"@en, "equipo de fútbol americano"@gl, "squadra di football americano"@it, "équipe américaine de football américain"@fr, "ομάδα αμερικανικού ποδοσφαίρου"@el, "امریکی فٹ بال ٹیم"@ur, "アメリカン・フットボール・チー� "@ja, "미식 축구 팀"@ko ;
     rdfs:subClassOf :SportsTeam ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:AmericanFootballTeam> .
 
@@ -1671,7 +1671,7 @@
 
 :AnatomicalStructure
     a owl:Class ;
-    rdfs:label "anatomical structure"@en, "anatomische structuur"@nl, "anatomischen Struktur"@de, "anatomska struktura"@sl, "coirpeog"@ga, "estrutura anatómica"@gl, "structure anatomique"@fr, "struttura anatomica"@it, "ανατομική δομή"@el, "جسمانی ساخت"@ur, "解剖構� "@ja, "해부학"@ko ;
+    rdfs:label "anatomical structure"@en, "anatomische structuur"@nl, "anatomischen Struktur"@de, "anatomska struktura"@sl, "coirpeog"@ga, "estrutura anatómica"@gl, "structure anatomique"@fr, "struttura anatomica"@it, "ανατομική δομή"@el, "جسمانی ساخت"@ur, "解剖構� "@ja, "해부학"@ko ;
     rdfs:subClassOf owl:Thing ;
     owl:equivalentClass wikidata:Q4936952 ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:AnatomicalStructure> .
@@ -1686,14 +1686,14 @@
 :AnimangaCharacter
     a owl:Class ;
     rdfs:comment "Anime/Manga character"@en, "Χαρακτήρας από Άνιμε/Μάνγκα"@el ;
-    rdfs:label "Manga-Charakter"@de, "ani-manga figuur"@nl, "animanga character"@en, "carachtar animanga"@ga, "personaggio animanga"@it, "personaxe de animanga"@gl, "personnage d'animanga"@fr, "χαρακτήρας ανιμάνγκα"@el, "انیمنگا کردار"@ur, "キャラクター"@ja, "만화� 니 등장인물"@ko ;
+    rdfs:label "Manga-Charakter"@de, "ani-manga figuur"@nl, "animanga character"@en, "carachtar animanga"@ga, "personaggio animanga"@it, "personaxe de animanga"@gl, "personnage d'animanga"@fr, "χαρακτήρας ανιμάνγκα"@el, "انیمنگا کردار"@ur, "キャラクター"@ja, "만화� 니 등장인물"@ko ;
     rdfs:subClassOf :ComicsCharacter ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:AnimangaCharacter> .
 
 :Anime
     a owl:Class ;
     rdfs:comment "A style of animation originating in Japan"@en, "Designación coa que se coñece a animación xaponesa"@gl, "Geanimeerd Japans stripverhaal"@nl, "Style d'animation né au Japon"@fr, "Στυλ κινουμένων σχεδίων με καταγωγή την Ιαπωνία"@el, "حرکت پذیری کا ایک انداز جاپان میں شروع ہوا۔"@ur ;
-    rdfs:label "Animation"@fr, "Anime"@en, "anime"@de, "anime"@ga, "anime"@gl, "anime"@it, "anime"@nl, "άνιμε"@el, "انیمے"@ur, "アニメ"@ja, "일본의 � 니메이션"@ko ;
+    rdfs:label "Animation"@fr, "Anime"@en, "anime"@de, "anime"@ga, "anime"@gl, "anime"@it, "anime"@nl, "άνιμε"@el, "انیمے"@ur, "アニメ"@ja, "일본의 � 니메이션"@ko ;
     rdfs:subClassOf :Cartoon ;
     owl:equivalentClass wikidata:Q1107 ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:Anime> .
@@ -1714,7 +1714,7 @@
 
 :Archaea
     a owl:Class ;
-    rdfs:label "Archaea (oerbacteriën)"@nl, "Archaeen"@de, "archaea"@en, "archei"@it, "archées"@fr, "αρχαία"@el, "آثار قدیمہ"@ur, "古細菌"@ja, "� 세� "@ko ;
+    rdfs:label "Archaea (oerbacteriën)"@nl, "Archaeen"@de, "archaea"@en, "archei"@it, "archées"@fr, "αρχαία"@el, "آثار قدیمہ"@ur, "古細菌"@ja, "� 세� "@ko ;
     rdfs:subClassOf :Species ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:Archaea> .
 
@@ -1733,7 +1733,7 @@
 
 :ArcherPlayer
     a owl:Class ;
-    rdfs:label "Archer Player"@en, "Bogenschütze"@de, "Tireur �  l'arc"@fr, "boogschutter"@nl, "تیر انداز کھلاڑی"@ur ;
+    rdfs:label "Archer Player"@en, "Bogenschütze"@de, "Tireur �  l'arc"@fr, "boogschutter"@nl, "تیر انداز کھلاڑی"@ur ;
     rdfs:subClassOf :Athlete ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:ArcherPlayer> .
 
@@ -1754,13 +1754,13 @@
 :ArchitecturalStructure
     a owl:Class ;
     rdfs:comment "An architectural structure is a human-made, free-standing, immobile outdoor construction (http://en.wikipedia.org/wiki/Architectural_structure)."@en, "Ein Bauwerk ist eine von Menschen errichtete Konstruktion mit ruhendem Kontakt zum Untergrund. Es ist in der Regel für eine langfristige Nutzungsdauer konzipiert (http://de.wikipedia.org/wiki/Bauwerk)."@de, "Une structure architecturale est une construction extérieure immobile, autonome et construite par l'homme (http://en.wikipedia.org/wiki/Architectural_structure)."@fr, "Μια αρχιτεκτονική κατασκευή είναι μια ανθρώπινη κατασκευή, επιδαπέδια, ακίνητη κατασκευή (http://en.wikipedia.org/wiki/Architectural_structure)."@el, "یہ تعمیراتی ڈھانچے مواد سے بنے ہیں۔، آزادانہ ، غیر مستحکم بیرونی تعمیر۔"@ur ;
-    rdfs:label "Bauwerk"@de, "architectural structure"@en, "bouwsel"@nl, "estructura arquitectural"@es, "struchtúr ailtireachta"@ga, "structure architecturale"@fr, "struttura architettonica"@it, "αρχιτεκτονική κατασκευή"@el, "تعمیراتی ڈھانچے"@ur, "構� 物"@ja, "건축 구조"@ko ;
+    rdfs:label "Bauwerk"@de, "architectural structure"@en, "bouwsel"@nl, "estructura arquitectural"@es, "struchtúr ailtireachta"@ga, "structure architecturale"@fr, "struttura architettonica"@it, "αρχιτεκτονική κατασκευή"@el, "تعمیراتی ڈھانچے"@ur, "構� 物"@ja, "건축 구조"@ko ;
     rdfs:subClassOf owl:Thing ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:ArchitecturalStructure> .
 
 :Archive
     a owl:Class ;
-    rdfs:comment "Collection de documents appartenant �  une personne ou une organisation."@fr, "Collection of documents pertaining to a person or organisation."@en, "Verzameling van documenten rondom een persoon of organisatie."@nl, "Η συλλογή των εγγράφων που σχετίζονται με ένα πρόσωπο ή οργανισμό."@el, "کسی شخص یا تنظیم سے متعلق دستاویزات کا مجموع"@ur ;
+    rdfs:comment "Collection de documents appartenant �  une personne ou une organisation."@fr, "Collection of documents pertaining to a person or organisation."@en, "Verzameling van documenten rondom een persoon of organisatie."@nl, "Η συλλογή των εγγράφων που σχετίζονται με ένα πρόσωπο ή οργανισμό."@el, "کسی شخص یا تنظیم سے متعلق دستاویزات کا مجموع"@ur ;
     rdfs:label "Archief"@nl, "Archiv"@de, "Archive"@en, "archive"@fr, "archivo"@es, "archiwum"@pl, "αρχείο"@el, "محفوظ شدہ دستاویزات"@ur, "アーカイブ"@ja ;
     rdfs:subClassOf :CollectionOfValuables ;
     owl:equivalentClass wikidata:Q166118 ;
@@ -1816,7 +1816,7 @@
 
 :Artist
     a owl:Class ;
-    rdfs:label "Künstler"@de, "artist"@en, "artista"@it, "artiste"@fr, "artysta"@pl, "ealaíontóir"@ga, "kunstenaar"@nl, "kunstner"@da, "καλλιτέχνης"@el, "мастак"@be, "художник"@ru, "فنکار"@ur, "芸術家"@ja, "예� 가"@ko ;
+    rdfs:label "Künstler"@de, "artist"@en, "artista"@it, "artiste"@fr, "artysta"@pl, "ealaíontóir"@ga, "kunstenaar"@nl, "kunstner"@da, "καλλιτέχνης"@el, "мастак"@be, "художник"@ru, "فنکار"@ur, "芸術家"@ja, "예� 가"@ko ;
     rdfs:subClassOf :Person ;
     owl:equivalentClass wikidata:Q483501 ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:Artist> .
@@ -1864,7 +1864,7 @@
 
 :Athlete
     a owl:Class ;
-    rdfs:label "Athlet"@de, "athlete"@en, "athlète"@fr, "atleet"@nl, "atleta"@it, "lúthchleasaí"@ga, "αθλητής"@el, "کھلاڑی"@ur, "アスリート"@ja, "운동 � 수"@ko ;
+    rdfs:label "Athlet"@de, "athlete"@en, "athlète"@fr, "atleet"@nl, "atleta"@it, "lúthchleasaí"@ga, "αθλητής"@el, "کھلاڑی"@ur, "アスリート"@ja, "운동 � 수"@ko ;
     rdfs:subClassOf :Person ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:Athlete> .
 
@@ -1897,19 +1897,19 @@
 :AustralianFootballLeague
     a owl:Class ;
     rdfs:comment "A group of sports teams that compete against each other in australian football."@en, "Μια ομάδα αθλητικών ομάδων που ανταγωνίζονται μεταξύ τους σε αυστραλιανό ποδόσφαιρο."@el, "کھیلوں کی ٹیموں کا ایک گروپ جو آسٹریلین فٹ بال میں ایک دوسرے کے خلاف مقابلہ کرتا ہے"@ur ;
-    rdfs:label "Australian Football League"@de, "australian football competitie"@nl, "australian football league"@en, "australian football league"@fr, "lega di football australiano"@it, "liga de futebol australiano"@pt, "liga de fútbol australiana"@es, "αυστραλιανό πρωτάθλημα ποδοσφαίρου"@el, "آسٹریلوی فٹ بال کی انجمن"@ur, "オーストラリアン・フットボール・リーグ"@ja, "오스트� �일리안 풋볼 리그"@ko ;
+    rdfs:label "Australian Football League"@de, "australian football competitie"@nl, "australian football league"@en, "australian football league"@fr, "lega di football australiano"@it, "liga de futebol australiano"@pt, "liga de fútbol australiana"@es, "αυστραλιανό πρωτάθλημα ποδοσφαίρου"@el, "آسٹریلوی فٹ بال کی انجمن"@ur, "オーストラリアン・フットボール・リーグ"@ja, "오스트� �일리안 풋볼 리그"@ko ;
     rdfs:subClassOf :SportsLeague ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:AustralianFootballLeague> .
 
 :AustralianFootballTeam
     a owl:Class ;
-    rdfs:label "Australian Football Team"@de, "Australian football team"@nl, "australian football Team"@en, "squadra di football australiano"@it, "Équipe de Football Australien"@fr, "ποδοσφαιρική ομάδα αυστραλίας"@el, "آسٹریلوی فٹ بال ٹیم"@ur, "オーストラリアンフットボールチー� "@ja ;
+    rdfs:label "Australian Football Team"@de, "Australian football team"@nl, "australian football Team"@en, "squadra di football australiano"@it, "Équipe de Football Australien"@fr, "ποδοσφαιρική ομάδα αυστραλίας"@el, "آسٹریلوی فٹ بال ٹیم"@ur, "オーストラリアンフットボールチー� "@ja ;
     rdfs:subClassOf :SportsTeam ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:AustralianFootballTeam> .
 
 :AustralianRulesFootballPlayer
     a owl:Class ;
-    rdfs:label "Australian Rules Football-Spieler"@de, "Australian football-speler"@nl, "Australian rules football player"@en, "giocatore di football australiano"@it, "αυστραλιανοί κανόνες ποδοσφαιριστή"@el, "آسٹریلوی رولز فٹ بال پلیئر"@ur, "オージーフットボール選手"@ja, "오스트� �일리아식 풋볼 � 수"@ko ;
+    rdfs:label "Australian Rules Football-Spieler"@de, "Australian football-speler"@nl, "Australian rules football player"@en, "giocatore di football australiano"@it, "αυστραλιανοί κανόνες ποδοσφαιριστή"@el, "آسٹریلوی رولز فٹ بال پلیئر"@ur, "オージーフットボール選手"@ja, "오스트� �일리아식 풋볼 � 수"@ko ;
     rdfs:subClassOf :Athlete ;
     owl:equivalentClass wikidata:Q13414980 ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:AustralianRulesFootballPlayer> .
@@ -1961,13 +1961,13 @@
 
 :Bacteria
     a owl:Class ;
-    rdfs:label "bacteria"@en, "bacteria"@es, "bacterie"@nl, "bactérie"@fr, "baictéir"@ga, "bakterium"@de, "batterio"@it, "βακτήρια"@el, "جراثیم"@ur, "真正細菌"@ja, "세� "@ko ;
+    rdfs:label "bacteria"@en, "bacteria"@es, "bacterie"@nl, "bactérie"@fr, "baictéir"@ga, "bakterium"@de, "batterio"@it, "βακτήρια"@el, "جراثیم"@ur, "真正細菌"@ja, "세� "@ko ;
     rdfs:subClassOf :Species ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:Bacteria> .
 
 :BadmintonPlayer
     a owl:Class ;
-    rdfs:label "Badmintonspieler"@de, "badminton player"@en, "badmintonspeler"@nl, "giocatore di badminton"@it, "imreoir badmantain"@ga, "jogador de badminton"@pt, "joueur de badminton"@fr, "παίχτης του μπάντμιντον"@el, "بیڈمنٹن کا کھلاڑی"@ur, "バドミントン選手"@ja, "배드민턴 � 수"@ko ;
+    rdfs:label "Badmintonspieler"@de, "badminton player"@en, "badmintonspeler"@nl, "giocatore di badminton"@it, "imreoir badmantain"@ga, "jogador de badminton"@pt, "joueur de badminton"@fr, "παίχτης του μπάντμιντον"@el, "بیڈمنٹن کا کھلاڑی"@ur, "バドミントン選手"@ja, "배드민턴 � 수"@ko ;
     rdfs:subClassOf :Athlete ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:BadmintonPlayer> .
 
@@ -2003,7 +2003,7 @@
 :BaseballPlayer
     a owl:Class ;
     rdfs:comment "Ο αθλητής (άνδρας ή γυναίκα) που συμμετέχει σε μία ομάδα μπέιζμπολ."@el ;
-    rdfs:label "Baseballspieler"@de, "baseball player"@en, "giocatore di baseball"@it, "honkballer"@nl, "imreoir daorchluiche"@ga, "jogador de basebol"@pt, "joueur de baseball"@fr, "παίκτης μπέιζμπολ"@el, "بیس بال کا کھلاڑی"@ur, "野球選手"@ja, "야구 � 수"@ko ;
+    rdfs:label "Baseballspieler"@de, "baseball player"@en, "giocatore di baseball"@it, "honkballer"@nl, "imreoir daorchluiche"@ga, "jogador de basebol"@pt, "joueur de baseball"@fr, "παίκτης μπέιζμπολ"@el, "بیس بال کا کھلاڑی"@ur, "野球選手"@ja, "야구 � 수"@ko ;
     rdfs:subClassOf :Athlete ;
     owl:equivalentClass wikidata:Q10871364 ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:BaseballPlayer> .
@@ -2017,7 +2017,7 @@
 :BaseballTeam
     a owl:Class ;
     rdfs:comment "Ένας αριθμός από άνδρες ή γυναίκες που αποτελούν ένα διακριτό σύνολο με συγκεκριμένους στόχους σχετικά με το άθλημα του μπέιζμπολ."@el, "متعدد مرد یا خواتین جو بیس بال کے کھیل کے حوالے سے مخصوص اہداف کے ساتھ ایک الگ وجود بناتے ہیں۔"@ur ;
-    rdfs:label "Baseballmannschaft"@de, "baseball team"@en, "foireann daorchluiche"@ga, "honkbal team"@nl, "squadra di baseball"@it, "équipe de baseball"@fr, "ομάδα μπέιζμπολ"@el, "بیس بال کی جماعت"@ur, "野球チー� "@ja, "야구팀"@ko ;
+    rdfs:label "Baseballmannschaft"@de, "baseball team"@en, "foireann daorchluiche"@ga, "honkbal team"@nl, "squadra di baseball"@it, "équipe de baseball"@fr, "ομάδα μπέιζμπολ"@el, "بیس بال کی جماعت"@ur, "野球チー� "@ja, "야구팀"@ko ;
     rdfs:subClassOf :SportsTeam ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:BaseballTeam> .
 
@@ -2031,14 +2031,14 @@
 :BasketballPlayer
     a owl:Class ;
     rdfs:comment "Ένας αθλητής (άνδρας ή γυναίκα) που ασχολείται με το άθλημα της καλαθοσφαίρισης."@el ;
-    rdfs:label "Basketballspieler"@de, "Basquetbolista"@es, "basketbal speler"@nl, "basketball player"@en, "giocatore di pallacanestro"@it, "imreoir cispheile"@ga, "joueur de basketball"@fr, "παίκτης καλαθοσφαίρισης"@el, "باسکٹ بال کھلاڑی"@ur, "バスケットボール選手"@ja, "농구 � 수"@ko ;
+    rdfs:label "Basketballspieler"@de, "Basquetbolista"@es, "basketbal speler"@nl, "basketball player"@en, "giocatore di pallacanestro"@it, "imreoir cispheile"@ga, "joueur de basketball"@fr, "παίκτης καλαθοσφαίρισης"@el, "باسکٹ بال کھلاڑی"@ur, "バスケットボール選手"@ja, "농구 � 수"@ko ;
     rdfs:subClassOf :Athlete ;
     owl:equivalentClass wikidata:Q3665646 ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:BasketballPlayer> .
 
 :BasketballTeam
     a owl:Class ;
-    rdfs:label "Basketballmannschaft"@de, "basketball team"@en, "basketbalteam"@nl, "foireann cispheile"@ga, "squadra di pallacanestro"@it, "time de basquete"@pt, "équipe de basketball"@fr, "Κουτί πληροφοριών συλλόγου καλαθοσφαίρισης"@el, "باسکٹ بال کی جماعت"@ur, "バスケットボールチー� "@ja, "농구 팀"@ko ;
+    rdfs:label "Basketballmannschaft"@de, "basketball team"@en, "basketbalteam"@nl, "foireann cispheile"@ga, "squadra di pallacanestro"@it, "time de basquete"@pt, "équipe de basketball"@fr, "Κουτί πληροφοριών συλλόγου καλαθοσφαίρισης"@el, "باسکٹ بال کی جماعت"@ur, "バスケットボールチー� "@ja, "농구 팀"@ko ;
     rdfs:subClassOf :SportsTeam ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:BasketballTeam> .
 
@@ -2059,14 +2059,14 @@
 :Beach
     a owl:Class ;
     rdfs:comment "Ribera del mar o de un río grande, formada de arenales en superficie casi plana."@es, "The shore of a body of water, especially when sandy or pebbly."@en, "پانی کے جسم کا ساحل ، خاص طور پر جب ریت بھرا یا کنکری"@ur ;
-    rdfs:label "Strand"@de, "beach"@en, "plage"@fr, "platja"@ca, "playa"@es, "praia"@pt, "strand"@da, "strand"@nl, "ساحل_سمندر"@ur, "� �浜"@ja ;
+    rdfs:label "Strand"@de, "beach"@en, "plage"@fr, "platja"@ca, "playa"@es, "praia"@pt, "strand"@da, "strand"@nl, "ساحل_سمندر"@ur, "� �浜"@ja ;
     rdfs:subClassOf :NaturalPlace ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:Beach> .
 
 :BeachVolleyballPlayer
     a owl:Class ;
     rdfs:comment "Ένα άτομο (άνδρας ή γυναίκα) που ασχολείται με το άθλημα του μπίτς βόλλεϋ."@el ;
-    rdfs:label "Beachvolleyballspieler"@de, "beach volleyball player"@en, "beachvolleybal speler"@nl, "giocatore di beach volley"@it, "joueur de volleyball de plage"@fr, "παίκτης του beach volley"@el, "ساحل سمندروالی بال کاکھلاڑی"@ur, "ビーチバレー選手"@ja, "비치발리볼 � 수"@ko ;
+    rdfs:label "Beachvolleyballspieler"@de, "beach volleyball player"@en, "beachvolleybal speler"@nl, "giocatore di beach volley"@it, "joueur de volleyball de plage"@fr, "παίκτης του beach volley"@el, "ساحل سمندروالی بال کاکھلاڑی"@ur, "ビーチバレー選手"@ja, "비치발리볼 � 수"@ko ;
     rdfs:subClassOf :VolleyballPlayer ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:BeachVolleyballPlayer> .
 
@@ -2100,7 +2100,7 @@
 :BiologicalDatabase
     a owl:Class ;
     rdfs:comment "Διάφορες βάσεις δεδομένων οι οποίες περιέχουν πληροφορίες που ταυτοποιούν τα βασικά βιολογικά χαρακτηριστικά των οργανισμών. Οι πληροφορίες αυτές συγκροτούνται σε σύνολα βιβλιοθηκών των βασικών δομών των κυττάρων των οργανισμών, όπως οι βιλβιοθήκες νουκλεϊνικών οξέων (genomics) και πρωτεϊνών (proteomics)."@el, "حیاتیات کی بنیادی حیاتیاتی خصوصیات کی نشاندہی کرنے والی معلومات پر مشتمل مختلف ڈیٹا بیس۔ یہ معلومات حیاتیات کے خلیات کے بنیادی ڈھانچے کی لائبریریوں کے سیٹوں میں مرتب کی جاتی ہیں، جیسے کہ نیوکلک ایسڈ (جینومکس) اور پروٹین (پروٹومکس) کی لائبریریاں۔"@ur ;
-    rdfs:label "Banco de dados biológico"@pt, "Base de données biologiques"@fr, "Biological database"@en, "Biologische Datenbank"@de, "biologische databank"@nl, "database biologico"@it, "Βάση Δεδομένων Βιολογικών Χαρακτηριστικών"@el, "حیاتیاتی ریکارڈرز_پر_مبنی_ایک_فائل"@ur, "バイオデータベース"@ja, "생물학 데이터� 이스"@ko ;
+    rdfs:label "Banco de dados biológico"@pt, "Base de données biologiques"@fr, "Biological database"@en, "Biologische Datenbank"@de, "biologische databank"@nl, "database biologico"@it, "Βάση Δεδομένων Βιολογικών Χαρακτηριστικών"@el, "حیاتیاتی ریکارڈرز_پر_مبنی_ایک_فائل"@ur, "バイオデータベース"@ja, "생물학 데이터� 이스"@ko ;
     rdfs:subClassOf :Database ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:BiologicalDatabase> .
 
@@ -2112,7 +2112,7 @@
 
 :Biomolecule
     a owl:Class ;
-    rdfs:comment "Een molecuul wat van nature voorkomt in een organisme en gevormd kan worden door organismen."@nl, "equivalent to http://ccdb.ucsd.edu/NIF/BIRNLex-OBO-UBO.owl#birnlex_22."@en, "Κάθε μόριο που παράγεται σε έναν ζωντανό οργανισμό. Συνήθως μεγαλομοριακές ενώσεις που χρησιμεύουν στην δομή και στο μεταβολισμό του κυττάρου. � ρωτεΐνες, νουκλεϊνικά οξέα, υδατάνθρακες και λιπίδια."@el, "ایسے پیچدہ نامیاتی مالیکیولز جو زندگی کی بنیاد ہیں یعنی وہ زندہ اجسام کو تعمیر کرنے ، ان کو نشوونما کرنے اور برقرار رکھنے کے لیے ضروری ہوتے ہیں"@ur ;
+    rdfs:comment "Een molecuul wat van nature voorkomt in een organisme en gevormd kan worden door organismen."@nl, "equivalent to http://ccdb.ucsd.edu/NIF/BIRNLex-OBO-UBO.owl#birnlex_22."@en, "Κάθε μόριο που παράγεται σε έναν ζωντανό οργανισμό. Συνήθως μεγαλομοριακές ενώσεις που χρησιμεύουν στην δομή και στο μεταβολισμό του κυττάρου. � ρωτεΐνες, νουκλεϊνικά οξέα, υδατάνθρακες και λιπίδια."@el, "ایسے پیچدہ نامیاتی مالیکیولز جو زندگی کی بنیاد ہیں یعنی وہ زندہ اجسام کو تعمیر کرنے ، ان کو نشوونما کرنے اور برقرار رکھنے کے لیے ضروری ہوتے ہیں"@ur ;
     rdfs:label "Biomolecule"@en, "Biomolecuul"@nl, "Biomolekül"@de, "biomolecola"@it, "biomolécule"@fr, "βιομόριο"@el, "حیاتیاتی مرکبات"@ur, "生体物質"@ja, "생체 분자"@ko ;
     rdfs:subClassOf owl:Thing ;
     owl:equivalentClass wikidata:Q206229 ;
@@ -2126,7 +2126,7 @@
 
 :Blazon
     a owl:Class ;
-    rdfs:label "Blason"@fr, "Blazon"@en, "Wappen"@de, "blazoen (wapenschild)"@nl, "οικόσημο"@el, "آب و تاب"@ur, "紋� 記述"@ja ;
+    rdfs:label "Blason"@fr, "Blazon"@en, "Wappen"@de, "blazoen (wapenschild)"@nl, "οικόσημο"@el, "آب و تاب"@ur, "紋� 記述"@ja ;
     rdfs:subClassOf owl:Thing ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:Blazon> .
 
@@ -2139,7 +2139,7 @@
 :BoardGame
     a owl:Class ;
     rdfs:comment "Un gioco da tavolo è un gioco che richiede una ben definita superficie di gioco, che viene detta di solito tabellone o plancia."@it, "come from http://en.wikipedia.org/wiki/Category:Board_games"@en, "ایک بورڈ گیم ایک ایسا کھیل ہے جس کے لیے ایک اچھی طرح سے متعین کردہ سطح کی ضرورت ہوتی ہے ، جسے عام طور پر ایک بورڈ کہا جاتا ہے۔"@ur ;
-    rdfs:label "Brettspiel"@de, "board game"@en, "bordspel"@nl, "brætspil"@da, "gioco da tavolo"@it, "jeu de société"@fr, "juego de mesa"@es, "επιτραπέζιο παιχνίδι"@el, "بورڈ کھیل"@ur, "ボードゲー� "@ja, "보드 게임"@ko ;
+    rdfs:label "Brettspiel"@de, "board game"@en, "bordspel"@nl, "brætspil"@da, "gioco da tavolo"@it, "jeu de société"@fr, "juego de mesa"@es, "επιτραπέζιο παιχνίδι"@el, "بورڈ کھیل"@ur, "ボードゲー� "@ja, "보드 게임"@ko ;
     rdfs:subClassOf :Game ;
     owl:equivalentClass wikidata:Q131436 ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:BoardGame> .
@@ -2189,7 +2189,7 @@
 
 :Boxer
     a owl:Class ;
-    rdfs:label "Boxer"@de, "bokser"@nl, "boxeador"@pt, "boxer"@en, "boxeur"@fr, "dornálaí"@ga, "pugile"@it, "πυγμάχος"@el, "مکے باز"@ur, "ボクサー"@ja, "권투 � 수"@ko ;
+    rdfs:label "Boxer"@de, "bokser"@nl, "boxeador"@pt, "boxer"@en, "boxeur"@fr, "dornálaí"@ga, "pugile"@it, "πυγμάχος"@el, "مکے باز"@ur, "ボクサー"@ja, "권투 � 수"@ko ;
     rdfs:subClassOf :Athlete ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:Boxer> .
 
@@ -2511,7 +2511,7 @@
 
 :ChemicalElement
     a owl:Class ;
-    rdfs:label "chemical element"@en, "chemisch element"@nl, "chemisches Element"@de, "elemento chimico"@it, "élément chimique"@fr, "χημικό στοιχείο"@el, "کیمیائی عنصر"@ur, "元� "@ja, "원소"@ko ;
+    rdfs:label "chemical element"@en, "chemisch element"@nl, "chemisches Element"@de, "elemento chimico"@it, "élément chimique"@fr, "χημικό στοιχείο"@el, "کیمیائی عنصر"@ur, "元� "@ja, "원소"@ko ;
     rdfs:subClassOf :ChemicalSubstance ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:ChemicalElement> .
 
@@ -2531,7 +2531,7 @@
 <http://dbpedia.org/ontology/ChemicalSubstance/density>
     a owl:DatatypeProperty ;
     rdfs:domain :ChemicalSubstance ;
-    rdfs:label "Dichte (μ3)"@de, "densidade (μ3)"@pt, "density (μ3)"@en, "densit�  (μ3)"@it, "densité (μ3)"@fr, "πυκνότητα (μ3)"@el, "密度 (μ3)"@ja ;
+    rdfs:label "Dichte (μ3)"@de, "densidade (μ3)"@pt, "density (μ3)"@en, "densit�  (μ3)"@it, "densité (μ3)"@fr, "πυκνότητα (μ3)"@el, "密度 (μ3)"@ja ;
     rdfs:range <http://dbpedia.org/datatype/kilogramPerCubicMetre> .
 
 <http://dbpedia.org/ontology/ChemicalSubstance/meltingPoint>
@@ -2542,7 +2542,7 @@
 
 :ChessPlayer
     a owl:Class ;
-    rdfs:label "Schachspieler"@de, "chess player"@en, "giocatore di scacchi"@it, "imreoir fichille"@ga, "joueur d'échecs"@fr, "schaker"@nl, "szachista"@pl, "παίκτης σκάκι"@el, "شطرنج کا کھلاڑی"@ur, "チェスプレーヤー"@ja, "체스 � 수"@ko ;
+    rdfs:label "Schachspieler"@de, "chess player"@en, "giocatore di scacchi"@it, "imreoir fichille"@ga, "joueur d'échecs"@fr, "schaker"@nl, "szachista"@pl, "παίκτης σκάκι"@el, "شطرنج کا کھلاڑی"@ur, "チェスプレーヤー"@ja, "체스 � 수"@ko ;
     rdfs:subClassOf :Athlete ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:ChessPlayer> .
 
@@ -2555,7 +2555,7 @@
 
 :ChristianBishop
     a owl:Class ;
-    rdfs:label "Christelijk bisschop"@nl, "Christian Bishop"@en, "Easpag Críostaí"@ga, "biskup chrześcijański"@pl, "christlicher  Bischof"@de, "vescovo cristiano"@it, "évêque chrétien"@fr, "� ληροφορίες Επισκόπου"@el, "عیسائی پادري"@ur, "기독교 주교"@ko ;
+    rdfs:label "Christelijk bisschop"@nl, "Christian Bishop"@en, "Easpag Críostaí"@ga, "biskup chrześcijański"@pl, "christlicher  Bischof"@de, "vescovo cristiano"@it, "évêque chrétien"@fr, "� ληροφορίες Επισκόπου"@el, "عیسائی پادري"@ur, "기독교 주교"@ko ;
     rdfs:subClassOf :Cleric ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:ChristianBishop> .
 
@@ -2597,7 +2597,7 @@
 :City
     a owl:Class ;
     rdfs:comment "Actualmente considérase como unha entidade urbana con alta densidade de poboación na que predominan fundamentalmente a industria e os servizos."@gl, "a relatively large and permanent settlement, particularly a large urban settlement"@en, "un asentamiento permanente y relativamente grande, especialmente un gran asentamiento urbano"@es, "ایک نسبتا  بڑی اور مستقل آبادی ، خاص طور پر ایک بڑی شہری بستی"@ur ;
-    rdfs:label "Stadt"@de, "by"@da, "cathair"@ga, "cidade"@gl, "cidade"@pt, "citt� "@it, "city"@en, "ciudad"@es, "miasto"@pl, "stad"@nl, "ville"@fr, "πόλη"@el, "شہر"@ur, "शहर"@hi, "市"@ja, "도시"@ko ;
+    rdfs:label "Stadt"@de, "by"@da, "cathair"@ga, "cidade"@gl, "cidade"@pt, "citt� "@it, "city"@en, "ciudad"@es, "miasto"@pl, "stad"@nl, "ville"@fr, "πόλη"@el, "شہر"@ur, "शहर"@hi, "市"@ja, "도시"@ko ;
     rdfs:subClassOf :Settlement ;
     owl:equivalentClass <http://schema.org/City>, wikidata:Q515 ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:City> .
@@ -2665,7 +2665,7 @@
 :CollectionOfValuables
     a owl:Class ;
     rdfs:comment "Collection of valuables is a collection considered to be a work in itself)"@en, "Een verzameling van kostbaarheden, die als een werk beschouwd wordt )."@nl, "قیمتی اشیاء کا مجموعہ ایک ایسا مجموعہ ہے جو اپنے آپ میں ایک کام سمجھا جاتا ہے۔"@ur ;
-    rdfs:label "Kunst- und Wertsachenversammlung"@de, "collection d'objets"@fr, "collection of valuables"@en, "verzameling van kostbaarheden"@nl, "قیمتی اشیاء کا مجموعہ"@ur, "귀중품의 컬� �션"@ko ;
+    rdfs:label "Kunst- und Wertsachenversammlung"@de, "collection d'objets"@fr, "collection of valuables"@en, "verzameling van kostbaarheden"@nl, "قیمتی اشیاء کا مجموعہ"@ur, "귀중품의 컬� �션"@ko ;
     rdfs:subClassOf :Work ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:CollectionOfValuables> .
 
@@ -2722,7 +2722,7 @@
 
 :ComicsCharacter
     a owl:Class ;
-    rdfs:label "Comic Charakter"@de, "comics character"@en, "personagem de quadrinhos"@pt, "personnage de bandes dessinées"@fr, "stripfiguur (Amerikaans)"@nl, "χαρακτήρας κινούμενων σχεδίων"@el, "مُضحِکہ خیزکردار"@ur, "コミックスのキャラクター"@ja, "만화� 니 등장인물"@ko ;
+    rdfs:label "Comic Charakter"@de, "comics character"@en, "personagem de quadrinhos"@pt, "personnage de bandes dessinées"@fr, "stripfiguur (Amerikaans)"@nl, "χαρακτήρας κινούμενων σχεδίων"@el, "مُضحِکہ خیزکردار"@ur, "コミックスのキャラクター"@ja, "만화� 니 등장인물"@ko ;
     rdfs:subClassOf :FictionalCharacter ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:ComicsCharacter> .
 
@@ -2866,8 +2866,8 @@
 
 :Covid19
     a owl:Class ;
-    rdfs:comment "2019� 狀病毒病疫情是一次由严重急性呼吸系统综合征� 状病毒导致的2019� 状病毒病所引發的全球大流行疫情"@zh, "Ongoing pandemic of coronavirus disease 2019"@en, "Pandémie actuelle de maladie coronavirus 2019"@fr, "کورونا وائرس کی بیماری 2019 کی جاری وبائی بیماری۔"@ur ;
-    rdfs:label "2019� 状病毒病疫情"@zh, "COVID-19 pandemic"@en, "Pandémie COVID-19"@fr, "کورونا وائرس2019"@ur ;
+    rdfs:comment "2019� 狀病毒病疫情是一次由严重急性呼吸系统综合征� 状病毒导致的2019� 状病毒病所引發的全球大流行疫情"@zh, "Ongoing pandemic of coronavirus disease 2019"@en, "Pandémie actuelle de maladie coronavirus 2019"@fr, "کورونا وائرس کی بیماری 2019 کی جاری وبائی بیماری۔"@ur ;
+    rdfs:label "2019� 状病毒病疫情"@zh, "COVID-19 pandemic"@en, "Pandémie COVID-19"@fr, "کورونا وائرس2019"@ur ;
     rdfs:subClassOf owl:Thing ;
     owl:equivalentClass wikidata:Q84263196 ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:Covid19> .
@@ -2893,13 +2893,13 @@
 
 :CricketTeam
     a owl:Class ;
-    rdfs:label "Cricketmannschaft"@de, "cricket team"@en, "cricketteam"@nl, "foireann cuircéid"@ga, "squadra di cricket"@it, "équipe de cricket"@fr, "ομάδα κρίκετ"@el, "کرکٹ جماعت"@ur, "クリケットチー� "@ja ;
+    rdfs:label "Cricketmannschaft"@de, "cricket team"@en, "cricketteam"@nl, "foireann cuircéid"@ga, "squadra di cricket"@it, "équipe de cricket"@fr, "ομάδα κρίκετ"@el, "کرکٹ جماعت"@ur, "クリケットチー� "@ja ;
     rdfs:subClassOf :SportsTeam ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:CricketTeam> .
 
 :Cricketer
     a owl:Class ;
-    rdfs:label "Cricketspieler"@de, "cricketer"@en, "cricketspeler"@nl, "imreoir cruicéid"@ga, "joueur de cricket"@fr, "παίκτης του κρίκετ"@el, "کرکٹ کا کھلاڑی"@ur, "クリケット選手"@ja, "크리켓 � 수"@ko ;
+    rdfs:label "Cricketspieler"@de, "cricketer"@en, "cricketspeler"@nl, "imreoir cruicéid"@ga, "joueur de cricket"@fr, "παίκτης του κρίκετ"@el, "کرکٹ کا کھلاڑی"@ur, "クリケット選手"@ja, "크리켓 � 수"@ko ;
     rdfs:subClassOf :Athlete ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:Cricketer> .
 
@@ -2932,7 +2932,7 @@
 
 :Curler
     a owl:Class ;
-    rdfs:label "Curlingspieler"@de, "curler"@en, "curlingspeler"@nl, "μπικουτί"@el, "کرلنگ کا کھیل کھیلنے والا"@ur, "カーリング選手"@ja, "컬링 � 수"@ko ;
+    rdfs:label "Curlingspieler"@de, "curler"@en, "curlingspeler"@nl, "μπικουτί"@el, "کرلنگ کا کھیل کھیلنے والا"@ur, "カーリング選手"@ja, "컬링 � 수"@ko ;
     rdfs:subClassOf :WinterSportPlayer ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:Curler> .
 
@@ -2951,7 +2951,7 @@
 
 :Cycad
     a owl:Class ;
-    rdfs:label "Palmfarn"@de, "cicadácea"@pt, "cycad"@en, "cycadeeën"@nl, "cycadophytes"@fr, "cíocáid"@ga, "φοινικόθαμνος"@el, "کرف نخلی"@ur, "ソテツ門"@ja, "소� 류"@kr ;
+    rdfs:label "Palmfarn"@de, "cicadácea"@pt, "cycad"@en, "cycadeeën"@nl, "cycadophytes"@fr, "cíocáid"@ga, "φοινικόθαμνος"@el, "کرف نخلی"@ur, "ソテツ門"@ja, "소� 류"@kr ;
     rdfs:subClassOf :Plant ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:Cycad> .
 
@@ -2964,7 +2964,7 @@
 :CyclingLeague
     a owl:Class ;
     rdfs:comment "a group of sports teams that compete against each other in Cycling"@en, "کھیلوں کی ٹیموں کا ایک گروپ جو سائیکلنگ میں ایک دوسرے کے خلاف مقابلہ کرتا ہے۔"@ur ;
-    rdfs:label "Rad-Liga"@de, "cycling league"@en, "liga de ciclismo"@es, "ligue de cyclisme"@fr, "wielerronde"@nl, "Ομοσπονδία � οδηλασίας"@el, "سائیکل سوار کی انجمن"@ur, "사이클 리그"@ko ;
+    rdfs:label "Rad-Liga"@de, "cycling league"@en, "liga de ciclismo"@es, "ligue de cyclisme"@fr, "wielerronde"@nl, "Ομοσπονδία � οδηλασίας"@el, "سائیکل سوار کی انجمن"@ur, "사이클 리그"@ko ;
     rdfs:subClassOf :SportsLeague ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:CyclingLeague> .
 
@@ -2983,7 +2983,7 @@
 
 :Cyclist
     a owl:Class ;
-    rdfs:label "Radfahrer"@de, "ciclista"@es, "ciclista"@pt, "cyclist"@en, "cycliste"@fr, "cyklist"@da, "rothaí"@ga, "wielrenner"@nl, "ποδηλάτης"@el, "سائیکل سوار"@ur, "自転車選手"@ja, "사이클 � 수"@ko ;
+    rdfs:label "Radfahrer"@de, "ciclista"@es, "ciclista"@pt, "cyclist"@en, "cycliste"@fr, "cyklist"@da, "rothaí"@ga, "wielrenner"@nl, "ποδηλάτης"@el, "سائیکل سوار"@ur, "自転車選手"@ja, "사이클 � 수"@ko ;
     rdfs:subClassOf :Athlete ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:Cyclist> .
 
@@ -3002,7 +3002,7 @@
 :Dam
     a owl:Class ;
     rdfs:comment "A dam is part of a landscape infrastructure, like waterworks (canals) or roads, much more than a building, though, of course, it has been built, too."@en, "Ένα φράγμα είναι μια κατασκευή που εμποδίζει, ανακατευθύνει ή επιβραδύνει την φυσική ροή υδάτων."@el, "ڈیم ایک ایسا ڈھانچہ ہے جو پانی کے قدرتی بہاؤ کو روکتا، ری ڈائریکٹ یا سست کر دیتا ہے۔"@ur ;
-    rdfs:label "Damm"@de, "barrage"@fr, "dam"@en, "dam"@nl, "damba"@ga, "diga"@it, "φράγμα"@el, "ڈیم"@ur, "ダ� "@ja ;
+    rdfs:label "Damm"@de, "barrage"@fr, "dam"@en, "dam"@nl, "damba"@ga, "diga"@it, "φράγμα"@el, "ڈیم"@ur, "ダ� "@ja ;
     rdfs:subClassOf :Infrastructure ;
     owl:equivalentClass wikidata:Q12323 ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:Dam> .
@@ -3015,13 +3015,13 @@
 
 :DartsPlayer
     a owl:Class ;
-    rdfs:label "Dartspieler"@de, "darter"@nl, "darts player"@en, "joueur de fléchettes"@fr, "παίκτης βελάκιων"@el, "نيزہ باز"@ur, "다트 � 수"@ko ;
+    rdfs:label "Dartspieler"@de, "darter"@nl, "darts player"@en, "joueur de fléchettes"@fr, "παίκτης βελάκιων"@el, "نيزہ باز"@ur, "다트 � 수"@ko ;
     rdfs:subClassOf :Athlete ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:DartsPlayer> .
 
 :Database
     a owl:Class ;
-    rdfs:label "Banco de dados"@pt, "Base de données"@fr, "Database"@en, "Datenbank"@de, "bunachar sonraí"@ga, "database"@nl, "βάση δεδομένων"@el, "ریکارڈرز_پر_مبنی_ایک_فائل"@ur, "データベース"@ja, "데이터� 이스"@ko ;
+    rdfs:label "Banco de dados"@pt, "Base de données"@fr, "Database"@en, "Datenbank"@de, "bunachar sonraí"@ga, "database"@nl, "βάση δεδομένων"@el, "ریکارڈرز_پر_مبنی_ایک_فائل"@ur, "データベース"@ja, "데이터� 이스"@ko ;
     rdfs:subClassOf :Work, dul:InformationObject ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:Database> .
 
@@ -3034,14 +3034,14 @@
 
 :Decoration
     a owl:Class ;
-    rdfs:comment "An object, such as a medal or an order, that is awarded to honor the recipient ostentatiously."@en, "Per onorificenza si intende un segno di onore che viene concesso da un'autorit�  in riconoscimento di particolari atti benemeriti."@it, "Une distinction honorifique en reconnaissance d'un service civil ou militaire ."@fr, "ایک شے ، جیسے تمغہ یا آرڈر ، جو وصول کنندہ کو عزت سے نوازنے کے لیے دیا جاتا ہے۔"@ur ;
-    rdfs:label "Auszeichnung"@de, "condecoración"@es, "decoration"@en, "décoration"@fr, "onderscheiding"@nl, "onorificenza"@it, "διακόσμηση"@el, "سجاوٹ"@ur, "勲� "@ja, "장식"@ko ;
+    rdfs:comment "An object, such as a medal or an order, that is awarded to honor the recipient ostentatiously."@en, "Per onorificenza si intende un segno di onore che viene concesso da un'autorit�  in riconoscimento di particolari atti benemeriti."@it, "Une distinction honorifique en reconnaissance d'un service civil ou militaire ."@fr, "ایک شے ، جیسے تمغہ یا آرڈر ، جو وصول کنندہ کو عزت سے نوازنے کے لیے دیا جاتا ہے۔"@ur ;
+    rdfs:label "Auszeichnung"@de, "condecoración"@es, "decoration"@en, "décoration"@fr, "onderscheiding"@nl, "onorificenza"@it, "διακόσμηση"@el, "سجاوٹ"@ur, "勲� "@ja, "장식"@ko ;
     rdfs:subClassOf :Award ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:Decoration> .
 
 :Deity
     a owl:Class ;
-    rdfs:label "Gottheit"@de, "bóstwo"@pl, "deity"@en, "dia"@ga, "godheid"@nl, "θεότητα"@el, "دیوتا"@ur, "神"@ja, "이집트 � "@ko ;
+    rdfs:label "Gottheit"@de, "bóstwo"@pl, "deity"@en, "dia"@ga, "godheid"@nl, "θεότητα"@el, "دیوتا"@ur, "神"@ja, "이집트 � "@ko ;
     rdfs:subClassOf :Agent ;
     owl:equivalentClass wikidata:Q178885 ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:Deity> .
@@ -3074,7 +3074,7 @@
 :Desert
     a owl:Class ;
     rdfs:comment "Barren land where there is less rain."@en, "زمین کا بنجر علاقہ جہاں کم بارش ہوتی ہے۔"@ur ;
-    rdfs:label "Desert"@en, "Desierto"@es, "Désert"@fr, "Wüste"@de, "deserto"@pt, "gaineamhlach"@ga, "woestijn"@nl, "Έρημος"@el, "صحرا"@ur, "� �� "@ja ;
+    rdfs:label "Desert"@en, "Desierto"@es, "Désert"@fr, "Wüste"@de, "deserto"@pt, "gaineamhlach"@ga, "woestijn"@nl, "Έρημος"@el, "صحرا"@ur, "� �� "@ja ;
     rdfs:subClassOf :NaturalPlace ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:Desert> .
 
@@ -3094,7 +3094,7 @@
 :Dike
     a owl:Class ;
     rdfs:comment "A dike is an elongated naturally occurring ridge or artificially constructed fill or wall, which regulates water levels"@en, "بند ایک لمبی قدرتی طور پر واقع رکاوٹ یا مصنوعی طور پر تعمیر شدہ ذخیرہ یا دیوار ہے ، جو پانی کی سطح کو کنٹرول کرتی ہے۔"@ur ;
-    rdfs:label "diga"@it, "dijk"@nl, "dike"@en, "levée"@fr, "بند"@ur, "� �防"@ja ;
+    rdfs:label "diga"@it, "dijk"@nl, "dike"@en, "levée"@fr, "بند"@ur, "� �防"@ja ;
     rdfs:subClassOf :Infrastructure ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:Dike> .
 
@@ -3198,7 +3198,7 @@
 :Economist
     a owl:Class ;
     rdfs:comment "An economist is a professional in the social science discipline of economics."@en, "Le terme d’économiste désigne une personne experte en science économique."@fr, "Un economista es un profesional de las ciencias sociales experto en economía teórica o aplicada."@es, "ایک ماہر معاشیات معاشیات کے سماجی سائنس کے شعبے میں پیشہ ور ہوتا ہے"@ur ;
-    rdfs:label "eacnamaí"@ga, "economist"@en, "economista"@es, "econoom"@nl, "Ökonom"@de, "économiste"@fr, "οικονομολόγος"@el, "ماہر معاشیات"@ur, "経済学者"@ja, "경� �학자"@ko ;
+    rdfs:label "eacnamaí"@ga, "economist"@en, "economista"@es, "econoom"@nl, "Ökonom"@de, "économiste"@fr, "οικονομολόγος"@el, "ماہر معاشیات"@ur, "経済学者"@ja, "경� �학자"@ko ;
     rdfs:subClassOf :Person ;
     owl:equivalentClass wikidata:Q188094 ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:Economist> .
@@ -3219,7 +3219,7 @@
 
 :Election
     a owl:Class ;
-    rdfs:label "Election"@en, "Wahl"@de, "elección"@es, "elezione"@it, "toghchán"@ga, "verkiezing"@nl, "élection"@fr, "εκλογή"@el, "انتخابات"@ur, "選挙"@ja, "� 거"@ko ;
+    rdfs:label "Election"@en, "Wahl"@de, "elección"@es, "elezione"@it, "toghchán"@ga, "verkiezing"@nl, "élection"@fr, "εκλογή"@el, "انتخابات"@ur, "選挙"@ja, "� 거"@ko ;
     rdfs:subClassOf :SocietalEvent ;
     owl:equivalentClass wikidata:Q40231 ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:Election> .
@@ -3359,7 +3359,7 @@
 
 :Enzyme
     a owl:Class ;
-    rdfs:label "Enzym"@de, "einsím"@ga, "enzima"@it, "enzym"@nl, "enzyme"@en, "enzyme"@fr, "ένζυμο"@el, "خامرہ"@ur, "酵� "@ja, "효소"@ko ;
+    rdfs:label "Enzym"@de, "einsím"@ga, "enzima"@it, "enzym"@nl, "enzyme"@en, "enzyme"@fr, "ένζυμο"@el, "خامرہ"@ur, "酵� "@ja, "효소"@ko ;
     rdfs:subClassOf :Biomolecule ;
     owl:equivalentClass wikidata:Q8047 ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:Enzyme> .
@@ -3417,7 +3417,7 @@
 
 :Eukaryote
     a owl:Class ;
-    rdfs:label "Eukaryoten"@de, "eocarót"@ga, "eucarionte"@es, "eucaryote"@fr, "eukaryoot"@nl, "eukaryote"@en, "ευκαρυωτικό"@el, "خلوی مادہ"@ur, "真� �生物"@ja, "진핵생물"@ko ;
+    rdfs:label "Eukaryoten"@de, "eocarót"@ga, "eucarionte"@es, "eucaryote"@fr, "eukaryoot"@nl, "eukaryote"@en, "ευκαρυωτικό"@el, "خلوی مادہ"@ur, "真� �生物"@ja, "진핵생물"@ko ;
     rdfs:subClassOf :Species ;
     owl:equivalentClass wikidata:Q19088 ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:Eukaryote> .
@@ -3438,8 +3438,8 @@
 
 :Factory
     a owl:Class ;
-    rdfs:comment "A factory (previously manufactory) or manufacturing plant is an industrial site, usually consisting of buildings and machinery, or more commonly a complex having several buildings, where workers manufacture goods or operate machines processing one product into another."@en, "Une usine est un bâtiment ou un ensemble de bâtiments destinés �  la production industrielle."@fr, "Το εργοστάσιο είναι ένα κτίριο μέσα στο οποίο, με τη βοήθεια των μηχανημάτων και τη σημαντικότατη συνεισφορά εργασίας από τους εργάτες, παράγονται σήμερα όλα σχεδόν τα βιομηχανικά είδη, είτε αυτά χρειάζονται πάλι για την παραγωγή (όπως μηχανές κλπ.) είτε είναι καταναλωτικά αγαθά."@el, "ایک کارخانه (پہلے کارخانه) ایک صنعتی رقبہ ہے ، عام طور پر عمارتوں اور مشینری پر مشتمل ہوتی ہے ، یا زیادہ عام طور پر ایک  مرکب جس میں کئی عمارتیں ہوتی ہیں ، جہاں مزدور سامان تیار کرتے ہیں یا مشینیں چلاتے ہیں جو ایک مصنوعات کو دوسری پر پروسیسنگ کرتے ہیں۔"@ur ;
-    rdfs:label "Fabrik"@de, "fabbrica"@it, "fabriek"@nl, "factory"@en, "monarcha"@ga, "usine"@fr, "εργοστάσιο"@el, "کارخانه"@ur, "工� �"@ja, "공장"@ko ;
+    rdfs:comment "A factory (previously manufactory) or manufacturing plant is an industrial site, usually consisting of buildings and machinery, or more commonly a complex having several buildings, where workers manufacture goods or operate machines processing one product into another."@en, "Une usine est un bâtiment ou un ensemble de bâtiments destinés �  la production industrielle."@fr, "Το εργοστάσιο είναι ένα κτίριο μέσα στο οποίο, με τη βοήθεια των μηχανημάτων και τη σημαντικότατη συνεισφορά εργασίας από τους εργάτες, παράγονται σήμερα όλα σχεδόν τα βιομηχανικά είδη, είτε αυτά χρειάζονται πάλι για την παραγωγή (όπως μηχανές κλπ.) είτε είναι καταναλωτικά αγαθά."@el, "ایک کارخانه (پہلے کارخانه) ایک صنعتی رقبہ ہے ، عام طور پر عمارتوں اور مشینری پر مشتمل ہوتی ہے ، یا زیادہ عام طور پر ایک  مرکب جس میں کئی عمارتیں ہوتی ہیں ، جہاں مزدور سامان تیار کرتے ہیں یا مشینیں چلاتے ہیں جو ایک مصنوعات کو دوسری پر پروسیسنگ کرتے ہیں۔"@ur ;
+    rdfs:label "Fabrik"@de, "fabbrica"@it, "fabriek"@nl, "factory"@en, "monarcha"@ga, "usine"@fr, "εργοστάσιο"@el, "کارخانه"@ur, "工� �"@ja, "공장"@ko ;
     rdfs:subClassOf :Building ;
     owl:equivalentClass wikidata:Q83405 ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:Factory> .
@@ -3524,14 +3524,14 @@
 
 :Film
     a owl:Class ;
-    rdfs:label "Film"@de, "film"@da, "film"@fr, "film"@nl, "film"@pl, "movie"@en, "película"@es, "scannán"@ga, "ταινία"@el, "فلم"@ur, "فيلم"@ar, "� 画"@ja, "영화"@ko ;
+    rdfs:label "Film"@de, "film"@da, "film"@fr, "film"@nl, "film"@pl, "movie"@en, "película"@es, "scannán"@ga, "ταινία"@el, "فلم"@ur, "فيلم"@ar, "� 画"@ja, "영화"@ko ;
     rdfs:subClassOf :Work ;
     owl:equivalentClass <http://schema.org/Movie>, wikidata:Q11424 ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:Film> .
 
 :FilmFestival
     a owl:Class ;
-    rdfs:label "Filmfestival"@de, "festival du film"@fr, "festiwal filmowy"@pl, "film festival"@en, "filmfestival"@da, "filmfestival"@nl, "féile scannán"@ga, "φεστιβάλ κινηματογράφου"@el, "فلمی میلہ"@ur, "� 画祭"@ja, "영화� �"@ko ;
+    rdfs:label "Filmfestival"@de, "festival du film"@fr, "festiwal filmowy"@pl, "film festival"@en, "filmfestival"@da, "filmfestival"@nl, "féile scannán"@ga, "φεστιβάλ κινηματογράφου"@el, "فلمی میلہ"@ur, "� 画祭"@ja, "영화� �"@ko ;
     rdfs:subClassOf :SocietalEvent, <http://schema.org/Festival> ;
     owl:equivalentClass wikidata:Q220505 ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:FilmFestival> .
@@ -3652,7 +3652,7 @@
 <http://dbpedia.org/ontology/Galaxy/density>
     a owl:DatatypeProperty ;
     rdfs:domain :Galaxy ;
-    rdfs:label "Dichte (μ3)"@de, "densidade (μ3)"@pt, "density (μ3)"@en, "densit�  (μ3)"@it, "densité (μ3)"@fr, "πυκνότητα (μ3)"@el, "密度 (μ3)"@ja ;
+    rdfs:label "Dichte (μ3)"@de, "densidade (μ3)"@pt, "density (μ3)"@en, "densit�  (μ3)"@it, "densité (μ3)"@fr, "πυκνότητα (μ3)"@el, "密度 (μ3)"@ja ;
     rdfs:range <http://dbpedia.org/datatype/kilogramPerCubicMetre> .
 
 <http://dbpedia.org/ontology/Galaxy/mass>
@@ -3688,7 +3688,7 @@
 <http://dbpedia.org/ontology/Galaxy/orbitalPeriod>
     a owl:DatatypeProperty ;
     rdfs:domain :Galaxy ;
-    rdfs:label "Umlaufzeit (μ)"@de, "orbital period (μ)"@en, "� ερίοδος περιφοράς (μ)"@el ;
+    rdfs:label "Umlaufzeit (μ)"@de, "orbital period (μ)"@en, "� ερίοδος περιφοράς (μ)"@el ;
     rdfs:range <http://dbpedia.org/datatype/day> .
 
 <http://dbpedia.org/ontology/Galaxy/periapsis>
@@ -3718,7 +3718,7 @@
 :Game
     a owl:Class ;
     rdfs:comment "a structured activity, usually undertaken for enjoyment and sometimes used as an educational tool"@en, "ایک ساختی سرگرمی،جوعموما لطف اندوز ہونے کے لیے کی جاتی ہے اور بعض اوقات تعلیمی آلے کے طور پر استعمال ہوتی ہے۔"@ur ;
-    rdfs:label "Spiel"@de, "cluiche"@ga, "game"@en, "jeu"@fr, "jogo"@pt, "juego"@es, "spel"@nl, "spil"@da, "� ληροφορίες παιχνιδιού"@el, "کھیل"@ur, "ゲー� "@ja ;
+    rdfs:label "Spiel"@de, "cluiche"@ga, "game"@en, "jeu"@fr, "jogo"@pt, "juego"@es, "spel"@nl, "spil"@da, "� ληροφορίες παιχνιδιού"@el, "کھیل"@ur, "ゲー� "@ja ;
     rdfs:subClassOf :Activity ;
     owl:equivalentClass wikidata:Q11410 ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:Game> .
@@ -3767,7 +3767,7 @@
 
 :GeopoliticalOrganisation
     a owl:Class ;
-    rdfs:label "geopolitical organisation"@en, "geopolitieke organisatie"@nl, "geopolitische Organisation"@de, "organisation géopolitique"@fr, "organización geopolítica"@es, "γεωπολιτική οργάνωση"@el, "جُغرافیائی سیاسیات تنظیم"@ur, "지� �학� � 조직"@ko ;
+    rdfs:label "geopolitical organisation"@en, "geopolitieke organisatie"@nl, "geopolitische Organisation"@de, "organisation géopolitique"@fr, "organización geopolítica"@es, "γεωπολιτική οργάνωση"@el, "جُغرافیائی سیاسیات تنظیم"@ur, "지� �학� � 조직"@ko ;
     rdfs:subClassOf :Organisation ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:GeopoliticalOrganisation> .
 
@@ -3799,7 +3799,7 @@
 
 :Glacier
     a owl:Class ;
-    rdfs:comment "� αγετώνες ονομάζονται μεγάλες μάζες πάγου συνήθως κινούμενες λόγω συμπίεσης του χιονιού."@el ;
+    rdfs:comment "� αγετώνες ονομάζονται μεγάλες μάζες πάγου συνήθως κινούμενες λόγω συμπίεσης του χιονιού."@el ;
     rdfs:label "Gletscher"@de, "geleira"@pt, "ghiacciaio"@it, "glacier"@en, "glacier"@fr, "gletsjer"@nl, "oighearshruth"@ga, "παγετώνας"@el, "برف کا تودہ"@ur, "氷河"@ja ;
     rdfs:subClassOf :NaturalPlace ;
     owl:equivalentClass wikidata:Q35666 ;
@@ -3813,7 +3813,7 @@
 
 :Gnetophytes
     a owl:Class ;
-    rdfs:label "Gnetales"@nl, "Gnetophyta"@de, "Gnetophytes"@el, "Gnetophytes"@en, "gnétophytes"@fr, "گمٹیلا پودا"@ur, "グネツ� 綱"@ja ;
+    rdfs:label "Gnetales"@nl, "Gnetophyta"@de, "Gnetophytes"@el, "Gnetophytes"@en, "gnétophytes"@fr, "گمٹیلا پودا"@ur, "グネツ� 綱"@ja ;
     rdfs:subClassOf :Plant ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:Gnetophytes> .
 
@@ -3849,7 +3849,7 @@
 :GovernmentAgency
     a owl:Class ;
     rdfs:comment "A government agency is a permanent or semi-permanent organization in the machinery of government that is responsible for the oversight and administration of specific functions, such as an intelligence agency."@en, "Eine Behörde ist eine staatliche Einrichtung, die im weitesten Sinne für die Erfüllung von Aufgaben der Verwaltung des Staates und dabei insbesondere für Dienstleistungen des Staates gegenüber seinen Bürgern zuständig ist. Eine Behörde erhält ihren Auftrag aus den Gesetzen des Staates, in dem und für den sie tätig ist."@de, "Μια κυβερνητική υπηρεσία είναι μόνιμη ή ημι-μόνιμη οργάνωση στο μηχανισμό της κυβέρνησης, η οποία είναι υπεύθυνη για την εποπτεία και διαχείριση συγκεκριμένων λειτουργιών, όπως η υπηρεσία πληροφοριών."@el, "ایک سرکاری ایجنسی حکومت کی مشینری میں ایک مستقل یا نیم مستقل تنظیم ہے جو مخصوص افعال کی نگرانی اور انتظام کے لیے ذمہ دار ہے ، جیسے کہ ایک انٹیلی جنس ایجنسی"@ur ;
-    rdfs:label "Behörde"@de, "agence gouvernementale"@fr, "agencia del gobierno"@es, "government agency"@en, "orgaan openbaar bestuur"@nl, "κυβερνητική υπηρεσία"@el, "Орган исполнительной власти"@ru, "سرکاری محکمہ"@ur, "� �부 기관"@ko ;
+    rdfs:label "Behörde"@de, "agence gouvernementale"@fr, "agencia del gobierno"@es, "government agency"@en, "orgaan openbaar bestuur"@nl, "κυβερνητική υπηρεσία"@el, "Орган исполнительной власти"@ru, "سرکاری محکمہ"@ur, "� �부 기관"@ko ;
     rdfs:subClassOf :Organisation ;
     owl:equivalentClass wikidata:Q327333 ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:GovernmentAgency> .
@@ -3950,7 +3950,7 @@
 
 :Guitar
     a owl:Class ;
-    rdfs:comment "Describe la guitarra"@es, "Describes the guitar"@en, "Décrit la guitare"@fr, "beschrijving van de gitaar"@nl, "� εριγράφει την κιθάρα"@el, "ایک تار والا میوزیکل آلہ ، جس میں فنگر فنگر بورڈ ہوتا ہے ، عام طور پر کٹے ہوئے اطراف ، اور چھ یا بارہ تار ، انگلیوں یا پلیکٹرم سے توڑنے یا جھومنے سے بجائے جاتے ہیں۔"@ur ;
+    rdfs:comment "Describe la guitarra"@es, "Describes the guitar"@en, "Décrit la guitare"@fr, "beschrijving van de gitaar"@nl, "� εριγράφει την κιθάρα"@el, "ایک تار والا میوزیکل آلہ ، جس میں فنگر فنگر بورڈ ہوتا ہے ، عام طور پر کٹے ہوئے اطراف ، اور چھ یا بارہ تار ، انگلیوں یا پلیکٹرم سے توڑنے یا جھومنے سے بجائے جاتے ہیں۔"@ur ;
     rdfs:label "Gitarre"@de, "giotar"@ga, "gitaar"@nl, "guitar"@da, "guitar"@en, "guitare"@fr, "guitarra"@es, "κιθάρα"@el, "ستار"@ur, "ギター"@ja ;
     rdfs:subClassOf :Instrument ;
     owl:equivalentClass wikidata:Q6607 ;
@@ -4006,7 +4006,7 @@
 
 :HistoricBuilding
     a owl:Class ;
-    rdfs:label "bâtiment historique"@fr, "foirgneamh stairiúil"@ga, "historic building"@en, "historisch gebouw"@nl, "historisches Gebäude"@de, "ιστορικό κτίριο"@el, "تاریخی عمارت"@ur, "歴史的建� 物"@ja ;
+    rdfs:label "bâtiment historique"@fr, "foirgneamh stairiúil"@ga, "historic building"@en, "historisch gebouw"@nl, "historisches Gebäude"@de, "ιστορικό κτίριο"@el, "تاریخی عمارت"@ur, "歴史的建� 物"@ja ;
     rdfs:subClassOf :Building, <http://schema.org/LandmarksOrHistoricalBuildings> ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:HistoricBuilding> .
 
@@ -4046,7 +4046,7 @@
 
 :HistoricalPeriod
     a owl:Class ;
-    rdfs:comment "A historical Period should be linked to a Place by way of the property dct:spatial (already defined)"@en, "Une période historique doit être liée �  un lieu au moyen de la propriété dct:spatial (déj�  définie)"@fr, "یک تاریخی ادوار کو جائیداد کے ذریعے کسی جگہ سے جوڑا جانا چاہیے۔"@ur ;
+    rdfs:comment "A historical Period should be linked to a Place by way of the property dct:spatial (already defined)"@en, "Une période historique doit être liée �  un lieu au moyen de la propriété dct:spatial (déj�  définie)"@fr, "یک تاریخی ادوار کو جائیداد کے ذریعے کسی جگہ سے جوڑا جانا چاہیے۔"@ur ;
     rdfs:label "historical period"@en, "historische Periode"@de, "historische periode"@nl, "période historique"@fr, "tréimhse sa stair"@ga, "ιστορική περίοδος"@el, "تاریخی دور"@ur ;
     rdfs:subClassOf :TimePeriod ;
     owl:disjointWith :Person ;
@@ -4181,7 +4181,7 @@
 
 :IceHockeyPlayer
     a owl:Class ;
-    rdfs:label "Eishockeyspieler"@de, "ice hockey player"@en, "ijshockeyspeler"@nl, "joueur de hockey sur glace"@fr, "παίκτης χόκεϋ"@el, "برفانی ہاکی کا کھلاڑی"@ur, "아이스하키 � 수"@ko ;
+    rdfs:label "Eishockeyspieler"@de, "ice hockey player"@en, "ijshockeyspeler"@nl, "joueur de hockey sur glace"@fr, "παίκτης χόκεϋ"@el, "برفانی ہاکی کا کھلاڑی"@ur, "아이스하키 � 수"@ko ;
     rdfs:subClassOf :WinterSportPlayer ;
     owl:equivalentClass wikidata:Q11774891 ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:IceHockeyPlayer> .
@@ -4195,7 +4195,7 @@
 
 :Ideology
     a owl:Class ;
-    rdfs:comment "for example: Progressivism_in_the_United_States, Classical_liberalism"@en, "για παραδειγμα: � ροοδευτισμός στις Η� Α, κλασικός φιλελευθερισμός"@el, "مثال کے طور پر: ریاستہائے متحدہ میں ترقی پسندی، کلاسیکی لبرل ازم"@ur ;
+    rdfs:comment "for example: Progressivism_in_the_United_States, Classical_liberalism"@en, "για παραδειγμα: � ροοδευτισμός στις Η� Α, κλασικός φιλελευθερισμός"@el, "مثال کے طور پر: ریاستہائے متحدہ میں ترقی پسندی، کلاسیکی لبرل ازم"@ur ;
     rdfs:label "Ideologie"@de, "ideologia"@pt, "ideologie"@nl, "ideology"@en, "idé-eolaíocht"@ga, "idéologie"@fr, "ιδεολογία"@el, "نظریہ"@ur, "イデオロギー"@ja ;
     rdfs:subClassOf :TopicalConcept ;
     owl:equivalentClass d0:CognitiveEntity, wikidata:Q7257 ;
@@ -4298,7 +4298,7 @@
 
 :Jockey
     a owl:Class ;
-    rdfs:label "Jockey (Pferderennprofi)"@de, "jockey"@nl, "jockey (coureur �  cheval)"@fr, "jockey (horse racer)"@en, "marcach"@ga, "αναβάτης αλόγου αγώνων"@el, "پیشہ ور گھڑ سوار"@ur, "騎手"@ja ;
+    rdfs:label "Jockey (Pferderennprofi)"@de, "jockey"@nl, "jockey (coureur �  cheval)"@fr, "jockey (horse racer)"@en, "marcach"@ga, "αναβάτης αλόγου αγώνων"@el, "پیشہ ور گھڑ سوار"@ur, "騎手"@ja ;
     rdfs:subClassOf :Athlete ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:Jockey> .
 
@@ -4504,7 +4504,7 @@
 
 :Lock
     a owl:Class ;
-    rdfs:label "Schleuse"@de, "glas"@ga, "lock"@en, "lås"@da, "sluis"@nl, "écluse"@fr, "κλειδαριά"@el, "تالا"@ur, "� "@ja ;
+    rdfs:label "Schleuse"@de, "glas"@ga, "lock"@en, "lås"@da, "sluis"@nl, "écluse"@fr, "κλειδαριά"@el, "تالا"@ur, "� "@ja ;
     rdfs:subClassOf :Infrastructure ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:Lock> .
 
@@ -4536,8 +4536,8 @@
 
 :Magazine
     a owl:Class ;
-    rdfs:comment "Als Publikumszeitschrift (auch Magazin) bezeichnet man eine Gattung von Zeitschriften, die sich an eine sehr breite Zielgruppe wendet und keine fachlichen Prägungen oder andere spezifische Merkmale voraussetzt. Publikumszeitschriften dienen der Unterhaltung und Information, sie sollen unangestrengt gelesen werden können."@de, "Magazines, periodicals, glossies or serials are publications, generally published on a regular schedule, containing a variety of articles. They are generally financed by advertising, by a purchase price, by pre-paid magazine subscriptions, or all three."@en, "� εριοδικά ή γυαλιστερές φωτογραφίες περιοδικών εκδόσεων δημοσιεύονται σε τακτά χρονικά διαστήματα, περιέχει μια ποικιλία από αντικείμενα.Γενικά χρηματοδοτείται από διαφημίσεις, με τιμή αγοράς, με προπληρωμένες συνδρομές περιοδικών, ή και των τριών."@el, "میگزین، میگزین، چمکیلی یا سیریل اشاعتیں ہیں، عام طور پر ایک باقاعدہ شیڈول پر شائع ہوتے ہیں، مختلف مضامین پر مشتمل ہوتے ہیں. انہیں عام طور پر اشتہارات، خریداری کی قیمت، پری پیڈ میگزین سبسکرپشنز، یا تینوں کے ذریعے مالی اعانت فراہم کی جاتی ہے۔."@ur ;
-    rdfs:label "Publikumszeitschrift"@de, "irisleabhar"@ga, "magazine"@en, "magazine"@fr, "tijdschrift"@nl, "� εριοδικό"@el, "رسالہ"@ur, "雑誌"@ja, "잡지"@ko ;
+    rdfs:comment "Als Publikumszeitschrift (auch Magazin) bezeichnet man eine Gattung von Zeitschriften, die sich an eine sehr breite Zielgruppe wendet und keine fachlichen Prägungen oder andere spezifische Merkmale voraussetzt. Publikumszeitschriften dienen der Unterhaltung und Information, sie sollen unangestrengt gelesen werden können."@de, "Magazines, periodicals, glossies or serials are publications, generally published on a regular schedule, containing a variety of articles. They are generally financed by advertising, by a purchase price, by pre-paid magazine subscriptions, or all three."@en, "� εριοδικά ή γυαλιστερές φωτογραφίες περιοδικών εκδόσεων δημοσιεύονται σε τακτά χρονικά διαστήματα, περιέχει μια ποικιλία από αντικείμενα.Γενικά χρηματοδοτείται από διαφημίσεις, με τιμή αγοράς, με προπληρωμένες συνδρομές περιοδικών, ή και των τριών."@el, "میگزین، میگزین، چمکیلی یا سیریل اشاعتیں ہیں، عام طور پر ایک باقاعدہ شیڈول پر شائع ہوتے ہیں، مختلف مضامین پر مشتمل ہوتے ہیں. انہیں عام طور پر اشتہارات، خریداری کی قیمت، پری پیڈ میگزین سبسکرپشنز، یا تینوں کے ذریعے مالی اعانت فراہم کی جاتی ہے۔."@ur ;
+    rdfs:label "Publikumszeitschrift"@de, "irisleabhar"@ga, "magazine"@en, "magazine"@fr, "tijdschrift"@nl, "� εριοδικό"@el, "رسالہ"@ur, "雑誌"@ja, "잡지"@ko ;
     rdfs:subClassOf :PeriodicalLiterature ;
     owl:equivalentClass wikidata:Q41298 ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:Magazine> .
@@ -4590,7 +4590,7 @@
 
 :MartialArtist
     a owl:Class ;
-    rdfs:label "Kampfkünstler"@de, "martial artist"@en, "� ολεμικός Καλλιτέχνης"@el, "مارشل کے فنکار"@ur ;
+    rdfs:label "Kampfkünstler"@de, "martial artist"@en, "� ολεμικός Καλλιτέχνης"@el, "مارشل کے فنکار"@ur ;
     rdfs:subClassOf :Athlete ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:MartialArtist> .
 
@@ -4668,7 +4668,7 @@
 
 :Medician
     a owl:Class ;
-    rdfs:label "Mediziner"@de, "medician"@en, "medico"@it, "medicus"@nl, "γιατρός"@el, "طبیب"@ur, "生命医科学� �究者または医師"@ja ;
+    rdfs:label "Mediziner"@de, "medician"@en, "medico"@it, "medicus"@nl, "γιατρός"@el, "طبیب"@ur, "生命医科学� �究者または医師"@ja ;
     rdfs:subClassOf :Scientist ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:Medician> .
 
@@ -4718,7 +4718,7 @@
 
 :MicroRegion
     a owl:Class ;
-    rdfs:comment "A microregion is a - mainy statistical - region in Brazil, at an administrative level between a meso-region and a community"@en, "Une microrégion est - principalement du point de vue statistique - une région du Brésil, qui se trouve �  un niveau administratif entre la mésorégion et la communauté"@fr, "Η μικρο-περιφέρεια χρησιμοποιείται για να περιγράψει, κυρίως στατιστικά, μια περιοχή στη Βραζιλία σε διοικητικό επίπεδο μεταξύ μίας μεσο-περιφέρειας και μίας κοινότητα"@el, "مائیکرو ریجن برازیل میں ایک - بنیادی شماریاتی - خطہ ہے، انتظامی سطح پر ایک میسو ریجن اور کمیونٹی کے درمیان"@ur ;
+    rdfs:comment "A microregion is a - mainy statistical - region in Brazil, at an administrative level between a meso-region and a community"@en, "Une microrégion est - principalement du point de vue statistique - une région du Brésil, qui se trouve �  un niveau administratif entre la mésorégion et la communauté"@fr, "Η μικρο-περιφέρεια χρησιμοποιείται για να περιγράψει, κυρίως στατιστικά, μια περιοχή στη Βραζιλία σε διοικητικό επίπεδο μεταξύ μίας μεσο-περιφέρειας και μίας κοινότητα"@el, "مائیکرو ریجن برازیل میں ایک - بنیادی شماریاتی - خطہ ہے، انتظامی سطح پر ایک میسو ریجن اور کمیونٹی کے درمیان"@ur ;
     rdfs:label "Mikroregion"@de, "micro-region"@en, "micro-région"@fr, "microregio"@nl, "microrregiao"@pt, "μικρο-περιφέρεια"@el, "چھوٹاعلاقہ"@ur ;
     rdfs:subClassOf :GovernmentalAdministrativeRegion ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:MicroRegion> .
@@ -4731,7 +4731,7 @@
 
 :MilitaryConflict
     a owl:Class ;
-    rdfs:label "conflit militaire"@fr, "militair conflict"@nl, "military conflict"@en, "militärischer Konflikt"@de, "militær konflikt"@da, "στρατιωτική σύγκρουση"@el, "فوجی تنازعہ"@ur, "� �쟁"@ko ;
+    rdfs:label "conflit militaire"@fr, "militair conflict"@nl, "military conflict"@en, "militärischer Konflikt"@de, "militær konflikt"@da, "στρατιωτική σύγκρουση"@el, "فوجی تنازعہ"@ur, "� �쟁"@ko ;
     rdfs:subClassOf :SocietalEvent ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:MilitaryConflict> .
 
@@ -4770,7 +4770,7 @@
 :Mill
     a owl:Class ;
     rdfs:comment "a unit operation designed to break a solid material into smaller pieces"@en, "ایک یونٹ آپریشن جو ٹھوس مواد کو چھوٹے ٹکڑوں میں توڑنے کے لیے ڈیزائن کیا گیا ہے۔"@ur ;
-    rdfs:label "Mill"@en, "Molen"@nl, "Moulin"@fr, "Mühle"@de, "muileann"@ga, "mulino"@it, "mølle"@da, "Μύλος"@el, "چکی"@ur, "粉� �機"@ja ;
+    rdfs:label "Mill"@en, "Molen"@nl, "Moulin"@fr, "Mühle"@de, "muileann"@ga, "mulino"@it, "mølle"@da, "Μύλος"@el, "چکی"@ur, "粉� �機"@ja ;
     rdfs:subClassOf :ArchitecturalStructure ;
     owl:equivalentClass wikidata:Q44494 ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:Mill> .
@@ -4841,7 +4841,7 @@
 
 :Monastery
     a owl:Class ;
-    rdfs:comment "Een klooster (van het Latijnse claustrum, afgesloten ruimte) is een gebouw of een samenstel van gebouwen dat dient tot huisvesting van een groep of gemeenschap van mannen of vrouwen, vaak monniken of monialen genoemd, die zich uit de wereld heeft teruggetrokken om een godsdienstig leven te leiden."@nl, "Is pobal manaigh ina gcónaí faoi móideanna reiligiúnach í mainistir."@ga, "Klasztor – budynek lub zespół budynków, w którym mieszkają wspólnoty religijne zakonników albo zakonnic."@pl, "Le monastère est un ensemble de bâtiments où habite une communauté religieuse de moines ou de moniales.."@fr, "Monastery denotes the building, or complex of buildings, comprising the domestic quarters and workplace(s) of monastics, whether monks or nuns, and whether living in community or alone (hermits). The monastery generally includes a place reserved for prayer which may be a chapel, church or temple, and may also serve as an oratory."@en, "Un monestir és un tipus d'edificació per a la reclusió dels religiosos, que hi viuen en comú. Origin� riament un monestir era la cel·la d'un sol monjo, dit en aquest cas ermit�  o anacoreta."@ca, "Μονή υποδηλώνει το κτίριο ή συγκρότημα κτιρίων, που αποτελείται από τις εγχώρια τρίμηνα και στο χώρο εργασίας (ες) των μοναχών, αν οι μοναχοί ή μοναχές, και αν ζουν στην κοινότητα ή μεμονωμένα (ερημίτες). Η μονή περιλαμβάνει γενικά ένα χώρο που προορίζεται για την προσευχή που μπορεί να είναι ένα παρεκκλήσι, εκκλησία ή ναό, και μπορεί επίσης να χρησιμεύσει ως μια ρητορική."@el, "خانقاہ عمارت، یا عمارتوں کے کمپلیکس کی نشاندہی کرتی ہے، جس میں خانقاہوں کے گھریلو کوارٹرز اور کام کی جگہیں شامل ہیں، چاہے وہ راہب ہوں یا راہبائیں، اور چاہے وہ برادری میں رہ رہے ہوں یا اکیلے (حرمت والے)۔ خانقاہ میں عام طور پر نماز کے لیے مخصوص جگہ شامل ہوتی ہے جو ایک چیپل، گرجا گھر یا مندر ہو سکتا ہے، اور ایک تقریر کے طور پر بھی کام کر سکتا ہے۔"@ur ;
+    rdfs:comment "Een klooster (van het Latijnse claustrum, afgesloten ruimte) is een gebouw of een samenstel van gebouwen dat dient tot huisvesting van een groep of gemeenschap van mannen of vrouwen, vaak monniken of monialen genoemd, die zich uit de wereld heeft teruggetrokken om een godsdienstig leven te leiden."@nl, "Is pobal manaigh ina gcónaí faoi móideanna reiligiúnach í mainistir."@ga, "Klasztor – budynek lub zespół budynków, w którym mieszkają wspólnoty religijne zakonników albo zakonnic."@pl, "Le monastère est un ensemble de bâtiments où habite une communauté religieuse de moines ou de moniales.."@fr, "Monastery denotes the building, or complex of buildings, comprising the domestic quarters and workplace(s) of monastics, whether monks or nuns, and whether living in community or alone (hermits). The monastery generally includes a place reserved for prayer which may be a chapel, church or temple, and may also serve as an oratory."@en, "Un monestir és un tipus d'edificació per a la reclusió dels religiosos, que hi viuen en comú. Origin� riament un monestir era la cel·la d'un sol monjo, dit en aquest cas ermit�  o anacoreta."@ca, "Μονή υποδηλώνει το κτίριο ή συγκρότημα κτιρίων, που αποτελείται από τις εγχώρια τρίμηνα και στο χώρο εργασίας (ες) των μοναχών, αν οι μοναχοί ή μοναχές, και αν ζουν στην κοινότητα ή μεμονωμένα (ερημίτες). Η μονή περιλαμβάνει γενικά ένα χώρο που προορίζεται για την προσευχή που μπορεί να είναι ένα παρεκκλήσι, εκκλησία ή ναό, και μπορεί επίσης να χρησιμεύσει ως μια ρητορική."@el, "خانقاہ عمارت، یا عمارتوں کے کمپلیکس کی نشاندہی کرتی ہے، جس میں خانقاہوں کے گھریلو کوارٹرز اور کام کی جگہیں شامل ہیں، چاہے وہ راہب ہوں یا راہبائیں، اور چاہے وہ برادری میں رہ رہے ہوں یا اکیلے (حرمت والے)۔ خانقاہ میں عام طور پر نماز کے لیے مخصوص جگہ شامل ہوتی ہے جو ایک چیپل، گرجا گھر یا مندر ہو سکتا ہے، اور ایک تقریر کے طور پر بھی کام کر سکتا ہے۔"@ur ;
     rdfs:label "Kloster"@de, "klasztor"@pl, "klooster"@nl, "kloster"@da, "mainistir"@ga, "monastery"@en, "monastère"@fr, "monestir"@ca, "μοναστήρι"@el, "خانقاہ"@ur, "僧院"@ja ;
     rdfs:subClassOf :ReligiousBuilding ;
     owl:equivalentClass d0:Location, wikidata:Q44613 ;
@@ -4931,7 +4931,7 @@
 :MountainPass
     a owl:Class ;
     rdfs:comment "a path that allows the crossing of a mountain chain. It is usually a saddle point in between two areas of higher elevation"@en, "ایک راستہ جو پہاڑی سلسلہ کو عبور کرنے کی اجازت دیتا ہے۔ یہ عام طور پر اونچی اونچائی کے دو علاقوں کے درمیان ایک سیڈل پوائنٹ ہوتا ہے"@ur ;
-    rdfs:label "Bergpass"@de, "bergpas"@nl, "col de montagne"@fr, "desfiladeiro"@pt, "mountain pass"@en, "� έρασμα βουνού"@el, "درہ"@ur, "� "@ja ;
+    rdfs:label "Bergpass"@de, "bergpas"@nl, "col de montagne"@fr, "desfiladeiro"@pt, "mountain pass"@en, "� έρασμα βουνού"@el, "درہ"@ur, "� "@ja ;
     rdfs:subClassOf :NaturalPlace ;
     owl:equivalentClass wikidata:Q133056 ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:MountainPass> .
@@ -5071,7 +5071,7 @@
 
 :MusicFestival
     a owl:Class ;
-    rdfs:label "Musikfestival"@de, "festival de musique"@fr, "festival de música"@es, "music festival"@en, "muziekfestival"@nl, "φεστιβάλ μουσικής"@el, "موسیقی میلہ"@ur, "음악� �"@ko ;
+    rdfs:label "Musikfestival"@de, "festival de musique"@fr, "festival de música"@es, "music festival"@en, "muziekfestival"@nl, "φεστιβάλ μουσικής"@el, "موسیقی میلہ"@ur, "음악� �"@ko ;
     rdfs:subClassOf :SocietalEvent ;
     owl:equivalentClass <http://schema.org/Festival>, wikidata:Q868557 ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:MusicFestival> .
@@ -5212,7 +5212,7 @@
 :Newspaper
     a owl:Class ;
     rdfs:comment "A newspaper is a regularly scheduled publication containing news of current events, informative articles, diverse features and advertising. It usually is printed on relatively inexpensive, low-grade paper such as newsprint."@en, "Eine Zeitung ist ein Druckwerk von mäßigem Seitenumfang, das in kurzen periodischen Zeitspannen, mindestens einmal wöchentlich, öffentlich erscheint. Die Zeitung ist, anders als die Zeitschrift, ein der Aktualität verpflichtetes Presseorgan und gliedert sich meist in mehrere inhaltliche Rubriken wie Politik, Lokales, Wirtschaft, Sport, Feuilleton und Immobilien."@de, "اخبار ایک باقاعدہ شیڈول اشاعت ہے جس میں موجودہ واقعات، معلوماتی مضامین، متنوع خصوصیات اور اشتہارات کی خبریں ہوتی ہیں۔ یہ عام طور پر نسبتاً سستے، کم درجے کے کاغذ پر پرنٹ کیا جاتا ہے جیسے نیوز پرنٹ۔"@ur ;
-    rdfs:label "Zeitung"@de, "journal"@fr, "krant"@nl, "newspaper"@en, "εφημερίδα"@el, "اخبار"@ur, "新聞"@ja, "� 문"@ko ;
+    rdfs:label "Zeitung"@de, "journal"@fr, "krant"@nl, "newspaper"@en, "εφημερίδα"@el, "اخبار"@ur, "新聞"@ja, "� 문"@ko ;
     rdfs:subClassOf :PeriodicalLiterature ;
     owl:equivalentClass wikidata:Q11032 ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:Newspaper> .
@@ -5240,7 +5240,7 @@
 
 :Non-ProfitOrganisation
     a owl:Class ;
-    rdfs:label "gemeinnützige Organisation"@de, "non-profit organisatie"@nl, "non-profit organisation"@en, "organisation �  but non lucratif"@fr, "μη κερδοσκοπική οργάνωση"@el, "Некоммерческая организация"@ru, "غیر منافع بخش تنظیم"@ur ;
+    rdfs:label "gemeinnützige Organisation"@de, "non-profit organisatie"@nl, "non-profit organisation"@en, "organisation �  but non lucratif"@fr, "μη κερδοσκοπική οργάνωση"@el, "Некоммерческая организация"@ru, "غیر منافع بخش تنظیم"@ur ;
     rdfs:subClassOf :Organisation ;
     owl:equivalentClass wikidata:Q163740 ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:Non-ProfitOrganisation> .
@@ -5262,7 +5262,7 @@
 
 :NuclearPowerStation
     a owl:Class ;
-    rdfs:label "Kernkraftwerk"@de, "Nuclear Power plant"@en, "centrale nucléaire"@fr, "kernenergiecentrale"@nl, "stáisiún núicléach"@ga, "� υρηνικός Σταθμός � αραγωγής Ενέργειας"@el, "ایٹمی بجلی گھر"@ur ;
+    rdfs:label "Kernkraftwerk"@de, "Nuclear Power plant"@en, "centrale nucléaire"@fr, "kernenergiecentrale"@nl, "stáisiún núicléach"@ga, "� υρηνικός Σταθμός � αραγωγής Ενέργειας"@el, "ایٹمی بجلی گھر"@ur ;
     rdfs:subClassOf :PowerStation ;
     owl:equivalentClass wikidata:Q134447 ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:NuclearPowerStation> .
@@ -5379,7 +5379,7 @@
 
 :OrganisationMember
     a owl:Class ;
-    rdfs:comment "A member of an organisation."@en, "Membre appartenant �  une organisation."@fr, "Μέλος ενός οργανισμού."@el, "کسی تنظیم کا ممبر"@ur ;
+    rdfs:comment "A member of an organisation."@en, "Membre appartenant �  une organisation."@fr, "Μέλος ενός οργανισμού."@el, "کسی تنظیم کا ممبر"@ur ;
     rdfs:label "Membre d'organisation"@fr, "Miembro de organización"@es, "Organisation member"@en, "Organisationsmitglied"@de, "organisatielid"@nl, "Μέλος οργανισμού"@el, "تنظیم کے رکن"@ur ;
     rdfs:subClassOf :Person ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:OrganisationMember> .
@@ -5465,7 +5465,7 @@
 
 :PeriodicalLiterature
     a owl:Class ;
-    rdfs:comment "Periodical literature (also called a periodical publication or simply a periodical) is a published work that appears in a new edition on a regular schedule. The most familiar examples are the newspaper, often published daily, or weekly; or the magazine, typically published weekly, monthly or as a quarterly. Other examples would be a newsletter, a literary journal or learned journal, or a yearbook."@en, "Une publication périodique est un titre de presse qui paraît régulièrement."@fr, "Unter Periodikum wird im Bibliothekswesen im Gegensatz zu Monografien ein (in der Regel) regelmäßig erscheinendes Druckwerk bezeichnet. Es handelt sich um den Fachbegriff für Heftreihen, Gazetten, Journale, Magazine, Zeitschriften und Zeitungen."@de, "� εριοδικός Τύπος (ή αλλιώς περιοδικό ή εφημερίδα) είναι η δημοσίευση άρθρου ή νέων ανά τακτά διαστήματα. Το πιο γνωστό παράδειγμα είναι οι εφημερίδες, που δημοσιεύονται σε καθημερινή ή εβδομαδιαία βάση και το περιοδικό, που τυπικά εκδίδεται σε εβδομαδιαία, μηνιαία ή δίμηνη βάση. Άλλα παραδείγματα μπορεί να είναι τα νέα ενός οργανισμού ή εταιρείας, ένα λογοτεχνικό ή εκπαιδευτικό περιοδικό ή ένα ετήσιο λεύκωμα."@el, "ایک شائع شدہ کام ہے جو ایک باقاعدہ ترتیب کار پر ایک نئے اشاعت میں نمودار ہوتا ہے۔ سب سے واقف مثال اخبار ہیں ، جو اکثر روزانہ یا ہفتہ وار شائع ہوتے ہیں۔ یا رسالہ عام طور پر ہفتہ وار ، ماہانہ یا سہ ماہی کے طور پر شائع ہوتا ہے۔ دوسری مثالوں میں ایک نیوز لیٹر ، ایک ادبی جریدہ یا سیکھا ہوا جریدہ ، یا ایک سالانہ کتاب ہوگی۔"@ur ;
+    rdfs:comment "Periodical literature (also called a periodical publication or simply a periodical) is a published work that appears in a new edition on a regular schedule. The most familiar examples are the newspaper, often published daily, or weekly; or the magazine, typically published weekly, monthly or as a quarterly. Other examples would be a newsletter, a literary journal or learned journal, or a yearbook."@en, "Une publication périodique est un titre de presse qui paraît régulièrement."@fr, "Unter Periodikum wird im Bibliothekswesen im Gegensatz zu Monografien ein (in der Regel) regelmäßig erscheinendes Druckwerk bezeichnet. Es handelt sich um den Fachbegriff für Heftreihen, Gazetten, Journale, Magazine, Zeitschriften und Zeitungen."@de, "� εριοδικός Τύπος (ή αλλιώς περιοδικό ή εφημερίδα) είναι η δημοσίευση άρθρου ή νέων ανά τακτά διαστήματα. Το πιο γνωστό παράδειγμα είναι οι εφημερίδες, που δημοσιεύονται σε καθημερινή ή εβδομαδιαία βάση και το περιοδικό, που τυπικά εκδίδεται σε εβδομαδιαία, μηνιαία ή δίμηνη βάση. Άλλα παραδείγματα μπορεί να είναι τα νέα ενός οργανισμού ή εταιρείας, ένα λογοτεχνικό ή εκπαιδευτικό περιοδικό ή ένα ετήσιο λεύκωμα."@el, "ایک شائع شدہ کام ہے جو ایک باقاعدہ ترتیب کار پر ایک نئے اشاعت میں نمودار ہوتا ہے۔ سب سے واقف مثال اخبار ہیں ، جو اکثر روزانہ یا ہفتہ وار شائع ہوتے ہیں۔ یا رسالہ عام طور پر ہفتہ وار ، ماہانہ یا سہ ماہی کے طور پر شائع ہوتا ہے۔ دوسری مثالوں میں ایک نیوز لیٹر ، ایک ادبی جریدہ یا سیکھا ہوا جریدہ ، یا ایک سالانہ کتاب ہوگی۔"@ur ;
     rdfs:label "Periodikum"@de, "periodical literature"@en, "publication périodique"@fr, "περιοδικός τύπος"@el, "متواتر ادب"@ur ;
     rdfs:subClassOf :WrittenWork ;
     owl:equivalentClass wikidata:Q1092563 ;
@@ -5473,7 +5473,7 @@
 
 :Person
     a owl:Class ;
-    rdfs:label "Oseba"@sl, "Person"@de, "duine"@ga, "osoba"@pl, "person"@da, "person"@en, "persona"@es, "persona"@it, "personne"@fr, "persoon"@nl, "pertsona"@eu, "pessoa"@pt, "� ληροφορίες προσώπου"@el, "անձ"@hy, "شخص"@ar, "شخص"@ur, "人_(法律)"@ja ;
+    rdfs:label "Oseba"@sl, "Person"@de, "duine"@ga, "osoba"@pl, "person"@da, "person"@en, "persona"@es, "persona"@it, "personne"@fr, "persoon"@nl, "pertsona"@eu, "pessoa"@pt, "� ληροφορίες προσώπου"@el, "անձ"@hy, "شخص"@ar, "شخص"@ur, "人_(法律)"@ja ;
     rdfs:subClassOf :Animal ;
     owl:equivalentClass <http://schema.org/Person>, dul:NaturalPerson, wikidata:Q215627, wikidata:Q5, foaf:Person ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:Person> .
@@ -5512,7 +5512,7 @@
 
 :Philosopher
     a owl:Class ;
-    rdfs:label "Philosoph"@de, "filosoof"@nl, "philosophe"@fr, "philosopher"@en, "φιλόσοφος"@el, "فلسفی"@ur, "哲学者"@ja, "� 학자"@ko ;
+    rdfs:label "Philosoph"@de, "filosoof"@nl, "philosophe"@fr, "philosopher"@en, "φιλόσοφος"@el, "فلسفی"@ur, "哲学者"@ja, "� 학자"@ko ;
     rdfs:subClassOf :Person ;
     owl:equivalentClass wikidata:Q4964182 ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:Philosopher> .
@@ -5547,7 +5547,7 @@
 
 :Planet
     a owl:Class ;
-    rdfs:label "Planet"@de, "Planeta"@pt, "planeet"@nl, "planet"@en, "planet"@sl, "planeta"@ca, "planeta"@es, "planeta"@pl, "planète"@fr, "pláinéad"@ga, "� λανήτης"@el, "سیارہ"@ur, "惑星"@ja ;
+    rdfs:label "Planet"@de, "Planeta"@pt, "planeet"@nl, "planet"@en, "planet"@sl, "planeta"@ca, "planeta"@es, "planeta"@pl, "planète"@fr, "pláinéad"@ga, "� λανήτης"@el, "سیارہ"@ur, "惑星"@ja ;
     rdfs:subClassOf :CelestialBody ;
     owl:equivalentClass wikidata:Q634 ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:Planet> .
@@ -5568,7 +5568,7 @@
 <http://dbpedia.org/ontology/Planet/density>
     a owl:DatatypeProperty ;
     rdfs:domain :Planet ;
-    rdfs:label "Dichte (μ3)"@de, "densidade (μ3)"@pt, "density (μ3)"@en, "densit�  (μ3)"@it, "densité (μ3)"@fr, "πυκνότητα (μ3)"@el, "密度 (μ3)"@ja ;
+    rdfs:label "Dichte (μ3)"@de, "densidade (μ3)"@pt, "density (μ3)"@en, "densit�  (μ3)"@it, "densité (μ3)"@fr, "πυκνότητα (μ3)"@el, "密度 (μ3)"@ja ;
     rdfs:range <http://dbpedia.org/datatype/kilogramPerCubicMetre> .
 
 <http://dbpedia.org/ontology/Planet/mass>
@@ -5604,7 +5604,7 @@
 <http://dbpedia.org/ontology/Planet/orbitalPeriod>
     a owl:DatatypeProperty ;
     rdfs:domain :Planet ;
-    rdfs:label "Umlaufzeit (μ)"@de, "orbital period (μ)"@en, "� ερίοδος περιφοράς (μ)"@el ;
+    rdfs:label "Umlaufzeit (μ)"@de, "orbital period (μ)"@en, "� ερίοδος περιφοράς (μ)"@el ;
     rdfs:range <http://dbpedia.org/datatype/day> .
 
 <http://dbpedia.org/ontology/Planet/periapsis>
@@ -5710,7 +5710,7 @@
 
 :Politician
     a owl:Class ;
-    rdfs:label "Politiker"@de, "polaiteoir"@ga, "politician"@en, "politicien"@fr, "politicus"@nl, "politik"@sl, "político"@pt, "πολιτικός"@el, "سیاستدان"@ur, "政治家"@ja, "� �치인"@ko ;
+    rdfs:label "Politiker"@de, "polaiteoir"@ga, "politician"@en, "politicien"@fr, "politicus"@nl, "politik"@sl, "político"@pt, "πολιτικός"@el, "سیاستدان"@ur, "政治家"@ja, "� �치인"@ko ;
     rdfs:subClassOf :Person ;
     owl:equivalentClass wikidata:Q82955 ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:Politician> .
@@ -5744,7 +5744,7 @@
 
 :PopulatedPlace
     a owl:Class ;
-    rdfs:comment "As defined by the United States Geological Survey, a populated place is a place or area with clustered or scattered buildings and a permanent human population (city, settlement, town, or village) referenced with geographic coordinates (http://en.wikipedia.org/wiki/Populated_place)."@en, "Selon la définition du United States Geological Survey, un lieu peuplé est un lieu ou une zone avec des bâtiments regroupés ou dispersés et une population humaine permanente (agglomération, colonie, ville ou village) référencée par des coordonnées géographiques (http://en.wikipedia. org/wiki/Populated_place)."@fr, "� υκνοκατοικημένη περιοχή, είναι η περιοχή ή το μέρος με μεγάλο αριθμό κτιρίων και μεγάλο μόνιμο πληθυσμό, σε σύγκριση με την γεωγραφική περιοχή που καταλαμβάνει (μεγαλούπολη, πόλη ή χωριό)."@el, "جیسا کہ امریکہ نے بیان کیا ہے۔ ارضیاتی سروے ، ایک آبادی والی جگہ وہ جگہ یا علاقہ ہے جہاں گروہ یا بکھرے ہوئے عمارتیں اور مستقل انسانی آبادی (شہر ، بستی ، قصبہ یا گاؤں) ہو۔"@ur ;
+    rdfs:comment "As defined by the United States Geological Survey, a populated place is a place or area with clustered or scattered buildings and a permanent human population (city, settlement, town, or village) referenced with geographic coordinates (http://en.wikipedia.org/wiki/Populated_place)."@en, "Selon la définition du United States Geological Survey, un lieu peuplé est un lieu ou une zone avec des bâtiments regroupés ou dispersés et une population humaine permanente (agglomération, colonie, ville ou village) référencée par des coordonnées géographiques (http://en.wikipedia. org/wiki/Populated_place)."@fr, "� υκνοκατοικημένη περιοχή, είναι η περιοχή ή το μέρος με μεγάλο αριθμό κτιρίων και μεγάλο μόνιμο πληθυσμό, σε σύγκριση με την γεωγραφική περιοχή που καταλαμβάνει (μεγαλούπολη, πόλη ή χωριό)."@el, "جیسا کہ امریکہ نے بیان کیا ہے۔ ارضیاتی سروے ، ایک آبادی والی جگہ وہ جگہ یا علاقہ ہے جہاں گروہ یا بکھرے ہوئے عمارتیں اور مستقل انسانی آبادی (شہر ، بستی ، قصبہ یا گاؤں) ہو۔"@ur ;
     rdfs:label "bebouwde omgeving"@nl, "befolket sted"@da, "bewohnter Ort"@de, "lieu habité"@fr, "populated place"@en, "πυκνοκατοικημένη περιοχή"@el, "آبادی والی جگہ"@ur, "تجمع سكاني"@ar ;
     rdfs:subClassOf :Place ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:PopulatedPlace> .
@@ -5831,14 +5831,14 @@
 :Presenter
     a owl:Class ;
     rdfs:comment "TV or radio show presenter"@en, "ٹی وی یا ریڈیو شو پیش کرنے والا"@ur ;
-    rdfs:label "Moderator"@de, "láithreoir"@ga, "presentator"@nl, "presenter"@en, "présentateur"@fr, "� αρουσιαστής"@el, "پیش کنندہ"@ur, "司会者"@ja ;
+    rdfs:label "Moderator"@de, "láithreoir"@ga, "presentator"@nl, "presenter"@en, "présentateur"@fr, "� αρουσιαστής"@el, "پیش کنندہ"@ur, "司会者"@ja ;
     rdfs:subClassOf :Person ;
     owl:equivalentClass wikidata:Q13590141 ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:Presenter> .
 
 :President
     a owl:Class ;
-    rdfs:label "Präsident"@de, "president"@en, "president"@nl, "prezydent"@pl, "président"@fr, "uachtarán"@ga, "πρόεδρος"@el, "صدر"@ur, "大統� �"@ja, "국가원수"@ko ;
+    rdfs:label "Präsident"@de, "president"@en, "president"@nl, "prezydent"@pl, "président"@fr, "uachtarán"@ga, "πρόεδρος"@el, "صدر"@ur, "大統� �"@ja, "국가원수"@ko ;
     rdfs:subClassOf :Politician ;
     owl:equivalentClass wikidata:Q30461 ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:President> .
@@ -5958,7 +5958,7 @@
 
 :PublicTransitSystem
     a owl:Class ;
-    rdfs:comment "A public transit system is a shared passenger transportation service which is available for use by the general public. Public transport modes include buses, trolleybuses, trams and trains, 'rapid transit' (metro/subways/undergrounds etc) and ferries. Intercity public transport is dominated by airlines, coaches, and intercity rail. (http://en.wikipedia.org/wiki/Public_transit)."@en, "Ein System des Öffentlichen Personenverkehrs auf Straße, Schiene oder Wasser."@de, "Un système de transport en commun est un service de transport partagé de passagers mis �  la disposition du grand public. Les modes de transport public comprennent les bus, les trolleybus, les tramways et les trains, le « transport en commun rapide » (métro, TGV, etc.) et les ferries. Les transports publics interurbains sont dominés par les compagnies aériennes, les autocars et le rail intercité. (http://en.wikipedia.org/wiki/Public_transit)."@fr, "Τα μέσα μαζικής μεταφοράς (συντομογραφία ΜΜΜ) είναι τα δημόσια συγκοινωνιακά μέσα, που περιλαμβάνουν τα λεωφορεία, τα τρόλεϊ, τα τραμ, τα τρένα, το μετρό, τα πλοία. Υπάρχουν και τα ταχεία μέσα συγκοινωνίας που περιλαμβάνουν τα αεροπλάνα, υπερταχεία τρένα."@el, "عوامی راہداری کا نظام ایک مشترکہ عوامی نقل و حمل کی سروس ہے جو عام لوگوں کے استعمال کے لیے دستیاب ہے۔عوامی نقل و حمل کے طریقوں میں بسیں ، ٹرالی بسیں ، ٹرام اور ٹرینیں ، 'تیز رفتارراہداری' (میٹرو/زمین دوز برقی ریل/زیر زمین وغیرہ) اور فیری شامل ہیں۔"@ur ;
+    rdfs:comment "A public transit system is a shared passenger transportation service which is available for use by the general public. Public transport modes include buses, trolleybuses, trams and trains, 'rapid transit' (metro/subways/undergrounds etc) and ferries. Intercity public transport is dominated by airlines, coaches, and intercity rail. (http://en.wikipedia.org/wiki/Public_transit)."@en, "Ein System des Öffentlichen Personenverkehrs auf Straße, Schiene oder Wasser."@de, "Un système de transport en commun est un service de transport partagé de passagers mis �  la disposition du grand public. Les modes de transport public comprennent les bus, les trolleybus, les tramways et les trains, le « transport en commun rapide » (métro, TGV, etc.) et les ferries. Les transports publics interurbains sont dominés par les compagnies aériennes, les autocars et le rail intercité. (http://en.wikipedia.org/wiki/Public_transit)."@fr, "Τα μέσα μαζικής μεταφοράς (συντομογραφία ΜΜΜ) είναι τα δημόσια συγκοινωνιακά μέσα, που περιλαμβάνουν τα λεωφορεία, τα τρόλεϊ, τα τραμ, τα τρένα, το μετρό, τα πλοία. Υπάρχουν και τα ταχεία μέσα συγκοινωνίας που περιλαμβάνουν τα αεροπλάνα, υπερταχεία τρένα."@el, "عوامی راہداری کا نظام ایک مشترکہ عوامی نقل و حمل کی سروس ہے جو عام لوگوں کے استعمال کے لیے دستیاب ہے۔عوامی نقل و حمل کے طریقوں میں بسیں ، ٹرالی بسیں ، ٹرام اور ٹرینیں ، 'تیز رفتارراہداری' (میٹرو/زمین دوز برقی ریل/زیر زمین وغیرہ) اور فیری شامل ہیں۔"@ur ;
     rdfs:label "Sistema de Transporte Público"@es, "Système de transport public"@fr, "openbaar vervoer systeem"@nl, "public transit system"@en, "Öffentliches Personenverkehrssystem"@de, "μέσα μαζικής μεταφοράς"@el, "عوامی راہداری کا نظام"@ur ;
     rdfs:subClassOf :Company ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:PublicTransitSystem> .
@@ -6000,7 +6000,7 @@
 :Racecourse
     a owl:Class ;
     rdfs:comment "A racecourse is an alternate term for a horse racing track, found in countries such as the United Kingdom, Australia, Hong Kong, and the United Arab Emirates."@en, "Ο ιππόδρομος,εναλλακτικός όρος για την πίστα διεξαγωγής αγώνων μεταξύ ίππων,συναντάται σε χώρες όπως η Αγγλία, Αυστραλία, Χονγκ Κονγκ και τα Ηνωμένα Αραβικά Εμιράτα."@el, "ریس کورس ہارس ریسنگ ٹریک کے لیے ایک متبادل اصطلاح ہے، جو برطانیہ، آسٹریلیا، ہانگ کانگ اور متحدہ عرب امارات جیسے ممالک میں پائی جاتی ہے۔"@ur ;
-    rdfs:label "Rennbahn"@de, "ippodromo"@it, "racecourse"@en, "renbaan"@nl, "ráschúrsa"@ga, "ιππόδρομος"@el, "بھاگنے والا رستہ"@ur, "競馬� �"@ja ;
+    rdfs:label "Rennbahn"@de, "ippodromo"@it, "racecourse"@en, "renbaan"@nl, "ráschúrsa"@ga, "ιππόδρομος"@el, "بھاگنے والا رستہ"@ur, "競馬� �"@ja ;
     rdfs:subClassOf :RaceTrack ;
     owl:equivalentClass wikidata:Q1777138 ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:Racecourse> .
@@ -6105,7 +6105,7 @@
 
 :Reference
     a owl:Class ;
-    rdfs:comment "Reference to a work (book, movie, website)  providing info about the subject"@en, "Référence �  un travail (livre, film, site web), fournissant des informations sur le sujet"@fr, "Verwijzing naar een plaats in een boek of film"@nl, "موضوع کے بارے میں معلومات فراہم کرنے والے کام (کتاب، فلم، ویب سائٹ) کا حوالہ"@ur ;
+    rdfs:comment "Reference to a work (book, movie, website)  providing info about the subject"@en, "Référence �  un travail (livre, film, site web), fournissant des informations sur le sujet"@fr, "Verwijzing naar een plaats in een boek of film"@nl, "موضوع کے بارے میں معلومات فراہم کرنے والے کام (کتاب، فلم، ویب سائٹ) کا حوالہ"@ur ;
     rdfs:label "Reference"@en, "Referenz"@de, "Référence"@fr, "Verwijzing"@nl, "αναφορά"@el, "حوالہ"@ur, "参考文献"@ja ;
     rdfs:subClassOf :Annotation ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:Reference> .
@@ -6174,7 +6174,7 @@
 
 :RestArea
     a owl:Class ;
-    rdfs:comment "A rest area is part of a Road, meant to stop and rest. More often than not, there is a filling station"@en, "Une aire de repos fait partie d'une route, destinée �  s'arrêter et �  se reposer. Le plus souvent, il y a une station-service"@fr, "آرام گاہ ایک سڑک کا حصہ ہے، جس کا مقصد رکنا اور آرام کرنا ہے"@ur ;
+    rdfs:comment "A rest area is part of a Road, meant to stop and rest. More often than not, there is a filling station"@en, "Une aire de repos fait partie d'une route, destinée �  s'arrêter et �  se reposer. Le plus souvent, il y a une station-service"@fr, "آرام گاہ ایک سڑک کا حصہ ہے، جس کا مقصد رکنا اور آرام کرنا ہے"@ur ;
     rdfs:label "Rasthof"@de, "aire de repos"@fr, "rest area"@en, "rustplaats"@nl, "آرام گاہ"@ur ;
     rdfs:subClassOf :Infrastructure ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:RestArea> .
@@ -6224,7 +6224,7 @@
 
 :Robot
     a owl:Class ;
-    rdfs:label "Robot"@en, "Robot"@fr, "Robot"@nl, "� обота"@ru, "روبوٹ/مشین"@ur ;
+    rdfs:label "Robot"@en, "Robot"@fr, "Robot"@nl, "� обота"@ru, "روبوٹ/مشین"@ur ;
     rdfs:subClassOf :Device ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:Robot> .
 
@@ -6323,7 +6323,7 @@
 
 :Saint
     a owl:Class ;
-    rdfs:label "Heilige"@de, "heilige"@nl, "naomh"@ga, "saint"@en, "saint"@fr, "� ληροφορίες Αγίου"@el, "ولی"@ur, "聖人"@ja, "성인"@ko ;
+    rdfs:label "Heilige"@de, "heilige"@nl, "naomh"@ga, "saint"@en, "saint"@fr, "� ληροφορίες Αγίου"@el, "ولی"@ur, "聖人"@ja, "성인"@ko ;
     rdfs:subClassOf :Cleric ;
     owl:equivalentClass wikidata:Q43115 ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:Saint> .
@@ -6350,7 +6350,7 @@
 
 :School
     a owl:Class ;
-    rdfs:label "Schule"@de, "escola"@pt, "escuela"@es, "school"@en, "school"@nl, "scoil"@ga, "scuola"@it, "skole"@da, "szkoła"@pl, "école"@fr, "σχολείο"@el, "مدرسه"@ur, "学� �"@ja, "학교"@ko ;
+    rdfs:label "Schule"@de, "escola"@pt, "escuela"@es, "school"@en, "school"@nl, "scoil"@ga, "scuola"@it, "skole"@da, "szkoła"@pl, "école"@fr, "σχολείο"@el, "مدرسه"@ur, "学� �"@ja, "학교"@ko ;
     rdfs:subClassOf :EducationalInstitution ;
     owl:equivalentClass <http://schema.org/School>, wikidata:Q3914 ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:School> .
@@ -6486,7 +6486,7 @@
 
 :SkiArea
     a owl:Class ;
-    rdfs:label "Skigebiet"@de, "domaine skiable"@fr, "láthair sciála"@ga, "ski area"@en, "� εριοχή Χιονοδρομίας"@el, "اسکی  کاعلاقہ"@ur, "スキー� �"@ja ;
+    rdfs:label "Skigebiet"@de, "domaine skiable"@fr, "láthair sciála"@ga, "ski area"@en, "� εριοχή Χιονοδρομίας"@el, "اسکی  کاعلاقہ"@ur, "スキー� �"@ja ;
     rdfs:subClassOf :SportFacility ;
     owl:equivalentClass <http://schema.org/SkiResort> ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:SkiArea> .
@@ -6520,7 +6520,7 @@
 
 :Skyscraper
     a owl:Class ;
-    rdfs:label "Hochhaus"@de, "gratte-ciel"@fr, "ilstórach"@ga, "skyscraper"@en, "wolkenkrabber"@nl, "ουρανοξύστης"@el, "فلک بوس عمارت"@ur, "超高層建築物"@ja, "초� 층 건물"@ko ;
+    rdfs:label "Hochhaus"@de, "gratte-ciel"@fr, "ilstórach"@ga, "skyscraper"@en, "wolkenkrabber"@nl, "ουρανοξύστης"@el, "فلک بوس عمارت"@ur, "超高層建築物"@ja, "초� 층 건물"@ko ;
     rdfs:subClassOf :Building ;
     owl:equivalentClass wikidata:Q11303 ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:Skyscraper> .
@@ -6569,7 +6569,7 @@
 :SoccerLeague
     a owl:Class ;
     rdfs:comment "A group of sports teams that compete against each other in soccer."@en, "کھیلوں کی ٹیموں کا ایک گروپ جو فٹ بال میں ایک دوسرے کے خلاف مقابلہ کرتا ہے۔"@ur ;
-    rdfs:label "Fußball Liga"@de, "ligue de football"@fr, "soccer league"@en, "sraith sacair"@ga, "voetbal competitie"@nl, "Ομοσπονδία � οδοσφαίρου"@el, "فٹ بال کی انجمن"@ur, "サッカーリーグ"@ja ;
+    rdfs:label "Fußball Liga"@de, "ligue de football"@fr, "soccer league"@en, "sraith sacair"@ga, "voetbal competitie"@nl, "Ομοσπονδία � οδοσφαίρου"@el, "فٹ بال کی انجمن"@ur, "サッカーリーグ"@ja ;
     rdfs:subClassOf :SportsLeague ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:SoccerLeague> .
 
@@ -6588,7 +6588,7 @@
 
 :SoccerPlayer
     a owl:Class ;
-    rdfs:label "Fußballspieler"@de, "calciatore"@it, "fodboldspiller"@da, "futbolista"@es, "imreoir sacair"@ga, "joueur de football"@fr, "soccer player"@en, "voetballer"@nl, "παίχτης ποδοσφαίρου"@el, "فٹبال کا کھلاڑی"@ur, "サッカー選手"@ja, "축구 � 수"@ko ;
+    rdfs:label "Fußballspieler"@de, "calciatore"@it, "fodboldspiller"@da, "futbolista"@es, "imreoir sacair"@ga, "joueur de football"@fr, "soccer player"@en, "voetballer"@nl, "παίχτης ποδοσφαίρου"@el, "فٹبال کا کھلاڑی"@ur, "サッカー選手"@ja, "축구 � 수"@ko ;
     rdfs:subClassOf :Athlete ;
     owl:equivalentClass wikidata:Q937857 ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:SoccerPlayer> .
@@ -6651,7 +6651,7 @@
 
 :Sound
     a owl:Class ;
-    rdfs:comment "An audio document intended to be listened to; equivalent to http://purl.org/dc/dcmitype/Sound"@en, "Un document sonore �  écouter; équivalent �  http://purl.org/dc/dcmitype/Sound"@fr, "Μεταβολή στην πίεση του ατμοσφαιρικού αέρα που διεγείρει το αισθητήριο όργανο της ακοής μέσω ηχητικών κυμάτων"@el, "صوتی لہروں کے ذریعے سماعت کے حسی اعضاء سے محرک ہوا کے دباؤ میں تبدیلی"@ur ;
+    rdfs:comment "An audio document intended to be listened to; equivalent to http://purl.org/dc/dcmitype/Sound"@en, "Un document sonore �  écouter; équivalent �  http://purl.org/dc/dcmitype/Sound"@fr, "Μεταβολή στην πίεση του ατμοσφαιρικού αέρα που διεγείρει το αισθητήριο όργανο της ακοής μέσω ηχητικών κυμάτων"@el, "صوتی لہروں کے ذریعے سماعت کے حسی اعضاء سے محرک ہوا کے دباؤ میں تبدیلی"@ur ;
     rdfs:label "Lied"@de, "audio"@fr, "fuaim"@ga, "geluid"@nl, "lyd"@da, "sound"@en, "ήχος"@el, "آواز"@ur, "音"@ja ;
     rdfs:subClassOf :Document ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:Sound> .
@@ -6725,7 +6725,7 @@
 
 :SpaceShuttle
     a owl:Class ;
-    rdfs:label "Raumfähre"@de, "navette spatiale"@fr, "ruimteveer"@nl, "space shuttle"@en, "spástointeáil"@ga, "διαστημικό λεωφορείο"@el, "خلائی جہاز"@ur, "우주 왕복� "@ko ;
+    rdfs:label "Raumfähre"@de, "navette spatiale"@fr, "ruimteveer"@nl, "space shuttle"@en, "spástointeáil"@ga, "διαστημικό λεωφορείο"@el, "خلائی جہاز"@ur, "우주 왕복� "@ko ;
     rdfs:subClassOf :MeanOfTransportation ;
     owl:equivalentClass wikidata:Q48806 ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:SpaceShuttle> .
@@ -6744,7 +6744,7 @@
 
 :SpaceStation
     a owl:Class ;
-    rdfs:label "Raumstation"@de, "estación espacial"@es, "ruimtestation"@nl, "space station"@en, "station spatiale"@fr, "stáisiún spáis"@ga, "διαστημικός σταθμός"@el, "خلائی اڈہ"@ur, "우주 � �거장"@ko ;
+    rdfs:label "Raumstation"@de, "estación espacial"@es, "ruimtestation"@nl, "space station"@en, "station spatiale"@fr, "stáisiún spáis"@ga, "διαστημικός σταθμός"@el, "خلائی اڈہ"@ur, "우주 � �거장"@ko ;
     rdfs:subClassOf :MeanOfTransportation ;
     owl:equivalentClass wikidata:Q25956 ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:SpaceStation> .
@@ -6757,7 +6757,7 @@
 
 :Spacecraft
     a owl:Class ;
-    rdfs:label "Raumfahrzeug"@de, "ruimtevaartuig"@nl, "spacecraft"@en, "spásárthach"@ga, "vaisseau spatial"@fr, "διαστημόπλοιο"@el, "خلائی جہاز"@ur, "宇宙機"@ja, "우주� "@ko ;
+    rdfs:label "Raumfahrzeug"@de, "ruimtevaartuig"@nl, "spacecraft"@en, "spásárthach"@ga, "vaisseau spatial"@fr, "διαστημόπλοιο"@el, "خلائی جہاز"@ur, "宇宙機"@ja, "우주� "@ko ;
     rdfs:subClassOf :MeanOfTransportation ;
     owl:equivalentClass wikidata:Q40218 ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:Spacecraft> .
@@ -6859,7 +6859,7 @@
     a owl:Class ;
     rdfs:comment "A sport is commonly defined as an organized, competitive, and skillful physical activity."@en, """ایک ساختی سرگرمی ، جو عموما لطف اندوز ہونے کے لیے کی جاتی ہے اور بعض اوقات تعلیمی آلے کے طور پر استعمال ہوتی ہے۔
 ."""@ur ;
-    rdfs:label "Deporte"@es, "Sportart"@de, "esporte"@pt, "sport"@en, "sport"@fr, "sport"@nl, "spórt"@ga, "Αθλήματα"@el, "Вид спорта"@ru, "کھیل"@ur, "スポーツ"@ja, "스포� "@ko ;
+    rdfs:label "Deporte"@es, "Sportart"@de, "esporte"@pt, "sport"@en, "sport"@fr, "sport"@nl, "spórt"@ga, "Αθλήματα"@el, "Вид спорта"@ru, "کھیل"@ur, "スポーツ"@ja, "스포� "@ko ;
     rdfs:subClassOf :Activity ;
     owl:equivalentClass wikidata:Q349 ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:Sport> .
@@ -6893,14 +6893,14 @@
 :SportsLeague
     a owl:Class ;
     rdfs:comment "A group of sports teams or individual athletes that compete against each other in a specific sport."@en, "کھیلوں کی ٹیموں یا انفرادی کھلاڑیوں کا ایک گروہ جو ایک مخصوص کھیل میں ایک دوسرے کے خلاف مقابلہ کرتے ہیں۔"@ur ;
-    rdfs:label "Sportliga"@de, "liga deportiva"@es, "ligue sportive"@fr, "sport competitie"@nl, "sports league"@en, "Αθλητική Ομοσπονδία"@el, "کھیلوں کی انجمن"@ur, "スポーツリーグ"@ja, "스포�  리그"@ko ;
+    rdfs:label "Sportliga"@de, "liga deportiva"@es, "ligue sportive"@fr, "sport competitie"@nl, "sports league"@en, "Αθλητική Ομοσπονδία"@el, "کھیلوں کی انجمن"@ur, "スポーツリーグ"@ja, "스포�  리그"@ko ;
     rdfs:subClassOf :Organisation ;
     owl:equivalentClass wikidata:Q623109 ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:SportsLeague> .
 
 :SportsManager
     a owl:Class ;
-    rdfs:comment "According to the french label sub Soccer, trainership could be meant. However, here a Sportsmanager is interpreted as a member of the board of a sporting club."@en, "Σύμφωνα με τη γαλλική ετικέτα Soccer,μπορεί να εννοείται ο προπονητής.� αρ'όλα αυτα,εδώ ένας αθλητικός μάνατζερ μεταφράζεται ως ένα μέλος συμβουλίου ενός αθλητικού κλαμπ."@el, "فرانسیسی لیبل سب ساکر کے مطابق، ٹرینر شپ کا مطلب ہو سکتا ہے۔ تاہم، یہاں ایک اسپورٹس مینیجر کو اسپورٹنگ کلب کے بورڈ کے رکن سے تعبیر کیا جاتا ہے"@ur ;
+    rdfs:comment "According to the french label sub Soccer, trainership could be meant. However, here a Sportsmanager is interpreted as a member of the board of a sporting club."@en, "Σύμφωνα με τη γαλλική ετικέτα Soccer,μπορεί να εννοείται ο προπονητής.� αρ'όλα αυτα,εδώ ένας αθλητικός μάνατζερ μεταφράζεται ως ένα μέλος συμβουλίου ενός αθλητικού κλαμπ."@el, "فرانسیسی لیبل سب ساکر کے مطابق، ٹرینر شپ کا مطلب ہو سکتا ہے۔ تاہم، یہاں ایک اسپورٹس مینیجر کو اسپورٹنگ کلب کے بورڈ کے رکن سے تعبیر کیا جاتا ہے"@ur ;
     rdfs:label "Sportmanager"@de, "director deportivo"@es, "sportbestuurder"@nl, "sports manager"@en, "αθλητικός μάνατζερ"@el, "کھیلوں کا منتظم"@ur ;
     rdfs:subClassOf :Person ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:SportsManager> .
@@ -6913,7 +6913,7 @@
 
 :SportsTeam
     a owl:Class ;
-    rdfs:label "Sportmannschaft"@de, "sports team"@en, "sportteam"@nl, "équipe sportive"@fr, "ομαδικά αθλήματα"@el, "کھیل کی  جماعت"@ur, "スポーツチー� "@ja ;
+    rdfs:label "Sportmannschaft"@de, "sports team"@en, "sportteam"@nl, "équipe sportive"@fr, "ομαδικά αθλήματα"@el, "کھیل کی  جماعت"@ur, "スポーツチー� "@ja ;
     rdfs:subClassOf :Organisation ;
     owl:equivalentClass <http://schema.org/SportsTeam>, wikidata:Q12973014 ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:SportsTeam> .
@@ -6954,21 +6954,21 @@
 
 :SquashPlayer
     a owl:Class ;
-    rdfs:label "Squashspieler"@de, "giocatore di squash"@it, "joueur de squash"@fr, "squash player"@en, "squasher"@nl, "스쿼시 � 수"@ko ;
+    rdfs:label "Squashspieler"@de, "giocatore di squash"@it, "joueur de squash"@fr, "squash player"@en, "squasher"@nl, "스쿼시 � 수"@ko ;
     rdfs:subClassOf :Athlete ;
     owl:equivalentClass wikidata:Q16278103 ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:SquashPlayer> .
 
 :Stadium
     a owl:Class ;
-    rdfs:label "Stadion"@de, "stade"@fr, "stadion"@nl, "stadium"@en, "staidiam"@ga, "στάδιο"@el, "معروف کھیلوں کے لیے مَخصُوص جگہ"@ur, "スタジア� "@ja, "경기장"@ko ;
+    rdfs:label "Stadion"@de, "stade"@fr, "stadion"@nl, "stadium"@en, "staidiam"@ga, "στάδιο"@el, "معروف کھیلوں کے لیے مَخصُوص جگہ"@ur, "スタジア� "@ja, "경기장"@ko ;
     rdfs:subClassOf :Venue, <http://schema.org/StadiumOrArena> ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:Stadium> .
 
 :Standard
     a owl:Class ;
     rdfs:comment "a common specification"@en, "une spécification commune"@fr, "ایک عام تفصیل"@ur ;
-    rdfs:label "standaard"@nl, "standard"@en, "standard"@fr, "معیاری"@ur, "規� �"@ja ;
+    rdfs:label "standaard"@nl, "standard"@en, "standard"@fr, "معیاری"@ur, "規� �"@ja ;
     rdfs:subClassOf :TopicalConcept ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:Standard> .
 
@@ -7116,7 +7116,7 @@
 :Swimmer
     a owl:Class ;
     rdfs:comment "a trained athlete who participates in swimming meets"@en, "ένας εκπαιδευμένος αθλητής που συμμετέχει σε συναντήσεις κολύμβησης"@el, "ایک تربیت یافتہ کھلاڑی جو تیراکی کے مقابلوں میں حصہ لیتا ہے"@ur ;
-    rdfs:label "Kολυμβητής"@el, "Schwimmer"@de, "nadador"@es, "nadador"@pt, "nageur"@fr, "nuotatore"@it, "snámhaí"@ga, "swimmer"@en, "zwemmer"@nl, "تیراک"@ur, "競泳選手"@ja, "수영 � 수"@ko ;
+    rdfs:label "Kολυμβητής"@el, "Schwimmer"@de, "nadador"@es, "nadador"@pt, "nageur"@fr, "nuotatore"@it, "snámhaí"@ga, "swimmer"@en, "zwemmer"@nl, "تیراک"@ur, "競泳選手"@ja, "수영 � 수"@ko ;
     rdfs:subClassOf :Athlete ;
     owl:equivalentClass wikidata:Q10843402 ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:Swimmer> .
@@ -7139,7 +7139,7 @@
 :TableTennisPlayer
     a owl:Class ;
     rdfs:comment "Athlete who plays table tennis"@en, "Athlète qui joue du tennis de table"@fr, "O αθλητής που παίζει πινγκ-πονγκ"@el, "کھلاڑی جو ٹیبل ٹینس کھیلتا ہے"@ur ;
-    rdfs:label "Tischtennisspieler"@de, "imreoir leadóg bhoird"@ga, "joueur de ping-pong"@fr, "table tennis player"@en, "tafeltennisser"@nl, "παίκτης πινγκ-πονγκ"@el, "ٹیبل ٹینس کا کھلاڑی"@ur, "卓球選手"@ja, "탁구 � 수"@ko ;
+    rdfs:label "Tischtennisspieler"@de, "imreoir leadóg bhoird"@ga, "joueur de ping-pong"@fr, "table tennis player"@en, "tafeltennisser"@nl, "παίκτης πινγκ-πονγκ"@el, "ٹیبل ٹینس کا کھلاڑی"@ur, "卓球選手"@ja, "탁구 � 수"@ko ;
     rdfs:subClassOf :Athlete ;
     owl:equivalentClass wikidata:Q13382519 ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:TableTennisPlayer> .
@@ -7168,14 +7168,14 @@
 :TeamMember
     a owl:Class ;
     rdfs:comment "A member of an athletic team."@en, "Ένα μέλος μιας αθλητικής ομάδας."@el, "ایتھلیٹک ٹیم کا رکن"@ur ;
-    rdfs:label "Team member"@en, "Teammitglied"@de, "coéquipier"@fr, "teamlid"@nl, "Μέλος ομάδας"@el, "ٹیم کے رکن"@ur, "チー� メンバー"@ja ;
+    rdfs:label "Team member"@en, "Teammitglied"@de, "coéquipier"@fr, "teamlid"@nl, "Μέλος ομάδας"@el, "ٹیم کے رکن"@ur, "チー� メンバー"@ja ;
     rdfs:subClassOf :Athlete ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:TeamMember> .
 
 :TeamSport
     a owl:Class ;
     rdfs:comment "A team sport is commonly defined as a sport that is being played by competing teams"@en, "Un sport d'équipe est défini communément comme un sport pratiqué par des équipes en compétition"@fr, "ایک ٹیم کے کھیل کو عام طور پر ایک کھیل کے طور پر بیان کیا جاتا ہے جو مسابقتی ٹیموں کے ذریعہ کھیلا جاتا ہے"@ur ;
-    rdfs:label "sport d'équipe"@fr, "team sport"@en, "teamsport"@nl, "جماعتی کھیل"@ur, "チー� スポーツ"@ja ;
+    rdfs:label "sport d'équipe"@fr, "team sport"@en, "teamsport"@nl, "جماعتی کھیل"@ur, "チー� スポーツ"@ja ;
     rdfs:subClassOf :Sport ;
     owl:equivalentClass wikidata:Q216048 ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:TeamSport> .
@@ -7190,7 +7190,7 @@
 :TelevisionEpisode
     a owl:Class ;
     rdfs:comment "A television episode is a part of serial television program."@en, "ٹیلی ویژن ایپی سوڈ سیریل ٹیلی ویژن پروگرام کا ایک حصہ ہے"@ur ;
-    rdfs:label "Fernsehfolge"@de, "capítulo de serie de televisión"@es, "eagrán de chlár teilifíse"@ga, "televisie seizoen"@nl, "television episode"@en, "épisode télévisé"@fr, "επεισόδιο τηλεόρασης"@el, "ٹی وی کی قسط"@ur, "テレビ放送回"@ja, "텔� �비� � 에피소드"@ko ;
+    rdfs:label "Fernsehfolge"@de, "capítulo de serie de televisión"@es, "eagrán de chlár teilifíse"@ga, "televisie seizoen"@nl, "television episode"@en, "épisode télévisé"@fr, "επεισόδιο τηλεόρασης"@el, "ٹی وی کی قسط"@ur, "テレビ放送回"@ja, "텔� �비� � 에피소드"@ko ;
     rdfs:subClassOf :Work ;
     owl:equivalentClass <http://schema.org/TVEpisode> ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:TelevisionEpisode> .
@@ -7204,7 +7204,7 @@
 
 :TelevisionSeason
     a owl:Class ;
-    rdfs:label "Fernsehstaffel"@de, "televisie seizoen"@nl, "television season"@en, "τηλεοπτική σεζόν"@el, "ٹی وی ڈرامہ"@ur, "텔� �비� � 시즌"@ko ;
+    rdfs:label "Fernsehstaffel"@de, "televisie seizoen"@nl, "television season"@en, "τηλεοπτική σεζόν"@el, "ٹی وی ڈرامہ"@ur, "텔� �비� � 시즌"@ko ;
     rdfs:subClassOf :Work ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:TelevisionSeason> .
 
@@ -7273,7 +7273,7 @@
 :Theatre
     a owl:Class ;
     rdfs:comment "A theater or theatre (also a playhouse) is a structure where theatrical works or plays are performed or other performances such as musical concerts may be produced."@en, "ایک تھیٹر یا تھیٹر (ایک پلے ہاؤس بھی) ایک ڈھانچہ ہے جہاں تھیٹر کے کام یا ڈرامے پیش کیے جاتے ہیں یا دیگر پرفارمنس جیسے میوزیکل کنسرٹ تیار کیے جا سکتے ہیں"@ur ;
-    rdfs:label "Theater"@de, "amharclann"@ga, "schouwburg"@nl, "theatre"@en, "théâtre"@fr, "θέατρο"@el, "تماشا گاہ"@ur, "劇� �"@ja ;
+    rdfs:label "Theater"@de, "amharclann"@ga, "schouwburg"@nl, "theatre"@en, "théâtre"@fr, "θέατρο"@el, "تماشا گاہ"@ur, "劇� �"@ja ;
     rdfs:subClassOf :Venue ;
     owl:equivalentClass wikidata:Q24354 ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:Theatre> .
@@ -7394,7 +7394,7 @@
 
 :Tunnel
     a owl:Class ;
-    rdfs:comment "A tunnel may be for foot or vehicular road traffic, for rail traffic, or for a canal. Some tunnels are aqueducts to supply water for consumption or for hydroelectric stations or are sewers (http://en.wikipedia.org/wiki/Tunnel)."@en, "Ein Tunnel (auch Tunell) ist eine künstliche Passage, die Berge, Gewässer oder andere Hindernisse (in der Regel als Verkehrsweg) unterquert (http://de.wikipedia.org/wiki/Tunnel)."@de, "Un tunnel est une galerie souterraine livrant passage �  une voie de communication (chemin de fer, canal, route, chemin piétonnier). Sont apparentés aux tunnels par leur mode de construction les grands ouvrages hydrauliques souterrains, tels que les aqueducs, collecteurs et émissaires destinés soit �  l'amenée, soit �  l'évacuation des eaux des grands centres et certaines conduites établies en liaison avec les barrages et usines hydro-électriques.  (http://fr.wikipedia.org/wiki/Tunnel)."@fr, "Ένα τούνελ μπορεί να είναι για πεζούς ή για αυτοκινητόδρομους,για σιδηρόδρομους,ή για κανάλια στο νερό.Μερικά τούνελ είναι υδραγωγεία για να παρέχουν νερό προς κατανάλωση ή για υδροηλεκτικούς σταθμούς ή είναι υπόνομοι."@el, "ایک سرنگ پیدل یا گاڑیوں کی سڑک کے لیے، ریل ٹریفک کے لیے، یا نہر کے لیے ہو سکتی ہے۔ کچھ سرنگیں پانی کی کھپت یا ہائیڈرو الیکٹرک اسٹیشنوں کے لیے پانی کی فراہمی کے لیے آبی راستے ہیں یا گٹر ہیں"@ur ;
+    rdfs:comment "A tunnel may be for foot or vehicular road traffic, for rail traffic, or for a canal. Some tunnels are aqueducts to supply water for consumption or for hydroelectric stations or are sewers (http://en.wikipedia.org/wiki/Tunnel)."@en, "Ein Tunnel (auch Tunell) ist eine künstliche Passage, die Berge, Gewässer oder andere Hindernisse (in der Regel als Verkehrsweg) unterquert (http://de.wikipedia.org/wiki/Tunnel)."@de, "Un tunnel est une galerie souterraine livrant passage �  une voie de communication (chemin de fer, canal, route, chemin piétonnier). Sont apparentés aux tunnels par leur mode de construction les grands ouvrages hydrauliques souterrains, tels que les aqueducs, collecteurs et émissaires destinés soit �  l'amenée, soit �  l'évacuation des eaux des grands centres et certaines conduites établies en liaison avec les barrages et usines hydro-électriques.  (http://fr.wikipedia.org/wiki/Tunnel)."@fr, "Ένα τούνελ μπορεί να είναι για πεζούς ή για αυτοκινητόδρομους,για σιδηρόδρομους,ή για κανάλια στο νερό.Μερικά τούνελ είναι υδραγωγεία για να παρέχουν νερό προς κατανάλωση ή για υδροηλεκτικούς σταθμούς ή είναι υπόνομοι."@el, "ایک سرنگ پیدل یا گاڑیوں کی سڑک کے لیے، ریل ٹریفک کے لیے، یا نہر کے لیے ہو سکتی ہے۔ کچھ سرنگیں پانی کی کھپت یا ہائیڈرو الیکٹرک اسٹیشنوں کے لیے پانی کی فراہمی کے لیے آبی راستے ہیں یا گٹر ہیں"@ur ;
     rdfs:label "Tunnel"@de, "tollán"@ga, "tunnel"@en, "tunnel"@fr, "tunnel"@nl, "τούνελ"@el, "سرنگ"@ur, "トンネル"@ja, "터널"@ko ;
     rdfs:subClassOf :ArchitecturalStructure ;
     owl:equivalentClass wikidata:Q44377 ;
@@ -7416,7 +7416,7 @@
 
 :UnitOfWork
     a owl:Class ;
-    rdfs:comment "Cette classe est destinée �  transmettre la notion de quantité de travail �  faire. Elle est différente de l'activité en ce qu'elle a une fin définie et qu'elle est mesurée."@fr, "This class is meant to convey the notion of an amount work to be done. It is different from Activity in that it has a definite end and is being measured."@en, "اس کلاس کا مقصد کام کی مقدار کو سمجھانا ہے۔ یہ سرگرمی سے مختلف ہے کہ اس کا ایک حتمی اختتام ہے اور اسے ناپا جا رہا ہے۔"@ur ;
+    rdfs:comment "Cette classe est destinée �  transmettre la notion de quantité de travail �  faire. Elle est différente de l'activité en ce qu'elle a une fin définie et qu'elle est mesurée."@fr, "This class is meant to convey the notion of an amount work to be done. It is different from Activity in that it has a definite end and is being measured."@en, "اس کلاس کا مقصد کام کی مقدار کو سمجھانا ہے۔ یہ سرگرمی سے مختلف ہے کہ اس کا ایک حتمی اختتام ہے اور اسے ناپا جا رہا ہے۔"@ur ;
     rdfs:label "Arbeitseinheit"@de, "aonad oibre"@ga, "unit of work"@en, "unité de travail"@fr, "werkeenheid"@nl, "کام کی اکائی"@ur ;
     rdfs:subClassOf owl:Thing ;
     owl:disjointWith :Person ;
@@ -7437,7 +7437,7 @@
 
 :VaccinationStatistics
     a owl:Class ;
-    rdfs:comment "COVID-19 ویکسینیشن کی عالمی پیشرفت سے متعلق اعدادوشمار‎"@ur, "Statistics related to the COVID-19 vaccination world progress‎"@en, "Statistiques relatives �  la progression mondiale de la vaccination contre le COVID-19‎"@fr ;
+    rdfs:comment "COVID-19 ویکسینیشن کی عالمی پیشرفت سے متعلق اعدادوشمار‎"@ur, "Statistics related to the COVID-19 vaccination world progress‎"@en, "Statistiques relatives �  la progression mondiale de la vaccination contre le COVID-19‎"@fr ;
     rdfs:label "Vaccination Statistics"@en, "statistiques de vaccination"@fr, "ویکسینیشن کے اعدادوشمار"@ur ;
     rdfs:subClassOf :Drug ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:VaccinationStatistics> .
@@ -7492,7 +7492,7 @@
 :VideoGame
     a owl:Class ;
     rdfs:comment "A video game is an electronic game that involves interaction with a user interface to generate visual feedback on a video device."@en, "بصری کھیل ایک الیکٹرانک گیم ہے جس میں ویڈیو ڈیوائس پر بصری تاثرات پیدا کرنے کے لیے صارف کے انٹرفیس کے ساتھ تعامل شامل ہوتا ہے"@ur ;
-    rdfs:label "Videospiel"@de, "computerspil"@da, "físchluiche"@ga, "jeux vidéo"@fr, "video game"@en, "videojogo"@pt, "videojuego"@es, "videospel"@nl, "βιντεοπαιχνίδι"@el, "بصری کھیل"@ur, "テレビゲー� "@ja, "비디오 게임"@ko ;
+    rdfs:label "Videospiel"@de, "computerspil"@da, "físchluiche"@ga, "jeux vidéo"@fr, "video game"@en, "videojogo"@pt, "videojuego"@es, "videospel"@nl, "βιντεοπαιχνίδι"@el, "بصری کھیل"@ur, "テレビゲー� "@ja, "비디오 게임"@ko ;
     rdfs:subClassOf :Software ;
     owl:equivalentClass wikidata:Q7889 ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:VideoGame> .
@@ -7541,13 +7541,13 @@
 :VolleyballLeague
     a owl:Class ;
     rdfs:comment "A group of sports teams that compete against each other in volleyball."@en, "کھیلوں کی ٹیموں کا ایک گروپ جو والی بال میں ایک دوسرے سے مقابلہ کرتے ہیں"@ur ;
-    rdfs:label "Volleyball-Liga"@de, "ligue de volleyball"@fr, "volleybal competitie"@nl, "volleyball league"@en, "Ομοσπονδία � ετοσφαίρισης"@el, "والی بال کی انجمن"@ur ;
+    rdfs:label "Volleyball-Liga"@de, "ligue de volleyball"@fr, "volleybal competitie"@nl, "volleyball league"@en, "Ομοσπονδία � ετοσφαίρισης"@el, "والی بال کی انجمن"@ur ;
     rdfs:subClassOf :SportsLeague ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:VolleyballLeague> .
 
 :VolleyballPlayer
     a owl:Class ;
-    rdfs:label "Volleyballspieler"@de, "joueur de volleyball"@fr, "siatkarz"@pl, "volleyball player"@en, "volleyballer"@nl, "παίχτης βόλεϊ"@el, "والی بال کاکھلاڑی"@ur, "배구 � 수"@ko ;
+    rdfs:label "Volleyballspieler"@de, "joueur de volleyball"@fr, "siatkarz"@pl, "volleyball player"@en, "volleyballer"@nl, "παίχτης βόλεϊ"@el, "والی بال کاکھلاڑی"@ur, "배구 � 수"@ko ;
     rdfs:subClassOf :Athlete ;
     owl:equivalentClass wikidata:Q15117302 ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:VolleyballPlayer> .
@@ -7567,7 +7567,7 @@
 
 :WaterTower
     a owl:Class ;
-    rdfs:comment "a construction designed to store larger quantities of water at a place of some elevation in order to keep pressure on the water provision system"@en, "une construction destinée �  entreposer l'eau, et placée en général sur un sommet géographique pour permettre de la distribuer sous pression"@fr, "μια κατασκευή σχεδιασμένη για αποθήκευση μεγάλων ποσοτήτων νερού σε μέρος με κάποια ανύψωση, ώστε να διατηρήσει πίεση στο σύστημα παροχής νερού"@el, "پانی کی فراہمی کے نظام پر دباؤ برقرار رکھنے کے لیے کچھ بلندی کی جگہ پر پانی کی بڑی مقدار کو ذخیرہ کرنے کے لیے ڈیزائن کیا گیا ایک تعمیر"@ur ;
+    rdfs:comment "a construction designed to store larger quantities of water at a place of some elevation in order to keep pressure on the water provision system"@en, "une construction destinée �  entreposer l'eau, et placée en général sur un sommet géographique pour permettre de la distribuer sous pression"@fr, "μια κατασκευή σχεδιασμένη για αποθήκευση μεγάλων ποσοτήτων νερού σε μέρος με κάποια ανύψωση, ώστε να διατηρήσει πίεση στο σύστημα παροχής νερού"@el, "پانی کی فراہمی کے نظام پر دباؤ برقرار رکھنے کے لیے کچھ بلندی کی جگہ پر پانی کی بڑی مقدار کو ذخیرہ کرنے کے لیے ڈیزائن کیا گیا ایک تعمیر"@ur ;
     rdfs:label "Château d'eau"@fr, "Serbatoio idrico a torre"@it, "Wasserturm"@de, "Water tower"@en, "Watertoren"@nl, "πύργος νερού"@el, "بُرج آب"@ur ;
     rdfs:subClassOf :Tower ;
     owl:equivalentClass wikidata:Q274153 ;
@@ -7576,7 +7576,7 @@
 :Watermill
     a owl:Class ;
     rdfs:comment "A watermill is a structure that uses a water wheel or turbine to drive a mechanical process such as flour, lumber or textile production, or metal shaping (rolling, grinding or wire drawing)"@en, "واٹر مل ایک ایسا ڈھانچہ ہے جو پانی کے پہیے یا ٹربائن کا استعمال مکینیکل عمل کو چلانے کے لیے کرتا ہے جیسے آٹا، لکڑی یا ٹیکسٹائل کی پیداوار، یا دھات کی تشکیل (رولنگ، پیسنا یا تار ڈرائنگ)"@ur ;
-    rdfs:label "Moulin �  eau"@fr, "Wassermühle"@de, "Watermill"@en, "Watermolen"@nl, "muileann uisce"@ga, "mulino ad acqua"@it, "Νερόμυλος"@el, "پن چکی"@ur, "水車小屋"@ja ;
+    rdfs:label "Moulin �  eau"@fr, "Wassermühle"@de, "Watermill"@en, "Watermolen"@nl, "muileann uisce"@ga, "mulino ad acqua"@it, "Νερόμυλος"@el, "پن چکی"@ur, "水車小屋"@ja ;
     rdfs:subClassOf :Mill ;
     owl:equivalentClass wikidata:Q185187 ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:Watermill> .
@@ -7649,8 +7649,8 @@
 
 :Windmill
     a owl:Class ;
-    rdfs:comment "A windmill is a machine that converts the energy of wind into rotational energy by means of vanes called sails"@en, "Le moulin �  vent est un dispositif qui transforme l’énergie éolienne (énergie cinétique du vent) en mouvement rotatif au moyen d’ailes ajustables."@fr, "ہوا کی چکی ایک مشین ہے جو ہوا کی توانائی کو سیل نامی وینز کے ذریعے گردشی توانائی میں تبدیل کرتی ہے"@ur ;
-    rdfs:label "Molinos de viento"@es, "Windmill"@en, "Windmolen"@nl, "Windmühle"@de, "moulin �  vent"@fr, "muileann gaoithe"@ga, "mulino a vento"@it, "vindmølle"@da, "Ανεμόμυλος"@el, "ہوا کی چکی"@ur, "風車"@ja ;
+    rdfs:comment "A windmill is a machine that converts the energy of wind into rotational energy by means of vanes called sails"@en, "Le moulin �  vent est un dispositif qui transforme l’énergie éolienne (énergie cinétique du vent) en mouvement rotatif au moyen d’ailes ajustables."@fr, "ہوا کی چکی ایک مشین ہے جو ہوا کی توانائی کو سیل نامی وینز کے ذریعے گردشی توانائی میں تبدیل کرتی ہے"@ur ;
+    rdfs:label "Molinos de viento"@es, "Windmill"@en, "Windmolen"@nl, "Windmühle"@de, "moulin �  vent"@fr, "muileann gaoithe"@ga, "mulino a vento"@it, "vindmølle"@da, "Ανεμόμυλος"@el, "ہوا کی چکی"@ur, "風車"@ja ;
     rdfs:subClassOf :Mill ;
     owl:equivalentClass wikidata:Q38720 ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:Windmill> .
@@ -7719,7 +7719,7 @@
 :WorldHeritageSite
     a owl:Class ;
     rdfs:comment "A UNESCO World Heritage Site is a site (such as a forest, mountain, lake, desert, monument, building, complex, or city) that is on the list that is maintained by the international World Heritage Programme administered by the UNESCO World Heritage Committee, composed of 21 state parties which are elected by their General Assembly for a four-year term. A World Heritage Site is a place of either cultural or physical significance."@en, "یونیسکو کی عالمی ثقافتی ورثہ سائٹ ایک ایسی جگہ ہے (جیسے جنگل، پہاڑ، جھیل، صحرا، یادگار، عمارت، کمپلیکس، یا شہر) جو اس فہرست میں شامل ہے جسے یونیسکو کی عالمی ثقافتی ورثہ کمیٹی کے زیر انتظام بین الاقوامی عالمی ثقافتی ورثہ پروگرام کے ذریعے برقرار رکھا جاتا ہے۔ 21 ریاستی پارٹیوں پر مشتمل ہے جنہیں ان کی جنرل اسمبلی چار سال کی مدت کے لیے منتخب کرتی ہے۔ عالمی ثقافتی ورثہ کی جگہ ثقافتی یا جسمانی اہمیت کی حامل جگہ ہے"@ur ;
-    rdfs:label "Láithreán Oidhreachta Domhanda"@ga, "Weltkulturerbe"@de, "World Heritage Site"@en, "site du patrimoine mondial"@fr, "werelderfgoed"@nl, "Μνημείο � αγκόσμιας � ολιτιστικής Κληρονομιάς (� ληροφορίες � � Κ)"@el, "عالمی ثقافتی ورثہ"@ur, "世界遺産"@ja, "세계� 산"@ko ;
+    rdfs:label "Láithreán Oidhreachta Domhanda"@ga, "Weltkulturerbe"@de, "World Heritage Site"@en, "site du patrimoine mondial"@fr, "werelderfgoed"@nl, "Μνημείο � αγκόσμιας � ολιτιστικής Κληρονομιάς (� ληροφορίες � � Κ)"@el, "عالمی ثقافتی ورثہ"@ur, "世界遺産"@ja, "세계� 산"@ko ;
     rdfs:subClassOf :Place ;
     owl:equivalentClass wikidata:Q9259 ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:WorldHeritageSite> .
@@ -7746,7 +7746,7 @@
 
 :WrittenWork
     a owl:Class ;
-    rdfs:comment "Ein geschriebenes Erzeugnis ist jede Art von Text der geschrieben wurde um ihn zu lesen (z.B. Bücher, Zeitungen, Artikel)."@de, "Un travail écrit est tout texte écrit destiné �  être lu (ex. : livres, journaux, articles, document)"@fr, "Written work is any text written to read it (e.g.: books, newspaper, articles)"@en, "تحریری کام کسی بھی متن کو پڑھنے کے لیے لکھا جاتا ہے (مثال کے طور پر: کتابیں ، اخبار ، مضامین)"@ur ;
+    rdfs:comment "Ein geschriebenes Erzeugnis ist jede Art von Text der geschrieben wurde um ihn zu lesen (z.B. Bücher, Zeitungen, Artikel)."@de, "Un travail écrit est tout texte écrit destiné �  être lu (ex. : livres, journaux, articles, document)"@fr, "Written work is any text written to read it (e.g.: books, newspaper, articles)"@en, "تحریری کام کسی بھی متن کو پڑھنے کے لیے لکھا جاتا ہے (مثال کے طور پر: کتابیں ، اخبار ، مضامین)"@ur ;
     rdfs:label "geschreven werk"@nl, "geschriebenes Erzeugnis"@de, "obair scríofa"@ga, "obra escrita"@es, "skriftligt værk"@da, "travail écrit"@fr, "written work"@en, "تحریری کام"@ur ;
     rdfs:subClassOf :Work ;
     owl:equivalentClass wikidata:Q234460 ;
@@ -7832,7 +7832,7 @@
 
 :abstract
     a rdf:Property, owl:DatatypeProperty ;
-    rdfs:comment "Reserved for DBpedia."@en, "� ροορίζεται για την DBpedia."@el ;
+    rdfs:comment "Reserved for DBpedia."@en, "� ροορίζεται για την DBpedia."@el ;
     rdfs:label "abstract"@de, "has abstract"@en, "έχει περίληψη"@el, "апстракт"@sr, "خلاصہ"@ur ;
     rdfs:range rdf:langString ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyProperty:abstract> .
@@ -8490,7 +8490,7 @@
 
 :alternativeTitle
     a rdf:Property, owl:DatatypeProperty ;
-    rdfs:comment "Autre titre attribué �  une oeuvre"@fr, "The alternative title attributed to a work"@en ;
+    rdfs:comment "Autre titre attribué �  une oeuvre"@fr, "The alternative title attributed to a work"@en ;
     rdfs:domain :Work ;
     rdfs:label "alternatieve titel"@nl, "alternative title"@en, "alternativer Titel"@de, "autre titre"@fr, "алтернативни наслов"@sr ;
     rdfs:range rdf:langString ;
@@ -8849,7 +8849,7 @@
 :areaOfSearch
     a rdf:Property, owl:ObjectProperty ;
     rdfs:domain :SiteOfSpecialScientificInterest ;
-    rdfs:label "Suchgebiet"@de, "area of search"@en, "� εριοχή Αναζήτησης"@el ;
+    rdfs:label "Suchgebiet"@de, "area of search"@en, "� εριοχή Αναζήτησης"@el ;
     rdfs:range :PopulatedPlace ;
     rdfs:subPropertyOf dul:hasLocation ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyProperty:areaOfSearch> .
@@ -9043,7 +9043,7 @@
 
 :assets
     a rdf:Property, owl:DatatypeProperty ;
-    rdfs:comment "Assets and liabilities are part of a companis balance sheet. In financial accounting, assets are economic resources. Anything tangible or intangible that is capable of being owned or controlled to produce value and that is held to have positive economic value is considered an asset."@en, "� εριουσιακά στοιχεία και υποχρεώσεις αποτελούν μέρος του ισολογισμού μιας εταιρείας.Σε χρηματοοικονομική λογιστική,τα περιουσιακά στοιχεία είναι οι οικονομικοί πόροι. Οτιδήποτε ενσώματο ή άυλο, που είναι ικανό να ανήκει ή να ελέγχεται για να παράγει αξία και που κατέχεται για να έχει θετική οικονομική αξία θεωρείται ένα περιουσιακό στοιχείο."@el, "اثاثے اور واجبات کمپنی کی بیلنس شیٹ کا حصہ ہیں۔ مالیاتی اکاؤنٹنگ میں، اثاثے اقتصادی وسائل ہیں۔ کوئی بھی ٹھوس یا غیر محسوس چیز جو قدر پیدا کرنے کے لیے ملکیت یا کنٹرول کرنے کے قابل ہو اور جس کی مثبت اقتصادی قدر ہو اسے اثاثہ سمجھا جاتا ہے۔"@ur ;
+    rdfs:comment "Assets and liabilities are part of a companis balance sheet. In financial accounting, assets are economic resources. Anything tangible or intangible that is capable of being owned or controlled to produce value and that is held to have positive economic value is considered an asset."@en, "� εριουσιακά στοιχεία και υποχρεώσεις αποτελούν μέρος του ισολογισμού μιας εταιρείας.Σε χρηματοοικονομική λογιστική,τα περιουσιακά στοιχεία είναι οι οικονομικοί πόροι. Οτιδήποτε ενσώματο ή άυλο, που είναι ικανό να ανήκει ή να ελέγχεται για να παράγει αξία και που κατέχεται για να έχει θετική οικονομική αξία θεωρείται ένα περιουσιακό στοιχείο."@el, "اثاثے اور واجبات کمپنی کی بیلنس شیٹ کا حصہ ہیں۔ مالیاتی اکاؤنٹنگ میں، اثاثے اقتصادی وسائل ہیں۔ کوئی بھی ٹھوس یا غیر محسوس چیز جو قدر پیدا کرنے کے لیے ملکیت یا کنٹرول کرنے کے قابل ہو اور جس کی مثبت اقتصادی قدر ہو اسے اثاثہ سمجھا جاتا ہے۔"@ur ;
     rdfs:domain :Company ;
     rdfs:label "Aktiva ($)"@de, "assets ($)"@en, "περιουσιακά στοιχεία ($)"@el, "اثاثے ($)"@ur ;
     rdfs:range xsd:double ;
@@ -9118,7 +9118,7 @@
 
 :astrazenca
     a rdf:Property, owl:DatatypeProperty ;
-    rdfs:comment "AstraZeneca plc est une multinationale pharmaceutique et biotechnologique anglo-suédoise dont le siège social est situé au Cambridge Biomedical Campus �  Cambridge, en Angleterre."@fr, "AstraZeneca plc is a British-Swedish multinational pharmaceutical and biotechnology company with its headquarters at the Cambridge Biomedical Campus in Cambridge, England."@en, "阿斯利康制药公司，是一家由瑞典阿斯特公司（Astra AB）和英国捷利康公司（Zeneca Group PLC）于1999年4月6日合并而成的大型英瑞合资生物制药企业"@zh ;
+    rdfs:comment "AstraZeneca plc est une multinationale pharmaceutique et biotechnologique anglo-suédoise dont le siège social est situé au Cambridge Biomedical Campus �  Cambridge, en Angleterre."@fr, "AstraZeneca plc is a British-Swedish multinational pharmaceutical and biotechnology company with its headquarters at the Cambridge Biomedical Campus in Cambridge, England."@en, "阿斯利康制药公司，是一家由瑞典阿斯特公司（Astra AB）和英国捷利康公司（Zeneca Group PLC）于1999年4月6日合并而成的大型英瑞合资生物制药企业"@zh ;
     rdfs:label "Astrazenca"@en, "Astrazenca"@fr, "阿斯利康制药"@zh ;
     rdfs:range xsd:string ;
     owl:equivalentProperty :vaccine ;
@@ -9631,7 +9631,7 @@
 
 :binomial
     a rdf:Property, owl:ObjectProperty ;
-    rdfs:comment "sert �  nommer les espèces avec un nom composé de deux mots."@fr, "used to name species with a name consisting of two words."@en ;
+    rdfs:comment "sert �  nommer les espèces avec un nom composé de deux mots."@fr, "used to name species with a name consisting of two words."@en ;
     rdfs:domain :Species ;
     rdfs:label "Doppelbenennung"@de, "binomial"@en, "binomial"@fr, "διωνυμικός"@el, "学名"@ja ;
     rdfs:subPropertyOf dul:sameSettingAs ;
@@ -9814,7 +9814,7 @@
 :board
     a rdf:Property, owl:ObjectProperty ;
     rdfs:domain :Person ;
-    rdfs:label "bestuur"@nl, "board"@en, "επιβιβάζομαι"@el, "取� 役会"@ja ;
+    rdfs:label "bestuur"@nl, "board"@en, "επιβιβάζομαι"@el, "取� 役会"@ja ;
     rdfs:subPropertyOf dul:isMemberOf ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyProperty:board> .
 
@@ -10024,7 +10024,7 @@
 
 :broadcastRepeater
     a rdf:Property, owl:DatatypeProperty ;
-    rdfs:comment "A repeater is an electronic device that receives a signal and retransmits it at a higher level and/or higher power, or onto the other side of an obstruction, so that the signal can cover longer distances (http://en.wikipedia.org/wiki/Repeater)."@en, "Un répéteur est un équipement électronique qui reçoit un signal et le retransmet avec un niveau supérieur et/ou �  une puissance plus grande, ou après un obstacle de sorte �  ce que le signal puisse couvrir des distances plus grandes  (https://fr.wikipedia.org/wiki/Répéteur)."@fr ;
+    rdfs:comment "A repeater is an electronic device that receives a signal and retransmits it at a higher level and/or higher power, or onto the other side of an obstruction, so that the signal can cover longer distances (http://en.wikipedia.org/wiki/Repeater)."@en, "Un répéteur est un équipement électronique qui reçoit un signal et le retransmet avec un niveau supérieur et/ou �  une puissance plus grande, ou après un obstacle de sorte �  ce que le signal puisse couvrir des distances plus grandes  (https://fr.wikipedia.org/wiki/Répéteur)."@fr ;
     rdfs:domain :Broadcaster ;
     rdfs:label "broadcast repeater"@en, "répéteur de diffusion"@fr, "επαναληπτική αναμετάδοση"@el ;
     rdfs:range xsd:string ;
@@ -10189,7 +10189,7 @@
 
 :campus
     a rdf:Property, owl:ObjectProperty ;
-    rdfs:comment "Campus means any urban complex that offers residential, teaching and research facilities to the students of a university."@en, "Tout complexe urbain qui offre des installations résidentielles, d'enseignement et de recherche aux étudiants d'une université."@fr, "� ανεπιστημιούπολη εννοείται κάθε πολεοδομικό συγκρότημα που προσφέρει οικιστικές, διδακτικές και ερευνητικές διευκολύνσεις στους φοιτητές ενός πανεπιστημίου."@el, "جامع کا علقه کا مطلب ہے کوئی بھی شہری جامع کا علقه جو جامع کے طلباء کو رہائشی، تدریسی اور تحقیقی سہولیات فراہم کرتا ہے۔"@ur ;
+    rdfs:comment "Campus means any urban complex that offers residential, teaching and research facilities to the students of a university."@en, "Tout complexe urbain qui offre des installations résidentielles, d'enseignement et de recherche aux étudiants d'une université."@fr, "� ανεπιστημιούπολη εννοείται κάθε πολεοδομικό συγκρότημα που προσφέρει οικιστικές, διδακτικές και ερευνητικές διευκολύνσεις στους φοιτητές ενός πανεπιστημίου."@el, "جامع کا علقه کا مطلب ہے کوئی بھی شہری جامع کا علقه جو جامع کے طلباء کو رہائشی، تدریسی اور تحقیقی سہولیات فراہم کرتا ہے۔"@ur ;
     rdfs:domain :University ;
     rdfs:label "Campus"@de, "campus"@en, "campus"@fr, "πανεπιστημιούπολη"@el, "جامع کا علقه"@ur ;
     rdfs:subPropertyOf dul:hasLocation ;
@@ -10508,7 +10508,7 @@
 
 :ceiling
     a rdf:Property, owl:DatatypeProperty ;
-    rdfs:comment "Distance maximale jusqu'�  la surface de la terre, exprimé en kilomètres"@fr, "Maximum distance to the earth surface, to be expressed in kilometers"@en ;
+    rdfs:comment "Distance maximale jusqu'�  la surface de la terre, exprimé en kilomètres"@fr, "Maximum distance to the earth surface, to be expressed in kilometers"@en ;
     rdfs:domain :Aircraft ;
     rdfs:label "ceiling"@en, "dienstplafond"@nl, "plafond"@fr ;
     rdfs:range xsd:positiveInteger ;
@@ -10600,7 +10600,7 @@
 
 :chain
     a rdf:Property, owl:ObjectProperty ;
-    rdfs:comment "Chaîne (commerciale) �  laquelle cette instance est associée."@fr, "The (business) chain this instance is associated with."@en ;
+    rdfs:comment "Chaîne (commerciale) �  laquelle cette instance est associée."@fr, "The (business) chain this instance is associated with."@en ;
     rdfs:label "Kette"@de, "chaîne"@en, "αλυσίδα"@el ;
     rdfs:range :Company ;
     rdfs:subPropertyOf dul:isMemberOf ;
@@ -10956,14 +10956,14 @@
 
 :classification
     a rdf:Property, owl:DatatypeProperty ;
-    rdfs:comment "Any string representing a class or category this thing is assigned to."@en, "Toute chaîne de caractères représentant une classe ou une catégorie �  laquelle cette chose est assignée."@fr ;
+    rdfs:comment "Any string representing a class or category this thing is assigned to."@en, "Toute chaîne de caractères représentant une classe ou une catégorie �  laquelle cette chose est assignée."@fr ;
     rdfs:label "categorie"@nl, "catégorie"@de, "classification"@en ;
     rdfs:range xsd:string ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyProperty:classification> .
 
 :classis
     a rdf:Property, owl:ObjectProperty ;
-    rdfs:comment "Troisième niveau de la classification classique (c’est-� -dire n’utilisant pas la notion de distance génétique) des espèces vivantes (voir systématique)."@fr, "the living thing class (from the Latin \"classis\"), according to the biological taxonomy"@en ;
+    rdfs:comment "Troisième niveau de la classification classique (c’est-� -dire n’utilisant pas la notion de distance génétique) des espèces vivantes (voir systématique)."@fr, "the living thing class (from the Latin \"classis\"), according to the biological taxonomy"@en ;
     rdfs:domain :Species ;
     rdfs:label "clase (biología)"@es, "classe (biologie)"@fr, "classis"@en, "klasse"@nl, "綱_(分類学)"@ja ;
     owl:equivalentProperty wikidata:P77 ;
@@ -10987,7 +10987,7 @@
     a rdf:Property, owl:ObjectProperty ;
     rdfs:comment "lieu proche d'un autre."@fr, "place close to another place"@en ;
     rdfs:domain :Place ;
-    rdfs:label "is close to"@en, "�  côté de"@fr ;
+    rdfs:label "is close to"@en, "�  côté de"@fr ;
     rdfs:range :Place ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyProperty:closeTo> .
 
@@ -11151,7 +11151,7 @@
 
 :coalition
     a rdf:Property, owl:DatatypeProperty ;
-    rdfs:comment "� αλαιότερα ο συνασπισμός χρησιμοποιούνταν ως στρατιωτικός όρος που υποδήλωνε την όμορη παράταξη πολεμιστών κατά την οποία ο κάθε στρατιώτης προφύλασσε τον διπλανό του με την ασπίδα του."@el ;
+    rdfs:comment "� αλαιότερα ο συνασπισμός χρησιμοποιούνταν ως στρατιωτικός όρος που υποδήλωνε την όμορη παράταξη πολεμιστών κατά την οποία ο κάθε στρατιώτης προφύλασσε τον διπλανό του με την ασπίδα του."@el ;
     rdfs:domain :Person ;
     rdfs:label "Koalition"@de, "coalition"@en, "συνασπισμός"@el ;
     rdfs:range xsd:string ;
@@ -12194,7 +12194,7 @@
 :currentTeam
     a rdf:Property, owl:ObjectProperty ;
     rdfs:domain :Athlete ;
-    rdfs:label "aktuelle Mannschaft"@de, "current team"@en, "所属チー� "@ja ;
+    rdfs:label "aktuelle Mannschaft"@de, "current team"@en, "所属チー� "@ja ;
     rdfs:range :SportsTeam ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyProperty:currentTeam> .
 
@@ -12669,7 +12669,7 @@
 
 :demolitionDate
     a rdf:Property, owl:DatatypeProperty ;
-    rdfs:comment "Date �  laquelle l'immeuble a été démoli."@fr, "The date the building was demolished."@en, "جس تاریخ کو عمارت گرائی گئی۔"@ur ;
+    rdfs:comment "Date �  laquelle l'immeuble a été démoli."@fr, "The date the building was demolished."@en, "جس تاریخ کو عمارت گرائی گئی۔"@ur ;
     rdfs:domain :ArchitecturalStructure ;
     rdfs:label "date de démolition"@fr, "demolition date"@en, "ημερομηνία κατεδάφισης"@el, "انہدام کی تاریخ"@ur ;
     rdfs:range xsd:date ;
@@ -12699,7 +12699,7 @@
 
 :density
     a rdf:Property, owl:DatatypeProperty ;
-    rdfs:label "Dichte (μ3)"@de, "densidade (μ3)"@pt, "density (μ3)"@en, "densit�  (μ3)"@it, "densité (μ3)"@fr, "πυκνότητα (μ3)"@el, "密度 (μ3)"@ja ;
+    rdfs:label "Dichte (μ3)"@de, "densidade (μ3)"@pt, "density (μ3)"@en, "densit�  (μ3)"@it, "densité (μ3)"@fr, "πυκνότητα (μ3)"@el, "密度 (μ3)"@ja ;
     rdfs:range xsd:double ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyProperty:density> .
 
@@ -13111,7 +13111,7 @@
 :distanceToNearestCity
     a rdf:Property, owl:DatatypeProperty ;
     rdfs:domain :Settlement ;
-    rdfs:label "distance to nearest city (μ)"@en, "distance �  la ville la plus proche (μ)"@fr, "vzdálenost k nejbližšímu městu (μ)"@cs ;
+    rdfs:label "distance to nearest city (μ)"@en, "distance �  la ville la plus proche (μ)"@fr, "vzdálenost k nejbližšímu městu (μ)"@cs ;
     rdfs:range xsd:double ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyProperty:distanceToNearestCity> .
 
@@ -13460,9 +13460,9 @@
 
 :eastPlace
     a rdf:Property, owl:ObjectProperty ;
-    rdfs:comment "indicates another place situated east."@en, "indique un autre lieu situé �  l'est."@fr ;
+    rdfs:comment "indicates another place situated east."@en, "indique un autre lieu situé �  l'est."@fr ;
     rdfs:domain :Place ;
-    rdfs:label "east place"@en, "lieu �  l'est"@fr ;
+    rdfs:label "east place"@en, "lieu �  l'est"@fr ;
     rdfs:range :Place ;
     rdfs:subPropertyOf :closeTo ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyProperty:eastPlace> .
@@ -14036,7 +14036,7 @@
 
 :eventDescription
     a rdf:Property, owl:DatatypeProperty ;
-    rdfs:comment "Sert �  décrire l'événement qui s'est passé ici (dans le cas où il n'y a pas de ressource liée d'événement)"@fr, "This is to describe the event that hapened here (in case there is no event resource to be linked to)"@en ;
+    rdfs:comment "Sert �  décrire l'événement qui s'est passé ici (dans le cas où il n'y a pas de ressource liée d'événement)"@fr, "This is to describe the event that hapened here (in case there is no event resource to be linked to)"@en ;
     rdfs:domain :HistoricPlace ;
     rdfs:label "beschrijving gebeurtenis"@nl, "description de l'événement"@fr, "event description"@en ;
     rdfs:range xsd:string ;
@@ -14059,7 +14059,7 @@
 
 :exhibition
     a rdf:Property, owl:DatatypeProperty ;
-    rdfs:comment "Notes about an exhibition the object has been to"@en, "Notes relatives �  l'exposition dont l'objet a fait partie"@fr ;
+    rdfs:comment "Notes about an exhibition the object has been to"@en, "Notes relatives �  l'exposition dont l'objet a fait partie"@fr ;
     rdfs:label "exhibition"@en, "exposition"@fr ;
     rdfs:range xsd:string ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyProperty:exhibition> .
@@ -14182,7 +14182,7 @@
 
 :fareZone
     a rdf:Property, owl:DatatypeProperty ;
-    rdfs:comment "Die Tarifzone zu der die Station gehört."@de, "The fare zone in which station is located."@en, "Zone de tarification �  laquelle appartient la gare."@fr ;
+    rdfs:comment "Die Tarifzone zu der die Station gehört."@de, "The fare zone in which station is located."@en, "Zone de tarification �  laquelle appartient la gare."@fr ;
     rdfs:domain :Station ;
     rdfs:label "Tarifzone"@de, "fare zone"@en, "zone de tarification"@fr ;
     rdfs:range xsd:string ;
@@ -15144,7 +15144,7 @@
 :frequentlyUpdated
     a rdf:Property, owl:DatatypeProperty ;
     rdfs:domain :Software ;
-    rdfs:label "frequently updated"@en, "häufig aktualisiert"@de, "mise �  jour fréquente"@fr ;
+    rdfs:label "frequently updated"@en, "häufig aktualisiert"@de, "mise �  jour fréquente"@fr ;
     rdfs:range xsd:string ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyProperty:frequentlyUpdated> .
 
@@ -15289,7 +15289,7 @@
     a rdf:Property, owl:ObjectProperty ;
     rdfs:comment "A game artist is an artist who creates art for one or more types of games. Game artists are responsible for all of the aspects of game development that call for visual art."@en ;
     rdfs:domain :VideoGame ;
-    rdfs:label "game artist"@en, "ゲー� デザイナー"@ja ;
+    rdfs:label "game artist"@en, "ゲー� デザイナー"@ja ;
     rdfs:range :Person ;
     rdfs:subPropertyOf dul:coparticipatesWith ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyProperty:gameArtist> .
@@ -15297,7 +15297,7 @@
 :gameEngine
     a rdf:Property, owl:ObjectProperty ;
     rdfs:domain :VideoGame ;
-    rdfs:label "Game Engine"@en, "ゲー� エンジン"@ja ;
+    rdfs:label "Game Engine"@en, "ゲー� エンジン"@ja ;
     rdfs:subPropertyOf dul:coparticipatesWith ;
     owl:equivalentProperty wikidata:P408 ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyProperty:gameEngine> .
@@ -15325,9 +15325,9 @@
 
 :gasChambers
     a rdf:Property, owl:DatatypeProperty ;
-    rdfs:comment "Nombre ou description des chambres �  gaz d'un camp de concentration"@fr, "Number or description of gas chambers of a ConcentrationCamp"@en ;
+    rdfs:comment "Nombre ou description des chambres �  gaz d'un camp de concentration"@fr, "Number or description of gas chambers of a ConcentrationCamp"@en ;
     rdfs:domain :ConcentrationCamp ;
-    rdfs:label "chambres �  gaz"@fr, "gas chambers"@en ;
+    rdfs:label "chambres �  gaz"@fr, "gas chambers"@en ;
     rdfs:range xsd:string ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyProperty:gasChambers> .
 
@@ -15885,7 +15885,7 @@
 :gun
     a rdf:Property, owl:DatatypeProperty ;
     rdfs:domain :Aircraft ;
-    rdfs:label "Flugabwehrkanone"@de, "aircraft gun"@en, "� ολυβόλο"@el ;
+    rdfs:label "Flugabwehrkanone"@de, "aircraft gun"@en, "� ολυβόλο"@el ;
     rdfs:range xsd:string ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyProperty:gun> .
 
@@ -15972,7 +15972,7 @@
 
 :hasInsidePlace
     a rdf:Property, owl:ObjectProperty ;
-    rdfs:comment "indicates another place situated inside."@en, "indique un autre lieu situé �  l'intérieur."@fr ;
+    rdfs:comment "indicates another place situated inside."@en, "indique un autre lieu situé �  l'intérieur."@fr ;
     rdfs:domain :Place ;
     rdfs:label "a un lieu intérieur"@fr, "has inside place"@en ;
     rdfs:range :Place ;
@@ -16002,7 +16002,7 @@
 
 :hasOutsidePlace
     a rdf:Property, owl:ObjectProperty ;
-    rdfs:comment "indicates another place situated around outside."@en, "indique un autre lieu situé autour �  l'extérieur."@fr ;
+    rdfs:comment "indicates another place situated around outside."@en, "indique un autre lieu situé autour �  l'extérieur."@fr ;
     rdfs:domain :Place ;
     rdfs:label "a un lieu extérieur"@fr, "has outside place"@en ;
     rdfs:range :Place ;
@@ -16121,7 +16121,7 @@
 
 :heritageRegister
     a rdf:Property, owl:ObjectProperty ;
-    rdfs:comment "inscrit �  un inventaires dédiés �  la conservation du patrimoine, naturel ou culturel, existants dans le monde."@fr, "registered in a heritage register : inventory of cultural properties, natural and man-made, tangible and intangible, movable and immovable, that are deemed to be of sufficient heritage value to be separately identified and recorded."@en ;
+    rdfs:comment "inscrit �  un inventaires dédiés �  la conservation du patrimoine, naturel ou culturel, existants dans le monde."@fr, "registered in a heritage register : inventory of cultural properties, natural and man-made, tangible and intangible, movable and immovable, that are deemed to be of sufficient heritage value to be separately identified and recorded."@en ;
     rdfs:domain :Place ;
     rdfs:label "heritage register"@en, "inventaire du patrimoine"@fr ;
     rdfs:subPropertyOf dul:isMemberOf ;
@@ -17558,7 +17558,7 @@
 :lastSeason
     a rdf:Property, owl:DatatypeProperty ;
     rdfs:domain :FormulaOneRacer ;
-    rdfs:label "last season"@en, "� ροηγούμενη � ερίοδος"@el ;
+    rdfs:label "last season"@en, "� ροηγούμενη � ερίοδος"@el ;
     rdfs:range xsd:date ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyProperty:lastSeason> .
 
@@ -18573,7 +18573,7 @@
 :managerClub
     a rdf:Property, owl:ObjectProperty ;
     rdfs:domain :Athlete ;
-    rdfs:label "Clubmanager"@de, "manager club"@en, "監督チー� "@ja ;
+    rdfs:label "Clubmanager"@de, "manager club"@en, "監督チー� "@ja ;
     rdfs:range :SportsTeam ;
     rdfs:subPropertyOf dul:coparticipatesWith ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyProperty:managerClub> .
@@ -19015,7 +19015,7 @@
 
 :mentor
     a rdf:Property, owl:ObjectProperty ;
-    rdfs:comment "A wise and trusted counselor or teacher"@en, "Celui qui sert de guide, de conseiller �  quelqu’un."@fr ;
+    rdfs:comment "A wise and trusted counselor or teacher"@en, "Celui qui sert de guide, de conseiller �  quelqu’un."@fr ;
     rdfs:domain :Artist ;
     rdfs:label "Mentor"@de, "mentor"@en, "mentor"@fr ;
     rdfs:range :Artist ;
@@ -19360,7 +19360,7 @@
 
 :moderna
     a rdf:Property, owl:DatatypeProperty ;
-    rdfs:comment "Moderna, Inc et une compagnie américaine pharmaceutique et de biotechnologie basée �  Cambridge, Massachusetts."@fr, "Moderna, Inc is an American pharmaceutical and biotechnology company based in Cambridge, Massachusetts."@en, "莫德纳，是一家总部位于美国马萨诸塞州剑桥市的跨国制药、生物技术公司，专注于癌症免疫治疗，包括基于mRNA的药物发现、药物� �发和疫苗技术"@zh ;
+    rdfs:comment "Moderna, Inc et une compagnie américaine pharmaceutique et de biotechnologie basée �  Cambridge, Massachusetts."@fr, "Moderna, Inc is an American pharmaceutical and biotechnology company based in Cambridge, Massachusetts."@en, "莫德纳，是一家总部位于美国马萨诸塞州剑桥市的跨国制药、生物技术公司，专注于癌症免疫治疗，包括基于mRNA的药物发现、药物� �发和疫苗技术"@zh ;
     rdfs:label "Moderna"@en, "Moderna"@fr, "莫德纳"@zh ;
     rdfs:range xsd:string ;
     owl:equivalentProperty :vaccine ;
@@ -19368,7 +19368,7 @@
 
 :modernaCumul
     a rdf:Property, owl:DatatypeProperty ;
-    rdfs:comment "莫德纳，是一家总部位于美国马萨诸塞州剑桥市的跨国制药、生物技术公司，专注于癌症免疫治疗，包括基于mRNA的药物发现、药物� �发和疫苗技术"@en ;
+    rdfs:comment "莫德纳，是一家总部位于美国马萨诸塞州剑桥市的跨国制药、生物技术公司，专注于癌症免疫治疗，包括基于mRNA的药物发现、药物� �发和疫苗技术"@en ;
     rdfs:label "ModernaCumulativeDoses"@en ;
     rdfs:range xsd:integer ;
     owl:equivalentProperty :moderna ;
@@ -21705,7 +21705,7 @@ Domain is unrestricted since Organization is Agent but City is Place. Range is u
 :orbitalPeriod
     a rdf:Property, owl:DatatypeProperty ;
     rdfs:domain :Planet ;
-    rdfs:label "Umlaufzeit (s)"@de, "orbital period (s)"@en, "� ερίοδος περιφοράς (s)"@el ;
+    rdfs:label "Umlaufzeit (s)"@de, "orbital period (s)"@en, "� ερίοδος περιφοράς (s)"@el ;
     rdfs:range xsd:double ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyProperty:orbitalPeriod> .
 
@@ -22591,7 +22591,7 @@ Domain is unrestricted since Organization is Agent but City is Place. Range is u
 
 :pfizer
     a rdf:Property, owl:DatatypeProperty ;
-    rdfs:comment "American multinational pharmaceutical corporation the COVID-19 vaccine Pfizer–BioNTech COVID-19 vaccine"@en, "Corporation pharmaceutique multinationale américaine, vaccin contre le COVID-19, vaccin Pfizer–BioNTech COVID-19"@fr, "辉瑞是源自美国的跨国制药、生物技术公司，营运总部位于纽约，� �发总部位于康涅狄� �州的� �罗顿市"@zh ;
+    rdfs:comment "American multinational pharmaceutical corporation the COVID-19 vaccine Pfizer–BioNTech COVID-19 vaccine"@en, "Corporation pharmaceutique multinationale américaine, vaccin contre le COVID-19, vaccin Pfizer–BioNTech COVID-19"@fr, "辉瑞是源自美国的跨国制药、生物技术公司，营运总部位于纽约，� �发总部位于康涅狄� �州的� �罗顿市"@zh ;
     rdfs:label "Pfizer"@en, "Pfizer"@fr, "辉瑞"@zh ;
     rdfs:range xsd:string ;
     owl:equivalentProperty :vaccine ;
@@ -22599,7 +22599,7 @@ Domain is unrestricted since Organization is Agent but City is Place. Range is u
 
 :pfizerCumul
     a rdf:Property, owl:DatatypeProperty ;
-    rdfs:comment "辉瑞是源自美国的跨国制药、生物技术公司，营运总部位于纽约，� �发总部位于康涅狄� �州的� �罗顿市"@en ;
+    rdfs:comment "辉瑞是源自美国的跨国制药、生物技术公司，营运总部位于纽约，� �发总部位于康涅狄� �州的� �罗顿市"@en ;
     rdfs:label "PfizerCumulativeDoses"@en ;
     rdfs:range xsd:integer ;
     owl:equivalentProperty :pfizer ;
@@ -24100,7 +24100,7 @@ Domain is unrestricted since Organization is Agent but City is Place. Range is u
 :recordedIn
     a rdf:Property, owl:ObjectProperty ;
     rdfs:domain :MusicalWork ;
-    rdfs:label "enregistré � "@fr, "opgenomen in"@nl, "recorded in"@en, "ηχογράφηση"@el ;
+    rdfs:label "enregistré � "@fr, "opgenomen in"@nl, "recorded in"@en, "ηχογράφηση"@el ;
     rdfs:range :PopulatedPlace ;
     rdfs:subPropertyOf dul:coparticipatesWith ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyProperty:recordedIn> .
@@ -27069,7 +27069,7 @@ http://www.idref.fr/$1"""@en ;
 
 :synonym
     a rdf:Property, owl:DatatypeProperty ;
-    rdfs:label "Synonym"@de, "synonym"@en, "synonyme"@fr, "συνώνυμο"@el, "シノニ� "@ja ;
+    rdfs:label "Synonym"@de, "synonym"@en, "synonyme"@fr, "συνώνυμο"@el, "シノニ� "@ja ;
     rdfs:range xsd:string ;
     owl:equivalentProperty wikidata:P5973 ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyProperty:synonym> .
@@ -27149,7 +27149,7 @@ http://www.idref.fr/$1"""@en ;
 
 :team
     a rdf:Property, owl:ObjectProperty ;
-    rdfs:label "Team"@de, "team"@en, "team"@nl, "équipe"@fr, "ομάδα"@el, "チー� "@ja ;
+    rdfs:label "Team"@de, "team"@en, "team"@nl, "équipe"@fr, "ομάδα"@el, "チー� "@ja ;
     rdfs:range :SportsTeam ;
     rdfs:subPropertyOf dul:isSettingFor ;
     owl:equivalentProperty wikidata:P54 ;
@@ -27401,7 +27401,7 @@ http://www.idref.fr/$1"""@en ;
 :timeZone
     a rdf:Property, owl:ObjectProperty ;
     rdfs:domain :Place ;
-    rdfs:label "Zeitzone"@de, "fuseau horaire"@fr, "fuso horario"@pt, "huso horario"@es, "strefa czasowa"@pl, "tijdzone"@nl, "time zone"@en, "zona hor� ria"@ca, "ζώνη_ώρας1"@el ;
+    rdfs:label "Zeitzone"@de, "fuseau horaire"@fr, "fuso horario"@pt, "huso horario"@es, "strefa czasowa"@pl, "tijdzone"@nl, "time zone"@en, "zona hor� ria"@ca, "ζώνη_ώρας1"@el ;
     rdfs:subPropertyOf dul:sameSettingAs ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyProperty:timeZone> .
 
@@ -28481,9 +28481,9 @@ http://vocab.getty.edu/ulan/$1"""@en ;
 
 :westPlace
     a rdf:Property, owl:ObjectProperty ;
-    rdfs:comment "indicates another place situated west."@en, "indique un autre lieu situé �  l'ouest."@fr ;
+    rdfs:comment "indicates another place situated west."@en, "indique un autre lieu situé �  l'ouest."@fr ;
     rdfs:domain :Place ;
-    rdfs:label "lieu �  l'ouest"@fr, "west place"@en ;
+    rdfs:label "lieu �  l'ouest"@fr, "west place"@en ;
     rdfs:range :Place ;
     rdfs:subPropertyOf :closeTo ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyProperty:westPlace> .
@@ -28646,7 +28646,7 @@ http://vocab.getty.edu/ulan/$1"""@en ;
 
 :wikiPageUsesTemplate
     a rdf:Property, owl:ObjectProperty ;
-    rdfs:comment "DO NOT USE THIS PROPERTY! For internal use only."@en, "NE PAS UTILISER CETTE PROPRIETE! Réservé �  l'usage interne uniquement."@fr ;
+    rdfs:comment "DO NOT USE THIS PROPERTY! For internal use only."@en, "NE PAS UTILISER CETTE PROPRIETE! Réservé �  l'usage interne uniquement."@fr ;
     rdfs:label "Wikiseite verwendet Template"@de, "page wiki transcluant un modèle"@fr, "wiki page uses template"@en ;
     rdfs:range :WikimediaTemplate ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyProperty:wikiPageUsesTemplate> .

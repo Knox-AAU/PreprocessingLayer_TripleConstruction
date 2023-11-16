@@ -8,4 +8,4 @@ You can also do it manually:
 `docker build -t server-image .`
 `docker run --name server-container -p 8000:8000 server-image`
 
-Use Postman to POST `exampleInput.json` to 0.0.0.0:8000
+Use Postman to POST `exampleInput.json` to 0.0.0.0:8000/tripleconstruction

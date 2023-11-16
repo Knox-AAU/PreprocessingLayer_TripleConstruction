@@ -1,28 +1,59 @@
 import unittest
 import requests
 from http.server import HTTPServer
-from threading import Thread
+from threading import Thread, Lock
 from server import PreProcessingHandler  
+import json
 
-# Import your server class
 
 PORT = 4201
+lock = Lock()
 
-def add_numbers(a, b):
-    return a + b
+class TestServerEndpoint(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        lock.acquire()
+        cls.server_thread = Thread(target=cls.start_server)
+        cls.server_thread.daemon = True
+        cls.server_thread.start()
 
-class TestServer(unittest.TestCase):
-    def test_add_positive_numbers(self):
-        result = add_numbers(2, 3)
-        self.assertEqual(result, 5)
+    @classmethod
+    def start_server(cls):
+        cls.server = HTTPServer(('localhost', PORT), PreProcessingHandler)
+        lock.release()
+        cls.server.serve_forever()
 
-    def test_add_negative_numbers(self):
-        result = add_numbers(-2, -3)
-        self.assertEqual(result, -5)
+    @classmethod
+    def tearDownClass(cls):
+        cls.server.shutdown()
+        cls.server.server_close()
 
-    def test_add_mixed_numbers(self):
-        result = add_numbers(2, -3)
-        self.assertEqual(result, -1)
+    def test_pre_processing_endpoint_with_valid_data(self):
+        while(lock.locked()):
+            pass
+
+        data = """[
+                    {
+                        "filename": "path/to/Artikel.txt",
+                        "language": "en",
+                        "sentences": [
+                            {
+                                "sentence": "Barrack Obama is married to Michelle Obama.",
+                                "sentenceStartIndex": 20,
+                                "sentenceEndIndex": 62,
+                                "entityMentions": 
+                                [
+                                    { "name": "Barrack Obama", "startIndex": 0, "endIndex": 12, "iri": "knox-kb01.srv.aau.dk/Barack_Obama" },
+                                    { "name": "Michelle Obama", "startIndex": 27, "endIndex": 40, "iri": "knox-kb01.srv.aau.dk/Michele_Obama" }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            """
+        jsonData = json.loads(data)
+        response = requests.post(f'http://localhost:{PORT}/tripleconstruction', json=jsonData)
+        self.assertEqual(response.status_code, 200)
 
 if __name__ == '__main__':
     unittest.main()

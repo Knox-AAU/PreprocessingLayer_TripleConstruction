@@ -43,11 +43,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v3
-
       - name: Build if test pass
         run: |
+          cd ..
           echo "Building project"
           python3 server/server.py
 

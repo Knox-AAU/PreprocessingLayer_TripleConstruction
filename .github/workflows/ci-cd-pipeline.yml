@@ -38,16 +38,14 @@ jobs:
           python -m unittest || exit 1
         #Run all test
 
-      - name: List contents of the directory
-        run: |
-          ls -R
-          ls -R server
-        working-directory: ${{ github.workspace }}
-
   build:
     needs: test
     runs-on: ubuntu-latest
+
     steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
       - name: Build if test pass
         run: |
           echo "Building project"

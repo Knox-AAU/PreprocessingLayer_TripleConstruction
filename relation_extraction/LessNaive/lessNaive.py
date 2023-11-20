@@ -67,7 +67,7 @@ def do_relation_extraction(data, ontology_relations):
     for key, val in sentences.items():
         relations.extend(val["relations"])
 
-    tuples = [(r["subject"], r["relation"], r["object"]) for r in relations]
+    tuples = [[r["subject"], r["relation"], r["object"]] for r in relations]
     format_output(tuples)
     return tuples
 

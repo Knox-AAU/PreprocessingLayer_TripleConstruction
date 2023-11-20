@@ -43,16 +43,16 @@ def find_best_triple(sentence, relations):
     dt = datetime.datetime.now()
     filtered_tokens = filter_tokens(sentence["tokens"], entity_mentions)
     #print(f"filter_tokens: {(datetime.datetime.now()-dt).total_seconds()}")
-    best_triple = ()
+    best_triple = []
     highest_similarity = 0
     dt = datetime.datetime.now()
     for token in filtered_tokens:
         result = find_best_match(token, relations)
         if result["similarity"] > highest_similarity and result["similarity"] > threshold: #Only supporting 2 entity mentions per sentence
             highest_similarity = result["similarity"]
-            best_triple = (entity_mentions[0]["name"], result["predicted_relation"], entity_mentions[1]["name"])
+            best_triple = [entity_mentions[0]["name"], result["predicted_relation"], entity_mentions[1]["name"]]
     if highest_similarity == 0:
-        best_triple = (entity_mentions[0]["name"], "---",entity_mentions[1]["name"])
+        best_triple = [entity_mentions[0]["name"], "---",entity_mentions[1]["name"]]
     #print(f"handle all tokens: {(datetime.datetime.now()-dt).total_seconds()}")
     return best_triple
 
@@ -80,7 +80,7 @@ def parse_data(data, relations):
 def main():
     relations = extract_specific_relations(ontology_file_path)
     # Opening JSON file
-    with open('inputSentences.json', 'r') as f:
+    with open('relation_extraction/inputSentences.json', 'r') as f:
         # returns JSON object as a dictionary 
         data = json.load(f)
     format_output(parse_data(data, relations))

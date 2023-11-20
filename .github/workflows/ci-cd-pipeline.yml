@@ -1,9 +1,6 @@
 name: ci-cd-pipeline
 
 on:
-  push:
-    branches: ["main", "**"]
-  # remove push when merge with main
   pull_request:
     branches: ["main"]
   workflow_dispatch:
@@ -58,9 +55,9 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Build if test pass
+      - name: Build both projects if test pass
         run: |
-          echo "Building project"	          
+          echo "Building projects"	          
           python3 relation_extraction/main.py
           python3 concept_linking/main.py
 

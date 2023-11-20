@@ -1,0 +1,133 @@
+{
+    "naive": {
+        "triples": [
+            {
+                "sentence": "Turn Me On is a 35.1 minute long album produced by Wharton Tiers that was followed by the album entitled Take it Off.",
+                "triples_from_solution": [
+                    [
+                        "Turn Me On",
+                        "album",
+                        "35.1"
+                    ]
+                ],
+                "expected_triples": [
+                    [
+                        "Turn Me On",
+                        "runtime",
+                        "35.1"
+                    ],
+                    [
+                        "Turn Me On",
+                        "producer",
+                        "Wharton Tiers"
+                    ],
+                    [
+                        "Turn Me On",
+                        "followedBy",
+                        "Take It Off!"
+                    ]
+                ],
+                "contains_hits": 0
+            },
+            {
+                "sentence": "The location of Trane is Swords, Dublin.",
+                "triples_from_solution": [
+                    [
+                        "Trane",
+                        "location",
+                        "Swords, Dublin"
+                    ]
+                ],
+                "expected_triples": [
+                    [
+                        "Trane",
+                        "location",
+                        "Swords, Dublin"
+                    ]
+                ],
+                "contains_hits": 1
+            },
+            {
+                "sentence": "The Ciudad Ayala city, a part of Morelos with population density and population of 1604.0 and 1,777,539 respectively, has a UTC offset of -6. The government type of Ciudad Ayala is council-manager government and City Manager is one of the leaders.",
+                "triples_from_solution": [
+                    [
+                        "Ciudad Ayala",
+                        "part",
+                        "1777539"
+                    ]
+                ],
+                "expected_triples": [
+                    [
+                        "Ciudad Ayala",
+                        "populationMetro",
+                        "1777539"
+                    ],
+                    [
+                        "Ciudad Ayala",
+                        "leaderTitle",
+                        "\"City Manager\""
+                    ],
+                    [
+                        "Ciudad Ayala",
+                        "type",
+                        "City"
+                    ],
+                    [
+                        "Ciudad Ayala",
+                        "populationDensity",
+                        "1604.0"
+                    ],
+                    [
+                        "Ciudad Ayala",
+                        "governmentType",
+                        "Council-manager government"
+                    ],
+                    [
+                        "Ciudad Ayala",
+                        "utcOffset",
+                        "\u22126"
+                    ],
+                    [
+                        "Ciudad Ayala",
+                        "isPartOf",
+                        "Morelos"
+                    ]
+                ],
+                "contains_hits": 0
+            },
+            {
+                "sentence": "The 17068.8 millimeter long ALCO RS-3 has a diesel-electric transmission.",
+                "triples_from_solution": [
+                    [
+                        "ALCO RS-3",
+                        "lounge",
+                        "Diesel-electric transmission"
+                    ]
+                ],
+                "expected_triples": [
+                    [
+                        "ALCO RS-3",
+                        "powerType",
+                        "Diesel-electric transmission"
+                    ],
+                    [
+                        "ALCO RS-3",
+                        "length",
+                        "17068.8"
+                    ]
+                ],
+                "contains_hits": 0
+            }
+        ],
+        "result": {
+            "total_expected_triples": 13,
+            "hits": 1,
+            "hit_percentage": 0.07692307692307693
+        },
+        "score": {
+            "precision": 0.25,
+            "recall": 0.07692307692307693,
+            "F1_score": 0.11764705882352941
+        }
+    }
+}

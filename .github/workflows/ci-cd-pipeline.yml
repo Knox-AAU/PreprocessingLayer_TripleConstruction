@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
 
 env:
-  PROJECT_PATH: PreprocessingLayer_TripleConstruction/
+  RELATIVE_PATH: ./server
   # Use docker.io for Docker Hub if empty
   REGISTRY: ghcr.io
   # github.repository as <account>/<repo>
@@ -62,8 +62,8 @@ jobs:
       - name: Build if test pass
         run: |
           echo "Building project"	          
-          python3 server/server.py
-        working-directory: ${{ github.workspace }}/${{ env.PROJECT_PATH }}
+          python3 server.py
+        working-directory: ${{ github.workspace }}/${{ env.RELATIVE_PATH }}
 
   docker_build_and_deploy_image:
     runs-on: ubuntu-latest

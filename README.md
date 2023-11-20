@@ -72,7 +72,7 @@ The solution developed by group C to perform relation extraction on sentences wi
 Is the solution developed by group D to perform concept linking on sentences with entity mentions and IRIs pointing to the entities.
 
 ## Prerequisites
-Run the command `pip install requirements.txt` to install the necessary libraries/modules for the solution.
+Run the command `pip install -r requirements.txt` to install the necessary libraries/modules for the solution.
 Docker should be installed <a href="https://www.docker.com/products/docker-desktop/">download docker desktop</a>.
 
 ## Running the solution

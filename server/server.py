@@ -30,4 +30,4 @@ class PreProcessingHandler(BaseHTTPRequestHandler):
 if __name__ == '__main__':
     with HTTPServer(('', 8000), PreProcessingHandler) as server:
         print("Hosting server on 0.0.0.0:8000")
-       # server.serve_forever()
+        server.serve_forever()

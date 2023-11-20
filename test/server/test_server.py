@@ -2,7 +2,7 @@ import unittest
 import requests
 from http.server import HTTPServer
 from threading import Thread, Lock
-from server.server import PreProcessingHandler  
+from server.server import PreProcessingHandler
 import json
 
 VALID_POST_STRING = """[

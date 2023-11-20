@@ -9,14 +9,17 @@ class PreProcessingHandler(BaseHTTPRequestHandler):
         post_json = json.loads(post_data)
 
         if self.path == '/tripleconstruction':
-            self.send_response(200)
             self.send_header('Content-type','text/html')
             self.end_headers()
-            for f in post_json:
-                for sentence in f["sentences"]:
-                    for em in sentence["entityMentions"]:
-                        print(em["name"])
-            message = "POST to group-c data: " + post_data
+            try:
+                for f in post_json:
+                    for sentence in f["sentences"]:
+                        for em in sentence["entityMentions"]:
+                            print(em["name"])
+                message = "POST to group-c data: " + post_data
+                self.send_response(200)
+            except:
+                self.send_response(422)
             
         else:
             self.send_response(404)

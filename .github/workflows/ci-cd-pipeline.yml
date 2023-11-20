@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
 
 env:
-  RELATIVE_PATH: ./server
+  RELATIVE_PATH: ./relation_extraction
   # Use docker.io for Docker Hub if empty
   REGISTRY: ghcr.io
   # github.repository as <account>/<repo>
@@ -62,7 +62,7 @@ jobs:
       - name: Build if test pass
         run: |
           echo "Building project"	          
-          python3 server.py
+          python3 main.py
         working-directory: ${{ github.workspace }}/${{ env.RELATIVE_PATH }}
 
   docker_build_and_deploy_image:

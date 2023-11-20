@@ -7,7 +7,6 @@ from getRel import extract_specific_relations
 import datetime
 import json
 
-ontology_file_path = 'DBpedia_Ont.ttl'
 
 def printProgressBar (iteration, total, prefix = '', suffix = '', decimals = 3, length = 100, fill = '█', printEnd = "\r"):
     percent = ("{0:." + str(decimals) + "f}").format(100 * (iteration / float(total)))
@@ -20,7 +19,7 @@ def printProgressBar (iteration, total, prefix = '', suffix = '', decimals = 3, 
 
 def convert_testdata_to_input_format():
     objs = []
-    tree = ET.parse('relation_extraction/Evaluation/testdataMini.xml')
+    tree = ET.parse('relation_extraction/Evaluation/testdata.xml')
     root = tree.getroot()
     for entry in root.findall('.//entry'):
         sentence = entry.findall('lex')[0].text

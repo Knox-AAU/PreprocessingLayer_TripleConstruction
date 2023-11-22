@@ -3,7 +3,6 @@ name: test-and-build
 on:
   pull_request:
     branches: ["main, **"] #delete **
-  workflow_dispatch:
 
 env:
   # Use docker.io for Docker Hub if empty

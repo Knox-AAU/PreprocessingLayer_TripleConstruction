@@ -2,8 +2,7 @@ name: build-and-deploy-docker image
 
 on:
   push:
-    branches: ["main", "**"] #delete **
-  workflow_dispatch:
+    branches: ["main"]
 
 env:
   # Use docker.io for Docker Hub if empty

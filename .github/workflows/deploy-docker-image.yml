@@ -2,7 +2,7 @@ name: build-and-deploy-docker image
 
 on:
   push:
-    branches: ["main", "**"] #delete **
+    branches: ["main"]
   workflow_dispatch:
 
 env:

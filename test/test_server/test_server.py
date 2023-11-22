@@ -3,7 +3,7 @@ import unittest
 import requests
 from http.server import HTTPServer
 from threading import Thread, Lock
-from server.server import PreProcessingHandler  
+from server.server import PreProcessingHandler
 import json
 
 
@@ -27,7 +27,9 @@ VALID_POST_STRING = """[
                     }
                 ]
             """
-
+INVALID_POST_STRING = """
+[{{}}]
+"""
 
 PORT = 4201
 lock = Lock()
@@ -58,6 +60,13 @@ class TestServerEndpoint(unittest.TestCase):
         dictionary = json.loads(VALID_POST_STRING)
         response = requests.post(f'http://localhost:{PORT}/tripleconstruction', json=dictionary)
         self.assertEqual(response.status_code, 200)
+
+    def test_pre_processing_endpoint_with_invalid_data_returns_422(self):
+        while(lock.locked()):
+            pass
+        response = requests.post(f'http://localhost:{PORT}/tripleconstruction', json=INVALID_POST_STRING)
+        self.assertEqual(response.status_code, 422)
+        
 
 if __name__ == '__main__':
     unittest.main()

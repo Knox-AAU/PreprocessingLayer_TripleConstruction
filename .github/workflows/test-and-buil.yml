@@ -1,8 +1,8 @@
 name: test-and-build
 
 on:
-  pull_request:
-    branches: ["main, **"] #delete **
+  push:
+    branches: ["**"]
 
 env:
   # Use docker.io for Docker Hub if empty

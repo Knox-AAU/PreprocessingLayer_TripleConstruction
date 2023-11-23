@@ -19,6 +19,7 @@ import re
 #     return sorted(relations) 
 
 def extract_specifict_relations():
+    "Function to extract relations based on the specified pattern"
     relations = []
     URL = "http://localhost:8000/ontology"
     query_string_s = 'http://dbpedia.org/ontology/'

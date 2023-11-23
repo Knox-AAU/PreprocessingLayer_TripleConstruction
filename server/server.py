@@ -19,7 +19,7 @@ class PreProcessingHandler(BaseHTTPRequestHandler):
                 self.send_response(200)
                 self.send_header('Content-type','text/html')
                 self.end_headers()
-                message = "POST to group-c data: " + post_content['post_data']
+                message = "Post request was successfully processed. Relation extraction and concept linking has begun " + post_content['post_data']
             except:
                 self.wrongly_formatted_request_response()
                 return
@@ -44,7 +44,7 @@ class PreProcessingHandler(BaseHTTPRequestHandler):
             return True
         except:
             self.wrongly_formatted_request_response()
-            return (False)
+            return False
 
 
 if __name__ == '__main__':

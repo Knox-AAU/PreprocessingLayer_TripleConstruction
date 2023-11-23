@@ -1,9 +1,11 @@
 import json
+import requests
 
 def format_output(output):
-    print(output)
-    #formatted_output = json.dumps(output)
-    #send_to_database_component(formatted_output)
+    formatted_output = {"triples": output}
+    return formatted_output
 
-def send_to_database_component(formatted_output):
-    return 0
+def send_to_database_component(output):
+    URL = "http://192.38.54.90/knowledge-base"
+    response = requests.post(url=URL, json=format_output(output))
+    

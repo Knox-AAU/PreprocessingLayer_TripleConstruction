@@ -20,17 +20,16 @@ import re
 
 def extract_specifict_relations():
     relations = []
-    URL = "http://localhost:8000/get"
-    query_string = 'http://dbpedia.org/ontology/'
-    PARAMS = {"s": query_string}
+    URL = "http://localhost:8000/ontology"
+    query_string_s = 'http://dbpedia.org/ontology/'
+    query_string_o = 'http://www.w3.org/1999/02/22-rdf-syntax-ns#Property'
+    PARAMS = {"s": query_string_s, "o": query_string_o}
     r = requests.get(url=URL, params=PARAMS)
 
     data = r.json()
 
-    print(data["triples"])
     for triple in data["triples"]:
-        relation = re.split("http://dbpedia.org/ontology/", triple["s"])[1]
+        relation = re.split("http://dbpedia.org/ontology/", triple["s"]["Value"])[1]
         relations.append(relation)
-
-if __name__ == "__main__":
-    extract_specifict_relations()
+        
+    return relations

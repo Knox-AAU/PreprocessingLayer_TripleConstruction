@@ -21,7 +21,7 @@ import re
 def extract_specifict_relations():
     "Function to extract relations based on the specified pattern"
     relations = []
-    URL = "http://localhost:8000/ontology"
+    URL = "http://192.38.54.90/ontology"
     query_string_s = 'http://dbpedia.org/ontology/'
     query_string_o = 'http://www.w3.org/1999/02/22-rdf-syntax-ns#Property'
     PARAMS = {"s": query_string_s, "o": query_string_o}

@@ -2,13 +2,13 @@ import json
 import strsimpy
 import sys
 from strsimpy.normalized_levenshtein import NormalizedLevenshtein
-from output import format_output
-from getRel import extract_specific_relations
+from output import send_to_database_component
+from get_relations import extract_specific_relations
 import datetime
 import multiprocessing as mp
 from functools import partial
 
-ontology_file_path = 'DBpedia_Ont.ttl'
+ontology_file_path = '../DBpedia_Ont.ttl'
 threshold = 0
 normalized_levenshtein = NormalizedLevenshtein()
 
@@ -80,10 +80,10 @@ def parse_data(data, relations):
 def main():
     relations = extract_specific_relations(ontology_file_path)
     # Opening JSON file
-    with open('relation_extraction/inputSentences.json', 'r') as f:
+    with open('inputSentences.json', 'r') as f:
         # returns JSON object as a dictionary 
         data = json.load(f)
-    format_output(parse_data(data, relations))
+    send_to_database_component(parse_data(data, relations))
 
 if __name__ == "__main__":
     main()

@@ -54,12 +54,12 @@ def calculate_metrics(data):
 def main():
     input_objs = convert_testdata_to_input_format()
     print("testdata converted successfully")
-    ontology_relations = extract_specific_relations(ontology_file_path)
+    ontology_relations = extract_specific_relations("DBpedia_Ont.ttl")
     
     
     solutions_to_test = {
-        #"less_naive": do_relation_extraction, 
-        "naive": parse_data
+        "less_naive": do_relation_extraction
+        # "naive": parse_data
     }
     evaluation_results = dict() #dictionary to hold results of tests
     for name, solution in solutions_to_test.items():

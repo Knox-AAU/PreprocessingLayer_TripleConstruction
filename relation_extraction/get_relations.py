@@ -18,7 +18,7 @@ import re
             
 #     return sorted(relations) 
 
-def extract_specifict_relations():
+def extract_specific_relations():
     "Function to extract relations based on the specified pattern"
     relations = []
     URL = "http://192.38.54.90/ontology"

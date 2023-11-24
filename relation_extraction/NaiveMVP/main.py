@@ -2,8 +2,8 @@ import json
 import strsimpy
 import sys
 from strsimpy.normalized_levenshtein import NormalizedLevenshtein
-from output import send_to_database_component
-from get_relations import extract_specific_relations
+from relation_extraction.output import send_to_database_component
+from relation_extraction.get_relations import extract_specific_relations
 import datetime
 import multiprocessing as mp
 from functools import partial
@@ -50,7 +50,7 @@ def find_best_triple(sentence, relations):
         result = find_best_match(token, relations)
         if result["similarity"] > highest_similarity and result["similarity"] > threshold: #Only supporting 2 entity mentions per sentence
             highest_similarity = result["similarity"]
-            best_triple = [entity_mentions[0]["name"], result["predicted_relation"], entity_mentions[1]["name"]]
+            best_triple = [entity_mentions[0]["iri"], result["predicted_relation"], entity_mentions[1]["iri"]]
     if highest_similarity == 0:
         best_triple = [entity_mentions[0]["name"], "---",entity_mentions[1]["name"]]
     #print(f"handle all tokens: {(datetime.datetime.now()-dt).total_seconds()}")
@@ -64,6 +64,12 @@ def parse_data(data, relations):
         sentences_in_data = file["sentences"]
 
         for sentence_object in sentences_in_data:
+            for i, em in enumerate(sentence_object["entityMentions"]):  #remove all entity mentions with iri=null
+                if em["iri"] is None:
+                    sentence_object["entityMentions"].pop(i)
+                    print(f"Removed entity because iri=null: {em}")
+            if len(sentence_object["entityMentions"]) < 2: #skip if less than 2 entity mentions
+                continue
             tokens = sentence_object["sentence"].split(" ")
             entity_mentions = sentence_object["entityMentions"]
             
@@ -73,9 +79,28 @@ def parse_data(data, relations):
                 'entity_mentions': entity_mentions
             }
             
-            output.append(find_best_triple(sentence, relations))
+            output.append([elem.replace(" ","_") for elem in find_best_triple(sentence, relations)])
             
     return output
+
+def handle_relation_post_request(data):
+    try:
+        relations = extract_specific_relations()
+    except Exception as E:
+        print(f"Exection during retrieval of relations: {str(E)}")
+    
+    try:
+        parsed_data = parse_data(data, relations)
+    except Exception as E:
+        print(f"Exception during parse of data {str(E)}")
+        raise Exception("Incorrectly formatted input. Exception during parsing")
+    
+    try:
+        send_to_database_component(parsed_data)
+    except Exception as E:
+        print(f"Exception during request to database. {str(E)}")
+        raise Exception("Data was not sent to database due to connection error")
+
 
 def main():
     relations = extract_specific_relations(ontology_file_path)

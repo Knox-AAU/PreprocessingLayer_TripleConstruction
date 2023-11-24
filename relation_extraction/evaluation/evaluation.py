@@ -3,7 +3,7 @@ import xml.etree.ElementTree as ET
 from relation_extraction.LessNaive.lessNaive import do_relation_extraction
 from relation_extraction.NaiveMVP.main import parse_data
 import re
-from getRel import extract_specific_relations
+from relation_extraction.get_relations import extract_specific_relations
 import datetime
 import json
 
@@ -19,7 +19,7 @@ def printProgressBar (iteration, total, prefix = '', suffix = '', decimals = 3, 
 
 def convert_testdata_to_input_format():
     objs = []
-    tree = ET.parse('relation_extraction/Evaluation/testdata.xml')
+    tree = ET.parse('relation_extraction/Evaluation/testdataMini.xml')
     root = tree.getroot()
     for entry in root.findall('.//entry'):
         sentence = entry.findall('lex')[0].text
@@ -54,12 +54,12 @@ def calculate_metrics(data):
 def main():
     input_objs = convert_testdata_to_input_format()
     print("testdata converted successfully")
-    ontology_relations = extract_specific_relations("DBpedia_Ont.ttl")
+    ontology_relations = extract_specific_relations()
     
     
     solutions_to_test = {
-        "less_naive": do_relation_extraction
-        # "naive": parse_data
+        # "less_naive": do_relation_extraction
+        "naive": parse_data
     }
     evaluation_results = dict() #dictionary to hold results of tests
     for name, solution in solutions_to_test.items():
@@ -74,13 +74,14 @@ def main():
             expected_triples = obj["triples"]
             total_triples += len(expected_triples)
             ems = []
-            for triple in expected_triples:
+            for j, triple in enumerate(expected_triples):
                 ems.append(triple[0])
                 ems.append(triple[2])
+                expected_triples[j] = [expected_triples[j][0].replace(" ", "_"), expected_triples[j][1], expected_triples[j][2].replace(" ", "_")]
             
             ems = list(dict.fromkeys(ems)) #remove duplicate ems
 
-            entity_mentions = [{ "name": em, "startIndex": 0, "endIndex": 0 } for em in ems]    
+            entity_mentions = [{ "name": em, "startIndex": 0, "endIndex": 0, "iri": em.replace(" ", "_") } for em in ems]    
             input_obj = [{
                 "fileName": "path/to/Artikel.txt",
                 "sentences": [

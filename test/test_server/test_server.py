@@ -9,23 +9,44 @@ import json
 
 
 VALID_POST_STRING = """[
+    {
+        "fileName": "Artikel.txt",
+        "language": "en",
+        "sentences": [
+            {
+                "sentence": "Since the sudden exit of the controversial CEO Martin Kjær last week, both he and the executive board in Region North Jutland have been in hiding.",
+                "sentenceStartIndex": 0,
+                "sentenceEndIndex": 148,
+                "entityMentions": [
                     {
-                        "filename": "path/to/Artikel.txt",
-                        "language": "en",
-                        "sentences": [
-                            {
-                                "sentence": "Barrack Obama is married to Michelle Obama.",
-                                "sentenceStartIndex": 20,
-                                "sentenceEndIndex": 62,
-                                "entityMentions": 
-                                [
-                                    { "name": "Barrack Obama", "startIndex": 0, "endIndex": 12, "iri": "knox-kb01.srv.aau.dk/Barack_Obama" },
-                                    { "name": "Michelle Obama", "startIndex": 27, "endIndex": 40, "iri": "knox-kb01.srv.aau.dk/Michele_Obama" }
-                                ]
-                            }
-                        ]
+                        "name": "last week",
+                        "type": "Literal",
+                        "label": "DATE",
+                        "startIndex": 59,
+                        "endIndex": 68,
+                        "iri": null
+                    },
+                    {
+                        "name": "Martin Kjær",
+                        "type": "Entity",
+                        "label": "PERSON",
+                        "startIndex": 47,
+                        "endIndex": 58,
+                        "iri": "knox-kb01.srv.aau.dk/Martin_Kjær"
+                    },
+                    {
+                        "name": "Region North Jutland",
+                        "type": "Entity",
+                        "label": "LOC",
+                        "startIndex": 105,
+                        "endIndex": 125,
+                        "iri": "knox-kb01.srv.aau.dk/Region_North_Jutland"
                     }
                 ]
+            }
+        ]
+    }
+]
             """
 INVALID_POST_STRING = """
 [{{}}]

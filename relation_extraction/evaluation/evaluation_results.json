@@ -5,26 +5,26 @@
                 "sentence": "Turn Me On is a 35.1 minute long album produced by Wharton Tiers that was followed by the album entitled Take it Off.",
                 "triples_from_solution": [
                     [
-                        "Turn Me On",
+                        "Turn_Me_On",
                         "album",
                         "35.1"
                     ]
                 ],
                 "expected_triples": [
                     [
-                        "Turn Me On",
+                        "Turn_Me_On",
                         "runtime",
                         "35.1"
                     ],
                     [
-                        "Turn Me On",
+                        "Turn_Me_On",
                         "producer",
-                        "Wharton Tiers"
+                        "Wharton_Tiers"
                     ],
                     [
-                        "Turn Me On",
+                        "Turn_Me_On",
                         "followedBy",
-                        "Take It Off!"
+                        "Take_It_Off!"
                     ]
                 ],
                 "contains_hits": 0
@@ -35,14 +35,14 @@
                     [
                         "Trane",
                         "location",
-                        "Swords, Dublin"
+                        "Swords,_Dublin"
                     ]
                 ],
                 "expected_triples": [
                     [
                         "Trane",
                         "location",
-                        "Swords, Dublin"
+                        "Swords,_Dublin"
                     ]
                 ],
                 "contains_hits": 1
@@ -51,44 +51,44 @@
                 "sentence": "The Ciudad Ayala city, a part of Morelos with population density and population of 1604.0 and 1,777,539 respectively, has a UTC offset of -6. The government type of Ciudad Ayala is council-manager government and City Manager is one of the leaders.",
                 "triples_from_solution": [
                     [
-                        "Ciudad Ayala",
+                        "Ciudad_Ayala",
                         "part",
                         "1777539"
                     ]
                 ],
                 "expected_triples": [
                     [
-                        "Ciudad Ayala",
+                        "Ciudad_Ayala",
                         "populationMetro",
                         "1777539"
                     ],
                     [
-                        "Ciudad Ayala",
+                        "Ciudad_Ayala",
                         "leaderTitle",
-                        "\"City Manager\""
+                        "\"City_Manager\""
                     ],
                     [
-                        "Ciudad Ayala",
+                        "Ciudad_Ayala",
                         "type",
                         "City"
                     ],
                     [
-                        "Ciudad Ayala",
+                        "Ciudad_Ayala",
                         "populationDensity",
                         "1604.0"
                     ],
                     [
-                        "Ciudad Ayala",
+                        "Ciudad_Ayala",
                         "governmentType",
-                        "Council-manager government"
+                        "Council-manager_government"
                     ],
                     [
-                        "Ciudad Ayala",
+                        "Ciudad_Ayala",
                         "utcOffset",
                         "\u22126"
                     ],
                     [
-                        "Ciudad Ayala",
+                        "Ciudad_Ayala",
                         "isPartOf",
                         "Morelos"
                     ]
@@ -99,19 +99,19 @@
                 "sentence": "The 17068.8 millimeter long ALCO RS-3 has a diesel-electric transmission.",
                 "triples_from_solution": [
                     [
-                        "ALCO RS-3",
-                        "lounge",
-                        "Diesel-electric transmission"
+                        "ALCO_RS-3",
+                        "transmission",
+                        "Diesel-electric_transmission"
                     ]
                 ],
                 "expected_triples": [
                     [
-                        "ALCO RS-3",
+                        "ALCO_RS-3",
                         "powerType",
-                        "Diesel-electric transmission"
+                        "Diesel-electric_transmission"
                     ],
                     [
-                        "ALCO RS-3",
+                        "ALCO_RS-3",
                         "length",
                         "17068.8"
                     ]

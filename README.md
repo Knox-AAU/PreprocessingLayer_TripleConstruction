@@ -145,7 +145,7 @@ Docker should be installed <a href="https://www.docker.com/products/docker-deskt
 
 ### Run docker container using this command
 
-`docker-compose up`
+`docker-compose up --build`
 
 You can also do it manually:
 

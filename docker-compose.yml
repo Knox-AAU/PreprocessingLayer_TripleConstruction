@@ -1,7 +1,9 @@
 services:
   server:
-    build: .
+    build: .  # Dockerfile location
     container_name: server-container
-    command: python ./server/server.py --host 0.0.0.0 --port 8000 --reload
+    command: python -u -m server.server --host 0.0.0.0 --port 80 --reload
+    volumes:
+      - .:/code  # Mount current directory to /code in the image
     ports:
-      - 8000:8000
+      - "8000:80"

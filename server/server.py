@@ -1,5 +1,6 @@
 from http.server import BaseHTTPRequestHandler, HTTPServer
 import json
+import os
 from relation_extraction.NaiveMVP.main import handle_relation_post_request
 
 class PreProcessingHandler(BaseHTTPRequestHandler):
@@ -8,6 +9,14 @@ class PreProcessingHandler(BaseHTTPRequestHandler):
         message = ""
         content_length = int(self.headers['Content-Length'])
         post_content = {"post_data": self.rfile.read(content_length), "post_json": {}}
+
+        if self.headers.get("Access-Authorization").__str__() != os.getenv("API_SECRET"):
+            message = "Unauthorized"
+            self.send_response(401)
+            self.send_header('Content-type','text/html')
+            self.end_headers()
+            self.wfile.write(bytes(f"Error occured! {message}", "utf8"))
+            return
 
         if not self.handled_request_body(post_content):
             return
@@ -47,6 +56,6 @@ class PreProcessingHandler(BaseHTTPRequestHandler):
 
 
 if __name__ == '__main__':
-    with HTTPServer(('', 8000), PreProcessingHandler) as server:
-        print("Hosting server on 0.0.0.0:8000")
+    with HTTPServer(('', 80), PreProcessingHandler) as server:
+        print("Hosting server on 0.0.0.0:80")
         server.serve_forever()

@@ -10,4 +10,4 @@ def send_to_database_component(output):
     PARAMS={"g": "http://knox_database"}
     response = requests.post(url=URL, json=format_output(output), params=PARAMS, headers=HEADERS)
     print(f"db component response: {response.text}")
-    
+    return response.text

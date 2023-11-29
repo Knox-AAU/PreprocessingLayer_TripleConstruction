@@ -1,7 +1,7 @@
 from .openie import POST_corenlp
 import json
 import sys 
-ontology_file_path = 'DBpedia_Ont.ttl'
+
 import urllib.parse
 from strsimpy.normalized_levenshtein import NormalizedLevenshtein
 from rapidfuzz.distance import Levenshtein
@@ -72,7 +72,7 @@ def do_relation_extraction(data, ontology_relations):
     return tuples
 
 def main():
-    ontology_relations = extract_specific_relations(ontology_file_path)
+    ontology_relations = extract_specific_relations()
     do_relation_extraction(json.load(open("inputSentences.json")), ontology_relations)   
     
 

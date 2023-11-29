@@ -57,22 +57,22 @@ lock = Lock()
 
 class TestServerEndpoint(unittest.TestCase):
     @classmethod
-    def setUpClass(cls):
+    def setUpClass(self):
         lock.acquire()
-        cls.server_thread = Thread(target=cls.start_server)
-        cls.server_thread.daemon = True
-        cls.server_thread.start()
+        self.server_thread = Thread(target=self.start_server)
+        self.server_thread.daemon = True
+        self.server_thread.start()
 
     @classmethod
-    def start_server(cls):
-        cls.server = HTTPServer(('localhost', PORT), PreProcessingHandler)
+    def start_server(self):
+        self.server = HTTPServer(('localhost', PORT), PreProcessingHandler)
         lock.release()
-        cls.server.serve_forever()
+        self.server.serve_forever()
 
     @classmethod
-    def tearDownClass(cls):
-        cls.server.shutdown()
-        cls.server.server_close()
+    def tearDownClass(self):
+        self.server.shutdown()
+        self.server.server_close()
 
     def test_pre_processing_endpoint_with_valid_data(self):
         while(lock.locked()):

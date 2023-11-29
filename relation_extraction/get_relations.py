@@ -24,11 +24,13 @@ def extract_specific_relations():
     "Function to extract relations based on the specified pattern"
     print("Getting relations from online ontology...")
     relations = []
-    URL = "http://192.38.54.90/triples?g=http://knox_ontology"
+    URL = "http://130.225.57.13/knox-api/triples"
     query_string_s = 'http://dbpedia.org/ontology/'
     query_string_o = 'http://www.w3.org/1999/02/22-rdf-syntax-ns#Property'
-    PARAMS = {"s": query_string_s, "o": query_string_o}
-    r = requests.get(url=URL, params=PARAMS)
+    PARAMS = {"g":"http://knox_ontology", "s": query_string_s, "o": query_string_o}
+    HEADERS = {"Access-Authorization":"internal_key"}
+    r = requests.get(url=URL, params=PARAMS, headers=HEADERS)
+    print(f"db component response: {r.text}")
 
     data = r.json()
 
@@ -37,3 +39,5 @@ def extract_specific_relations():
         relations.append(relation)
         
     return relations
+
+extract_specific_relations()

@@ -2,6 +2,7 @@ from http.server import BaseHTTPRequestHandler, HTTPServer
 import json
 import os
 from relation_extraction.NaiveMVP.main import handle_relation_post_request
+from relation_extraction.relation_extractor import RelationExtractor
 
 class PreProcessingHandler(BaseHTTPRequestHandler):
     def do_POST(self):
@@ -23,7 +24,7 @@ class PreProcessingHandler(BaseHTTPRequestHandler):
 
         if self.path == '/tripleconstruction':
             try:
-                handle_relation_post_request(post_content["post_json"])
+                RelationExtractor.begin_extraction(post_content["post_json"])
                 self.send_response(200)
                 self.send_header('Content-type','text/html')
                 self.end_headers()

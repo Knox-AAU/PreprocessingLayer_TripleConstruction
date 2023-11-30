@@ -1,11 +1,12 @@
 import sys
 import xml.etree.ElementTree as ET
+from relation_extraction.ontology_messenger import OntologyMessenger
 from relation_extraction.LessNaive.lessNaive import do_relation_extraction
 from relation_extraction.NaiveMVP.main import parse_data
 import re
-from relation_extraction.get_relations import extract_specific_relations
 import datetime
 import json
+
 
 
 def printProgressBar (iteration, total, prefix = '', suffix = '', decimals = 3, length = 100, fill = '█', printEnd = "\r"):
@@ -54,7 +55,7 @@ def calculate_metrics(data):
 def main():
     input_objs = convert_testdata_to_input_format()
     print("testdata converted successfully")
-    ontology_relations = extract_specific_relations()
+    ontology_relations = OntologyMessenger.send_request()
     
     
     solutions_to_test = {

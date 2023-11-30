@@ -16,12 +16,12 @@ The triples will be data stored in the form of a subject (entity IRI), predicate
 
 ## Prerequisites
 
-Run the command `pip install -r requirements.txt` to install the necessary libraries/modules for the solution.
-Docker should be installed <a href="https://www.docker.com/products/docker-desktop/">download docker desktop</a>.
+If you wish to run the solution locally (not through docker). Run the command `pip install -r requirements.txt` to install the necessary libraries/modules for the solution.\
+Docker should be installed if you want to run the solution in a container <a href="https://www.docker.com/products/docker-desktop/">download docker desktop here</a>.
 
 ## Running the solution
 
-### Run docker container using this command
+### Run docker container on local machine using this command
 
 `docker-compose up --build`
 
@@ -29,13 +29,19 @@ Docker should be installed <a href="https://www.docker.com/products/docker-deskt
 
 Deployment is normally handled by watchtower on push to main. However, in case of the need of manual deployment, run
 
-`sudo docker run -p 0.0.0.0:80:<your_port> --add-host=host.docker.internal:host-gateway -e API_SECRET=\*\*\* -d ghcr.io/knox-aau/preprocessinglayer_tripleconstruction:main`
+#### Access the knox server via ssh
 
-### Manually connection to access API endpoint
+`ssh <your-aau-mail@student.aau.dk>@knox-preproc01.srv.aau.dk -L <your_port>:localhost:4444`
+
+Note that the ports map to the ports used in the ssh command give in "your port".
+
+`sudo docker run -p 0.0.0.0:4444:<your_port> --add-host=host.docker.internal:host-gateway -e API_SECRET=*** -d ghcr.io/knox-aau/preprocessinglayer_tripleconstruction:main`
+
+### Access through access API endpoint
 
 `130.225.57.13/tripleconstruction-api/tripleconstruction`
 
-### Manually connect to Endpoint
+### Direct access to endpoint
 
 `192.38.54.87/tripleconstruction`
 
@@ -52,12 +58,6 @@ The solution developed by group C to perform relation extraction on sentences wi
 ### /concept_linking
 
 Is the solution developed by group D to perform concept linking on sentences with entity mentions and IRIs pointing to the entities.
-
-## Accessing the knox server via ssh
-
-`ssh <your-aau-mail@student.aau.dk>@knox-preproc01.srv.aau.dk -L <your_port>:localhost:4444`
-
-Note that the ports map to the ports used in the ssh command give in "your port".
 
 ## Server documentation
 

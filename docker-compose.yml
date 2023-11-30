@@ -2,10 +2,10 @@ services:
   server:
     build: .  # Dockerfile location
     container_name: server-container
-    command: python -u -m server.server --host 0.0.0.0 --port 80 --reload
+    command: python -u -m server.server --host 0.0.0.0 --port 4444 --reload
     env_file:
       - .env
     volumes:
       - .:/code  # Mount current directory to /code in the image
     ports:
-      - "80:80"
+      - "4444:4444"

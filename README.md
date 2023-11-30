@@ -39,11 +39,11 @@ Note that the ports map to the ports used in the ssh command give in "your port"
 
 ### Access through access API endpoint
 
-`130.225.57.13/tripleconstruction-api/tripleconstruction`
+`knox-proxy01.srv.aau.dk/tripleconstruction-api/tripleconstruction`
 
 ### Direct access to endpoint
 
-`192.38.54.87/tripleconstruction`
+`http://knox-preproc01.srv.aau.dk:4444/tripleconstruction`
 
 ## Naming conventions
 
@@ -65,7 +65,7 @@ Is the solution developed by group D to perform concept linking on sentences wit
 
 /tripleconstruction
 
-##### Summary:
+### Summary:
 
 The tripleconstruction expects JSON-formatted data and starts the process of concept_linking and relation_extraction in parallel.
 
@@ -101,7 +101,7 @@ The tripleconstruction expects JSON-formatted data and starts the process of con
 ]
 ```
 
-##### Responses
+#### Responses
 
 | Code | Description                                                                                    | Schema                                                           |
 | ---- | ---------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- |

@@ -4,7 +4,7 @@ from relation_extraction.API_handler import APIHandler
 
 class KnowledgeGraphMessenger(APIHandler):
     def API_endpoint():
-        "http://130.225.57.13/knox-api/triples"
+        return "http://130.225.57.13/knox-api/triples"
         
     def send_request(output):
         HEADERS = {"Access-Authorization":"internal_key"}

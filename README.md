@@ -151,11 +151,11 @@ You can also do it manually:
 
 `docker build -t server-image .`
 
-`docker run --name server-container -p 8000:8000 server-image`
+`docker run --name server-container -p 4444:4444 server-image`
 
 ## Accessing the knox server
 
-`ssh <your-aau-mail@student.aau.dk>@knox-preproc01.srv.aau.dk -L 8000:localhost:8000`
+`ssh <your-aau-mail@student.aau.dk>@knox-preproc01.srv.aau.dk -L 4444:localhost:4444`
 
 Note that the ports map to the ports used in the ssh command.
 

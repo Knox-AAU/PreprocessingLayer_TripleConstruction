@@ -15,7 +15,7 @@ class TestPreProcessingHandler(unittest.TestCase):
         handler = PreProcessingHandler()
         handler.rfile = MagicMock()
         handler.wfile = MagicMock()
-        handler.headers = {'Content-Length': '0', "Access-Authorization": "env_var"}
+        handler.headers = {'Content-Length': '0', "Authorization": "env_var"}
         handler.send_response = MagicMock()
         handler.send_header = MagicMock()
         handler.end_headers = MagicMock()
@@ -41,7 +41,7 @@ class TestPreProcessingHandler(unittest.TestCase):
         handler = PreProcessingHandler()
         handler.rfile = MagicMock()
         handler.wfile = MagicMock()
-        handler.headers = {'Content-Length': '0', "Access-Authorization": "env_var"}
+        handler.headers = {'Content-Length': '0', "Authorization": "env_var"}
         handler.send_response = MagicMock()
         handler.send_header = MagicMock()
         handler.end_headers = MagicMock()
@@ -67,7 +67,7 @@ class TestPreProcessingHandler(unittest.TestCase):
         handler = PreProcessingHandler()
         handler.rfile = MagicMock()
         handler.wfile = MagicMock()
-        handler.headers = {'Content-Length': '0', "Access-Authorization": "env_var"}
+        handler.headers = {'Content-Length': '0', "Authorization": "env_var"}
         handler.send_response = MagicMock()
         handler.send_header = MagicMock()
         handler.end_headers = MagicMock()
@@ -107,7 +107,7 @@ class TestPreProcessingHandler(unittest.TestCase):
         handler = PreProcessingHandler()
         handler.rfile = MagicMock()
         handler.wfile = MagicMock()
-        handler.headers = {'Content-Length': '0', "Access-Authorization": "invalid_var"}
+        handler.headers = {'Content-Length': '0', "Authorization": "invalid_var"}
         handler.send_response = MagicMock()
         handler.send_header = MagicMock()
         handler.end_headers = MagicMock()

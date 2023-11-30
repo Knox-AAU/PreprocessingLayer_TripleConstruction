@@ -1,7 +1,7 @@
 import unittest
+from relation_extraction.ontology_messenger import OntologyMessenger
 from server.server import *
 from unittest.mock import patch, Mock, MagicMock, mock_open
-from relation_extraction.get_relations import *
 
 class TestGetRelations(unittest.TestCase):
 

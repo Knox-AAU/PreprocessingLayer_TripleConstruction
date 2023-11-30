@@ -1,12 +1,12 @@
 import sys
 import xml.etree.ElementTree as ET
+from relation_extraction.ontology_messenger import OntologyMessenger
 from relation_extraction.LessNaive.lessNaive import do_relation_extraction
 from relation_extraction.NaiveMVP.main import parse_data
 import re
 import datetime
 import json
 
-from relation_extraction.get_relations import OntologyMessenger
 
 
 def printProgressBar (iteration, total, prefix = '', suffix = '', decimals = 3, length = 100, fill = '█', printEnd = "\r"):

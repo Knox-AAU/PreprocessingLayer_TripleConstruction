@@ -1,4 +1,5 @@
-from relation_extraction.get_relations import OntologyMessenger
+from relation_extraction.ontology_messenger import OntologyMessenger
+from relation_extraction.knowledge_graph_messenger import KnowledgeGraphMessenger
 from .openie import POST_corenlp
 import json
 import sys 
@@ -6,7 +7,6 @@ import sys
 import urllib.parse
 from strsimpy.normalized_levenshtein import NormalizedLevenshtein
 from rapidfuzz.distance import Levenshtein
-from relation_extraction.output import format_output
 
 
 def find_best_ontology_match(api_relation, ontology_relations):
@@ -68,7 +68,7 @@ def do_relation_extraction(data, ontology_relations):
         relations.extend(val["relations"])
 
     tuples = [[r["subject"], r["relation"], r["object"]] for r in relations]
-    format_output(tuples)
+    KnowledgeGraphMessenger.format_output(tuples)
     return tuples
 
 def main():

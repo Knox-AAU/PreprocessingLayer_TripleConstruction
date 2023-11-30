@@ -4,7 +4,7 @@ from relation_extraction.NaiveMVP.main import *
 
 
 class TestHandleRelationPostRequest(unittest.TestCase):
-    @mock.patch('relation_extraction.NaiveMVP.main.extract_specific_relations')
+    @mock.patch('relation_extraction.ontology_messenger.OntologyMessenger.send_request')
     def test_handle_post_request_raises_exception_if_relations_fail(self, mock_extract_specific_relations):
         mock_extract_specific_relations.side_effect = Exception()
         data = dict()
@@ -15,7 +15,7 @@ class TestHandleRelationPostRequest(unittest.TestCase):
 
 
     @mock.patch('relation_extraction.NaiveMVP.main.parse_data')
-    @mock.patch('relation_extraction.NaiveMVP.main.extract_specific_relations')
+    @mock.patch('relation_extraction.ontology_messenger.OntologyMessenger.send_request')
     def test_handle_post_request_raises_exception_if_parse_fail(self, mock_extract_specific_relations, mock_parse_data):
         mock_extract_specific_relations.return_value = []
         mock_parse_data.side_effect = Exception()
@@ -28,9 +28,9 @@ class TestHandleRelationPostRequest(unittest.TestCase):
         mock_parse_data.assert_called_once()
 
 
-    @mock.patch('relation_extraction.NaiveMVP.main.send_to_database_component')
+    @mock.patch('relation_extraction.knowledge_graph_messenger.KnowledgeGraphMessenger.send_request')
     @mock.patch('relation_extraction.NaiveMVP.main.parse_data')
-    @mock.patch('relation_extraction.NaiveMVP.main.extract_specific_relations')
+    @mock.patch('relation_extraction.ontology_messenger.OntologyMessenger.send_request')
     def test_handle_post_request_raises_exception_if_db_component_fail(self, mock_extract_specific_relations, mock_parse_data, mock_send_to_db):
         mock_extract_specific_relations.return_value = []
         mock_parse_data.return_value = dict()

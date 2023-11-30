@@ -3,7 +3,7 @@ import strsimpy
 import sys
 from strsimpy.normalized_levenshtein import NormalizedLevenshtein
 from relation_extraction.output import send_to_database_component
-from relation_extraction.get_relations import extract_specific_relations
+from relation_extraction.get_relations import OntologyMessenger
 import datetime
 import multiprocessing as mp
 from functools import partial
@@ -71,7 +71,7 @@ def parse_data(data, relations):
 
 def handle_relation_post_request(data):
     try:
-        relations = extract_specific_relations()
+        relations = OntologyMessenger.send_request()
     except Exception as E:
         print(f"Exception during retrieval of relations: {str(E)}")
         raise Exception(f"Exception during retrieval of relations")
@@ -90,7 +90,7 @@ def handle_relation_post_request(data):
 
 
 def main():
-    relations = extract_specific_relations()
+    relations = OntologyMessenger.send_request()
     # Opening JSON file
     with open('inputSentences.json', 'r') as f:
         # returns JSON object as a dictionary 

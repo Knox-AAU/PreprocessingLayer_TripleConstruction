@@ -1,3 +1,4 @@
+from relation_extraction.get_relations import OntologyMessenger
 from .openie import POST_corenlp
 import json
 import sys 
@@ -6,7 +7,6 @@ import urllib.parse
 from strsimpy.normalized_levenshtein import NormalizedLevenshtein
 from rapidfuzz.distance import Levenshtein
 from relation_extraction.output import format_output
-from relation_extraction.get_relations import extract_specific_relations
 
 
 def find_best_ontology_match(api_relation, ontology_relations):
@@ -72,7 +72,7 @@ def do_relation_extraction(data, ontology_relations):
     return tuples
 
 def main():
-    ontology_relations = extract_specific_relations()
+    ontology_relations = OntologyMessenger.send_request()
     do_relation_extraction(json.load(open("inputSentences.json")), ontology_relations)   
     
 

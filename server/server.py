@@ -1,62 +1,37 @@
-from http.server import BaseHTTPRequestHandler, HTTPServer
+from flask import Flask, request, jsonify
 import json
 import os
-from relation_extraction.NaiveMVP.main import handle_relation_post_request
 from relation_extraction.relation_extractor import RelationExtractor
 
-class PreProcessingHandler(BaseHTTPRequestHandler):
-    def do_POST(self):
-        print("recieved post request...")
-        message = ""
-        content_length = int(self.headers['Content-Length'])
-        post_content = {"post_data": self.rfile.read(content_length), "post_json": {}}
+app = Flask(__name__)
 
-        if self.headers.get("Authorization").__str__() != os.getenv("API_SECRET"):
-            message = "Unauthorized"
-            self.send_response(401)
-            self.send_header('Content-type','text/html')
-            self.end_headers()
-            self.wfile.write(bytes(f"Error occured! {message}", "utf8"))
-            return
+@app.route('/tripleconstruction', methods=["POST"])
+def do_triple_construction():
+    print("Received POST request...")
 
-        if not self.handled_request_body(post_content):
-            return
+    authorization_header = request.headers.get("Authorization")
 
-        if self.path == '/tripleconstruction':
-            try:
-                RelationExtractor.begin_extraction(post_content["post_json"])
-                self.send_response(200)
-                self.send_header('Content-type','text/html')
-                self.end_headers()
-                message = "Post request was successfully processed. Relation extraction and concept linking completed\n"
-            except Exception as E:
-                self.wrongly_formatted_request_response(str(E))
-                return
-        else:
-            self.send_response(404)
-            self.send_header('Content-type','text/html')
-            self.end_headers()
-            message = "Invalid endpoint"
+    if authorization_header != os.getenv("API_SECRET"):
+        message = "Unauthorized"
+        return jsonify(error=f"Error occurred! {message}"), 401
+    
+    try:
+        post_data = request.get_data().decode('utf-8')
+        post_json = json.loads(post_data)
 
-        self.wfile.write(bytes(message, "utf8"))
+        RelationExtractor.begin_extraction(post_json)
+        #Begin ConceptLinking
 
-    def wrongly_formatted_request_response(self, message):
-        self.send_response(422)
-        self.send_header('Content-type','text/html')
-        self.end_headers()
-        self.wfile.write(bytes(f"Error occured! {message}", "utf8"))
+        message = "Post request was successfully processed. Relation extraction and concept linking completed."
+        return jsonify(message=message), 200
 
-    def handled_request_body(self, post_content):
-        try:
-            post_content['post_data'] = post_content['post_data'].decode('utf-8')
-            post_content['post_json'] = json.loads(post_content['post_data'])
-            return True
-        except:
-            self.wrongly_formatted_request_response("Error occured!")
-            return False
+    except Exception as e:
+        return jsonify(error=f"Error occured: {str(e)}"), 422
 
+@app.errorhandler(404)
+def page_not_found(error):
+    message = "Invalid endpoint"
+    return jsonify(error=message), 404
 
 if __name__ == '__main__':
-    with HTTPServer(('', 4444), PreProcessingHandler) as server:
-        print("Hosting server on 0.0.0.0:4444")
-        server.serve_forever()
+    app.run(host='0.0.0.0', port=4444)

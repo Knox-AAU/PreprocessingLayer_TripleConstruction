@@ -45,6 +45,9 @@ Deployment is normally handled by Watchtower on push to main. However, in case o
 
 `http://knox-preproc01.srv.aau.dk:4444/tripleconstruction`
 
+## Testing
+The testing framework <a href="https://docs.python.org/3/library/unittest.html"> unittest </a> has been utilised to test the solution. The testing framework discovers all directories with the naming convention `test_`. In addition, all Python files beginning with `test_` inside those directories will be run. 
+
 ## Naming conventions
 
 This repository uses the snake-case naming convention
@@ -58,6 +61,9 @@ The solution developed by group C to perform relation extraction on sentences wi
 ### /concept_linking
 
 Is the solution developed by group D to perform concept linking on sentences with entity mentions and IRIs pointing to the entities.
+
+### /test
+The directory containing the tests for the solutions. The testing framework <a href="https://docs.python.org/3/library/unittest.html"> unittest </a> has been utilised to test the solution. The testing framework discovers all directories inside with the naming convention `test_`. In addition, all Python files beginning with `test_` will be run. 
 
 ## Server documentation
 

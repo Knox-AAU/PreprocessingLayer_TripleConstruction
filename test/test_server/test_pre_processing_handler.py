@@ -5,7 +5,7 @@ from unittest.mock import patch, Mock, MagicMock
 
 class TestPreProcessingHandler(unittest.TestCase):
     @patch("os.getenv")
-    @patch('server.server.handle_relation_post_request', return_value=Mock())  
+    @patch('relation_extraction.relation_extractor.RelationExtractor.begin_extraction', return_value=Mock())  
     @patch.object(PreProcessingHandler, 'wrongly_formatted_request_response')
     @patch.object(PreProcessingHandler, 'handled_request_body', return_value=True)
     @patch.object(PreProcessingHandler, '__init__', return_value=None)
@@ -15,7 +15,7 @@ class TestPreProcessingHandler(unittest.TestCase):
         handler = PreProcessingHandler()
         handler.rfile = MagicMock()
         handler.wfile = MagicMock()
-        handler.headers = {'Content-Length': '0', "Access-Authorization": "env_var"}
+        handler.headers = {'Content-Length': '0', "Authorization": "env_var"}
         handler.send_response = MagicMock()
         handler.send_header = MagicMock()
         handler.end_headers = MagicMock()
@@ -41,7 +41,7 @@ class TestPreProcessingHandler(unittest.TestCase):
         handler = PreProcessingHandler()
         handler.rfile = MagicMock()
         handler.wfile = MagicMock()
-        handler.headers = {'Content-Length': '0', "Access-Authorization": "env_var"}
+        handler.headers = {'Content-Length': '0', "Authorization": "env_var"}
         handler.send_response = MagicMock()
         handler.send_header = MagicMock()
         handler.end_headers = MagicMock()
@@ -57,7 +57,7 @@ class TestPreProcessingHandler(unittest.TestCase):
         handler.end_headers.assert_called_once()
 
     @patch("os.getenv")
-    @patch('server.server.handle_relation_post_request', return_value=Mock())  
+    @patch('relation_extraction.relation_extractor.RelationExtractor.begin_extraction', return_value=Mock())  
     @patch.object(PreProcessingHandler, 'wrongly_formatted_request_response')
     @patch.object(PreProcessingHandler, 'handled_request_body', return_value=True)
     @patch.object(PreProcessingHandler, '__init__', return_value=None)
@@ -67,7 +67,7 @@ class TestPreProcessingHandler(unittest.TestCase):
         handler = PreProcessingHandler()
         handler.rfile = MagicMock()
         handler.wfile = MagicMock()
-        handler.headers = {'Content-Length': '0', "Access-Authorization": "env_var"}
+        handler.headers = {'Content-Length': '0', "Authorization": "env_var"}
         handler.send_response = MagicMock()
         handler.send_header = MagicMock()
         handler.end_headers = MagicMock()
@@ -107,7 +107,7 @@ class TestPreProcessingHandler(unittest.TestCase):
         handler = PreProcessingHandler()
         handler.rfile = MagicMock()
         handler.wfile = MagicMock()
-        handler.headers = {'Content-Length': '0', "Access-Authorization": "invalid_var"}
+        handler.headers = {'Content-Length': '0', "Authorization": "invalid_var"}
         handler.send_response = MagicMock()
         handler.send_header = MagicMock()
         handler.end_headers = MagicMock()

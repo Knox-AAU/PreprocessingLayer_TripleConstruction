@@ -1,9 +1,9 @@
 import json
+from relation_extraction.knowledge_graph_messenger import KnowledgeGraphMessenger
 import strsimpy
 import sys
 from strsimpy.normalized_levenshtein import NormalizedLevenshtein
-from relation_extraction.output import send_to_database_component
-from relation_extraction.get_relations import extract_specific_relations
+from relation_extraction.ontology_messenger import OntologyMessenger
 import datetime
 import multiprocessing as mp
 from functools import partial
@@ -71,7 +71,7 @@ def parse_data(data, relations):
 
 def handle_relation_post_request(data):
     try:
-        relations = extract_specific_relations()
+        relations = OntologyMessenger.send_request()
     except Exception as E:
         print(f"Exception during retrieval of relations: {str(E)}")
         raise Exception(f"Exception during retrieval of relations")
@@ -83,19 +83,19 @@ def handle_relation_post_request(data):
         raise Exception("Incorrectly formatted input. Exception during parsing")
     
     try:
-        send_to_database_component(parsed_data)
+        KnowledgeGraphMessenger.send_request(parsed_data)
     except Exception as E:
         print(f"Exception during request to database. {str(E)}")
         raise Exception("Data was not sent to database due to connection error")
 
 
 def main():
-    relations = extract_specific_relations()
+    relations = OntologyMessenger.send_request()
     # Opening JSON file
     with open('inputSentences.json', 'r') as f:
         # returns JSON object as a dictionary 
         data = json.load(f)
-    send_to_database_component(parse_data(data, relations))
+    KnowledgeGraphMessenger.send_request(parse_data(data, relations))
 
 if __name__ == "__main__":
     main()

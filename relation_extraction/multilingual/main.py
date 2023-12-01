@@ -29,7 +29,7 @@ def begin_relation_extraction(data):
         raise Exception("Incorrectly formatted input. Exception during parsing")
     
     try:
-        triples = LLMMessenger.costruct_prompt_message(parsed_data)
+        triples = LLMMessenger.prompt_llm(parsed_data, relations)
     except Exception as E:
         print(f"Exception during prompt to Llama 2: {str(E)}")
         raise Exception("Exception during prompt to Llama 2")
@@ -49,12 +49,12 @@ def test():
                 "language": "en",
                 "sentences": [
                     {
-                        "sentence": "Barrack Obama is married to Michelle Obama.",
+                        "sentence": "Barack Obama is married to Michelle Obama.",
                         "sentenceStartIndex": 20,
                         "sentenceEndIndex": 62,
                         "entityMentions": 
                         [
-                            { "name": "Barrack Obama", "startIndex": 0, "endIndex": 12, "iri": "knox-kb01.srv.aau.dk/Barack_Obama" },
+                            { "name": "Barack Obama", "startIndex": 0, "endIndex": 12, "iri": "knox-kb01.srv.aau.dk/Barack_Obama" },
                             { "name": "Michelle Obama", "startIndex": 27, "endIndex": 40, "iri": "knox-kb01.srv.aau.dk/Michele_Obama" }
                         ]
                     }

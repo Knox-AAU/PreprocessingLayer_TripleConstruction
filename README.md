@@ -25,17 +25,17 @@ Docker should be installed if you want to run the solution in a container <a hre
 
 `docker-compose up --build`
 
-### Deploy new version manually
-
-Deployment is normally handled by watchtower on push to main. However, in case of the need of manual deployment, run
-
-#### Access the knox server via ssh
+### Access the knox server via ssh
 
 `ssh <your-aau-mail@student.aau.dk>@knox-preproc01.srv.aau.dk -L <your_port>:localhost:4444`
 
 Note that the ports map to the ports used in the ssh command give in "your port".
 
-`sudo docker run -p 0.0.0.0:4444:<your_port> --add-host=host.docker.internal:host-gateway -e API_SECRET=*** -d ghcr.io/knox-aau/preprocessinglayer_tripleconstruction:main`
+### Deploy new version manually
+
+Deployment is normally handled by Watchtower on push to main. However, in case of the need of manual deployment, run:
+
+`sudo docker run -p 0.0.0.0:4444:<your_port> --add-host=host.docker.internal:host-gateway -e API_SECRET=*** -e ACCESS_SECRET=*** -d ghcr.io/knox-aau/preprocessinglayer_tripleconstruction:main`
 
 ### Access through access API endpoint
 

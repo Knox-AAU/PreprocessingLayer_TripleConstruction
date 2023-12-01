@@ -16,11 +16,11 @@ def parse_data(data):
     return data
 
 def begin_relation_extraction(data):
-    # try:
-    #     relations = OntologyMessenger.send_request()
-    # except Exception as E:
-    #     print(f"Exception during retrieval of relations: {str(E)}")
-    #     raise Exception(f"Exception during retrieval of relations")
+    try:
+        relations = OntologyMessenger.send_request()
+    except Exception as E:
+        print(f"Exception during retrieval of relations: {str(E)}")
+        raise Exception(f"Exception during retrieval of relations")
     
     try:
         parsed_data = parse_data(data)
@@ -34,11 +34,11 @@ def begin_relation_extraction(data):
         print(f"Exception during prompt to Llama 2: {str(E)}")
         raise Exception("Exception during prompt to Llama 2")
 
-    # try:
-    #     KnowledgeGraphMessenger.send_request(triples)
-    # except Exception as E:
-    #     print(f"Exception during request to database. {str(E)}")
-    #     raise Exception("Data was not sent to database due to connection error")
+    try:
+        KnowledgeGraphMessenger.send_request(triples)
+    except Exception as E:
+        print(f"Exception during request to database. {str(E)}")
+        raise Exception("Data was not sent to database due to connection error")
 
         
 def test():

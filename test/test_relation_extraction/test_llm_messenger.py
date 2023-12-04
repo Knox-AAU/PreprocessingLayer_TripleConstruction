@@ -3,6 +3,7 @@ from unittest import mock
 from relation_extraction.multilingual.llm_messenger import *
 
 class TestProcessMessage(unittest.TestCase):
+    #Needs testing
     def test_send_request(self):
         testdata = [
             {

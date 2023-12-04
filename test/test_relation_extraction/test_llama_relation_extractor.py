@@ -60,5 +60,100 @@ class TestHandleRelationPostRequest(unittest.TestCase):
         mock_prompt_llm.assert_called_once()
         mock_send_to_db.assert_called_once()
 
+class TestParseData(unittest.TestCase):
+    def test_parse_remove_ems_without_iri(self):
+        data = [
+            {
+                "filename": "path/to/Artikel.txt",
+                "language": "en",
+                "sentences": [
+                    {
+                        "sentence": "Barrack Obama is married to Michelle Obama and they have a dog.",
+                        "sentenceStartIndex": 20,
+                        "sentenceEndIndex": 62,
+                        "entityMentions": 
+                        [
+                            { "name": "Barrack Obama", "startIndex": 0, "endIndex": 12, "iri": "knox-kb01.srv.aau.dk/Barack_Obama" },
+                            { "name": "Michelle Obama", "startIndex": 27, "endIndex": 40, "iri": "knox-kb01.srv.aau.dk/Michele_Obama"},
+                            { "name": "Dog", "startIndex": 27, "endIndex": 40, "iri": None}
+                        ]
+                    }
+                ]
+            }
+        ]
+        res = parse_data(data)
+
+        expected = [
+            {
+                "filename": "path/to/Artikel.txt",
+                "language": "en",
+                "sentences": [
+                    {
+                        "sentence": "Barrack Obama is married to Michelle Obama and they have a dog.",
+                        "sentenceStartIndex": 20,
+                        "sentenceEndIndex": 62,
+                        "entityMentions": 
+                        [
+                            { "name": "Barrack Obama", "startIndex": 0, "endIndex": 12, "iri": "knox-kb01.srv.aau.dk/Barack_Obama" },
+                            { "name": "Michelle Obama", "startIndex": 27, "endIndex": 40, "iri": "knox-kb01.srv.aau.dk/Michele_Obama"},
+                        ]
+                    }
+                ]
+            }
+        ]
+
+        self.assertEqual(res, expected)
+
+    def test_parse_remove_sentences_with_lt_two_ems(self):
+        data = [
+            {
+                "filename": "path/to/Artikel.txt",
+                "language": "en",
+                "sentences": [
+                    {
+                        "sentence": "Barrack Obama is married to Michelle Obama and they have a dog.",
+                        "sentenceStartIndex": 20,
+                        "sentenceEndIndex": 62,
+                        "entityMentions": 
+                        [
+                            { "name": "Barrack Obama", "startIndex": 0, "endIndex": 12, "iri": "knox-kb01.srv.aau.dk/Barack_Obama" },
+                        ]
+                    },
+                    {
+                        "sentence": "Barrack Obama is married to Michelle Obama and they have a dog.",
+                        "sentenceStartIndex": 20,
+                        "sentenceEndIndex": 62,
+                        "entityMentions": 
+                        [
+                            { "name": "Barrack Obama", "startIndex": 0, "endIndex": 12, "iri": "knox-kb01.srv.aau.dk/Barack_Obama" },
+                            { "name": "Michelle Obama", "startIndex": 27, "endIndex": 40, "iri": "knox-kb01.srv.aau.dk/Michele_Obama"},
+                        ]
+                    }
+                ]
+            }
+        ]
+        res = parse_data(data)
+
+        expected = [
+            {
+                "filename": "path/to/Artikel.txt",
+                "language": "en",
+                "sentences": [
+                    {
+                        "sentence": "Barrack Obama is married to Michelle Obama and they have a dog.",
+                        "sentenceStartIndex": 20,
+                        "sentenceEndIndex": 62,
+                        "entityMentions": 
+                        [
+                            { "name": "Barrack Obama", "startIndex": 0, "endIndex": 12, "iri": "knox-kb01.srv.aau.dk/Barack_Obama" },
+                            { "name": "Michelle Obama", "startIndex": 27, "endIndex": 40, "iri": "knox-kb01.srv.aau.dk/Michele_Obama"},
+                        ]
+                    }
+                ]
+            }
+        ]
+
+        self.assertEqual(res, expected)
+
 if __name__ == '__main__':
     unittest.main()

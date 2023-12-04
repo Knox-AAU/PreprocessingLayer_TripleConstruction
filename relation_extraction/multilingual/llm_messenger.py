@@ -58,8 +58,7 @@ class LLMMessenger(APIHandler):
         print("Recieved response from Llama2...")
         triples = []
         answer = re.split("/INST]", response["choices"][0]["text"])[1]
-        print(answer)
-        llama_triples = re.findall("<.*,.*,.*>|\[.*,.*,.*\]", answer)
+        llama_triples = re.findall("<[\s\w\d]*,[\s\w\d]*,[\s\w\d]*>|\[[\s\w\d]*,[\s\w\d]*,[\s\w\d]*\]", answer)
         for llama_triple in llama_triples:
             triple = re.split(",", llama_triple.replace("<", "").replace(">", "").replace("]", "").replace("[", ""))
             if len(triple) == 3:
@@ -67,7 +66,6 @@ class LLMMessenger(APIHandler):
                 for i, entry in enumerate(triple):
                     triple_object[i.__str__()] = entry.strip()
                 triples.append(triple_object)
-        print(triples)
         return triples
 
     def check_validity_of_response(sentence, response, relations):
@@ -75,7 +73,7 @@ class LLMMessenger(APIHandler):
         valid_entity_mentions = [em["name"] for em in sentence["entityMentions"]]
         for triple in response:
             if triple["0"] in valid_entity_mentions and triple["1"] in relations and triple["2"] in valid_entity_mentions: # 0 = subject, 1 = predicate, and 2 = object
-                triples.append([[em["iri"] for em in sentence["entityMentions"] if em["name"] == triple["0"]], [em["iri"] for em in sentence["entityMentions"] if em["name"] == triple["1"]], [em["iri"] for em in sentence["entityMentions"] if em["name"] == triple["2"]]])
+                triples.append([[em["iri"] for em in sentence["entityMentions"] if em["name"] == triple["0"]][0], triple["1"], [em["iri"] for em in sentence["entityMentions"] if em["name"] == triple["2"]][0]])
         return triples
 
     def prompt_llm(data, relations):
@@ -110,4 +108,4 @@ class LLMMessenger(APIHandler):
                 response = LLMMessenger.send_request(request)
                 process_response = LLMMessenger.process_message(response)
                 triples = LLMMessenger.check_validity_of_response(sentence, process_response, relations_test)
-        print(triples)
+        return triples

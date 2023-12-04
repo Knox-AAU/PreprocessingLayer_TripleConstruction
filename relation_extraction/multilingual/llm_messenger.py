@@ -75,7 +75,7 @@ class LLMMessenger(APIHandler):
         valid_entity_mentions = [em["name"] for em in sentence["entityMentions"]]
         for triple in response:
             if triple["0"] in valid_entity_mentions and triple["1"] in relations and triple["2"] in valid_entity_mentions: # 0 = subject, 1 = predicate, and 2 = object
-                triples.append([triple["0"], triple["1"], triple["2"]])
+                triples.append([[em["iri"] for em in sentence["entityMentions"] if em["name"] == triple["0"]], [em["iri"] for em in sentence["entityMentions"] if em["name"] == triple["1"]], [em["iri"] for em in sentence["entityMentions"] if em["name"] == triple["2"]]])
         return triples
 
     def prompt_llm(data, relations):

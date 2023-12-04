@@ -1,0 +1,685 @@
+[
+  {
+    "fileName": "Artikel.txt",
+    "language": "en",
+    "sentences": [
+      {
+        "sentence": "Since the sudden exit of the controversial CEO Martin Kjær last week, both he and the executive board in Region North Jutland have been in hiding.",
+        "sentenceStartIndex": 0,
+        "sentenceEndIndex": 149,
+        "entityMentions": [
+          {
+            "name": "last week",
+            "type": "Literal",
+            "label": "DATE",
+            "startIndex": 60,
+            "endIndex": 69,
+            "iri": null
+          },
+          {
+            "name": "Martin Kjær",
+            "type": "Entity",
+            "label": "PERSON",
+            "startIndex": 47,
+            "endIndex": 57,
+            "iri": "knox-kb01.srv.aau.dk/Martin_Kjær"
+          },
+          {
+            "name": "Region North Jutland",
+            "type": "Entity",
+            "label": "LOC",
+            "startIndex": 106,
+            "endIndex": 126,
+            "iri": "knox-kb01.srv.aau.dk/Region_North_Jutland"
+          }
+        ]
+      },
+      {
+        "sentence": "Martin Kjær does not say directly why he has resigned from his position, but he writes that he has not regretted taking the job just a year and a half ago.",
+        "sentenceStartIndex": 362,
+        "sentenceEndIndex": 520,
+        "entityMentions": [
+          {
+            "name": "just a year and a half ago",
+            "type": "Literal",
+            "label": "DATE",
+            "startIndex": 491,
+            "endIndex": 517,
+            "iri": null
+          },
+          {
+            "name": "Martin Kjær",
+            "type": "Entity",
+            "label": "PERSON",
+            "startIndex": 362,
+            "endIndex": 372,
+            "iri": "knox-kb01.srv.aau.dk/Martin_Kjær"
+          }
+        ]
+      },
+      {
+        "sentence": "According to Martin Kjær, it has been \"surreal\" to see himself in the media, after the Norwegian Working Environment Authority took action against the department he headed in July.-",
+        "sentenceStartIndex": 520,
+        "sentenceEndIndex": 704,
+        "entityMentions": [
+          {
+            "name": "July",
+            "type": "Literal",
+            "label": "DATE",
+            "startIndex": 696,
+            "endIndex": 700,
+            "iri": null
+          },
+          {
+            "name": "Martin Kjær",
+            "type": "Entity",
+            "label": "PERSON",
+            "startIndex": 533,
+            "endIndex": 543,
+            "iri": "knox-kb01.srv.aau.dk/Martin_Kjær"
+          },
+          {
+            "name": "the Norwegian Working Environment Authority",
+            "type": "Entity",
+            "label": "ORG",
+            "startIndex": 604,
+            "endIndex": 647,
+            "iri": "knox-kb01.srv.aau.dk/the_Norwegian_Working_Environment_Authority"
+          }
+        ]
+      },
+      {
+        "sentence": "In that process, I have learned that the public and private business worlds are two very different worlds.",
+        "sentenceStartIndex": 705,
+        "sentenceEndIndex": 811,
+        "entityMentions": [
+          {
+            "name": "two",
+            "type": "Literal",
+            "label": "CARDINAL",
+            "startIndex": 785,
+            "endIndex": 788,
+            "iri": null
+          }
+        ]
+      },
+      {
+        "sentence": "A few days after Martin Kjær had conducted a major interview with Nordjyske in early September, he wrote in an email to his employees that he was \"deeply personally affected\" and that it was the \"most disgusting thing I have ever experienced\".- I don't remember several parts of the interview at all, he writes in the email, which Nordjyske has seen.",
+        "sentenceStartIndex": 2100,
+        "sentenceEndIndex": 2455,
+        "entityMentions": [
+          {
+            "name": "A few days",
+            "type": "Literal",
+            "label": "DATE",
+            "startIndex": 2100,
+            "endIndex": 2110,
+            "iri": null
+          },
+          {
+            "name": "early September",
+            "type": "Literal",
+            "label": "DATE",
+            "startIndex": 2180,
+            "endIndex": 2195,
+            "iri": null
+          },
+          {
+            "name": "Martin Kjær",
+            "type": "Entity",
+            "label": "PERSON",
+            "startIndex": 2117,
+            "endIndex": 2127,
+            "iri": "knox-kb01.srv.aau.dk/Martin_Kjær"
+          },
+          {
+            "name": "Nordjyske",
+            "type": "Entity",
+            "label": "ORG",
+            "startIndex": 2167,
+            "endIndex": 2176,
+            "iri": "knox-kb01.srv.aau.dk/Nordjyske"
+          },
+          {
+            "name": "Nordjyske",
+            "type": "Entity",
+            "label": "ORG",
+            "startIndex": 2434,
+            "endIndex": 2443,
+            "iri": "knox-kb01.srv.aau.dk/Nordjyske"
+          }
+        ]
+      },
+      {
+        "sentence": "In the post on LinkedIn, he ends by denying that he is leaving a \"construction site in chaos\".- NAU (New Aalborg University Hospital, ed.) is in a good place today, and even though there are massive challenges, today there is a highly competent team of own/external resources.",
+        "sentenceStartIndex": 2455,
+        "sentenceEndIndex": 2735,
+        "entityMentions": [
+          {
+            "name": "today",
+            "type": "Literal",
+            "label": "DATE",
+            "startIndex": 2615,
+            "endIndex": 2620,
+            "iri": null
+          },
+          {
+            "name": "today",
+            "type": "Literal",
+            "label": "DATE",
+            "startIndex": 2668,
+            "endIndex": 2673,
+            "iri": null
+          },
+          {
+            "name": "LinkedIn",
+            "type": "Entity",
+            "label": "ORG",
+            "startIndex": 2470,
+            "endIndex": 2478,
+            "iri": "knox-kb01.srv.aau.dk/LinkedIn"
+          },
+          {
+            "name": "New Aalborg University Hospital",
+            "type": "Entity",
+            "label": "ORG",
+            "startIndex": 2558,
+            "endIndex": 2589,
+            "iri": "knox-kb01.srv.aau.dk/New_Aalborg_University_Hospital"
+          }
+        ]
+      },
+      {
+        "sentence": "That statement is in sharp contrast to Martin Kjær's statements in Nordjyske earlier this month.",
+        "sentenceStartIndex": 2735,
+        "sentenceEndIndex": 2834,
+        "entityMentions": [
+          {
+            "name": "earlier this month",
+            "type": "Literal",
+            "label": "DATE",
+            "startIndex": 2813,
+            "endIndex": 2831,
+            "iri": null
+          },
+          {
+            "name": "Martin Kjær",
+            "type": "Entity",
+            "label": "PERSON",
+            "startIndex": 2774,
+            "endIndex": 2784,
+            "iri": "knox-kb01.srv.aau.dk/Martin_Kjær"
+          },
+          {
+            "name": "Nordjyske",
+            "type": "Entity",
+            "label": "ORG",
+            "startIndex": 2803,
+            "endIndex": 2812,
+            "iri": "knox-kb01.srv.aau.dk/Nordjyske"
+          }
+        ]
+      },
+      {
+        "sentence": "It is still unknown whether Martin Kjær has already had his last day of work, or whether he will have to work during the notice period.",
+        "sentenceStartIndex": 3122,
+        "sentenceEndIndex": 3260,
+        "entityMentions": [
+          {
+            "name": "last day",
+            "type": "Literal",
+            "label": "DATE",
+            "startIndex": 3183,
+            "endIndex": 3191,
+            "iri": null
+          },
+          {
+            "name": "Martin Kjær",
+            "type": "Entity",
+            "label": "PERSON",
+            "startIndex": 3150,
+            "endIndex": 3160,
+            "iri": "knox-kb01.srv.aau.dk/Martin_Kjær"
+          }
+        ]
+      },
+      {
+        "sentence": "Nordjyske learns that on Thursday last week he told the employees at an urgently called meeting that he had resigned from his position.",
+        "sentenceStartIndex": 3260,
+        "sentenceEndIndex": 3395,
+        "entityMentions": [
+          {
+            "name": "Thursday",
+            "type": "Literal",
+            "label": "DATE",
+            "startIndex": 3285,
+            "endIndex": 3293,
+            "iri": null
+          },
+          {
+            "name": "last week",
+            "type": "Literal",
+            "label": "DATE",
+            "startIndex": 3294,
+            "endIndex": 3303,
+            "iri": null
+          },
+          {
+            "name": "Nordjyske",
+            "type": "Entity",
+            "label": "ORG",
+            "startIndex": 3260,
+            "endIndex": 3269,
+            "iri": "knox-kb01.srv.aau.dk/Nordjyske"
+          }
+        ]
+      },
+      {
+        "sentence": "There hasn't been much positive news from the super hospital for a long time, but here is one: Money has been found to build a patient and maternity hotel at New Aalborg University Hospital.",
+        "sentenceStartIndex": 3677,
+        "sentenceEndIndex": 3868,
+        "entityMentions": [
+          {
+            "name": "one",
+            "type": "Literal",
+            "label": "CARDINAL",
+            "startIndex": 3767,
+            "endIndex": 3770,
+            "iri": null
+          },
+          {
+            "name": "New Aalborg University Hospital",
+            "type": "Entity",
+            "label": "ORG",
+            "startIndex": 3836,
+            "endIndex": 3867,
+            "iri": "knox-kb01.srv.aau.dk/New_Aalborg_University_Hospital"
+          }
+        ]
+      },
+      {
+        "sentence": "A total of DKK 120 million has been set aside over the next four years.- I am very happy that we have succeeded in finding a solution so that seriously ill patients admitted to the patient hotel and new parents do not have to transport themselves across the city when they need peace, closeness and professional help close at hand, says regional council chairman Mads Duedahl (V) in a press release.980 inhabitants of Bredebro near Tønder can soon look forward to receiving a letter from the municipality.",
+        "sentenceStartIndex": 3869,
+        "sentenceEndIndex": 4380,
+        "entityMentions": [
+          {
+            "name": "DKK 120 million",
+            "type": "Literal",
+            "label": "MONEY",
+            "startIndex": 3880,
+            "endIndex": 3895,
+            "iri": null
+          },
+          {
+            "name": "the next four years",
+            "type": "Literal",
+            "label": "DATE",
+            "startIndex": 3920,
+            "endIndex": 3939,
+            "iri": null
+          },
+          {
+            "name": "980",
+            "type": "Literal",
+            "label": "CARDINAL",
+            "startIndex": 4273,
+            "endIndex": 4276,
+            "iri": null
+          },
+          {
+            "name": "Mads Duedahl",
+            "type": "Entity",
+            "label": "PERSON",
+            "startIndex": 4234,
+            "endIndex": 4246,
+            "iri": "knox-kb01.srv.aau.dk/Mads_Duedahl"
+          },
+          {
+            "name": "Bredebro",
+            "type": "Entity",
+            "label": "ORG",
+            "startIndex": 4292,
+            "endIndex": 4300,
+            "iri": "knox-kb01.srv.aau.dk/Bredebro"
+          }
+        ]
+      },
+      {
+        "sentence": "But now the project director for the scandal-plagued construction of the super hospital in Aalborg opens up a bit in a post on the LinkedIn social media.",
+        "sentenceStartIndex": 207,
+        "sentenceEndIndex": 362,
+        "entityMentions": [
+          {
+            "name": "Aalborg",
+            "type": "Entity",
+            "label": "ORG",
+            "startIndex": 298,
+            "endIndex": 305,
+            "iri": "knox-kb01.srv.aau.dk/Aalborg"
+          }
+        ]
+      },
+      {
+        "sentence": "This also applies to the media attention, which is massive for public buildings, he writes on LinkedIn.Region North Jutland received an injunction for the psychological working environment, where employees criticized Martin Kjærr for, among other things, overcommitment, and the director himself acknowledged that several of his employees break down crying on the job.",
+        "sentenceStartIndex": 812,
+        "sentenceEndIndex": 1184,
+        "entityMentions": [
+          {
+            "name": "Region North Jutland",
+            "type": "Entity",
+            "label": "LOC",
+            "startIndex": 917,
+            "endIndex": 937,
+            "iri": "knox-kb01.srv.aau.dk/Region_North_Jutland"
+          },
+          {
+            "name": "Martin Kjær",
+            "type": "Entity",
+            "label": "PERSON",
+            "startIndex": 1031,
+            "endIndex": 1041,
+            "iri": "knox-kb01.srv.aau.dk/Martin_Kjær"
+          }
+        ]
+      },
+      {
+        "sentence": "Subsequently, he came under intense pressure internally after several highly sensational statements in North Jutland.",
+        "sentenceStartIndex": 1184,
+        "sentenceEndIndex": 1303,
+        "entityMentions": [
+          {
+            "name": "North Jutland",
+            "type": "Entity",
+            "label": "GPE",
+            "startIndex": 1287,
+            "endIndex": 1300,
+            "iri": "knox-kb01.srv.aau.dk/North_Jutland"
+          }
+        ]
+      },
+      {
+        "sentence": "Martin Kjær said, among other things, that the working environment could get even worse as more construction scandals came to light, and he started a public fight with the HR director in Region North Jutland, whom he accused of cutting him off from responding to the Norwegian Working Environment Authority.",
+        "sentenceStartIndex": 1303,
+        "sentenceEndIndex": 1613,
+        "entityMentions": [
+          {
+            "name": "Martin Kjær",
+            "type": "Entity",
+            "label": "PERSON",
+            "startIndex": 1303,
+            "endIndex": 1313,
+            "iri": "knox-kb01.srv.aau.dk/Martin_Kjær"
+          },
+          {
+            "name": "Region North Jutland",
+            "type": "Entity",
+            "label": "LOC",
+            "startIndex": 1491,
+            "endIndex": 1511,
+            "iri": "knox-kb01.srv.aau.dk/Region_North_Jutland"
+          },
+          {
+            "name": "the Norwegian Working Environment Authority",
+            "type": "Entity",
+            "label": "ORG",
+            "startIndex": 1567,
+            "endIndex": 1610,
+            "iri": "knox-kb01.srv.aau.dk/the_Norwegian_Working_Environment_Authority"
+          }
+        ]
+      },
+      {
+        "sentence": "Accusations that HR director Mariane Therkelsen has rejected.",
+        "sentenceStartIndex": 1613,
+        "sentenceEndIndex": 1676,
+        "entityMentions": [
+          {
+            "name": "Mariane Therkelsen",
+            "type": "Entity",
+            "label": "PERSON",
+            "startIndex": 1642,
+            "endIndex": 1660,
+            "iri": "knox-kb01.srv.aau.dk/Mariane_Therkelsen"
+          }
+        ]
+      },
+      {
+        "sentence": "But Martin Kjær believes he is a victim.",
+        "sentenceStartIndex": 1676,
+        "sentenceEndIndex": 1717,
+        "entityMentions": [
+          {
+            "name": "Martin Kjær",
+            "type": "Entity",
+            "label": "PERSON",
+            "startIndex": 1680,
+            "endIndex": 1690,
+            "iri": "knox-kb01.srv.aau.dk/Martin_Kjær"
+          }
+        ]
+      },
+      {
+        "sentence": "Here he said that he was considering moving employees away because \"there are some employees who do not fit into a turnaround of what is now the biggest construction scandal in Danish history\".",
+        "sentenceStartIndex": 2834,
+        "sentenceEndIndex": 3029,
+        "entityMentions": [
+          {
+            "name": "Danish",
+            "type": "Entity",
+            "label": "NORP",
+            "startIndex": 3011,
+            "endIndex": 3017,
+            "iri": "knox-kb01.srv.aau.dk/Danish"
+          }
+        ]
+      },
+      {
+        "sentence": "Nordjyske has tried to get Martin Kjær to speak, but he has not responded to our inquiries.",
+        "sentenceStartIndex": 3029,
+        "sentenceEndIndex": 3121,
+        "entityMentions": [
+          {
+            "name": "Nordjyske",
+            "type": "Entity",
+            "label": "ORG",
+            "startIndex": 3029,
+            "endIndex": 3038,
+            "iri": "knox-kb01.srv.aau.dk/Nordjyske"
+          },
+          {
+            "name": "Martin Kjær",
+            "type": "Entity",
+            "label": "PERSON",
+            "startIndex": 3056,
+            "endIndex": 3066,
+            "iri": "knox-kb01.srv.aau.dk/Martin_Kjær"
+          }
+        ]
+      },
+      {
+        "sentence": "According to Nordjyske's information, the termination comes after several meetings with acting CEO Kim Mikkelsen.",
+        "sentenceStartIndex": 3484,
+        "sentenceEndIndex": 3599,
+        "entityMentions": [
+          {
+            "name": "Nordjyske",
+            "type": "Entity",
+            "label": "ORG",
+            "startIndex": 3497,
+            "endIndex": 3506,
+            "iri": "knox-kb01.srv.aau.dk/Nordjyske"
+          },
+          {
+            "name": "Kim Mikkelsen",
+            "type": "Entity",
+            "label": "PERSON",
+            "startIndex": 3583,
+            "endIndex": 3596,
+            "iri": "knox-kb01.srv.aau.dk/Kim_Mikkelsen"
+          }
+        ]
+      },
+      {
+        "sentence": "Kim Mikkelsen has refused to answer questions - both verbally and in writing.",
+        "sentenceStartIndex": 3599,
+        "sentenceEndIndex": 3677,
+        "entityMentions": [
+          {
+            "name": "Kim Mikkelsen",
+            "type": "Entity",
+            "label": "PERSON",
+            "startIndex": 3599,
+            "endIndex": 3612,
+            "iri": "knox-kb01.srv.aau.dk/Kim_Mikkelsen"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "fileName": "NewsArticle.txt",
+    "language": "en",
+    "sentences": [
+      {
+        "sentence": "In a groundbreaking announcement, Tesla unveiled its latest electric vehicle model, the Cybertruck, during a high-profile event in Los Angeles.",
+        "sentenceStartIndex": 0,
+        "sentenceEndIndex": 112,
+        "entityMentions": [
+          {
+            "name": "Tesla",
+            "type": "ORG",
+            "label": "ORG",
+            "startIndex": 31,
+            "endIndex": 36,
+            "iri": "knox-kb01.srv.aau.dk/Tesla"
+          },
+          {
+            "name": "Cybertruck",
+            "type": "PRODUCT",
+            "label": "PRODUCT",
+            "startIndex": 78,
+            "endIndex": 89,
+            "iri": "knox-kb01.srv.aau.dk/Cybertruck"
+          },
+          {
+            "name": "Los Angeles",
+            "type": "GPE",
+            "label": "GPE",
+            "startIndex": 99,
+            "endIndex": 110,
+            "iri": "knox-kb01.srv.aau.dk/Los_Angeles"
+          }
+        ]
+      },
+      {
+        "sentence": "The World Health Organization (WHO) declared a global health emergency as the Delta variant of the COVID-19 virus continued to spread rapidly across multiple continents.",
+        "sentenceStartIndex": 114,
+        "sentenceEndIndex": 248,
+        "entityMentions": [
+          {
+            "name": "World Health Organization",
+            "type": "ORG",
+            "label": "ORG",
+            "startIndex": 4,
+            "endIndex": 31,
+            "iri": "knox-kb01.srv.aau.dk/World_Health_Organization"
+          },
+          {
+            "name": "Delta variant",
+            "type": "ENTITY",
+            "label": "ENTITY",
+            "startIndex": 64,
+            "endIndex": 77,
+            "iri": "knox-kb01.srv.aau.dk/Delta_variant"
+          },
+          {
+            "name": "COVID-19",
+            "type": "ENTITY",
+            "label": "ENTITY",
+            "startIndex": 81,
+            "endIndex": 89,
+            "iri": "knox-kb01.srv.aau.dk/COVID-19"
+          }
+        ]
+      },
+      {
+        "sentence": "As tensions escalate in the Middle East, the United Nations Security Council held an emergency meeting to address the ongoing conflict between Israel and Palestine.",
+        "sentenceStartIndex": 252,
+        "sentenceEndIndex": 401,
+        "entityMentions": [
+          {
+            "name": "Middle East",
+            "type": "LOC",
+            "label": "LOC",
+            "startIndex": 32,
+            "endIndex": 44,
+            "iri": "knox-kb01.srv.aau.dk/Middle_East"
+          },
+          {
+            "name": "United Nations Security Council",
+            "type": "ORG",
+            "label": "ORG",
+            "startIndex": 48,
+            "endIndex": 80,
+            "iri": "knox-kb01.srv.aau.dk/United_Nations_Security_Council"
+          },
+          {
+            "name": "Israel",
+            "type": "GPE",
+            "label": "GPE",
+            "startIndex": 106,
+            "endIndex": 112,
+            "iri": "knox-kb01.srv.aau.dk/Israel"
+          },
+          {
+            "name": "Palestine",
+            "type": "GPE",
+            "label": "GPE",
+            "startIndex": 117,
+            "endIndex": 126,
+            "iri": "knox-kb01.srv.aau.dk/Palestine"
+          }
+        ]
+      },
+      {
+        "sentence": "Tech giant Apple Inc. reported record-breaking quarterly profits, driven by strong sales of its new iPhone 13 and increased demand for its range of MacBooks and iPads.",
+        "sentenceStartIndex": 405,
+        "sentenceEndIndex": 563,
+        "entityMentions": [
+          {
+            "name": "Apple Inc.",
+            "type": "ORG",
+            "label": "ORG",
+            "startIndex": 10,
+            "endIndex": 20,
+            "iri": "knox-kb01.srv.aau.dk/Apple_Inc"
+          },
+          {
+            "name": "iPhone 13",
+            "type": "PRODUCT",
+            "label": "PRODUCT",
+            "startIndex": 104,
+            "endIndex": 114,
+            "iri": "knox-kb01.srv.aau.dk/iPhone_13"
+          },
+          {
+            "name": "MacBooks",
+            "type": "PRODUCT",
+            "label": "PRODUCT",
+            "startIndex": 140,
+            "endIndex": 148,
+            "iri": "knox-kb01.srv.aau.dk/MacBooks"
+          },
+          {
+            "name": "iPads",
+            "type": "PRODUCT",
+            "label": "PRODUCT",
+            "startIndex": 159,
+            "endIndex": 164,
+            "iri": "knox-kb01.srv.aau.dk/iPads"
+          }
+        ]
+      }
+    ]
+  }
+]

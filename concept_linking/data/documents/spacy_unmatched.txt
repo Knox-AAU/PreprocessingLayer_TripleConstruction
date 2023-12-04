@@ -1,0 +1,13 @@
+date
+fac
+gpe
+loc
+money
+norp
+ordinal
+org
+percent
+product
+quantity
+time
+work_of_art

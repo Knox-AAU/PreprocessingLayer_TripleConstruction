@@ -1,0 +1,543 @@
+[
+    {
+        "fileName": "Artikel_DK.txt",
+        "language": "da",
+        "sentences": [
+            {
+                "sentence": "En nylig undersøgelse afslører, at virksomheder i Nordjylland og Aarhus intensiverer samarbejdet om bæredygtige energiløsninger for at imødekomme stigende efterspørgsel. Kunstnere fra hele landet deltager i årets kulturfestival i Aalborg.",
+                "sentenceStartIndex": 208,
+                "sentenceEndIndex": 453,
+                "entityMentions": [
+                    {
+                        "name": "Nordjylland",
+                        "type": "Entity",
+                        "label": "LOC",
+                        "startIndex": 260,
+                        "endIndex": 271,
+                        "iri": "knox-kb01.srv.aau.dk/Nordjylland"
+                    },
+                    {
+                        "name": "Aarhus",
+                        "type": "Entity",
+                        "label": "LOC",
+                        "startIndex": 275,
+                        "endIndex": 281,
+                        "iri": "knox-kb01.srv.aau.dk/Aarhus"
+                    },
+                    {
+                        "name": "Aalborg",
+                        "type": "Entity",
+                        "label": "LOC",
+                        "startIndex": 445,
+                        "endIndex": 452,
+                        "iri": "knox-kb01.srv.aau.dk/Aalborg"
+                    }
+                ]
+            },
+            {
+                "sentence": "Byrådet godkender ambitiøse planer for bæredygtig byudvikling i Aalborgs centrum. Lokale landmænd i Hjørring og Frederikshavn rapporterer om udfordringer med klimaforandringer, der påvirker både afgrøder og dyrebestande.",
+                "sentenceStartIndex": 813,
+                "sentenceEndIndex": 1042,
+                "entityMentions": [
+                    {
+                        "name": "Byrådet",
+                        "type": "Entity",
+                        "label": "ORG",
+                        "startIndex": 813,
+                        "endIndex": 821,
+                        "iri": "knox-kb01.srv.aau.dk/Byrådet"
+                    },
+                    {
+                        "name": "Aalborgs",
+                        "type": "Entity",
+                        "label": "LOC",
+                        "startIndex": 880,
+                        "endIndex": 888,
+                        "iri": "knox-kb01.srv.aau.dk/Aalborgs"
+                    },
+                    {
+                        "name": "Frederikshavn",
+                        "type": "Entity",
+                        "label": "LOC",
+                        "startIndex": 930,
+                        "endIndex": 943,
+                        "iri": "knox-kb01.srv.aau.dk/Frederikshavn"
+                    }
+                ]
+            },
+            {
+                "sentence": "Kulturhuset lancerer et varieret program af aktiviteter for børn og unge i vinterferien.",
+                "sentenceStartIndex": 1128,
+                "sentenceEndIndex": 1217,
+                "entityMentions": [
+                    {
+                        "name": "Kulturhuset",
+                        "type": "Entity",
+                        "label": "LOC",
+                        "startIndex": 1128,
+                        "endIndex": 1139,
+                        "iri": "knox-kb01.srv.aau.dk/Kulturhuset"
+                    }
+                ]
+            },
+            {
+                "sentence": "I et nyt initiativ samarbejder Aalborg Kommune, Aalborg Universitet og lokale erhvervsliv om en ambitiøs plan for at tiltrække innovative startups til området.",
+                "sentenceStartIndex": 1667,
+                "sentenceEndIndex": 1791,
+                "entityMentions": [
+                    {
+                        "name": "Aalborg Kommune",
+                        "type": "Entity",
+                        "label": "ORG",
+                        "startIndex": 1698,
+                        "endIndex": 1713,
+                        "iri": "knox-kb01.srv.aau.dk/Aalborg_Kommune"
+                    },
+                    {
+                        "name": "Aalborg Universitet",
+                        "type": "Entity",
+                        "label": "ORG",
+                        "startIndex": 1715,
+                        "endIndex": 1734,
+                        "iri": "knox-kb01.srv.aau.dk/Aalborg_Universitet"
+                    }
+                ]
+            },
+            {
+                "sentence": "Et spændende kunstprojekt, støttet af Kulturministeriet, samler kunstnere fra København, Aalborg og Aarhus for at udforske kreative udtryk og lokale identiteter .Regionens politi, skoler og sundhedsmyndigheder gør sammen om at tackle ungdomskriminalitet og skabe bedre forhold for unge i udsatte områder.",
+                "sentenceStartIndex": 1830,
+                "sentenceEndIndex": 2147,
+                "entityMentions": [
+                    {
+                        "name": "Kulturministeriet",
+                        "type": "Entity",
+                        "label": "ORG",
+                        "startIndex": 1870,
+                        "endIndex": 1887,
+                        "iri": "knox-kb01.srv.aau.dk/Kulturministeriet"
+                    },
+                    {
+                        "name": "København",
+                        "type": "Entity",
+                        "label": "LOC",
+                        "startIndex": 1910,
+                        "endIndex": 1920,
+                        "iri": "knox-kb01.srv.aau.dk/København"
+                    },
+                    {
+                        "name": "Aalborg",
+                        "type": "Entity",
+                        "label": "LOC",
+                        "startIndex": 1922,
+                        "endIndex": 1929,
+                        "iri": "knox-kb01.srv.aau.dk/Aalborg"
+                    },
+                    {
+                        "name": "Aarhus",
+                        "type": "Entity",
+                        "label": "LOC",
+                        "startIndex": 1933,
+                        "endIndex": 1939,
+                        "iri": "knox-kb01.srv.aau.dk/Aarhus"
+                    },
+                    {
+                        "name": "sundhedsmyndigheder",
+                        "type": "Entity",
+                        "label": "ORG",
+                        "startIndex": 2023,
+                        "endIndex": 2042,
+                        "iri": "knox-kb01.srv.aau.dk/sundhedsmyndigheder"
+                    }
+                ]
+            },
+            {
+                "sentence": "FC København sikrede sig sejren mod Brøndby IF, da målscorerne Jonas Wind og Kasper Kusk viste imponerende præstationer.",
+                "sentenceStartIndex": 2209,
+                "sentenceEndIndex": 2434,
+                "entityMentions": [
+                    {
+                        "name": "FC København",
+                        "type": "Entity",
+                        "label": "ORG",
+                        "startIndex": 2309,
+                        "endIndex": 2322,
+                        "iri": "knox-kb01.srv.aau.dk/FC_København"
+                    },
+                    {
+                        "name": "Brøndby IF",
+                        "type": "Entity",
+                        "label": "ORG",
+                        "startIndex": 2346,
+                        "endIndex": 2357,
+                        "iri": "knox-kb01.srv.aau.dk/Brøndby_IF"
+                    },
+                    {
+                        "name": "målscorerne",
+                        "type": "Entity",
+                        "label": "MISC",
+                        "startIndex": 2362,
+                        "endIndex": 2374,
+                        "iri": "knox-kb01.srv.aau.dk/mÃ¥lscorerne"
+                    },
+                    {
+                        "name": "Jonas Wind",
+                        "type": "Entity",
+                        "label": "PER",
+                        "startIndex": 2375,
+                        "endIndex": 2385,
+                        "iri": "knox-kb01.srv.aau.dk/Jonas_Wind"
+                    },
+                    {
+                        "name": "Kasper Kusk",
+                        "type": "Entity",
+                        "label": "PER",
+                        "startIndex": 2389,
+                        "endIndex": 2400,
+                        "iri": "knox-kb01.srv.aau.dk/Kasper_Kusk"
+                    }
+                ]
+            },
+            {
+                "sentence": "Den danske regering annoncerede en ny miljøplan, der sigter mod at reducere CO2-udledningen med 30% inden 2030, ifølge klimaminister Karen Ellemann.",
+                "sentenceStartIndex": 2434,
+                "sentenceEndIndex": 2585,
+                "entityMentions": [
+                    {
+                        "name": "Karen Ellemann",
+                        "type": "Entity",
+                        "label": "PER",
+                        "startIndex": 2569,
+                        "endIndex": 2583,
+                        "iri": "knox-kb01.srv.aau.dk/Karen_Ellemann"
+                    }
+                ]
+            },
+            {
+                "sentence": "Skuespillerinden Sofie Gråbøl vil optræde i den kommende danske film, der udforsker historien om en berømt dansk forfatter.",
+                "sentenceStartIndex": 2735,
+                "sentenceEndIndex": 3008,
+                "entityMentions": [
+                    {
+                        "name": "Sofie Gråbøl",
+                        "type": "Entity",
+                        "label": "PER",
+                        "startIndex": 2752,
+                        "endIndex": 2766,
+                        "iri": "knox-kb01.srv.aau.dk/Sofie_Gråbøl"
+                    }
+                ]
+            },
+            {
+                "sentence": "Badmintonstjernen Viktor Axelsen annoncerede et partnerskab med et dansk sundhedsfirma for at fremme fitness og sund livsstil.",
+                "sentenceStartIndex": 3008,
+                "sentenceEndIndex": 3135,
+                "entityMentions": [
+                    {
+                        "name": "Badmintonstjernen Viktor Axelsen",
+                        "type": "Entity",
+                        "label": "PER",
+                        "startIndex": 3008,
+                        "endIndex": 3040,
+                        "iri": "knox-kb01.srv.aau.dk/Badmintonstjernen_Viktor_Axelsen"
+                    }
+                ]
+            },
+            {
+                "sentence": "Universitetet i Aarhus introducerede et nyt forskningscenter dedikeret til bæredygtig energi og klimaforandringer under ledelse af professor Anne Larsen.",
+                "sentenceStartIndex": 3135,
+                "sentenceEndIndex": 3289,
+                "entityMentions": [
+                    {
+                        "name": "Aarhus",
+                        "type": "Entity",
+                        "label": "LOC",
+                        "startIndex": 3151,
+                        "endIndex": 3157,
+                        "iri": "knox-kb01.srv.aau.dk/Aarhus"
+                    },
+                    {
+                        "name": "Anne Larsen",
+                        "type": "Entity",
+                        "label": "PER",
+                        "startIndex": 3277,
+                        "endIndex": 3288,
+                        "iri": "knox-kb01.srv.aau.dk/Anne_Larsen"
+                    }
+                ]
+            },
+            {
+                "sentence": "En nylig medicinsk undersøgelse ledet af Dr. Anders Jensen identificerede en ny genetisk markør forbundet med arvelig hjertesygdom.",
+                "sentenceStartIndex": 3540,
+                "sentenceEndIndex": 3673,
+                "entityMentions": [
+                    {
+                        "name": "Anders Jensen",
+                        "type": "Entity",
+                        "label": "PER",
+                        "startIndex": 3586,
+                        "endIndex": 3599,
+                        "iri": "knox-kb01.srv.aau.dk/Anders_Jensen"
+                    }
+                ]
+            },
+            {
+                "sentence": "Team Alpha sikrede sig en sejr mod Team Bravo med imponerende præstationer fra målscorerne Alex White og Chris Turner.",
+                "sentenceStartIndex": 0,
+                "sentenceEndIndex": 122,
+                "entityMentions": [
+                    {
+                        "name": "Team Alpha",
+                        "type": "Entity",
+                        "label": "ORG",
+                        "startIndex": 0,
+                        "endIndex": 10,
+                        "iri": "knox-kb01.srv.aau.dk/Team_Alpha"
+                    },
+                    {
+                        "name": "Team Bravo",
+                        "type": "Entity",
+                        "label": "ORG",
+                        "startIndex": 35,
+                        "endIndex": 45,
+                        "iri": "knox-kb01.srv.aau.dk/Team_Bravo"
+                    },
+                    {
+                        "name": "målscorerne",
+                        "type": "Entity",
+                        "label": "MISC",
+                        "startIndex": 80,
+                        "endIndex": 92,
+                        "iri": "knox-kb01.srv.aau.dk/målscorerne"
+                    },
+                    {
+                        "name": "Alex White",
+                        "type": "Entity",
+                        "label": "PER",
+                        "startIndex": 93,
+                        "endIndex": 103,
+                        "iri": "knox-kb01.srv.aau.dk/Alex_White"
+                    },
+                    {
+                        "name": "Chris Turner",
+                        "type": "Entity",
+                        "label": "PER",
+                        "startIndex": 107,
+                        "endIndex": 119,
+                        "iri": "knox-kb01.srv.aau.dk/Chris_Turner"
+                    }
+                ]
+            },
+            {
+                "sentence": "Regeringen annoncerede en ny miljøplan, der sigter mod at reducere CO2-udledningen med 30% inden 2030, ifølge klimaminister Karen Ellis.",
+                "sentenceStartIndex": 122,
+                "sentenceEndIndex": 410,
+                "entityMentions": [
+                    {
+                        "name": "Karen Ellis",
+                        "type": "Entity",
+                        "label": "PER",
+                        "startIndex": 248,
+                        "endIndex": 259,
+                        "iri": "knox-kb01.srv.aau.dk/Karen_Ellis"
+                    }
+                ]
+            },
+            {
+                "sentence": "Skuespiller Sarah Miller vil spille hovedrollen i den kommende internationale film, der udforsker livet af en berømt forfatter.",
+                "sentenceStartIndex": 412,
+                "sentenceEndIndex": 540,
+                "entityMentions": [
+                    {
+                        "name": "Sarah Miller",
+                        "type": "Entity",
+                        "label": "PER",
+                        "startIndex": 424,
+                        "endIndex": 436,
+                        "iri": "knox-kb01.srv.aau.dk/Sarah_Miller"
+                    }
+                ]
+            },
+            {
+                "sentence": "Harvard University introducerede et nyt forskningscenter dedikeret til bæredygtig energi og klimaændringer under ledelse af professor David Foster.",
+                "sentenceStartIndex": 818,
+                "sentenceEndIndex": 969,
+                "entityMentions": [
+                    {
+                        "name": "Harvard University",
+                        "type": "Entity",
+                        "label": "ORG",
+                        "startIndex": 818,
+                        "endIndex": 836,
+                        "iri": "knox-kb01.srv.aau.dk/Harvard_University"
+                    },
+                    {
+                        "name": "David Foster",
+                        "type": "Entity",
+                        "label": "PER",
+                        "startIndex": 954,
+                        "endIndex": 966,
+                        "iri": "knox-kb01.srv.aau.dk/David_Foster"
+                    }
+                ]
+            },
+            {
+                "sentence": "Bier i bymiljøer står over for udfordringer pÃ¥ grund af klimaændringer, advarer biolog Emma Johnson og opfordrer til øget opmærksomhed om biodiversitet.",
+                "sentenceStartIndex": 969,
+                "sentenceEndIndex": 1127,
+                "entityMentions": [
+                    {
+                        "name": "Emma Johnson",
+                        "type": "Entity",
+                        "label": "PER",
+                        "startIndex": 1060,
+                        "endIndex": 1072,
+                        "iri": "knox-kb01.srv.aau.dk/Emma_Johnson"
+                    }
+                ]
+            },
+            {
+                "sentence": "En nylig medicinsk undersøgelse ledet af Dr. Jessica Anderson identificerede en ny genetisk markør forbundet med arvelig hjertesygdom.",
+                "sentenceStartIndex": 1258,
+                "sentenceEndIndex": 1394,
+                "entityMentions": [
+                    {
+                        "name": "Dr. Jessica Anderson",
+                        "type": "Entity",
+                        "label": "PER",
+                        "startIndex": 1300,
+                        "endIndex": 1320,
+                        "iri": "knox-kb01.srv.aau.dk/Dr._Jessica_Anderson"
+                    }
+                ]
+            },
+            {
+                "sentence": "Den futuristiske skyskraber, designet af arkitekt James Walker, er sat til at omdefinere byens skyline.",
+                "sentenceStartIndex": 1394,
+                "sentenceEndIndex": 1501,
+                "entityMentions": [
+                    {
+                        "name": "James Walker",
+                        "type": "Entity",
+                        "label": "PER",
+                        "startIndex": 1446,
+                        "endIndex": 1458,
+                        "iri": "knox-kb01.srv.aau.dk/James_Walker"
+                    }
+                ]
+            },
+            {
+                "sentence": "Mode designer Lily Evans præsenterede sin seneste kollektion og trak inspiration fra naturen og bæredygtighed.",
+                "sentenceStartIndex": 1602,
+                "sentenceEndIndex": 1714,
+                "entityMentions": [
+                    {
+                        "name": "Lily Evans",
+                        "type": "Entity",
+                        "label": "PER",
+                        "startIndex": 1616,
+                        "endIndex": 1626,
+                        "iri": "knox-kb01.srv.aau.dk/Lily_Evans"
+                    }
+                ]
+            },
+            {
+                "sentence": "Marinbiolog Mark Taylor opdagede en ny art af dybhavsdyr under en ekspedition i Stillehavet.",
+                "sentenceStartIndex": 1842,
+                "sentenceEndIndex": 1936,
+                "entityMentions": [
+                    {
+                        "name": "Marinbiolog Mark Taylor",
+                        "type": "Entity",
+                        "label": "PER",
+                        "startIndex": 1842,
+                        "endIndex": 1865,
+                        "iri": "knox-kb01.srv.aau.dk/Marinbiolog_Mark_Taylor"
+                    },
+                    {
+                        "name": "Stillehavet",
+                        "type": "Entity",
+                        "label": "LOC",
+                        "startIndex": 1922,
+                        "endIndex": 1933,
+                        "iri": "knox-kb01.srv.aau.dk/Stillehavet"
+                    }
+                ]
+            },
+            {
+                "sentence": "NASAs seneste satellitmission sigter mod at udforske fjerne galakser og indsamle data om kosmiske fænomener.",
+                "sentenceStartIndex": 1936,
+                "sentenceEndIndex": 2045,
+                "entityMentions": [
+                    {
+                        "name": "NASAs",
+                        "type": "Entity",
+                        "label": "ORG",
+                        "startIndex": 1936,
+                        "endIndex": 1941,
+                        "iri": "knox-kb01.srv.aau.dk/NASAs"
+                    }
+                ]
+            },
+            {
+                "sentence": "Bilproducent Delta Motors afslørede en revolutionerende hybridbil med avanceret brændstofeffektivitet og topmoderne teknologi.",
+                "sentenceStartIndex": 2047,
+                "sentenceEndIndex": 2177,
+                "entityMentions": [
+                    {
+                        "name": "Bilproducent Delta Motors",
+                        "type": "Entity",
+                        "label": "ORG",
+                        "startIndex": 2047,
+                        "endIndex": 2072,
+                        "iri": "knox-kb01.srv.aau.dk/Bilproducent_Delta_Motors"
+                    }
+                ]
+            },
+            {
+                "sentence": "Forskere har identificeret en ny art af tropiske sommerfugle i Amazonas regnskov, som nu er under kategorisering.",
+                "sentenceStartIndex": 109,
+                "sentenceEndIndex": 222,
+                "entityMentions": [
+                    {
+                        "name": "Amazonas",
+                        "type": "Entity",
+                        "label": "LOC",
+                        "startIndex": 172,
+                        "endIndex": 180,
+                        "iri": "knox-kb01.srv.aau.dk/Amazonas"
+                    }
+                ]
+            },
+            {
+                "sentence": "Forfatteren Emma Jensen annoncerede udgivelsen af hendes seneste roman, der udforsker temaet kærlighed og tab.",
+                "sentenceStartIndex": 341,
+                "sentenceEndIndex": 454,
+                "entityMentions": [
+                    {
+                        "name": "Emma Jensen",
+                        "type": "Entity",
+                        "label": "PER",
+                        "startIndex": 353,
+                        "endIndex": 364,
+                        "iri": "knox-kb01.srv.aau.dk/Emma_Jensen"
+                    }
+                ]
+            },
+            {
+                "sentence": "WHO rapporterer stigning i tilfælde af en ny smitsom sygdom, og internationale eksperter arbejder pÃ¥ at identificere smittekilden.",
+                "sentenceStartIndex": 454,
+                "sentenceEndIndex": 586,
+                "entityMentions": [
+                    {
+                        "name": "WHO",
+                        "type": "Entity",
+                        "label": "ORG",
+                        "startIndex": 454,
+                        "endIndex": 457,
+                        "iri": "knox-kb01.srv.aau.dk/WHO"
+                    }
+                ]
+            }
+        ]
+    }
+]

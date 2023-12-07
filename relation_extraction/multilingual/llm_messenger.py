@@ -6,7 +6,7 @@ from llama_cpp import Llama
 class LLMMessenger(APIHandler):
 
     def API_endpoint():
-        return ""
+        return "http://knox-func01.srv.aau.dk:5004/llama"
 
     def send_request(request):
 
@@ -15,24 +15,6 @@ class LLMMessenger(APIHandler):
 
         # Create a llama model
         model = Llama(model_path=model_path, n_ctx=4096)
-
-        # Prompt creation
-        # system_message = """### Instruction ###
-        # When given a sentence and the entity mentions in the sentence, you should perform relation extraction.  This includes marking an entity mention as subject, marking another entity mention as object, and identifying the relation between the subject and object. You should only use entity mentions specified in the prompt. You should only use relations from the list of relations given in the context.
-
-        # ### Context ###
-        # List of relations: [location, birthPlace, deathPlace, owns, sibling, child, parent, title, employer, age, residence, headquarter, deathCause, member, foundedBy, religion]
-
-        # ### Input Data ###
-        # You should perform relation extraction when prompted with input on the following format:
-        # "sentence", [comma_separated_list_of_entity_mentions]
-
-        # ### Output Indicator ###
-        # If no relation can be found in the sentence, or the entity mentions have not been specified in the user prompt, you should respond with "undefined". In all other cases, your output should be a list of triples on the following format:
-        # <subject, relation, object>
-
-        # """
-        # user_message = '"Casper and Rytter has the same mother", [Casper, Rytter]'
 
         prompt = f"""<s>[INST] <<SYS>>
         {request["system_message"]}
@@ -51,17 +33,18 @@ class LLMMessenger(APIHandler):
         #     # Write content to the file
         #     file.write(output["choices"][0]["text"])
 
-        #response = requests.post(url=LLMMessenger.API_endpoint)
+        #response = requests.post(url=LLMMessenger.API_endpoint, json=request)
         return output
 
     def process_message(response):
         print("Recieved response from Llama2...")
         triples = []
+        print(response)
         answer = re.split("/INST]", response["choices"][0]["text"])[1]
         print(response["choices"][0]["text"])
-        llama_triples = re.findall("<[\s\w\d]*,[\s\w\d]*,[\s\w\d]*>|\[[\s\w\d]*,[\s\w\d]*,[\s\w\d]*\]", answer)
+        llama_triples = re.findall('<["\s\w\d,"]*,[\s\w\d]*,["\s\w\d,"]*>|\[["\s\w\d,"]*,[\s\w\d]*,["\s\w\d,"]*\]', answer)
         for llama_triple in llama_triples:
-            triple = re.split(",", llama_triple.replace("<", "").replace(">", "").replace("]", "").replace("[", ""))
+            triple = re.split('"."', llama_triple.replace("<", "").replace(">", "").replace("]", "").replace("[", ""))
             if len(triple) == 3:
                 triple_object = {}
                 for i, entry in enumerate(triple):
@@ -79,13 +62,11 @@ class LLMMessenger(APIHandler):
 
     def prompt_llm(data, relations):
         triples = []
-        relations_test = ["spouse", "location", "birthPlace", "deathPlace", "owns", "sibling", "child", "parent", "title", "employer", "age", "residence", "headquarter", "deathCause", "member", "foundedBy", "religion"]
-        relations_text = "[" + ", ".join(["location", "birthPlace", "deathPlace", "owns", "sibling", "child", "parent", "title", "employer", "age", "residence", "headquarter", "deathCause", "member", "foundedBy", "religion"]) + "]"
         system_message = f"""### Instruction ###
 When given a sentence in either danish or english and the entity mentions in the sentence, you should find triples by performing relation extraction.  This includes marking an entity mention as subject, marking another entity mention as object, and identifying the relation between the subject and object. You should only use entity mentions specified in the prompt. You should only use relations from the list of relations given in the context. You should provide reasoning for why each of the triples you find is correct. 
 S
 ### Context ###
-List of relations: [spouse, location, birthPlace, deathPlace, owns, sibling, child, parent, title, employer, age, residence, headquarter, deathCause, member, foundedBy, religion]
+List of relations: [{", ".join(relations)}]
 Here is a transcript with you. You are called Llama.
 User: Sentence: "Aalborg is in Denmark" Entity mentions: ["Aalborg", "Denmark"]
 Llama: The relation "is in" is not in the list of relations but "location" is in the list of relations. "Aalborg is in Denmark" implies that Aalborg is located in Denmark. Therefore, the triple <"Aalborg", location, "Denmark"> is correct.
@@ -103,7 +84,7 @@ Before answering with a triple, you should explain why it is correct. If no rela
 
         """
 
-        request = {"system_message": system_message, "user_message": ""}
+        request = {"system_message": system_message, "user_message": "", "max_tokens": 4096}
 
         for file in data:
             for sentence in file["sentences"]:

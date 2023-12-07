@@ -29,7 +29,11 @@ def begin_relation_extraction(data):
         raise Exception("Incorrectly formatted input. Exception during parsing")
     
     try:
-        triples = LLMMessenger.prompt_llm(parsed_data, relations)
+        triples = []
+        chunk_size = 250
+        split_relations = [relations[i:i + chunk_size] for i in range(0, len(relations), chunk_size)] #Split the relations into lists of size chunk_size
+        for split_relation in split_relations:
+            triples.append(LLMMessenger.prompt_llm(parsed_data, split_relation))
     except Exception as E:
         print(f"Exception during prompt to Llama 2: {str(E)}")
         raise Exception("Exception during prompt to Llama 2")
@@ -39,3 +43,23 @@ def begin_relation_extraction(data):
     except Exception as E:
         print(f"Exception during request to database. {str(E)}")
         raise Exception("Data was not sent to database due to connection error")
+
+begin_relation_extraction([
+    {
+        "filename": "path/to/Artikel.txt",
+        "language": "en",
+        "sentences": [
+            {
+                "sentence": "Barrack Obama is married to Michelle Obama.",
+                "sentenceStartIndex": 20,
+                "sentenceEndIndex": 62,
+                "entityMentions": 
+                [
+                    { "name": "Barrack Obama", "startIndex": 0, "endIndex": 12, "iri": "knox-kb01.srv.aau.dk/Barack_Obama" },
+                    { "name": "Michelle Obama", "startIndex": 27, "endIndex": 40, "iri": "knox-kb01.srv.aau.dk/Michele_Obama" }
+                ]
+            }
+        ]
+    }
+]
+)

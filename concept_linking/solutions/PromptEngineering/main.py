@@ -2,29 +2,22 @@ import json
 import re
 import requests
 import time
-
+import os
 from rdflib import Graph, URIRef
 from rdflib.plugins.sparql import prepareQuery
+from relation_extraction.knowledge_graph_messenger import KnowledgeGraphMessenger
+
 
 api_url = "http://127.0.0.1:5000/llama"
 headers = {"Content-Type": "application/json"}
 
+PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../"))
 
-# Read all ontology classes from file
+
 def read_ontology_class():
     return extract_super_classes_from_ontology()
-    # print(superclasses)
-    # # return superclasses
-    # with open('../../data/files/PromptEngineering/person.txt') as file1:
-    #     return [line.strip() for line in file1]
 
 
-# Open the JSON file with sentences for reading - use as input
-with open('../../data/files/PromptEngineering/sentence.json', 'r') as file2:
-    data = json.load(file2)
-
-
-# Generates the respective triples of the right format
 def generate_triples(output_data):
     triples = []
     for sentence_data in output_data["sentences"]:
@@ -46,21 +39,16 @@ def generate_triples(output_data):
     return triples
 
 
-def classify_entity_mentions():
+def classify_entity_mentions(input_data):
     start_time = time.time()
-
     ontology_classes_list = read_ontology_class()
     ontology_classes_string = ", ".join(ontology_classes_list)
-
-    # ontology_classes = "Person, Place, Time, Organisation, Event, Academic, AcademicConference"
-    # # creates a list of ontology_classes
-    # ontology_classes_list = [cls.strip() for cls in ontology_classes.split(',')]
 
     output_data = {"sentences": []}
     max_retries = 3
 
     # Iterate through each sentence
-    for sentence_data in data[0]["sentences"]:
+    for sentence_data in input_data[0]["sentences"]:
         content_sentence = sentence_data["sentence"]
 
         # Iterate through each entity mention in the sentence
@@ -152,7 +140,8 @@ def classify_entity_mentions():
 # Considering all classes that is a direct subclass of owl:Thing as a root class.
 def extract_super_classes_from_ontology():
     g = Graph()
-    ontology_file_path = "../data/files/ontology.ttl"
+    ontology_file_path = os.path.join(PROJECT_ROOT, "data/files/ontology.ttl")
+
     g.parse(ontology_file_path, format="ttl")
 
     # Define RDF namespace prefixes
@@ -179,27 +168,16 @@ def extract_super_classes_from_ontology():
     return root_classes
 
 
-if __name__ == '__main__':
-    # Specify the output file path
-    output_file_path = '../../data/files/PromptEngineering/output.json'
+def perform_entity_type_classification(post_json):
+    print(f'Running: {post_json}')
 
     # Classify entity mentions using llama api
-    output_data_response = classify_entity_mentions()
+    output_data_response = classify_entity_mentions(post_json)
 
     # Generate triples
     generated_triples = generate_triples(output_data_response)
-
-    # Specify the triples output file path
-    triples_file_path = '../../data/files/PromptEngineering/triples.json'
-
-    # Save the triples to a JSON file
-    with open(triples_file_path, 'w') as triples_file:
-        json.dump(generated_triples, triples_file, indent=2)
-
-    # Save the result to a JSON file
-    with open(output_file_path, 'w') as output_file:
-        json.dump(output_data_response, output_file, indent=2)
-
-    print("Output saved to:", output_file_path)
-
-    print("Triples saved to:", triples_file_path)
+    try:
+        KnowledgeGraphMessenger.send_request(generated_triples)
+    except Exception as E:
+        print(f"Exception during request to database. {str(E)}")
+        raise Exception("Data was not sent to database due to connection error")

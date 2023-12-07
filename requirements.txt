@@ -1,7 +1,7 @@
 #For python
 #----------
 # Concept linking
--r /concept_linking/requirements.txt
+-r concept_linking/requirements.txt
 
 # Relation extraction
--r /relation_extraction/requirements.txt
+-r relation_extraction/requirements.txt

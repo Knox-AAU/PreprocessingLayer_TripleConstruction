@@ -161,7 +161,9 @@ cython_debug/
 
 #Ignoring NDA classified files
 data/files/PromptEngineering/
-data/files/EvaluationData/output.json
+data/files/UntrainedSpacy/
+data/files/MachineLearning/
+data/files/StringComparison/
 
 #Llama model
 tools/LlamaServer/llama-2-7b-chat.Q2_K.gguf

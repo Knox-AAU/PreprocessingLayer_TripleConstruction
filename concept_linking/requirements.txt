@@ -1,10 +1,10 @@
-# Current solution
-#Requirements for PromptEngineering
--r solutions/PromptEngineering/requirements.txt
-
 # Other solutions
 #Requirements for MachineLearning
 #-r solutions/MachineLearning/requirements.txt
+
+# Current solution
+#Requirements for PromptEngineering
+-r solutions/PromptEngineering/requirements.txt
 
 #Requirements for StringComparison
 #-r solutions/StringComparison/requirements.txt

@@ -1,5 +1,6 @@
 import spacy
-from utils import clearFile, appendFile, writeFile, readFile
+from concept_linking.solutions.UntrainedSpacy.utils import clearFile, appendFile, writeFile, readFile
+from concept_linking.tools.triple_helper import *
 
 
 nlp = spacy.load("en_core_web_lg")
@@ -52,7 +53,7 @@ def generateSpacyUnmatchedExplanations():
         )
 
 
-def generateTriplesFromJSON(json_object):
+def generateTriplesFromJSON(input_data):
     """
         Generates triples from entity mentions in sentences based on spaCy and ontology classes.
 
@@ -82,19 +83,15 @@ def generateTriplesFromJSON(json_object):
         
     }
 
-    for obj in json_object:
-        for sentence in obj['sentences']:
-            ems = sentence['entityMentions']
-            sentence = sentence['sentence']
-            
-            for em in ems:
-                em_iri = em["iri"]
-                em_label = em["label"].lower()
-                em_type = em["type"].lower()
-                
-                if em_type == "entity":
-                    #get the value from the dictionary 
-                    dbpedia_uri = labels_dict.get(em_label, em_label)  
-                    triples.append({sentence: (em_iri, "http://www.w3.org/1999/02/22-rdf-syntax-ns#type", dbpedia_uri)})
+    entity_mentions_dict = extract_entity_mentions_from_input(input_data)
+    # Iterate over each entry in the dictionary
+    for sentence_key, entity_mentions in entity_mentions_dict.items():
+        for entity_mention in entity_mentions:
+            em_iri = entity_mention[1]
+            em_label = entity_mention[2]
+            # Trying to retrieve the URI with a specific label (first param), if none exists, set to unknown.
+            dbpedia_uri = labels_dict.get(em_label, "https://dbpedia.org/ontology/unknown")
+            # Generate triples
+            triples.append((em_iri, "http://www.w3.org/1999/02/22-rdf-syntax-ns#type", dbpedia_uri))
     return triples
                         

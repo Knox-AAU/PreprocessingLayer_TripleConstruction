@@ -110,12 +110,12 @@ class TestProcessMessage(unittest.TestCase):
                 "expected": [
                     [
                         "knox-kb01.srv.aau.dk/Barack_Obama",
-                        "married",
+                        "http://dbpedia.org/ontology/married",
                         "knox-kb01.srv.aau.dk/Michelle_Obama"
                     ],
                     [
                         "knox-kb01.srv.aau.dk/Michelle_Obama",
-                        "married",
+                        "http://dbpedia.org/ontology/married",
                         "knox-kb01.srv.aau.dk/Barack_Obama"
                     ],
                 ]
@@ -156,24 +156,24 @@ class TestProcessMessage(unittest.TestCase):
                 "validity_response": [
                     [
                         "knox-kb01.srv.aau.dk/Barack_Obama",
-                        "married",
+                        "http://dbpedia.org/ontology/married",
                         "knox-kb01.srv.aau.dk/Michelle_Obama"
                     ],
                     [
                         "knox-kb01.srv.aau.dk/Michelle_Obama",
-                        "married",
+                        "http://dbpedia.org/ontology/married",
                         "knox-kb01.srv.aau.dk/Barack_Obama"
                     ],
                 ],
                 "expected": [
                     [
                         "knox-kb01.srv.aau.dk/Barack_Obama",
-                        "married",
+                        "http://dbpedia.org/ontology/married",
                         "knox-kb01.srv.aau.dk/Michelle_Obama"
                     ],
                     [
                         "knox-kb01.srv.aau.dk/Michelle_Obama",
-                        "married",
+                        "http://dbpedia.org/ontology/married",
                         "knox-kb01.srv.aau.dk/Barack_Obama"
                     ],
                 ],
@@ -208,7 +208,6 @@ class TestProcessMessage(unittest.TestCase):
             for split_relation in td["split_relations"]:
                 res.extend(LLMMessenger.prompt_llm(td["data"], split_relation, td["relations"]))
             for triple in res:
-                print(triple)
                 self.assertEqual(len(triple), 3) #All must be triples
             self.assertEqual(td["expected"], res)
 

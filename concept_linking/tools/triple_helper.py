@@ -17,4 +17,3 @@ def extract_entity_mentions_from_input(input_data):
         # Add the entity mentions to the dictionary
         entity_mentions_by_sentence[sentence] = entity_mentions
     return entity_mentions_by_sentence
-

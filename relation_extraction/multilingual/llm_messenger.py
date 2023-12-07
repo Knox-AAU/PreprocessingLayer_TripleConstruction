@@ -11,6 +11,24 @@ class LLMMessenger(APIHandler):
     def send_request(request):
         HEADERS = {"Access-Authorization": os.getenv("ACCESS_SECRET")}
         response = requests.post(url=LLMMessenger.API_endpoint(), json=request, headers=HEADERS)
+
+        #  # Put the location of to the GGUF model that you've download from HuggingFace here
+        # model_path = "./relation_extraction/multilingual/llama-2-7b-chat.Q2_K.gguf"	
+
+        # # Create a llama model	
+        # model = Llama(model_path=model_path, n_ctx=4096)	
+
+        # prompt = f"""<s>[INST] <<SYS>>	
+        # {request["system_message"]}	
+        # <</SYS>>	
+        # {request["user_message"]} [/INST]"""	
+
+        # # Model parameters	
+        # max_tokens = 4096	
+
+        # # Run the model	
+        # output = model(prompt, max_tokens=request["max_tokens"], echo=True)
+        
         return response
 
     def process_message(response):

@@ -16,7 +16,7 @@ class TestProcessMessage(unittest.TestCase):
             {
                 "choices": [
                     {
-                        "text":"[INST] Barack Obama is married to Michelle Obama. [/INST] In this sentence the triples are: <Barack Obama, married, Michelle Obama> and <Michelle Obama, married, Barack Obama>"
+                        "text":'[INST] Barack Obama is married to Michelle Obama. [/INST] In this sentence the triples are: <"Barack Obama", married, "Michelle Obama"> and <"Michelle Obama", married, "Barack Obama">'
                     }
                 ],
                 "expected": [
@@ -35,7 +35,7 @@ class TestProcessMessage(unittest.TestCase):
             {
                 "choices": [
                     {
-                        "text":"[INST] Peter and Marianne has the same mother. [/INST] In this sentence the triples are: <Peter, sibling, Marianne> and <Marianne, sibling, Peter>"
+                        "text":'[INST] Peter and Marianne has the same mother. [/INST] In this sentence the triples are: <"Peter", sibling, "Marianne"> and <"Marianne", sibling, "Peter">'
                     }
                 ],
                 "expected":[
@@ -136,7 +136,7 @@ class TestProcessMessage(unittest.TestCase):
                 "response": {
                     "choices": [
                         {
-                            "text":"[INST] Barack Obama is married to Michelle Obama. [/INST] In this sentence the triples are: <Barack Obama, married, Michelle Obama> and <Michelle Obama, married, Barack Obama>"
+                            "text":'[INST] Barack Obama is married to Michelle Obama. [/INST] In this sentence the triples are: <"Barack Obama", married, "Michelle Obama"> and <"Michelle Obama", married, "Barack Obama">'
                         }
                     ],
                 },

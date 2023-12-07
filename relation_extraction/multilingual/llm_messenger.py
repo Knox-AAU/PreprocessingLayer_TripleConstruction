@@ -23,9 +23,6 @@ class LLMMessenger(APIHandler):
         # <</SYS>>	
         # {request["user_message"]} [/INST]"""	
 
-        # # Model parameters	
-        # max_tokens = 4096	
-
         # # Run the model	
         # output = model(prompt, max_tokens=request["max_tokens"], echo=True)
         

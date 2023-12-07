@@ -2,7 +2,7 @@ from flask import Flask, request, jsonify
 import json
 import os
 from relation_extraction.relation_extractor import RelationExtractor
-from concept_linking.solutions.PromptEngineering.main import perform_entity_type_classification
+from concept_linking.main import entity_type_classification
 
 app = Flask(__name__)
 
@@ -22,7 +22,7 @@ def do_triple_construction():
         post_json = json.loads(post_data)
 
         RelationExtractor.begin_extraction(post_json)
-        perform_entity_type_classification(post_json)
+        entity_type_classification(post_json)
 
         message = "Post request was successfully processed. Relation extraction and concept linking completed."
         return jsonify(message=message), 200

@@ -4,10 +4,10 @@
 
 # Current solution
 #Requirements for PromptEngineering
--r solutions/PromptEngineering/requirements.txt
+#-r solutions/PromptEngineering/requirements.txt
 
 #Requirements for StringComparison
-#-r solutions/StringComparison/requirements.txt
+-r solutions/StringComparison/requirements.txt
 
 #Requirements for UntrainedSpacy
 #-r solutions/UntrainedSpacy/requirements.txt

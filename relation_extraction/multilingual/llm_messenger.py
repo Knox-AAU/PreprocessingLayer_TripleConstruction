@@ -60,13 +60,13 @@ class LLMMessenger(APIHandler):
                 triples.append([[em["iri"] for em in sentence["entityMentions"] if em["name"] == triple["0"]][0], triple["1"], [em["iri"] for em in sentence["entityMentions"] if em["name"] == triple["2"]][0]])
         return triples
 
-    def prompt_llm(data, relations):
+    def prompt_llm(data, split_relations, relations):
         triples = []
         system_message = f"""### Instruction ###
 When given a sentence in either danish or english and the entity mentions in the sentence, you should find triples by performing relation extraction.  This includes marking an entity mention as subject, marking another entity mention as object, and identifying the relation between the subject and object. You should only use entity mentions specified in the prompt. You should only use relations from the list of relations given in the context. You should provide reasoning for why each of the triples you find is correct. 
 S
 ### Context ###
-List of relations: [{", ".join(relations)}]
+List of relations: [{", ".join(split_relations)}]
 Here is a transcript with you. You are called Llama.
 User: Sentence: "Aalborg is in Denmark" Entity mentions: ["Aalborg", "Denmark"]
 Llama: The relation "is in" is not in the list of relations but "location" is in the list of relations. "Aalborg is in Denmark" implies that Aalborg is located in Denmark. Therefore, the triple <"Aalborg", location, "Denmark"> is correct.

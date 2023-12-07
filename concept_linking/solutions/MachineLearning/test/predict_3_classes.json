@@ -1,0 +1,53 @@
+[
+  {
+    "language": "en",
+    "metadataId": "generated_data_1",
+    "sentences": [
+      {
+        "sentence": "In the embrace of nature, Gqhiwo exudes timeless charm",
+        "sentenceStartIndex": 0,
+        "sentenceEndIndex": 71,
+        "entityMentions": [
+          {
+            "name": "Gqhiwo",
+            "type": "Entity",
+            "label": "Place",
+            "startIndex": 0,
+            "endIndex": 8,
+            "iri": null
+          }
+        ]
+      },
+      {
+        "sentence": "The team at Telxhk lkzeep wzu fosters innovation and collaboration",
+        "sentenceStartIndex": 0,
+        "sentenceEndIndex": 80,
+        "entityMentions": [
+          {
+            "name": "Telxhk lkzeep",
+            "type": "Entity",
+            "label": "Organisation",
+            "startIndex": 28,
+            "endIndex": 41,
+            "iri": null
+          }
+        ]
+      },
+      {
+        "sentence": "Aibs brings creative visions to various screens",
+        "sentenceStartIndex": 0,
+        "sentenceEndIndex": 75,
+        "entityMentions": [
+          {
+            "name": "Aibs",
+            "type": "Entity",
+            "label": "Person",
+            "startIndex": 65,
+            "endIndex": 76,
+            "iri": null
+          }
+        ]
+      }
+    ]
+  }
+]

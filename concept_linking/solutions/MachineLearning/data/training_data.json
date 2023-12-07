@@ -1,0 +1,178 @@
+[
+  {
+    "language": "en",
+    "metadataId": "790261e8-b8ec-4801-9cbd-00263bcc666d",
+    "sentences": [
+      {
+        "sentence": "Barrack Obama was married to Michelle Obama two days ago.",
+        "sentenceStartIndex": 20,
+        "sentenceEndIndex": 62,
+        "entityMentions": [
+          {
+            "name": "Barrack Obama",
+            "type": "Entity",
+            "label": "PERSON",
+            "startIndex": 0,
+            "endIndex": 12,
+            "iri": "knox-kb01.srv.aau.dk/Barack_Obama",
+            "classification": "Person"
+          },
+          {
+            "name": "Michelle Obama",
+            "type": "Entity",
+            "label": "PERSON",
+            "startIndex": 59,
+            "endIndex": 73,
+            "iri": "knox-kb01.srv.aau.dk/Michele_Obama",
+            "classification": "Person"
+          }
+        ]
+      },
+      {
+        "sentence": "The international flight arrived at the bustling airport terminal.",
+        "sentenceStartIndex": 0,
+        "sentenceEndIndex": 60,
+        "entityMentions": [
+          {
+            "name": "airport terminal",
+            "type": "Entity",
+            "label": "LOCATION",
+            "startIndex": 35,
+            "endIndex": 51,
+            "iri": "example.com/airport_terminal",
+            "classification": "Airport"
+          }
+        ]
+      },
+      {
+        "sentence": "A mysterious virus outbreak has left the city in chaos.",
+        "sentenceStartIndex": 0,
+        "sentenceEndIndex": 55,
+        "entityMentions": [
+          {
+            "name": "virus outbreak",
+            "type": "Entity",
+            "label": "EVENT",
+            "startIndex": 14,
+            "endIndex": 29,
+            "iri": "example.com/virus_outbreak",
+            "classification": "Outbreak"
+          }
+        ]
+      },
+      {
+        "sentence": "The concert at the grand arena was a spectacular event.",
+        "sentenceStartIndex": 0,
+        "sentenceEndIndex": 54,
+        "entityMentions": [
+          {
+            "name": "grand arena",
+            "type": "Entity",
+            "label": "LOCATION",
+            "startIndex": 23,
+            "endIndex": 34,
+            "iri": "example.com/grand_arena",
+            "classification": "Arena"
+          }
+        ]
+      },
+      {
+        "sentence": "The animated characters in the anime series came to life on the screen.",
+        "sentenceStartIndex": 0,
+        "sentenceEndIndex": 69,
+        "entityMentions": [
+          {
+            "name": "anime series",
+            "type": "Entity",
+            "label": "WORK_OF_ART",
+            "startIndex": 33,
+            "endIndex": 46,
+            "iri": "example.com/anime_series",
+            "classification": "Anime"
+          }
+        ]
+      },
+      {
+
+        "sentence": "John Smith released his latest album to widespread acclaim.",
+        "sentenceStartIndex": 0,
+        "sentenceEndIndex": 49,
+        "entityMentions": [
+          {
+            "name": "latest album",
+            "type": "Entity",
+            "label": "WORK_OF_ART",
+            "startIndex": 23,
+            "endIndex": 35,
+            "iri": "example.com/latest_album",
+            "classification": "Album"
+          }
+        ]
+      },
+      {
+        "sentence": "Jane Doe deposited a large sum of money into her savings account at the local bank.",
+        "sentenceStartIndex": 0,
+        "sentenceEndIndex": 78,
+        "entityMentions": [
+          {
+            "name": "savings account",
+            "type": "Entity",
+            "label": "PRODUCT",
+            "startIndex": 39,
+            "endIndex": 54,
+            "iri": "example.com/savings_account",
+            "classification": "Bank"
+          }
+        ]
+      },
+      {
+        "sentence": "Alice used a vibrant red colour to paint her masterpiece.",
+        "sentenceStartIndex": 0,
+        "sentenceEndIndex": 47,
+        "entityMentions": [
+          {
+            "name": "vibrant red colour",
+            "type": "Entity",
+            "label": "ATTRIBUTE",
+            "startIndex": 24,
+            "endIndex": 44,
+            "iri": "example.com/vibrant_red_colour",
+            "classification": "Colour"
+          }
+        ]
+      },
+      {
+        "sentence": "The majestic horse, Thunderbolt, galloped across the open field, its mane flowing in the wind.",
+        "sentenceStartIndex": 0,
+        "sentenceEndIndex": 91,
+        "entityMentions": [
+          {
+            "name": "Thunderbolt",
+            "type": "Entity",
+            "label": "ANIMAL",
+            "startIndex": 21,
+            "endIndex": 32,
+            "iri": "example.com/thunderbolt_horse",
+            "classification": "Horse"
+          }
+        ]
+      },
+      {
+        "sentence": "Charlie Davis played a soulful melody on the saxophone during the jazz performance.",
+        "sentenceStartIndex": 0,
+        "sentenceEndIndex": 80,
+        "entityMentions": [
+          {
+            "name": "saxophone",
+            "type": "Entity",
+            "label": "PRODUCT",
+            "startIndex": 57,
+            "endIndex": 66,
+            "iri": "example.com/saxophone",
+            "classification": "Instrument"
+          }
+        ]
+      }
+    ]
+  }
+]

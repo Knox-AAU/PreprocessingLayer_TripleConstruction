@@ -1,54 +1,27 @@
 from relation_extraction.API_handler import APIHandler
 import requests
 import re
-from llama_cpp import Llama
 
 class LLMMessenger(APIHandler):
 
     def API_endpoint():
-        return "http://knox-func01.srv.aau.dk:5004/llama"
+        return "http://knox-proxy01.srv.aau.dk/llama-api/llama"
 
     def send_request(request):
-
-        # Put the location of to the GGUF model that you've download from HuggingFace here
-        model_path = "./relation_extraction/multilingual/llama-2-13b-chat.Q2_K.gguf"
-
-        # Create a llama model
-        model = Llama(model_path=model_path, n_ctx=4096)
-
-        prompt = f"""<s>[INST] <<SYS>>
-        {request["system_message"]}
-        <</SYS>>
-        {request["user_message"]} [/INST]"""
-
-        # Model parameters
-        max_tokens = 4096
-
-        # Run the model
-        output = model(prompt, max_tokens=max_tokens, echo=True)
-
-        # Print the model output
-        # print(output["choices"][0]["text"])
-        # with open("LlamaResponse.txt", "w") as file:
-        #     # Write content to the file
-        #     file.write(output["choices"][0]["text"])
-
-        #response = requests.post(url=LLMMessenger.API_endpoint, json=request)
-        return output
+        response = requests.post(url=LLMMessenger.API_endpoint, json=request)
+        return response
 
     def process_message(response):
         print("Recieved response from Llama2...")
         triples = []
-        print(response)
         answer = re.split("/INST]", response["choices"][0]["text"])[1]
-        print(response["choices"][0]["text"])
         llama_triples = re.findall('<["\s\w\d,"]*,[\s\w\d]*,["\s\w\d,"]*>|\[["\s\w\d,"]*,[\s\w\d]*,["\s\w\d,"]*\]', answer)
         for llama_triple in llama_triples:
             triple = re.split('"."', llama_triple.replace("<", "").replace(">", "").replace("]", "").replace("[", ""))
             if len(triple) == 3:
                 triple_object = {}
                 for i, entry in enumerate(triple):
-                    triple_object[i.__str__()] = entry.strip()
+                    triple_object[i.__str__()] = entry.strip(' ,')
                 triples.append(triple_object)
         return triples
 
@@ -95,7 +68,6 @@ Before answering with a triple, you should explain why it is correct. If no rela
                 request["user_message"] = user_message
                 response = LLMMessenger.send_request(request)
                 process_response = LLMMessenger.process_message(response)
-                triples = LLMMessenger.check_validity_of_response(sentence, process_response, relations)
-        print(triples)        
+                triples = LLMMessenger.check_validity_of_response(sentence, process_response, relations)      
         return triples
 

@@ -95,7 +95,11 @@ def main():
                 ]
             }]
             
-            res = solution(input_obj, ontology_relations)
+            chunk_size = 650
+            split_relations = [ontology_relations[i:i + chunk_size] for i in range(0, len(ontology_relations), chunk_size)] #Split the relations into lists of size chunk_size
+            res = []
+            for split_relation in split_relations:
+                res.append(solution(input_obj, split_relation, ontology_relations))
             res_hits = 0
             for triple in res:
                 if triple in expected_triples:

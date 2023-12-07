@@ -43,23 +43,3 @@ def begin_relation_extraction(data):
     except Exception as E:
         print(f"Exception during request to database. {str(E)}")
         raise Exception("Data was not sent to database due to connection error")
-    
-begin_relation_extraction([
-    {
-        "filename": "path/to/Artikel.txt",
-        "language": "en",
-        "sentences": [
-            {
-                "sentence": "Barrack Obama is married to Michelle Obama.",
-                "sentenceStartIndex": 20,
-                "sentenceEndIndex": 62,
-                "entityMentions": 
-                [
-                    { "name": "Barrack Obama", "startIndex": 0, "endIndex": 12, "iri": "knox-kb01.srv.aau.dk/Barack_Obama" },
-                    { "name": "Michelle Obama", "startIndex": 27, "endIndex": 40, "iri": "knox-kb01.srv.aau.dk/Michele_Obama" }
-                ]
-            }
-        ]
-    }
-]
-)

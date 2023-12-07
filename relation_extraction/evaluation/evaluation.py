@@ -3,13 +3,14 @@ import xml.etree.ElementTree as ET
 from relation_extraction.ontology_messenger import OntologyMessenger
 from relation_extraction.LessNaive.lessNaive import do_relation_extraction
 from relation_extraction.NaiveMVP.main import parse_data
+from relation_extraction.multilingual.llm_messenger import LLMMessenger
 import re
 import datetime
 import json
 
 
 
-def printProgressBar (iteration, total, prefix = '', suffix = '', decimals = 3, length = 100, fill = '█', printEnd = "\r"):
+def printProgressBar (iteration, total, prefix = '', suffix = '', decimals = 3, length = 100, fill = '█', printEnd = "\n"):
     percent = ("{0:." + str(decimals) + "f}").format(100 * (iteration / float(total)))
     filledLength = int(length * iteration // total)
     bar = fill * filledLength + '-' * (length - filledLength)
@@ -60,7 +61,8 @@ def main():
     
     solutions_to_test = {
         # "less_naive": do_relation_extraction
-        "naive": parse_data
+        # "naive": parse_data
+        "multilingual": LLMMessenger.prompt_llm
     }
     evaluation_results = dict() #dictionary to hold results of tests
     for name, solution in solutions_to_test.items():
@@ -93,7 +95,11 @@ def main():
                 ]
             }]
             
-            res = solution(input_obj, ontology_relations)
+            chunk_size = 650
+            split_relations = [ontology_relations[i:i + chunk_size] for i in range(0, len(ontology_relations), chunk_size)] #Split the relations into lists of size chunk_size
+            res = []
+            for split_relation in split_relations:
+                res.append(solution(input_obj, split_relation, ontology_relations))
             res_hits = 0
             for triple in res:
                 if triple in expected_triples:

@@ -35,7 +35,7 @@ Note that the ports map to the ports used in the ssh command give in "your port"
 
 Deployment is normally handled by Watchtower on push to main. However, in case of the need of manual deployment, run:
 
-`sudo docker run -p 0.0.0.0:4444:<your_port> --add-host=host.docker.internal:host-gateway -e API_SECRET=*** -e ACCESS_SECRET=*** -d ghcr.io/knox-aau/preprocessinglayer_tripleconstruction:main`
+`docker run --name tc_api -p 0.0.0.0:4444:<your_port> --add-host=host.docker.internal:host-gateway -e API_SECRET=*** -e ACCESS_SECRET=*** -d ghcr.io/knox-aau/preprocessinglayer_tripleconstruction:main`
 
 ### Access through access API endpoint
 

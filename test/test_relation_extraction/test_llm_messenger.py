@@ -131,6 +131,7 @@ class TestProcessMessage(unittest.TestCase):
     @mock.patch("relation_extraction.multilingual.llm_messenger.LLMMessenger.check_validity_of_response")
     def test_prompt_llm(self, mock_check_validity, mock_process_message, mock_send_request):
         relations = ["married", "sibling", "child", "parent"]
+        split_relations = [["married", "sibling", "child", "parent"]]
         testdata = [
             {
                 "response": {
@@ -188,12 +189,13 @@ class TestProcessMessage(unittest.TestCase):
                                 "entityMentions": 
                                 [
                                     { "name": "Barack Obama", "startIndex": 0, "endIndex": 12, "iri": "knox-kb01.srv.aau.dk/Barack_Obama" },
-                                    { "name": "Michelle Obama", "startIndex": 27, "endIndex": 40, "iri": "knox-kb01.srv.aau.dk/Michele_Obama" }
+                                    { "name": "Michelle Obama", "startIndex": 27, "endIndex": 40, "iri": "knox-kb01.srv.aau.dk/Michelle_Obama" }
                                 ]
                             }
                         ]
                     }
                 ],
+                "split_relations": split_relations,
                 "relations": relations
             }
         ]
@@ -202,8 +204,11 @@ class TestProcessMessage(unittest.TestCase):
             mock_send_request.return_value = td["response"]
             mock_process_message.return_value = td["process_response"]
             mock_check_validity.return_value = td["validity_response"]
-            res = LLMMessenger.prompt_llm(td["data"], td["relations"])
+            res = []
+            for split_relation in td["split_relations"]:
+                res.extend(LLMMessenger.prompt_llm(td["data"], split_relation, td["relations"]))
             for triple in res:
+                print(triple)
                 self.assertEqual(len(triple), 3) #All must be triples
             self.assertEqual(td["expected"], res)
 

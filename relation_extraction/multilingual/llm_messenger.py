@@ -1,6 +1,7 @@
 from relation_extraction.API_handler import APIHandler
 import requests
 import re
+from llama_cpp import Llama
 
 class LLMMessenger(APIHandler):
 
@@ -8,8 +9,32 @@ class LLMMessenger(APIHandler):
         return "http://knox-proxy01.srv.aau.dk/llama-api/llama"
 
     def send_request(request):
-        response = requests.post(url=LLMMessenger.API_endpoint, json=request)
-        return response
+
+        # Put the location of to the GGUF model that you've download from HuggingFace here
+        model_path = "./relation_extraction/multilingual/llama-2-7b-chat.Q2_K.gguf"	
+
+        # Create a llama model	
+        model = Llama(model_path=model_path, n_ctx=4096)	
+
+        prompt = f"""<s>[INST] <<SYS>>	
+        {request["system_message"]}	
+        <</SYS>>	
+        {request["user_message"]} [/INST]"""	
+
+        # Model parameters	
+        max_tokens = 4096	
+
+        # Run the model	
+        output = model(prompt, max_tokens=max_tokens, echo=True)	
+
+        # Print the model output	
+        # print(output["choices"][0]["text"])	
+        # with open("LlamaResponse.txt", "w") as file:	
+        #     # Write content to the file	
+        #     file.write(output["choices"][0]["text"])
+
+        #response = requests.post(url=LLMMessenger.API_endpoint, json=request)
+        return output
 
     def process_message(response):
         print("Recieved response from Llama2...")
@@ -17,7 +42,7 @@ class LLMMessenger(APIHandler):
         answer = re.split("/INST]", response["choices"][0]["text"])[1]
         llama_triples = re.findall('<["\s\w\d,"]*,[\s\w\d]*,["\s\w\d,"]*>|\[["\s\w\d,"]*,[\s\w\d]*,["\s\w\d,"]*\]', answer)
         for llama_triple in llama_triples:
-            triple = re.split('"."', llama_triple.replace("<", "").replace(">", "").replace("]", "").replace("[", ""))
+            triple = re.split('"', llama_triple.replace("<", "").replace(">", "").replace("]", "").replace("[", ""))[1:-1]
             if len(triple) == 3:
                 triple_object = {}
                 for i, entry in enumerate(triple):

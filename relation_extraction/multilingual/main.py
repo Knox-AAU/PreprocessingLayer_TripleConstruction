@@ -33,7 +33,7 @@ def begin_relation_extraction(data):
         chunk_size = 650
         split_relations = [relations[i:i + chunk_size] for i in range(0, len(relations), chunk_size)] #Split the relations into lists of size chunk_size
         for split_relation in split_relations:
-            triples.append(LLMMessenger.prompt_llm(parsed_data, split_relation, relations))
+            triples.extend(LLMMessenger.prompt_llm(parsed_data, split_relation, relations))
     except Exception as E:
         print(f"Exception during prompt to Llama 2: {str(E)}")
         raise Exception("Exception during prompt to Llama 2")

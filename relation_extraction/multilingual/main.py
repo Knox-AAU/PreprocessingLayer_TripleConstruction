@@ -4,7 +4,7 @@ from relation_extraction.knowledge_graph_messenger import KnowledgeGraphMessenge
 from relation_extraction.multilingual.llm_messenger import LLMMessenger
 
 def parse_data(data):
-    "Parses JSON data and converts it into a dictionary with information on sentence, tokens, and entity mentions"
+    "Removes entity mentions with no iri and sentences with less than two entity mentions"
 
     for file in data:
         for i, sentence in enumerate(file["sentences"]):

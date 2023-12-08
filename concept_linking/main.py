@@ -11,10 +11,10 @@ def entity_type_classification(input_data):
     # Remove the comment sign from the solution you want to run as main in the KNOX Pipeline.
 
     # String Comparison
-    stringComparisonSolution(input_data)
+    #stringComparisonSolution(input_data)
 
     # Untrained Spacy
-    #untrainedSpacySolution(input_data)
+    untrainedSpacySolution(input_data)
 
     # PromptEngineering
     #perform_entity_type_classification(input_data)

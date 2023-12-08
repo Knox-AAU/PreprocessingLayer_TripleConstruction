@@ -17,6 +17,8 @@ def stringComparisonSolution(post_json, output_file_path=None):
         print(f'"Successfully generated {len(generated_triples)} triples"')
 
     if output_file_path is not None:
+        os.makedirs(os.path.dirname(output_file_path), exist_ok=True)
+
         with open(output_file, "w", encoding="utf-8") as outfile:
             json.dump(generated_triples, outfile, ensure_ascii=False, indent=4)
     else:

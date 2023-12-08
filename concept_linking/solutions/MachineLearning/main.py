@@ -94,6 +94,6 @@ if __name__ == '__main__':
     output_file = os.path.join(PROJECT_ROOT, "data/files/MachineLearning/output.json")
 
     #ONLY IF YOU WANT TO TRAIN FIRST. Adjust training params in src.config.py
-    train(create_new_model=False, model_name="model.pth")
+    #train(create_new_model=False, model_name="model.pth")
 
     predict(input_file, output_file, model_name="model.pth")

@@ -53,7 +53,7 @@ def generateSpacyUnmatchedExplanations():
         )
 
 
-def generateTriplesFromJSON(input_data):
+def generateTriplesFromJSON(input_data, output_sentence_test_run):
     """
         Generates triples from entity mentions in sentences based on spaCy and ontology classes.
 
@@ -92,6 +92,10 @@ def generateTriplesFromJSON(input_data):
             # Trying to retrieve the URI with a specific label (first param), if none exists, set to unknown.
             dbpedia_uri = labels_dict.get(em_label, "https://dbpedia.org/ontology/unknown")
             # Generate triples
-            triples.append((em_iri, "http://www.w3.org/1999/02/22-rdf-syntax-ns#type", dbpedia_uri))
+            if output_sentence_test_run:
+                triples.append({sentence_key: (em_iri, "http://www.w3.org/1999/02/22-rdf-syntax-ns#type", dbpedia_uri)})
+            else:
+                triples.append((em_iri, "http://www.w3.org/1999/02/22-rdf-syntax-ns#type", dbpedia_uri))
+
     return triples
                         

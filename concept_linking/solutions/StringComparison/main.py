@@ -9,14 +9,17 @@ def generateTXTfiles():
     generateOntologyClasses()
     generateOntologyDatatypes()
 
-def stringComparisonSolution(post_json, output_file_path=None):
+
+def stringComparisonSolution(post_json, output_file_path=None, output_sentence_test_run=False):
     ontTypes = queryLabels()
-    generated_triples = generateTriples(post_json, ontTypes)
+    generated_triples = generateTriples(post_json, ontTypes, output_sentence_test_run)
 
     if len(generated_triples) > 0:
         print(f'"Successfully generated {len(generated_triples)} triples"')
 
     if output_file_path is not None:
+        os.makedirs(os.path.dirname(output_file_path), exist_ok=True)
+
         with open(output_file, "w", encoding="utf-8") as outfile:
             json.dump(generated_triples, outfile, ensure_ascii=False, indent=4)
     else:
@@ -32,5 +35,5 @@ if __name__ == '__main__':
     output_file = os.path.join(PROJECT_ROOT, "data/files/StringComparison/output.json")
     f = open(input_file, encoding="utf-8")
     data = json.load(f)
-    stringComparisonSolution(data, output_file)
+    stringComparisonSolution(data, output_file, False)
 

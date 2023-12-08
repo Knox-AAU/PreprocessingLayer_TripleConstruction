@@ -92,7 +92,7 @@ def queryLabels():
     return classesDict
 
 
-def generateTriples(JSONObject, classesDict):
+def generateTriples(JSONObject, classesDict, output_sentence_test_run):
     triples = []
     for object in JSONObject:
         language = object["language"]
@@ -124,7 +124,11 @@ def generateTriples(JSONObject, classesDict):
  
             for word in matchingWords:
                 for em in filtered_ems:
-                    triples.append((em['iri'], "http://www.w3.org/1999/02/22-rdf-syntax-ns#type", "http://dbpedia.org/ontology/" + word['className']))
+                    if output_sentence_test_run:
+                        triples.append({sentence: (em['iri'], "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                                        "http://dbpedia.org/ontology/" + word['className'])})
+                    else:
+                        triples.append((em['iri'], "http://www.w3.org/1999/02/22-rdf-syntax-ns#type", "http://dbpedia.org/ontology/" + word['className']))
     return triples
 
 

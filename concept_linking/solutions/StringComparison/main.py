@@ -31,7 +31,7 @@ def stringComparisonSolution(post_json, output_file_path=None, output_sentence_t
 
 
 if __name__ == '__main__':
-    input_file = os.path.join(PROJECT_ROOT, "data/files/EvaluationData/evaluationSet_EN_small.json")
+    input_file = os.path.join(PROJECT_ROOT, "data/files/EvaluationData/evaluationSet_EN.json")
     output_file = os.path.join(PROJECT_ROOT, "data/files/StringComparison/output.json")
     f = open(input_file, encoding="utf-8")
     data = json.load(f)

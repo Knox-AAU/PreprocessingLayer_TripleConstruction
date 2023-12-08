@@ -547,7 +547,7 @@
         "entityMentions": [
           {
             "name": "Tesla",
-            "type": "ORG",
+            "type": "Entity",
             "label": "ORG",
             "startIndex": 31,
             "endIndex": 36,
@@ -555,7 +555,7 @@
           },
           {
             "name": "Cybertruck",
-            "type": "PRODUCT",
+            "type": "Entity",
             "label": "PRODUCT",
             "startIndex": 78,
             "endIndex": 89,
@@ -563,7 +563,7 @@
           },
           {
             "name": "Los Angeles",
-            "type": "GPE",
+            "type": "Entity",
             "label": "GPE",
             "startIndex": 99,
             "endIndex": 110,
@@ -578,16 +578,16 @@
         "entityMentions": [
           {
             "name": "World Health Organization",
-            "type": "ORG",
+            "type": "Entity",
             "label": "ORG",
             "startIndex": 4,
             "endIndex": 31,
             "iri": "knox-kb01.srv.aau.dk/World_Health_Organization"
           },
           {
-            "name": "Delta variant",
-            "type": "ENTITY",
-            "label": "ENTITY",
+            "name": "Delta",
+            "type": "Entity",
+            "label": "LOC",
             "startIndex": 64,
             "endIndex": 77,
             "iri": "knox-kb01.srv.aau.dk/Delta_variant"
@@ -595,7 +595,7 @@
           {
             "name": "COVID-19",
             "type": "ENTITY",
-            "label": "ENTITY",
+            "label": "ORG",
             "startIndex": 81,
             "endIndex": 89,
             "iri": "knox-kb01.srv.aau.dk/COVID-19"
@@ -609,7 +609,7 @@
         "entityMentions": [
           {
             "name": "Middle East",
-            "type": "LOC",
+            "type": "Entity",
             "label": "LOC",
             "startIndex": 32,
             "endIndex": 44,
@@ -617,7 +617,7 @@
           },
           {
             "name": "United Nations Security Council",
-            "type": "ORG",
+            "type": "Enitity",
             "label": "ORG",
             "startIndex": 48,
             "endIndex": 80,
@@ -625,7 +625,7 @@
           },
           {
             "name": "Israel",
-            "type": "GPE",
+            "type": "Entity",
             "label": "GPE",
             "startIndex": 106,
             "endIndex": 112,
@@ -633,7 +633,7 @@
           },
           {
             "name": "Palestine",
-            "type": "GPE",
+            "type": "Entity",
             "label": "GPE",
             "startIndex": 117,
             "endIndex": 126,
@@ -648,7 +648,7 @@
         "entityMentions": [
           {
             "name": "Apple Inc.",
-            "type": "ORG",
+            "type": "Entity",
             "label": "ORG",
             "startIndex": 10,
             "endIndex": 20,
@@ -656,7 +656,7 @@
           },
           {
             "name": "iPhone 13",
-            "type": "PRODUCT",
+            "type": "Entity",
             "label": "PRODUCT",
             "startIndex": 104,
             "endIndex": 114,
@@ -664,7 +664,7 @@
           },
           {
             "name": "MacBooks",
-            "type": "PRODUCT",
+            "type": "Entity",
             "label": "PRODUCT",
             "startIndex": 140,
             "endIndex": 148,
@@ -672,7 +672,7 @@
           },
           {
             "name": "iPads",
-            "type": "PRODUCT",
+            "type": "Entity",
             "label": "PRODUCT",
             "startIndex": 159,
             "endIndex": 164,

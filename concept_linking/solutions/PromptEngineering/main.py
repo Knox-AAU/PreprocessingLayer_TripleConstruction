@@ -96,7 +96,7 @@ def classify_entity_mentions(input_data):
 
                     if classification:
                         # Generate triples if an entity was succesfully classified with the ontology
-                        triples.append((content_iri, "http://www.w3.org/1999/02/22-rdf-syntax-ns#type", classification))
+                        triples.append((content_iri, "http://www.w3.org/1999/02/22-rdf-syntax-ns#type", "http://dbpedia.org/ontology/" + classification))
 
                         break  # Exit the while loop if entity is mapped to a provided ontology class
     end_time = time.time()

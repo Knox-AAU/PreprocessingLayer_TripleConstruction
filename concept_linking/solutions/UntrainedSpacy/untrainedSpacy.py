@@ -19,7 +19,7 @@ def generateSpacyLabels():
     spacy_labels = nlp.get_pipe("ner").labels
     for label in spacy_labels:
         spacy_labelsLC.append(label.lower())
-    writeFile(spacy_label_path, "\n".join(spacy_labelsLC))
+    # writeFile(spacy_label_path, "\n".join(spacy_labelsLC))
 
 
 def generateSpacyMatches():
@@ -37,8 +37,8 @@ def generateSpacyMatches():
         if label != matched_labels[-1]:
             unmatched_labels.append(label)
 
-    writeFile(spacy_matched_path, "\n".join(matched_labels))
-    writeFile(spacy_unmatched_path, "\n".join(unmatched_labels))
+    # writeFile(spacy_matched_path, "\n".join(matched_labels))
+    # writeFile(spacy_unmatched_path, "\n".join(unmatched_labels))
 
 
 def generateSpacyUnmatchedExplanations():

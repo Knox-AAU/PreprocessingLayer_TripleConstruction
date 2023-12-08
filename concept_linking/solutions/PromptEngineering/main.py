@@ -19,7 +19,7 @@ def read_ontology_class():
     return extract_super_classes_from_ontology()
 
 
-def classify_entity_mentions(input_data):
+def classify_entity_mentions(input_data, output_sentence_test_run):
     start_time = time.time()
     ontology_classes_list = read_ontology_class()
     ontology_classes_string = ", ".join(ontology_classes_list)
@@ -96,7 +96,10 @@ def classify_entity_mentions(input_data):
 
                     if classification:
                         # Generate triples if an entity was succesfully classified with the ontology
-                        triples.append((content_iri, "http://www.w3.org/1999/02/22-rdf-syntax-ns#type", "http://dbpedia.org/ontology/" + classification))
+                        if output_sentence_test_run:
+                            triples.append({sentence_key: (content_iri, "http://www.w3.org/1999/02/22-rdf-syntax-ns#type", "http://dbpedia.org/ontology/" + classification)})
+                        else:
+                            triples.append((content_iri, "http://www.w3.org/1999/02/22-rdf-syntax-ns#type", "http://dbpedia.org/ontology/" + classification))
 
                         break  # Exit the while loop if entity is mapped to a provided ontology class
     end_time = time.time()
@@ -136,14 +139,14 @@ def extract_super_classes_from_ontology():
     return root_classes
 
 
-def perform_entity_type_classification(post_json, output_file_path=None):
+def perform_entity_type_classification(post_json, output_file_path=None, output_sentence_test_run=False):
     msg = "Performing entity type classification using: "
     print(f'{msg} "PromptEngineering solution"')
     if output_file_path is not None:
         print("Running in test mode")
 
     # Classify entity mentions using llama api
-    generated_triples = classify_entity_mentions(post_json)
+    generated_triples = classify_entity_mentions(post_json, output_sentence_test_run)
 
     if len(generated_triples) > 0:
         print(f'"Successfully generated {len(generated_triples)} triples"')
@@ -166,4 +169,4 @@ if __name__ == '__main__':
 
     f = open(input_file,  encoding="utf-8")
     data = json.load(f)
-    perform_entity_type_classification(data, output_file)
+    perform_entity_type_classification(data, output_file, True)

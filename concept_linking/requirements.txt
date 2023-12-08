@@ -1,6 +1,6 @@
 # Other solutions
 #Requirements for MachineLearning
--r solutions/MachineLearning/requirements.txt
+#-r solutions/MachineLearning/requirements.txt
 
 # Current solution
 #Requirements for PromptEngineering

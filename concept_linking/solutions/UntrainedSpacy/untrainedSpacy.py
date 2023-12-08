@@ -69,10 +69,10 @@ def generateTriplesFromJSON(input_data, output_sentence_test_run):
     labels_dict = {
         "event": "https://dbpedia.org/ontology/Event",
         "fac": "https://dbpedia.org/ontology/Building",
-        "gpe": "https://dbpedia.org/ontology/Country",
+        "gpe": "https://dbpedia.org/ontology/PopulatedPlace",
         "language": "https://dbpedia.org/ontology/Language",
         "law": "https://dbpedia.org/ontology/Law",
-        "loc": "https://dbpedia.org/ontology/Location",
+        "loc": "https://dbpedia.org/ontology/Place",
         "norp": "https://dbpedia.org/ontology/Group",
         "org": "https://dbpedia.org/ontology/Organisation",
         "product": "https://www.w3.org/2002/07/owl#/thing",

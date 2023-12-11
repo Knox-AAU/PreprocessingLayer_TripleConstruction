@@ -5,6 +5,8 @@ PreprocessingLayer TripleConstruction is responsible for creating triples that c
 The triples will be data stored in the form of a subject (entity IRI), predicate, and object (entity IRI), where the subject has some relation to the object.
 
 ## Documentation
+[TripleConstruction API | Knox Wiki](http://wiki.knox.aau.dk/en/relation-extraction/tripleconstruction-api)
+
 [Relation Extraction | Knox Wiki](http://wiki.knox.aau.dk/en/relation-extraction)
 
 [Concept Linking | Knox Wiki](http://wiki.knox.aau.dk/en/concept-linking)

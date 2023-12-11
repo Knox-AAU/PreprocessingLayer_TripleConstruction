@@ -24,7 +24,8 @@ def classify_entity_mentions(input_data, output_sentence_test_run):
     ontology_classes_list = read_ontology_class()
     ontology_classes_string = ", ".join(ontology_classes_list)
 
-    max_retries = 3
+    max_outer_retries = 5
+    max_inner_retries = 3
     triples = []
 
     entity_mentions_dict = extract_entity_mentions_from_input(input_data)
@@ -56,7 +57,7 @@ def classify_entity_mentions(input_data, output_sentence_test_run):
             }
 
             outer_while_retry_count = 0
-            while True:  # Run until entity is mapped to a provided ontology class
+            while outer_while_retry_count < max_outer_retries:  # Run until entity is mapped to a provided ontology class
                 outer_while_retry_count += 1
                 print(f'--- RUN Count #{outer_while_retry_count} (Outer While loop) ---')
                 prompt = {key: value.format(
@@ -68,7 +69,7 @@ def classify_entity_mentions(input_data, output_sentence_test_run):
                 inner_while_retry_count = 0
                 result_text = ''
                 # Retrying until we get a not none response
-                while inner_while_retry_count < max_retries:
+                while inner_while_retry_count < max_inner_retries:
                     inner_while_retry_count += 1
                     print(f'    --- RUN Count #{inner_while_retry_count} (Inner While loop) ---')
                     response = requests.post(api_url, data=json.dumps(prompt), headers=headers)
@@ -102,6 +103,13 @@ def classify_entity_mentions(input_data, output_sentence_test_run):
                             triples.append((content_iri, "http://www.w3.org/1999/02/22-rdf-syntax-ns#type", "http://dbpedia.org/ontology/" + classification))
 
                         break  # Exit the while loop if entity is mapped to a provided ontology class
+            if output_sentence_test_run:
+                triples.append({sentence_key: (content_iri, "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                                               "http://dbpedia.org/ontology/unknown")})
+            else:
+                triples.append((content_iri, "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                                "http://dbpedia.org/ontology/unknown"))
+
     end_time = time.time()
     elapsed_time = round((end_time - start_time), 2)
     print(f"Elapsed time: {elapsed_time} seconds")
@@ -164,7 +172,7 @@ def perform_entity_type_classification(post_json, output_file_path=None, output_
 
 
 if __name__ == '__main__':
-    input_file = os.path.join(PROJECT_ROOT, "data/files/EvaluationData/evaluationSet_EN_small.json")
+    input_file = os.path.join(PROJECT_ROOT, "data/files/EvaluationData/evaluationSet_EN.json")
     output_file = os.path.join(PROJECT_ROOT, "data/files/PromptEngineering/output.json")
 
     f = open(input_file,  encoding="utf-8")

@@ -1,0 +1,29 @@
+name: test
+
+on:
+  push:
+    branches: ["**"]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Setup python
+        uses: actions/setup-python@v3
+        with:
+          python-version: 3.12.0
+
+      - name: Install dependencies
+        run: |
+          echo "Installing dependencies"
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run tests
+        run: |
+          echo "Testing..."
+          python -m unittest || exit 1

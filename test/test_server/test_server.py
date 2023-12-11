@@ -58,6 +58,3 @@ class TestServer(unittest.TestCase):
         
         mock_os.assert_not_called()
         mock_begin_extraction.assert_not_called()
-
-if __name__ == '__main__':
-    unittest.main()

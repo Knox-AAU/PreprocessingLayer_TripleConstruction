@@ -1,13 +1,18 @@
 {
-    "naive": {
+    "multilingual": {
         "triples": [
             {
                 "sentence": "Turn Me On is a 35.1 minute long album produced by Wharton Tiers that was followed by the album entitled Take it Off.",
                 "triples_from_solution": [
                     [
+                        "Wharton_Tiers",
+                        "producer",
+                        "Turn_Me_On"
+                    ],
+                    [
                         "Turn_Me_On",
-                        "album",
-                        "35.1"
+                        "producedBy",
+                        "Wharton_Tiers"
                     ]
                 ],
                 "expected_triples": [
@@ -36,6 +41,21 @@
                         "Trane",
                         "location",
                         "Swords,_Dublin"
+                    ],
+                    [
+                        "Trane",
+                        "location",
+                        "Swords,_Dublin"
+                    ],
+                    [
+                        "Trane",
+                        "location",
+                        "Swords,_Dublin"
+                    ],
+                    [
+                        "Trane",
+                        "location",
+                        "Swords,_Dublin"
                     ]
                 ],
                 "expected_triples": [
@@ -52,8 +72,8 @@
                 "triples_from_solution": [
                     [
                         "Ciudad_Ayala",
-                        "part",
-                        "1777539"
+                        "location",
+                        "Morelos"
                     ]
                 ],
                 "expected_triples": [
@@ -97,13 +117,7 @@
             },
             {
                 "sentence": "The 17068.8 millimeter long ALCO RS-3 has a diesel-electric transmission.",
-                "triples_from_solution": [
-                    [
-                        "ALCO_RS-3",
-                        "transmission",
-                        "Diesel-electric_transmission"
-                    ]
-                ],
+                "triples_from_solution": [],
                 "expected_triples": [
                     [
                         "ALCO_RS-3",
@@ -125,9 +139,9 @@
             "hit_percentage": 0.07692307692307693
         },
         "score": {
-            "precision": 0.25,
+            "precision": 0.14285714285714285,
             "recall": 0.07692307692307693,
-            "F1_score": 0.11764705882352941
+            "F1_score": 0.1
         }
     }
 }

@@ -32,3 +32,6 @@ def do_triple_construction():
 def page_not_found(error):
     message = "Invalid endpoint"
     return jsonify(error=message), 404
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=4444)

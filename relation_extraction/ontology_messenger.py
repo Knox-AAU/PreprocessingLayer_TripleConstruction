@@ -19,7 +19,6 @@ class OntologyMessenger(APIHandler):
         PARAMS = {"g":"http://knox_ontology", "s": query_string_s, "o": query_string_o}
         HEADERS = {"Access-Authorization": os.getenv("ACCESS_SECRET")}
         r = requests.get(url=OntologyMessenger.API_endpoint(), params=PARAMS, headers=HEADERS)
-        # print(f"db component response: {r.text}")
 
         data = r.json()
 

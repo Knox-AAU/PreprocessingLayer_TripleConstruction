@@ -19,7 +19,3 @@ class KnowledgeGraphMessenger(APIHandler):
     def format_output(self, output):
         formatted_output = {"triples": output}
         return formatted_output
-
-
-
-

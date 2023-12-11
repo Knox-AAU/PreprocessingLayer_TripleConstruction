@@ -10,8 +10,8 @@ class OntologyMessenger(APIHandler):
         return "http://knox-proxy01.srv.aau.dk/knox-api/triples"
 
     def send_request():
-        load_dotenv()
         "Function to extract relations based on the specified pattern"
+        load_dotenv()
         print("Getting relations from online ontology...")
         relations = []
         query_string_s = 'http://dbpedia.org/ontology/'

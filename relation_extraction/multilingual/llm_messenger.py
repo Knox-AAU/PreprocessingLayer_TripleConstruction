@@ -2,6 +2,7 @@ from relation_extraction.API_handler import APIHandler
 import requests
 import re
 import os
+from llama_cpp import Llama
 
 class LLMMessenger(APIHandler):
 
@@ -9,24 +10,24 @@ class LLMMessenger(APIHandler):
         return "http://knox-proxy01.srv.aau.dk/llama-api/llama"
 
     def send_request(request):
-        HEADERS = {"Access-Authorization": os.getenv("ACCESS_SECRET")}
-        response = requests.post(url=LLMMessenger.API_endpoint(), json=request, headers=HEADERS)
+        # HEADERS = {"Access-Authorization": os.getenv("ACCESS_SECRET")}
+        # response = requests.post(url=LLMMessenger.API_endpoint(), json=request, headers=HEADERS)
 
-        #  # Put the location of to the GGUF model that you've download from HuggingFace here
-        # model_path = "./relation_extraction/multilingual/llama-2-7b-chat.Q2_K.gguf"	
+         # Put the location of to the GGUF model that you've download from HuggingFace here
+        model_path = "./relation_extraction/multilingual/llama-2-13b-chat.Q2_K.gguf"	
 
-        # # Create a llama model	
-        # model = Llama(model_path=model_path, n_ctx=4096)	
+        # Create a llama model	
+        model = Llama(model_path=model_path, n_ctx=4096)	
 
-        # prompt = f"""<s>[INST] <<SYS>>	
-        # {request["system_message"]}	
-        # <</SYS>>	
-        # {request["user_message"]} [/INST]"""	
+        prompt = f"""<s>[INST] <<SYS>>	
+        {request["system_message"]}	
+        <</SYS>>	
+        {request["user_message"]} [/INST]"""	
 
-        # # Run the model	
-        # output = model(prompt, max_tokens=request["max_tokens"], echo=True)
+        # Run the model	
+        output = model(prompt, max_tokens=request["max_tokens"], echo=True)
         
-        return response
+        return output
 
     def process_message(response):
         print("Recieved response from Llama2...")

@@ -99,13 +99,18 @@ def main():
             split_relations = [ontology_relations[i:i + chunk_size] for i in range(0, len(ontology_relations), chunk_size)] #Split the relations into lists of size chunk_size
             res = []
             for split_relation in split_relations:
-                res.append(solution(input_obj, split_relation, ontology_relations))
+                part_res = solution(input_obj, split_relation, ontology_relations)
+                for triple in part_res:
+                    triple[1] = triple[1].replace("http://dbpedia.org/ontology/", "")
+                res.extend(part_res)
             res_hits = 0
-            for triple in res:
+            convert_to_set_res = set(tuple(triples) for triples in res)
+            removed_duplicates_res = list(list(triples) for triples in convert_to_set_res)
+            for triple in removed_duplicates_res:
                 if triple in expected_triples:
                     res_hits += 1
                     hits +=1
-
+            
             evaluation_result_triples.append({"sentence":sentence, "triples_from_solution": res, "expected_triples": expected_triples, "contains_hits": res_hits})
             eta = round((((datetime.datetime.now()-dt).total_seconds()/60)/((i+1)/len(input_objs)))*(1-((i+1)/len(input_objs))),5)
             progress_suffix = f"Complete. Timeusage: {round((datetime.datetime.now()-dt).total_seconds()/60,5)} minutes. Eta {eta} minutes."

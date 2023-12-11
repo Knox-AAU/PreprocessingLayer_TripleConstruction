@@ -1,5 +1,6 @@
 import spacy
-from utils import clearFile, appendFile, writeFile, readFile
+from concept_linking.solutions.UntrainedSpacy.utils import clearFile, appendFile, writeFile, readFile
+from concept_linking.tools.triple_helper import *
 
 
 nlp = spacy.load("en_core_web_lg")
@@ -18,7 +19,7 @@ def generateSpacyLabels():
     spacy_labels = nlp.get_pipe("ner").labels
     for label in spacy_labels:
         spacy_labelsLC.append(label.lower())
-    writeFile(spacy_label_path, "\n".join(spacy_labelsLC))
+    # writeFile(spacy_label_path, "\n".join(spacy_labelsLC))
 
 
 def generateSpacyMatches():
@@ -36,8 +37,8 @@ def generateSpacyMatches():
         if label != matched_labels[-1]:
             unmatched_labels.append(label)
 
-    writeFile(spacy_matched_path, "\n".join(matched_labels))
-    writeFile(spacy_unmatched_path, "\n".join(unmatched_labels))
+    # writeFile(spacy_matched_path, "\n".join(matched_labels))
+    # writeFile(spacy_unmatched_path, "\n".join(unmatched_labels))
 
 
 def generateSpacyUnmatchedExplanations():
@@ -52,7 +53,7 @@ def generateSpacyUnmatchedExplanations():
         )
 
 
-def generateTriplesFromJSON(json_object):
+def generateTriplesFromJSON(input_data, output_sentence_test_run):
     """
         Generates triples from entity mentions in sentences based on spaCy and ontology classes.
 
@@ -68,10 +69,10 @@ def generateTriplesFromJSON(json_object):
     labels_dict = {
         "event": "https://dbpedia.org/ontology/Event",
         "fac": "https://dbpedia.org/ontology/Building",
-        "gpe": "https://dbpedia.org/ontology/Country",
+        "gpe": "https://dbpedia.org/ontology/PopulatedPlace",
         "language": "https://dbpedia.org/ontology/Language",
         "law": "https://dbpedia.org/ontology/Law",
-        "loc": "https://dbpedia.org/ontology/Location",
+        "loc": "https://dbpedia.org/ontology/Place",
         "norp": "https://dbpedia.org/ontology/Group",
         "org": "https://dbpedia.org/ontology/Organisation",
         "product": "https://www.w3.org/2002/07/owl#/thing",
@@ -82,19 +83,19 @@ def generateTriplesFromJSON(json_object):
         
     }
 
-    for obj in json_object:
-        for sentence in obj['sentences']:
-            ems = sentence['entityMentions']
-            sentence = sentence['sentence']
-            
-            for em in ems:
-                em_iri = em["iri"]
-                em_label = em["label"].lower()
-                em_type = em["type"].lower()
-                
-                if em_type == "entity":
-                    #get the value from the dictionary 
-                    dbpedia_uri = labels_dict.get(em_label, em_label)  
-                    triples.append({sentence: (em_iri, "http://www.w3.org/1999/02/22-rdf-syntax-ns#type", dbpedia_uri)})
+    entity_mentions_dict = extract_entity_mentions_from_input(input_data)
+    # Iterate over each entry in the dictionary
+    for sentence_key, entity_mentions in entity_mentions_dict.items():
+        for entity_mention in entity_mentions:
+            em_iri = entity_mention[1]
+            em_label = entity_mention[2]
+            # Trying to retrieve the URI with a specific label (first param), if none exists, set to unknown.
+            dbpedia_uri = labels_dict.get(em_label, "https://dbpedia.org/ontology/unknown")
+            # Generate triples
+            if output_sentence_test_run:
+                triples.append({sentence_key: (em_iri, "http://www.w3.org/1999/02/22-rdf-syntax-ns#type", dbpedia_uri)})
+            else:
+                triples.append((em_iri, "http://www.w3.org/1999/02/22-rdf-syntax-ns#type", dbpedia_uri))
+
     return triples
                         

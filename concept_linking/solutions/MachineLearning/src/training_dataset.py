@@ -1,6 +1,6 @@
 import torch
 from torch.utils.data import Dataset
-from src.text_processing import basic_tokenization_function
+from concept_linking.solutions.MachineLearning.src.text_processing import basic_tokenization_function
 
 def preprocess_sentence(sentence):
     processed_sentences = [basic_tokenization_function(sentence)]

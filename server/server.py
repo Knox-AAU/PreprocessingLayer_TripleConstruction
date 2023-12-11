@@ -2,8 +2,10 @@ from flask import Flask, request, jsonify
 import json
 import os
 from relation_extraction.relation_extractor import RelationExtractor
+from concept_linking.main import entity_type_classification
 
 app = Flask(__name__)
+
 
 @app.route('/tripleconstruction', methods=["POST"])
 def do_triple_construction():
@@ -20,7 +22,7 @@ def do_triple_construction():
         post_json = json.loads(post_data)
 
         RelationExtractor.begin_extraction(post_json)
-        #Begin ConceptLinking
+        entity_type_classification(post_json)
 
         message = "Post request was successfully processed. Relation extraction and concept linking completed."
         return jsonify(message=message), 200
@@ -28,10 +30,12 @@ def do_triple_construction():
     except Exception as e:
         return jsonify(error=f"Error occured: {str(e)}"), 422
 
+
 @app.errorhandler(404)
 def page_not_found(error):
     message = "Invalid endpoint"
     return jsonify(error=message), 404
+
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=4444)

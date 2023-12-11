@@ -27,6 +27,3 @@ class OntologyMessenger(APIHandler):
             relations.append(relation)
             
         return relations
-
-if __name__ == "__main__":
-    OntologyMessenger.send_request()

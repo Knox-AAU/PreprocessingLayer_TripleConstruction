@@ -234,7 +234,3 @@ class TestParseData(unittest.TestCase):
         res = parse_data(data, relations)
         self.assertFalse(mock_find_best.called)
         self.assertEqual(len(res), 0)
-
-
-if __name__ == '__main__':
-    unittest.main()

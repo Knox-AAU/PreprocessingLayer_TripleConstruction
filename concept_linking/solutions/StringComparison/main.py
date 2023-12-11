@@ -7,6 +7,29 @@ output_file = "../../data/files/EvaluationData/output.json"
 f = open(input_file,  encoding="utf-8")
 data = json.load(f)
 
+data = [
+  {
+    "fileName": "Artikel.txt",
+    "language": "en",
+    "sentences": [
+      {
+        "sentence": "Martin Kjær is a person and has a car",
+        "sentenceStartIndex": 0,
+        "sentenceEndIndex": 149,
+        "entityMentions": [
+          {
+            "name": "Martin Kjær",
+            "type": "Entity",
+            "label": "PERSON",
+            "startIndex": 0,
+            "endIndex": 10,
+            "iri": "knox-kb01.srv.aau.dk/Martin_Kjær"
+          },
+        ]
+      },
+    ]
+  }]
+
 def generateTXTfiles():
     generateOntologyClasses()
     generateOntologyDatatypes()

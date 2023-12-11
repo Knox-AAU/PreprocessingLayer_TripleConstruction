@@ -22,17 +22,19 @@ def untrainedSpacySolution(post_json, output_file_path=None, output_sentence_tes
     if len(generated_triples) > 0:
         print(f'"Successfully generated {len(generated_triples)} triples"')
 
-    if output_file_path is not None:
-        os.makedirs(os.path.dirname(output_file_path), exist_ok=True)
+        if output_file_path is not None:
+            os.makedirs(os.path.dirname(output_file_path), exist_ok=True)
 
-        with open(output_file, "w", encoding="utf-8") as outfile:
-            json.dump(generated_triples, outfile, ensure_ascii=False, indent=4)
+            with open(output_file, "w", encoding="utf-8") as outfile:
+                json.dump(generated_triples, outfile, ensure_ascii=False, indent=4)
+        else:
+            try:
+                KnowledgeGraphMessenger.send_request(generated_triples)
+            except Exception as E:
+                print(f"Exception during request to database. {str(E)}")
+                raise Exception("Data was not sent to database due to connection error")
     else:
-        try:
-            KnowledgeGraphMessenger.send_request(generated_triples)
-        except Exception as E:
-            print(f"Exception during request to database. {str(E)}")
-            raise Exception("Data was not sent to database due to connection error")
+        print("No triples generated")
 
 
 if __name__ == '__main__':

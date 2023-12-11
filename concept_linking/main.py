@@ -8,7 +8,6 @@ PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "./"))
 
 
 def entity_type_classification(input_data):
-    msg = "Performing entity type classification using: "
     # Remove the comment sign from the solution you want to run as main in the KNOX Pipeline.
 
     # String Comparison

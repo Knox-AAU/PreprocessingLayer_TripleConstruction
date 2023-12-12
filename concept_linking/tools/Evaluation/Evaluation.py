@@ -26,7 +26,7 @@ def evaluate_dataset(scores):
     plt.text(1.01, 0.8, f"Min: {min_score:.2f}", transform=plt.gca().transAxes)
     plt.text(1.01, 0.75, f"SD: {std_dev:.2f}", transform=plt.gca().transAxes)
 
-    plt.title('Distribution of Points: Untrained SpaCy Solution on Danish Dataset')
+    plt.title('Distribution of Points: String Comparison Solution on Danish Dataset')
     plt.xlabel('Score')
     plt.ylabel('Frequency')
     plt.xticks(np.arange(0, 1.1, 0.1))

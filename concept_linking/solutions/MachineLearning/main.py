@@ -71,8 +71,10 @@ def predict(input_file_path, output_file_path=None, model_name="model.pth"):
                 predicted_class_name = class_index_to_name.get(predicted_class_index, 'Unknown')
 
                 # Create the triple and add it to the list
-                triple = (iri, "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-                          "http://dbpedia.org/ontology/" + predicted_class_name)
+                #triple = (iri, "http://www.w3.org/1999/02/22-rdf-syntax-ns#type", "http://dbpedia.org/ontology/" + predicted_class_name)
+
+                # Triples with sentences:
+                triple = { sentence_data.get('sentence', 'Unknown'): (iri, "http://www.w3.org/1999/02/22-rdf-syntax-ns#type", "http://dbpedia.org/ontology/" + predicted_class_name)}
                 triples.append(triple)
 
     if len(triples) > 0:
@@ -92,7 +94,7 @@ def predict(input_file_path, output_file_path=None, model_name="model.pth"):
 
 
 if __name__ == '__main__':
-    input_file = os.path.join(PROJECT_ROOT, "data/files/EvaluationData/evaluationSet_EN.json")
+    input_file = os.path.join(PROJECT_ROOT, "data/files/EvaluationData/evaluationSet_DK.json")
     output_file = os.path.join(PROJECT_ROOT, "data/files/MachineLearning/output.json")
 
     #ONLY IF YOU WANT TO TRAIN FIRST. Adjust training params in src.config.py

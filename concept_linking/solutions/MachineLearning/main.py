@@ -78,15 +78,17 @@ def predict(input_file_path, output_file_path=None, model_name="model.pth"):
     if len(triples) > 0:
         print(f'"Successfully generated {len(triples)} triples"')
 
-    if output_file_path is not None:
-        with open(output_file, "w", encoding="utf-8") as outfile:
-            json.dump(triples, outfile, ensure_ascii=False, indent=4)
+        if output_file_path is not None:
+            with open(output_file, "w", encoding="utf-8") as outfile:
+                json.dump(triples, outfile, ensure_ascii=False, indent=4)
+        else:
+            try:
+                KnowledgeGraphMessenger.send_request(triples)
+            except Exception as E:
+                print(f"Exception during request to database. {str(E)}")
+                raise Exception("Data was not sent to database due to connection error")
     else:
-        try:
-            KnowledgeGraphMessenger.send_request(triples)
-        except Exception as E:
-            print(f"Exception during request to database. {str(E)}")
-            raise Exception("Data was not sent to database due to connection error")
+        print("No triples generated")
 
 
 if __name__ == '__main__':

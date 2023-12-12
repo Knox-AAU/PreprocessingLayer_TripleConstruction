@@ -87,4 +87,3 @@ Before answering with a triple, you should explain why it is correct. If no rela
                 process_response = LLMMessenger.process_message(response)
                 triples = LLMMessenger.check_validity_of_response(sentence, process_response, relations)      
         return triples
-

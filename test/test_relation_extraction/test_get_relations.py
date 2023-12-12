@@ -28,6 +28,3 @@ class TestGetRelations(unittest.TestCase):
         mock_get.assert_called_once_with(url='http://knox-proxy01.srv.aau.dk/knox-api/triples', params={'g': 'http://knox_ontology', 's': 'http://dbpedia.org/ontology/', 'o': 'http://www.w3.org/1999/02/22-rdf-syntax-ns#Property'}, headers={'Access-Authorization': 'internal_key'})
 
 
-
-if __name__ == "__main__":
-    unittest.main()

@@ -11,8 +11,11 @@ from concept_linking.solutions.MachineLearning.src.config import TrainingConfig,
 
 def custom_collate(batch):
     # Separate inputs, targets, and lengths
+    #inputs = [torch.LongTensor(item['input']) for item in batch]
+    #targets = [torch.tensor(item['target'], dtype=torch.float32) for item in batch]
+    #lengths = [item['length'] for item in batch]
     inputs = [torch.LongTensor(item['input']) for item in batch]
-    targets = [torch.tensor(item['target'], dtype=torch.float32) for item in batch]
+    targets = [item['target'].clone().detach() for item in batch]
     lengths = [item['length'] for item in batch]
 
     # Pad sequences

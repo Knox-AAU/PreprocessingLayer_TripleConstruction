@@ -212,5 +212,15 @@ class TestProcessMessage(unittest.TestCase):
             self.assertEqual(td["expected"], res)
 
 
-if __name__ == '__main__':
-    unittest.main()
+    def test_API_endpoint(self):
+        self.assertEqual(LLMMessenger.API_endpoint(), "http://knox-proxy01.srv.aau.dk/llama-api/llama")
+
+
+    @mock.patch("os.getenv")
+    @mock.patch("requests.post")
+    def test_send_request(self, mock_post, mock_getenv):
+        mock_post.return_value = "response"
+        mock_getenv.return_value = "secret"
+
+        self.assertEqual(LLMMessenger.send_request({"body": "requestbody"}), "response")
+

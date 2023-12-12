@@ -24,7 +24,7 @@ def do_triple_construction():
         RelationExtractor.begin_extraction(post_json)   # Relation Extraction
         entity_type_classification(post_json)           # Concept Linking
 
-        message = "Post request was successfully processed. Relation extraction and concept linking completed."
+        message = "Post request was successfully processed. Relation Extraction and Concept Linking completed."
         return jsonify(message=message), 200
 
     except Exception as e:

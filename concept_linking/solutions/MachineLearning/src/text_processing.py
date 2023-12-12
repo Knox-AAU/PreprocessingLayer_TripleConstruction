@@ -1,8 +1,14 @@
 # src/text_processing.py
 import nltk
 
-# Download the nltk punkt tokenizer data (run this once)
-nltk.download('punkt')
+# Check if punkt is already downloaded
+try:
+    nltk.data.find('tokenizers/punkt')
+except LookupError:
+    # Download punkt if not found
+    print("Downloading punkt...")
+    nltk.download('punkt')
+    print("Download complete.")
 
 
 def basic_tokenization_function(sentence):

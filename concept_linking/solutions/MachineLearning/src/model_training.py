@@ -3,15 +3,19 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 from torch.utils.data import DataLoader
-from src.training_dataset import TrainingDataset
-from src.model_module import ModelClass
-from src.config import TrainingConfig, ModelConfig
 from torch.nn.utils.rnn import pad_sequence
+from concept_linking.solutions.MachineLearning.src.training_dataset import TrainingDataset
+from concept_linking.solutions.MachineLearning.src.model_module import ModelClass
+from concept_linking.solutions.MachineLearning.src.config import TrainingConfig, ModelConfig
+
 
 def custom_collate(batch):
     # Separate inputs, targets, and lengths
+    #inputs = [torch.LongTensor(item['input']) for item in batch]
+    #targets = [torch.tensor(item['target'], dtype=torch.float32) for item in batch]
+    #lengths = [item['length'] for item in batch]
     inputs = [torch.LongTensor(item['input']) for item in batch]
-    targets = [torch.tensor(item['target'], dtype=torch.float32) for item in batch]
+    targets = [item['target'].clone().detach() for item in batch]
     lengths = [item['length'] for item in batch]
 
     # Pad sequences
@@ -22,7 +26,7 @@ def custom_collate(batch):
 
     return {'input': inputs_padded, 'target': targets_padded, 'length': lengths}
 
-def train_model(train_data, val_data, model=None, config=TrainingConfig):
+def train_model(train_data, val_data, model_name, model=None, config=TrainingConfig):
     # Instantiate your dataset class for training and validation
     possible_labels = ['Person', 'Place', 'Organisation']
     train_dataset = TrainingDataset(train_data, possible_labels)
@@ -37,7 +41,7 @@ def train_model(train_data, val_data, model=None, config=TrainingConfig):
         model = ModelClass(ModelConfig.input_size, ModelConfig.embedding_dim, ModelConfig.hidden_size, ModelConfig.num_classes)
     else:
         # Load the existing model's state dictionary
-        model.load_state_dict(torch.load('3_classes_model.pth'))
+        model.load_state_dict(torch.load(model_name))
 
     # Define loss function and optimizer
     criterion = nn.BCEWithLogitsLoss()
@@ -102,6 +106,6 @@ def train_model(train_data, val_data, model=None, config=TrainingConfig):
         print(f'Epoch {epoch+1}/{config.num_epochs} => Train Loss: {avg_train_loss:.4f}, Val Loss: {avg_val_loss:.4f}')
 
     # Save the updated trained model
-    torch.save(model.state_dict(), 'updated_model.pth')
+    torch.save(model.state_dict(), model_name)
 
     return model

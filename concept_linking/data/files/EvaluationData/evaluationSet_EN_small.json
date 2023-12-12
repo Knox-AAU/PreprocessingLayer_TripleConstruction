@@ -1,0 +1,38 @@
+[
+    {
+        "fileName": "Artikel.txt",
+        "language": "en",
+        "sentences": [
+            {
+                "sentence": "Barack Obama is an agent.",
+                "sentenceStartIndex": 0,
+                "sentenceEndIndex": 24,
+                "entityMentions": [
+                    {
+                        "name": "Barack Obama",
+                        "type": "Entity",
+                        "label": "PERSON",
+                        "startIndex": 0,
+                        "endIndex": 11,
+                        "iri": "knox-kb01.srv.aau.dk/Barack_Obama"
+                    }
+                ]
+            },
+            {
+                "sentence": "Michelle Obama is an person.",
+                "sentenceStartIndex": 0,
+                "sentenceEndIndex": 24,
+                "entityMentions": [
+                    {
+                        "name": "Barack Obama",
+                        "type": "Entity",
+                        "label": "PERSON",
+                        "startIndex": 0,
+                        "endIndex": 11,
+                        "iri": "knox-kb01.srv.aau.dk/Barack_Obama"
+                    }
+                ]
+            }
+        ]
+    }
+]

@@ -3,7 +3,15 @@ import json
 import nltk
 import random
 
-nltk.download('punkt')
+# Check if punkt is already downloaded
+try:
+    nltk.data.find('tokenizers/punkt')
+except LookupError:
+    # Download punkt if not found
+    print("Downloading punkt...")
+    nltk.download('punkt')
+    print("Download complete.")
+
 
 class EntityGenerator:
     def __init__(self):
@@ -251,7 +259,7 @@ final_json_object = [{
 }]
 
 # Specify the file path
-file_path = '../data/generated_data.json'
+file_path = '../generate_dataset/generated_data.json'
 
 # Write the JSON object to a file
 with open(file_path, 'w') as json_file:

@@ -1,10 +1,13 @@
-from utils import writeFile, translateWordToEn, similar
+from concept_linking.solutions.StringComparison.utils import writeFile, translateWordToEn, similar
 from rdflib import Graph
+import os
 
-ontology_path = "../../data/files/ontology.ttl"
-ontology_datatypes_path = "../../data/documents/ontology_datatypes.txt"
-ontology_classes_path = "../../data/documents/ontology_classes.txt"
-ontology_classes_multilingual_path = "../../data/documents/ontology_classes_multilingual.txt"
+PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../"))
+
+ontology_path = os.path.join(PROJECT_ROOT, "data/files/ontology.ttl")
+ontology_datatypes_path = os.path.join(PROJECT_ROOT, "data/documents/ontology_datatypes.txt")
+ontology_classes_path = os.path.join(PROJECT_ROOT, "data/documents/ontology_classes.txt")
+ontology_classes_multilingual_path = os.path.join(PROJECT_ROOT, "data/documents/ontology_classes_multilingual.txt")
 
 
 def generateOntologyDatatypes():
@@ -89,7 +92,7 @@ def queryLabels():
     return classesDict
 
 
-def generateTriples(JSONObject, classesDict):
+def generateTriples(JSONObject, classesDict, output_sentence_test_run):
     triples = []
     for object in JSONObject:
         language = object["language"]
@@ -121,7 +124,11 @@ def generateTriples(JSONObject, classesDict):
  
             for word in matchingWords:
                 for em in filtered_ems:
-                    triples.append({sentence: (em['iri'], "http://www.w3.org/1999/02/22-rdf-syntax-ns#type", "http://dbpedia.org/ontology/" + word['className'])})
+                    if output_sentence_test_run:
+                        triples.append({sentence: (em['iri'], "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                                        "http://dbpedia.org/ontology/" + word['className'])})
+                    else:
+                        triples.append((em['iri'], "http://www.w3.org/1999/02/22-rdf-syntax-ns#type", "http://dbpedia.org/ontology/" + word['className']))
     return triples
 
 

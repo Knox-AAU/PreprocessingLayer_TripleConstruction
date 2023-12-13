@@ -48,79 +48,13 @@ And run the following command
 pip install -r requirements.txt
 ```
 
-## Solutions
-
-Following below is brief description of each of the four solutions and how to get started.
-
----
 
 
-### Machine Learning
-description WIP
-
-### Prompt Engineering
-Uses the LLM Llama2. A prompt is given to the model. 
-
-```
- prompt_template = {
-                    "system_message": ("The input sentence is all your knowledge. \n"
-                                       "Do not answer if it can't be found in the sentence. \n"
-                                       "Do not use bullet points. \n"
-                                       "Do not identify entity mentions yourself, use the provided ones \n"
-                                       "Given the input in the form of the content from a file: \n"
-                                       "[Sentence]: {content_sentence} \n"
-                                       "[EntityMention]: {content_entity} \n"),
-
-                    "user_message": ("Classify the [EntityMention] in regards to ontology classes: {ontology_classes} \n"
-                                     "The output answer must be in JSON in the following format: \n"
-                                     "{{ \n"
-                                     "'Entity': 'Eiffel Tower', \n"
-                                     "'Class': 'ArchitecturalStructure' \n"
-                                     "}} \n"),
-
-                    "max_tokens": 4092
-                }
-```
-
-The variables {content_sentence} and {content_entity} is found in a previous part of the KNOX pipeline.
-The variable {ontology_classes} fetched by the Ontology endpoint provided by group E(Database Layer)
-
-
-#### Using LocalLlama API server
-It is possible to use a local LlamaServer. It can be found in ../concept_linking/tools/LlamaServer.
-A README for setting up an instance of this server can be found in the directory given above.
-
-#### Using the Llama API server hosted in the KNOX pipeline
-WIP
-Go to the directory /concept_linking/PromptEngineering/main
-set the api_url accordingly
-``` 
-api_url={domain or ip+port of llama server hosted in the knox pipeline}
-```
-Refer to the <a href="https://docs.google.com/spreadsheets/d/1dvVQSEvw15ulNER8qvl1P8Ufq-p3vLU0PswUeahhThg/edit#gid=0" target="_blank">Server Distribution document</a>
- for specific dns and ip+port information.
-
-### String Comparison
-description WIP
-
-
-### Untrained Spacy
-description WIP
-
-
-
----
-
-## Tools
-
-### LlamaServer
-
-### OntologyGraphBuilder
-
----
-
-## Report
-Description of the project can be found in the report on Overleaf (requires permission)
 
 ## Authors
-Lucas, Gamma, Vi, Mikkel, Caspar & Rune
+- Caspar Emil Jensen <ceje22@student.aau.dk>
+- Gamma Ishimwe Ntakiyimana <gntaki22@student.aau.dk>
+- Lucas Pedersen <llhp21@student.aau.dk>
+- Mikkel Wissing <mwissi21@student.aau.dk>
+- Rune Eberhardt <reber21@student.aau.dk>
+- Vi Thien Le <vle21@student.aau.dk>

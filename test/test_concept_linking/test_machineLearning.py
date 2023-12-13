@@ -7,6 +7,11 @@ from concept_linking.solutions.MachineLearning.src.model_module import ModelClas
 from concept_linking.solutions.MachineLearning.src.training_dataset import TrainingDataset
 from concept_linking.solutions.MachineLearning.src.config import TrainingConfig, ModelConfig
 from concept_linking.solutions.MachineLearning.src.data_preprocessing import split_data, load_data, extract_sentences
+from concept_linking.solutions.MachineLearning.main import predict
+from concept_linking.solutions.MachineLearning.src.prediction_dataset import PredictionDataset
+from concept_linking.solutions.MachineLearning.src.data_preprocessing import extract_sentences, load_data
+
+
 import json
 from sklearn.model_selection import train_test_split
 
@@ -16,7 +21,7 @@ class TestMachineLearning(unittest.TestCase):
     def setUp(self):
         self.data = [{"sentences": ["sentence " + str(i)]} for i in range(100)]
 
-    def test_correct_split_ratio(self):
+    def test_split_ratio(self):
         train_data, val_data, test_data = split_data(self.data, test_size=0.2, val_size=0.5, random_state=42)
 
         # Check if the split ratios are correct
@@ -25,7 +30,6 @@ class TestMachineLearning(unittest.TestCase):
         self.assertEqual(len(test_data), 10)   # 10% for testing
 
     def test_error_on_insufficient_samples(self):
-        # Test with insufficient data
         small_data = [{"sentences": ["sentence 1", "sentence 2"]}]
 
         test_size = 0.5  # This will take 1 sentence for testing, leaving 1 for training and validation
@@ -34,7 +38,7 @@ class TestMachineLearning(unittest.TestCase):
         with self.assertRaises(ValueError):
             split_data(small_data, test_size=test_size, val_size=val_size, random_state=42)
 
-    def test_reproducibility_with_random_state(self):
+    def test_with_random_state(self):
         train_data1, val_data1, test_data1 = split_data(self.data, test_size=0.2, val_size=0.5, random_state=42)
         train_data2, val_data2, test_data2 = split_data(self.data, test_size=0.2, val_size=0.5, random_state=42)
 
@@ -60,6 +64,9 @@ class TestMachineLearning(unittest.TestCase):
         expected_sentences = ["sentence 1", "sentence 2", "sentence 3"]
         result = extract_sentences(mock_data)
         self.assertEqual(result, expected_sentences)
+
+
+
 
 #class TestTrainModel(unittest.TestCase):
 #

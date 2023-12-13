@@ -10,7 +10,7 @@ def read_scores_from_json(file_path):
     return scores
 
 
-def evaluate_dataset(scores):
+def evaluate_dataset(scores, title):
     # Counter for "?" occurrences
     question_mark_count = 0
 
@@ -36,7 +36,7 @@ def evaluate_dataset(scores):
     plt.text(1.01, 0.75, f"SD: {std_dev:.2f}", transform=plt.gca().transAxes)
     plt.text(1.01, 0.7, f"?: {question_mark_count} occurrences", transform=plt.gca().transAxes)
 
-    plt.title('Distribution of Points: MAGAG on Danish Dataset')
+    plt.title(title)
     plt.xlabel('Score')
     plt.ylabel('Frequency')
     plt.xticks(np.arange(0, 1.1, 0.1))

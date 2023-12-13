@@ -8,8 +8,12 @@ from rdflib.plugins.sparql import prepareQuery
 from relation_extraction.knowledge_graph_messenger import KnowledgeGraphMessenger
 from concept_linking.tools.triple_helper import *
 
-
+# Local API url
 api_url = "http://127.0.0.1:5000/llama"
+
+# Remote API url
+# api_url = "http://knox-proxy01.srv.aau.dk/llama-api/llama"
+
 headers = {"Content-Type": "application/json"}
 
 PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../"))
@@ -58,6 +62,7 @@ def classify_entity_mentions(input_data, output_sentence_test_run):
 
             outer_while_retry_count = 0
             while outer_while_retry_count < max_outer_retries:  # Run until entity is mapped to a provided ontology class
+                found_classification = False
                 outer_while_retry_count += 1
                 print(f'--- RUN Count #{outer_while_retry_count} (Outer While loop) ---')
                 prompt = {key: value.format(
@@ -96,6 +101,7 @@ def classify_entity_mentions(input_data, output_sentence_test_run):
                     classification = match.group(1) if match and match.group(1) in ontology_classes_list else None
 
                     if classification:
+                        found_classification = True
                         # Generate triples if an entity was succesfully classified with the ontology
                         if output_sentence_test_run:
                             triples.append({sentence_key: (content_iri, "http://www.w3.org/1999/02/22-rdf-syntax-ns#type", "http://dbpedia.org/ontology/" + classification)})
@@ -103,12 +109,13 @@ def classify_entity_mentions(input_data, output_sentence_test_run):
                             triples.append((content_iri, "http://www.w3.org/1999/02/22-rdf-syntax-ns#type", "http://dbpedia.org/ontology/" + classification))
 
                         break  # Exit the while loop if entity is mapped to a provided ontology class
-            if output_sentence_test_run:
-                triples.append({sentence_key: (content_iri, "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-                                               "http://dbpedia.org/ontology/unknown")})
-            else:
-                triples.append((content_iri, "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-                                "http://dbpedia.org/ontology/unknown"))
+            if not found_classification:
+                if output_sentence_test_run:
+                    triples.append({sentence_key: (content_iri, "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                                                   "http://dbpedia.org/ontology/unknown")})
+                else:
+                    triples.append((content_iri, "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                                    "http://dbpedia.org/ontology/unknown"))
 
     end_time = time.time()
     elapsed_time = round((end_time - start_time), 2)

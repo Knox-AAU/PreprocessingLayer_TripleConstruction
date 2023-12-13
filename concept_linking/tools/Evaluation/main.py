@@ -5,8 +5,8 @@ PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../")
 
 
 if __name__ == "__main__":
-    name_of_result = "Untrained_EN"
+    name_of_result = "ML_DK"
     json_file_path = os.path.join(PROJECT_ROOT, "data/files/EvaluationData/Results/" + name_of_result + ".json")
 
     scores = read_scores_from_json(json_file_path)
-    evaluate_dataset(scores)
+    evaluate_dataset(scores,'Distribution of Points: Machine Learning Solution on Danish Dataset')

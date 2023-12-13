@@ -31,7 +31,7 @@ def train(create_new_model=False, model_name="model.pth"):
         trained_model = train_model(train_data, val_data, model_name, model=model, config=TrainingConfig)
 
 
-def predict(input_file_path, output_file_path=None, model_name="model.pth"):
+def predict(input_file_path, output_file_path=None, model_name="model.pth", output_sentence_test_run=False):
     # Load data
     data = load_data(input_file_path)
     sentences = extract_sentences(data)
@@ -70,10 +70,15 @@ def predict(input_file_path, output_file_path=None, model_name="model.pth"):
                 predicted_class_index = data_point['predicted_class']
                 predicted_class_name = class_index_to_name.get(predicted_class_index, 'Unknown')
 
-                # Create the triple and add it to the list
+            if output_sentence_test_run:
+                # Triples with sentences:
+                triple = {sentence_data.get('sentence', 'Unknown'): (
+                    iri, "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                    "http://dbpedia.org/ontology/" + predicted_class_name)}
+            else:
                 triple = (iri, "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
                           "http://dbpedia.org/ontology/" + predicted_class_name)
-                triples.append(triple)
+            triples.append(triple)
 
     if len(triples) > 0:
         print(f'"Successfully generated {len(triples)} triples"')
@@ -92,10 +97,10 @@ def predict(input_file_path, output_file_path=None, model_name="model.pth"):
 
 
 if __name__ == '__main__':
-    input_file = os.path.join(PROJECT_ROOT, "data/files/EvaluationData/evaluationSet_EN.json")
+    input_file = os.path.join(PROJECT_ROOT, "data/files/EvaluationData/evaluationSet_DK.json")
     output_file = os.path.join(PROJECT_ROOT, "data/files/MachineLearning/output.json")
 
     #ONLY IF YOU WANT TO TRAIN FIRST. Adjust training params in src.config.py
     #train(create_new_model=False, model_name="model.pth")
 
-    predict(input_file, output_file, model_name="model.pth")
+    predict(input_file, output_file, "model.pth", True)

@@ -103,12 +103,13 @@ def classify_entity_mentions(input_data, output_sentence_test_run):
                             triples.append((content_iri, "http://www.w3.org/1999/02/22-rdf-syntax-ns#type", "http://dbpedia.org/ontology/" + classification))
 
                         break  # Exit the while loop if entity is mapped to a provided ontology class
-            if output_sentence_test_run:
-                triples.append({sentence_key: (content_iri, "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-                                               "http://dbpedia.org/ontology/unknown")})
-            else:
-                triples.append((content_iri, "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-                                "http://dbpedia.org/ontology/unknown"))
+            if outer_while_retry_count > max_outer_retries:
+                if output_sentence_test_run:
+                    triples.append({sentence_key: (content_iri, "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                                                   "http://dbpedia.org/ontology/unknown")})
+                else:
+                    triples.append((content_iri, "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                                    "http://dbpedia.org/ontology/unknown"))
 
     end_time = time.time()
     elapsed_time = round((end_time - start_time), 2)

@@ -12,7 +12,7 @@ class LLMMessenger(APIHandler):
         HEADERS = {"Access-Authorization": os.getenv("ACCESS_SECRET")}
         response = requests.post(url=LLMMessenger.API_endpoint(), json=request, headers=HEADERS)
 
-        #  # Put the location of to the GGUF model that you've download from HuggingFace here
+        #  # Put the location of to the GGUF model that you've download from HuggingFace (https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGUF/resolve/main/llama-2-7b-chat.Q2_K.gguf?download=true) here
         # model_path = "./relation_extraction/multilingual/llama-2-7b-chat.Q2_K.gguf"	
 
         # # Create a llama model	

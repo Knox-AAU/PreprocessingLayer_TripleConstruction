@@ -9,8 +9,12 @@ class TestServer(unittest.TestCase):
 
     # Valid: authorized and correct format
     @patch('os.getenv', return_value="some_api_secret")
-    @patch('concept_linking.main.untrainedSpacySolution', return_value=Mock())
+    # @patch('concept_linking.main.stringComparisonSolution', return_value=Mock())
+    # @patch('concept_linking.main.untrainedSpacySolution', return_value=Mock())
+    @patch('concept_linking.main.perform_entity_type_classification', return_value=Mock())
+    # @patch('concept_linking.main.predict', return_value=Mock())
     @patch('relation_extraction.relation_extractor.RelationExtractor.begin_extraction', return_value=Mock())
+
     def test_do_tripleconstruction_valid_post_request(self, mock_begin_extraction, mock_entity_type_classification, mock_os):
         response = self.app.post('/tripleconstruction', data=bytes('{"key": "value"}', 'utf-8'), headers={"Authorization": "some_api_secret"})
         json_response = response.get_json()

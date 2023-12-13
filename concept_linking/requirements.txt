@@ -1,4 +1,11 @@
-# Other solutions
+# Tools
+#Requirements for LlamaServer
+-r tools/LlamaServer/requirements.txt
+
+#Requirements for OntologyGraphBuilder
+-r tools/OntologyGraphBuilder/requirements.txt
+
+# Solutions
 #Requirements for MachineLearning
 -r solutions/MachineLearning/requirements.txt
 
@@ -11,3 +18,4 @@
 
 #Requirements for UntrainedSpacy
 -r solutions/UntrainedSpacy/requirements.txt
+

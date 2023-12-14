@@ -44,11 +44,11 @@ def calculate_metrics(data):
 
     data_without_duplicates = data.deepcopy()
 
-    for triples in data_without_duplicates["multilingual"]["triples"]:
+    for triples in data_without_duplicates["triples"]:
         triples["triples_from_solution"] = set(tuple(triple) for triple in triples["triples_from_solution"])
         triples["triples_from_solution"] = list(list(triple) for triple in triples["triples_from_solution"])
 
-    for element in data["triples"]:
+    for element in data_without_duplicates["triples"]:
         TP += element["contains_hits"]
         FP += len(element["triples_from_solution"]) - element["contains_hits"]
         FN += len(element["expected_triples"]) - element["contains_hits"]

@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  llama-cpu-server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./concept_linking/tools/LlamaServer/llama-2-7b-chat.Q2_K.gguf:/app/concept_linking/tools/LlamaServer/llama-2-7b-chat.Q2_K.gguf

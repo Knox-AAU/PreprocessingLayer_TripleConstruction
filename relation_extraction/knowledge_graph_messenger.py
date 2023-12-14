@@ -13,14 +13,9 @@ class KnowledgeGraphMessenger(APIHandler):
         PARAMS={"g": "http://knox_database"}
         FORMATTED_OUTPUT = KnowledgeGraphMessenger.format_output(output)
         response = requests.post(url=KnowledgeGraphMessenger.API_endpoint(), json=FORMATTED_OUTPUT, params=PARAMS, headers=HEADERS)
-        # print(f"db component response: {response.text}")
         return response.text
     
     @classmethod
     def format_output(self, output):
         formatted_output = {"triples": output}
         return formatted_output
-
-
-
-

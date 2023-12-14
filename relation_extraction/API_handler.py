@@ -12,5 +12,3 @@ class APIHandler(metaclass=ABCMeta):
     @abstractmethod
     def send_request(request): 
         pass
-
-    

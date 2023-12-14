@@ -155,5 +155,3 @@ class TestParseData(unittest.TestCase):
 
         self.assertEqual(res, expected)
 
-if __name__ == '__main__':
-    unittest.main()

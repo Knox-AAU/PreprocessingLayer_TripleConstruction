@@ -1,0 +1,7 @@
+#For docker
+#----------
+# Concept linking
+-r /code/concept_linking/requirements.txt
+
+# Relation extraction
+-r /code/relation_extraction/requirements.txt

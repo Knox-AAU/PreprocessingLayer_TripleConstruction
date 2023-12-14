@@ -87,15 +87,3 @@ def handle_relation_post_request(data):
     except Exception as E:
         print(f"Exception during request to database. {str(E)}")
         raise Exception("Data was not sent to database due to connection error")
-
-
-def main():
-    relations = OntologyMessenger.send_request()
-    # Opening JSON file
-    with open('inputSentences.json', 'r') as f:
-        # returns JSON object as a dictionary 
-        data = json.load(f)
-    KnowledgeGraphMessenger.send_request(parse_data(data, relations))
-
-if __name__ == "__main__":
-    main()

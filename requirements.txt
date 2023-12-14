@@ -1,5 +1,7 @@
-requests==2.31.0
-strsimpy==0.2.1
-mock==5.1.0
-python-dotenv==0.21.0
-Flask==3.0.0
+#For python
+#----------
+# Concept linking
+-r concept_linking/requirements.txt
+
+# Relation extraction
+-r relation_extraction/requirements.txt

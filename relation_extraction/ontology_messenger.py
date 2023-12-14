@@ -1,8 +1,6 @@
 import requests
 import re
 import os
-from dotenv import load_dotenv
-
 from relation_extraction.API_handler import APIHandler
 
 class OntologyMessenger(APIHandler):
@@ -10,7 +8,6 @@ class OntologyMessenger(APIHandler):
         return "http://knox-proxy01.srv.aau.dk/knox-api/triples"
 
     def send_request():
-        load_dotenv()
         "Function to extract relations based on the specified pattern"
         print("Getting relations from online ontology...")
         relations = []

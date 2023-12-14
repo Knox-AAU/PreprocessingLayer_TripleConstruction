@@ -55,5 +55,119 @@
       </modifiedtripleset>
       <lex lang="en" lid="1">The 17068.8 millimeter long ALCO RS-3 has a diesel-electric transmission.</lex>
     </entry>
+    <entry category="Building" eid="Id5" shape="(X (X) (X) (X) (X (X)))" shape_type="mixed" size="5">
+      <originaltripleset>
+        <otriple>Alan_B._Miller_Hall | architect | Robert_A._M._Stern</otriple>
+        <otriple>Alan_B._Miller_Hall | address | "101 Ukrop Way"@en</otriple>
+        <otriple>Alan_B._Miller_Hall | currentTenants | Mason_School_of_Business</otriple>
+        <otriple>Alan_B._Miller_Hall | location | Virginia</otriple>
+        <otriple>Mason_School_of_Business | country | United_States</otriple>
+      </originaltripleset>
+      <modifiedtripleset>
+        <mtriple>Alan_B._Miller_Hall | architect | Robert_A._M._Stern</mtriple>
+        <mtriple>Alan_B._Miller_Hall | address | "101 Ukrop Way"</mtriple>
+        <mtriple>Alan_B._Miller_Hall | currentTenants | Mason_School_of_Business</mtriple>
+        <mtriple>Alan_B._Miller_Hall | location | Virginia</mtriple>
+        <mtriple>Mason_School_of_Business | country | United_States</mtriple>
+      </modifiedtripleset>
+      <lex lang="en" lid="1">Alan B. Miller Hall, in Virginia, USA, was designed by Robert A.M. Stern. The address of the hall is "101 Ukrop Way" and the current tenants are the Mason School of Business.</lex>
+    </entry>
+    <entry category="Artist" eid="Id6" shape="(X (X) (X (X)))" shape_type="mixed" size="3">
+      <originaltripleset>
+        <otriple>Liselotte_Grschebina | birthPlace | Karlsruhe</otriple>
+        <otriple>Liselotte_Grschebina | deathPlace | Israel</otriple>
+        <otriple>Israel | ethnicGroup | Arab_citizens_of_Israel</otriple>
+      </originaltripleset>
+      <modifiedtripleset>
+        <mtriple>Liselotte_Grschebina | birthPlace | Karlsruhe</mtriple>
+        <mtriple>Liselotte_Grschebina | deathPlace | Israel</mtriple>
+        <mtriple>Israel | ethnicGroup | Arab_citizens_of_Israel</mtriple>
+      </modifiedtripleset>
+      <lex lang="en" lid="1">Liselotte Grschebina was born in Karlsruhe and died in Israel. Ethnic groups in Israel include Arabs.</lex>
+    </entry>
+    <entry category="Film" eid="Id7" shape="(X (X))" shape_type="NA" size="1">
+      <originaltripleset>
+        <otriple>It's_Great_to_Be_Young_(1956_film) | editing | Max_Benedict</otriple>
+      </originaltripleset>
+      <modifiedtripleset>
+        <mtriple>It's_Great_to_Be_Young_(1956_film) | editing | Max_Benedict</mtriple>
+      </modifiedtripleset>
+      <lex lang="en" lid="1">It’s Great to Be Young is a film edited by Max Benedict.</lex>
+    </entry>
+    <entry category="Scientist" eid="Id8" shape="(X (X (X)))" shape_type="chain" size="2">
+      <originaltripleset>
+        <otriple>Turkey | leaderTitle | President</otriple>
+        <otriple>Nurhan_Atasoy | birthPlace | Turkey</otriple>
+      </originaltripleset>
+      <modifiedtripleset>
+        <mtriple>Turkey | leaderTitle | President</mtriple>
+        <mtriple>Nurhan_Atasoy | birthPlace | Turkey</mtriple>
+      </modifiedtripleset>
+      <lex lang="en" lid="1">Nurhan Atasoy was born in Turkey led by the President.</lex>
+    </entry>
+    <entry category="SportsTeam" eid="Id9" shape="(X (X) (X) (X (X)))" shape_type="mixed" size="4">
+      <originaltripleset>
+        <otriple>Agremiação_Sportiva_Arapiraquense | league | Campeonato_Brasileiro_Série_C</otriple>
+        <otriple>Campeonato_Brasileiro_Série_C | country | Brazil</otriple>
+        <otriple>Agremiação_Sportiva_Arapiraquense | capacity | "17000"^^xsd:nonNegativeInteger</otriple>
+        <otriple>Agremiação_Sportiva_Arapiraquense | manager | Vica</otriple>
+      </originaltripleset>
+      <modifiedtripleset>
+        <mtriple>Agremiação_Sportiva_Arapiraquense | league | Campeonato_Brasileiro_Série_C</mtriple>
+        <mtriple>Campeonato_Brasileiro_Série_C | country | Brazil</mtriple>
+        <mtriple>Agremiação_Sportiva_Arapiraquense | numberOfMembers | 17000</mtriple>
+        <mtriple>Agremiação_Sportiva_Arapiraquense | manager | Vica</mtriple>
+      </modifiedtripleset>
+      <lex lang="en" lid="1">Agremiação Sportiva Arapiraquense managed by Vica has 17000 members and play in the Campeonato Brasileiro Série C league which is from Brazil.</lex>
+    </entry>
+    <entry category="ComicsCharacter" eid="Id10" shape="(X (X) (X) (X))" shape_type="sibling" size="3">
+      <originaltripleset>
+        <otriple>Bananaman | creator | Steve_Bright</otriple>
+        <otriple>Bananaman | network | BBC</otriple>
+        <otriple>Bananaman | firstAired | "1983-10-03"^^xsd:date</otriple>
+      </originaltripleset>
+      <modifiedtripleset>
+        <mtriple>Bananaman | creator | Steve_Bright</mtriple>
+        <mtriple>Bananaman | broadcastedBy | BBC</mtriple>
+        <mtriple>Bananaman | firstAired | "1983-10-03"</mtriple>
+      </modifiedtripleset>
+      <lex lang="en" lid="1">Bananaman first aired on the 10th of March, 1983 and was created by Steve Bright. It was broadcast by the BBC.</lex>
+    </entry>
+    <entry category="Film" eid="Id11" shape="(X (X) (X) (X) (X) (X))" shape_type="sibling" size="5">
+      <originaltripleset>
+        <otriple>English_Without_Tears | cinematography | Bernard_Knowles</otriple>
+        <otriple>English_Without_Tears | writer | Terence_Rattigan</otriple>
+        <otriple>English_Without_Tears | musicComposer | Nicholas_Brodszky</otriple>
+        <otriple>English_Without_Tears | producer | Anatole_de_Grunwald</otriple>
+        <otriple>English_Without_Tears | director | Harold_French</otriple>
+      </originaltripleset>
+      <modifiedtripleset>
+        <mtriple>English_Without_Tears | cinematography | Bernard_Knowles</mtriple>
+        <mtriple>English_Without_Tears | writer | Terence_Rattigan</mtriple>
+        <mtriple>English_Without_Tears | musicComposer | Nicholas_Brodszky</mtriple>
+        <mtriple>English_Without_Tears | producer | Anatole_de_Grunwald</mtriple>
+        <mtriple>English_Without_Tears | director | Harold_French</mtriple>
+      </modifiedtripleset>
+      <lex lang="en" lid="1">The movie English Without Tears is written by Terence Rattigan and directed by Harold French. Anatole de Grunwald is the producer and Bernard Knowles is the cinematographer. Nicholas Brodszky was a composer of the songs.</lex>
+    </entry>
+    <entry category="Monument" eid="Id12" shape="(X (X) (X) (X) (X) (X (X)))" shape_type="mixed" size="6">
+      <originaltripleset>
+        <otriple>11th_Mississippi_Infantry_Monument | established | 2000</otriple>
+        <otriple>11th_Mississippi_Infantry_Monument | region | Adams_County,_Pennsylvania</otriple>
+        <otriple>11th_Mississippi_Infantry_Monument | municipality | Gettysburg,_Pennsylvania</otriple>
+        <otriple>11th_Mississippi_Infantry_Monument | category | Contributing_property</otriple>
+        <otriple>Adams_County,_Pennsylvania | north | Cumberland_County,_Pennsylvania</otriple>
+        <otriple>11th_Mississippi_Infantry_Monument | country | "United States"@en</otriple>
+      </originaltripleset>
+      <modifiedtripleset>
+        <mtriple>11th_Mississippi_Infantry_Monument | established | 2000</mtriple>
+        <mtriple>11th_Mississippi_Infantry_Monument | location | Adams_County,_Pennsylvania</mtriple>
+        <mtriple>11th_Mississippi_Infantry_Monument | municipality | Gettysburg,_Pennsylvania</mtriple>
+        <mtriple>11th_Mississippi_Infantry_Monument | category | Contributing_property</mtriple>
+        <mtriple>Adams_County,_Pennsylvania | hasToItsNorth | Cumberland_County,_Pennsylvania</mtriple>
+        <mtriple>11th_Mississippi_Infantry_Monument | country | "United States"</mtriple>
+      </modifiedtripleset>
+      <lex lang="en" lid="1">The 11th Mississippi Infantry Monument, built in 2000, is placed in the municipality of Gettysburg in Pennsylvania which is in Adams County, USA. The 11th Mississippi Infantry Monument is classified as a Contributing Property. Cumberland county, Pennsylvania is to the north of Adams County.</lex>
+    </entry>
   </entries>
 </benchmark>

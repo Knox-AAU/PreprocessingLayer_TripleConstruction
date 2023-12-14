@@ -5,6 +5,7 @@ from relation_extraction.LessNaive.lessNaive import do_relation_extraction
 from relation_extraction.NaiveMVP.main import parse_data
 from relation_extraction.multilingual.llm_messenger import LLMMessenger
 import re
+import copy
 import datetime
 import json
 
@@ -42,7 +43,7 @@ def calculate_metrics(data):
     FP = 0
     FN = 0
 
-    data_without_duplicates = data.deepcopy()
+    data_without_duplicates = copy.deepcopy(data)
 
     for triples in data_without_duplicates["triples"]:
         triples["triples_from_solution"] = set(tuple(triple) for triple in triples["triples_from_solution"])

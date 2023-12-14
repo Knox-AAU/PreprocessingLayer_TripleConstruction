@@ -1,9 +1,9 @@
 # Tools
 #Requirements for LlamaServer
--r tools/LlamaServer/requirements.txt
+#-r tools/LlamaServer/requirements.txt
 
 #Requirements for OntologyGraphBuilder
--r tools/OntologyGraphBuilder/requirements.txt
+#-r tools/OntologyGraphBuilder/requirements.txt
 
 # Solutions
 #Requirements for MachineLearning

@@ -1,8 +1,6 @@
 import requests
 import re
 import os
-from dotenv import load_dotenv
-
 from relation_extraction.API_handler import APIHandler
 
 class OntologyMessenger(APIHandler):
@@ -11,7 +9,6 @@ class OntologyMessenger(APIHandler):
 
     def send_request():
         "Function to extract relations based on the specified pattern"
-        load_dotenv()
         print("Getting relations from online ontology...")
         relations = []
         query_string_s = 'http://dbpedia.org/ontology/'

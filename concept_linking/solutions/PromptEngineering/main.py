@@ -8,13 +8,16 @@ from rdflib.plugins.sparql import prepareQuery
 from relation_extraction.knowledge_graph_messenger import KnowledgeGraphMessenger
 from concept_linking.tools.triple_helper import *
 
-# Local API url
+# Local API url python
 api_url = "http://127.0.0.1:5000/llama"
+
+# Local API url docker
+# api_url = "http://llama-cpu-server:5000/llama"
 
 # Remote API url
 # api_url = "http://knox-proxy01.srv.aau.dk/llama-api/llama"
 
-headers = {"Content-Type": "application/json"}
+headers = {"Access-Authorization": os.getenv("ACCESS_SECRET"), "Content-Type": "application/json"}
 
 PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../"))
 
@@ -181,7 +184,7 @@ def perform_entity_type_classification(post_json, output_file_path=None, output_
 
 
 if __name__ == '__main__':
-    input_file = os.path.join(PROJECT_ROOT, "data/files/EvaluationData/evaluationSet_EN.json")
+    input_file = os.path.join(PROJECT_ROOT, "data/files/EvaluationData/evaluationSet_EN_small.json")
     output_file = os.path.join(PROJECT_ROOT, "data/files/PromptEngineering/output.json")
 
     f = open(input_file,  encoding="utf-8")

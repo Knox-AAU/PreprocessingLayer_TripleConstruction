@@ -2,7 +2,6 @@ from relation_extraction.API_handler import APIHandler
 import requests
 import re
 import os
-from llama_cpp import Llama
 
 class LLMMessenger(APIHandler):
 

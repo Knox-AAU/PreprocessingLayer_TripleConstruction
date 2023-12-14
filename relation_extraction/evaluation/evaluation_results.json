@@ -2,146 +2,296 @@
     "multilingual": {
         "triples": [
             {
-                "sentence": "Turn Me On is a 35.1 minute long album produced by Wharton Tiers that was followed by the album entitled Take it Off.",
+                "sentence": "Hjertevarme er et album p\u00e5 42,5 minutter produceret af Mikael Rasmussen, efterfulgt af albummet Solopgang.",
                 "triples_from_solution": [
                     [
-                        "Wharton_Tiers",
+                        "Mikael_Rasmussen",
                         "producer",
-                        "Turn_Me_On"
+                        "Hjertevarme"
                     ],
                     [
-                        "Turn_Me_On",
+                        "Mikael_Rasmussen",
+                        "producer",
+                        "Hjertevarme"
+                    ],
+                    [
+                        "Hjertevarme",
                         "producedBy",
-                        "Wharton_Tiers"
+                        "Mikael_Rasmussen"
+                    ],
+                    [
+                        "Solopgang",
+                        "follows",
+                        "Hjertevarme"
+                    ],
+                    [
+                        "Hjertevarme",
+                        "producedBy",
+                        "Mikael_Rasmussen"
+                    ],
+                    [
+                        "Solopgang",
+                        "follows",
+                        "Hjertevarme"
                     ]
                 ],
                 "expected_triples": [
                     [
-                        "Turn_Me_On",
+                        "Hjertevarme",
                         "runtime",
-                        "35.1"
+                        "42.5"
                     ],
                     [
-                        "Turn_Me_On",
+                        "Hjertevarme",
                         "producer",
-                        "Wharton_Tiers"
+                        "Mikael_Rasmussen"
                     ],
                     [
-                        "Turn_Me_On",
+                        "Hjertevarme",
                         "followedBy",
-                        "Take_It_Off!"
+                        "Solopgang"
                     ]
                 ],
                 "contains_hits": 0
             },
             {
-                "sentence": "The location of Trane is Swords, Dublin.",
+                "sentence": "HyggeHjem har sin placering i Aarhus.",
                 "triples_from_solution": [
                     [
-                        "Trane",
+                        "HyggeHjem",
                         "location",
-                        "Swords,_Dublin"
+                        "Aarhus"
                     ],
                     [
-                        "Trane",
+                        "HyggeHjem",
                         "location",
-                        "Swords,_Dublin"
+                        "Aarhus"
                     ],
                     [
-                        "Trane",
+                        "HyggeHjem",
                         "location",
-                        "Swords,_Dublin"
-                    ],
-                    [
-                        "Trane",
-                        "location",
-                        "Swords,_Dublin"
+                        "Aarhus"
                     ]
                 ],
                 "expected_triples": [
                     [
-                        "Trane",
+                        "HyggeHjem",
                         "location",
-                        "Swords,_Dublin"
+                        "Aarhus"
                     ]
                 ],
                 "contains_hits": 1
             },
             {
-                "sentence": "The Ciudad Ayala city, a part of Morelos with population density and population of 1604.0 and 1,777,539 respectively, has a UTC offset of -6. The government type of Ciudad Ayala is council-manager government and City Manager is one of the leaders.",
+                "sentence": "Byen Odense, en del af Fyn med en befolkningst\u00e6thed p\u00e5 1500,0 og en metro-befolkning p\u00e5 178.329, har en UTC-offset p\u00e5 +1. Regeringstypen i Odense er kommunalregering, og borgmesteren er en af lederne.",
                 "triples_from_solution": [
                     [
-                        "Ciudad_Ayala",
+                        "Odense",
                         "location",
-                        "Morelos"
+                        "Fyn"
+                    ],
+                    [
+                        "178329",
+                        "population",
+                        "Odense"
                     ]
                 ],
                 "expected_triples": [
                     [
-                        "Ciudad_Ayala",
+                        "Odense",
                         "populationMetro",
-                        "1777539"
+                        "178329"
                     ],
                     [
-                        "Ciudad_Ayala",
+                        "Odense",
                         "leaderTitle",
-                        "\"City_Manager\""
+                        "\"Borgmester\""
                     ],
                     [
-                        "Ciudad_Ayala",
+                        "Odense",
                         "type",
-                        "City"
+                        "By"
                     ],
                     [
-                        "Ciudad_Ayala",
+                        "Odense",
                         "populationDensity",
-                        "1604.0"
+                        "1500.0"
                     ],
                     [
-                        "Ciudad_Ayala",
+                        "Odense",
                         "governmentType",
-                        "Council-manager_government"
+                        "Kommunalregering"
                     ],
                     [
-                        "Ciudad_Ayala",
+                        "Odense",
                         "utcOffset",
-                        "\u22126"
+                        "+1"
                     ],
                     [
-                        "Ciudad_Ayala",
+                        "Odense",
                         "isPartOf",
-                        "Morelos"
+                        "Fyn"
                     ]
                 ],
                 "contains_hits": 0
             },
             {
-                "sentence": "The 17068.8 millimeter long ALCO RS-3 has a diesel-electric transmission.",
-                "triples_from_solution": [],
-                "expected_triples": [
+                "sentence": "DanskeFart\u00f8jer er 24.000 millimeter langt og har en elektrisk motortype.",
+                "triples_from_solution": [
                     [
-                        "ALCO_RS-3",
-                        "powerType",
-                        "Diesel-electric_transmission"
+                        "DanskeFart\u00f8jer",
+                        "length",
+                        "24000"
                     ],
                     [
-                        "ALCO_RS-3",
+                        "DanskeFart\u00f8jer",
+                        "location",
+                        "24000"
+                    ],
+                    [
+                        "DanskeFart\u00f8jer",
+                        "location",
+                        "24000"
+                    ],
+                    [
+                        "DanskeFart\u00f8jer",
                         "length",
-                        "17068.8"
+                        "24000"
+                    ],
+                    [
+                        "DanskeFart\u00f8jer",
+                        "length",
+                        "24000"
+                    ],
+                    [
+                        "DanskeFart\u00f8jer",
+                        "length",
+                        "24000"
+                    ]
+                ],
+                "expected_triples": [
+                    [
+                        "DanskeFart\u00f8jer",
+                        "powerType",
+                        "Elektrisk"
+                    ],
+                    [
+                        "DanskeFart\u00f8jer",
+                        "length",
+                        "24000"
+                    ]
+                ],
+                "contains_hits": 1
+            },
+            {
+                "sentence": "K\u00f8benhavn T\u00e5rn, beliggende i K\u00f8benhavn, Danmark, er designet af Lars Mikkelsen. Adressen p\u00e5 t\u00e5rnet er \"K\u00f8bmagergade 52\" og nuv\u00e6rende lejere er Danmarks Radio.",
+                "triples_from_solution": [
+                    [
+                        "K\u00f8benhavn_T\u00e5rn",
+                        "location",
+                        "K\u00f8benhavn"
+                    ],
+                    [
+                        "Lars_Mikkelsen",
+                        "designer",
+                        "K\u00f8benhavn_T\u00e5rn"
+                    ]
+                ],
+                "expected_triples": [
+                    [
+                        "K\u00f8benhavn_T\u00e5rn",
+                        "architect",
+                        "Lars_Mikkelsen"
+                    ],
+                    [
+                        "K\u00f8benhavn_T\u00e5rn",
+                        "address",
+                        "\"K\u00f8bmagergade_52\""
+                    ],
+                    [
+                        "K\u00f8benhavn_T\u00e5rn",
+                        "location",
+                        "K\u00f8benhavn"
+                    ],
+                    [
+                        "Danmarks_Radio",
+                        "country",
+                        "Denmark"
+                    ]
+                ],
+                "contains_hits": 1
+            },
+            {
+                "sentence": "Jens Larsen blev f\u00f8dt i Aalborg og d\u00f8de i K\u00f8benhavn. Etniske grupper i K\u00f8benhavn inkluderer danskere.",
+                "triples_from_solution": [
+                    [
+                        "Jens_Larsen",
+                        "location",
+                        "Aalborg"
+                    ],
+                    [
+                        "Jens_Larsen",
+                        "location",
+                        "Aalborg"
+                    ]
+                ],
+                "expected_triples": [
+                    [
+                        "Jens_Larsen",
+                        "birthPlace",
+                        "Aalborg"
+                    ],
+                    [
+                        "Jens_Larsen",
+                        "deathPlace",
+                        "K\u00f8benhavn"
+                    ],
+                    [
+                        "K\u00f8benhavn",
+                        "ethnicGroup",
+                        "Dansk"
+                    ]
+                ],
+                "contains_hits": 0
+            },
+            {
+                "sentence": "Det Tabte Rige er en film redigeret af Anna J\u00f8rgensen.",
+                "triples_from_solution": [
+                    [
+                        "Det_Tabte_Rige",
+                        "editor",
+                        "Anna_J\u00f8rgensen"
+                    ],
+                    [
+                        "Det_Tabte_Rige",
+                        "editor",
+                        "Anna_J\u00f8rgensen"
+                    ],
+                    [
+                        "Det_Tabte_Rige",
+                        "film",
+                        "Anna_J\u00f8rgensen"
+                    ]
+                ],
+                "expected_triples": [
+                    [
+                        "Det_Tabte_Rige",
+                        "editing",
+                        "Anna_J\u00f8rgensen"
                     ]
                 ],
                 "contains_hits": 0
             }
         ],
         "result": {
-            "total_expected_triples": 13,
-            "hits": 1,
-            "hit_percentage": 0.07692307692307693
+            "total_expected_triples": 21,
+            "hits": 3,
+            "hit_percentage": 0.14285714285714285
         },
         "score": {
-            "precision": 0.14285714285714285,
-            "recall": 0.07692307692307693,
-            "F1_score": 0.1
+            "precision": 0.125,
+            "recall": 0.14285714285714285,
+            "F1_score": 0.13333333333333333
         }
     }
 }

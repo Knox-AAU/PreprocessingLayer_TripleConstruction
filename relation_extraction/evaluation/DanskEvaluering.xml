@@ -48,7 +48,7 @@
 			<originaltripleset>
 				<otriple>DanskeFartøjer | powerType | Elektrisk</otriple>
 				<otriple>
-					DanskeFartøjer | length | "24000"^^<http://dbpedia.org/datatype/millimetre>
+					DanskeFartøjer | length | "24000"^^&lt;http://dbpedia.org/datatype/millimetre&gt;
 				</otriple>
 			</originaltripleset>
 			<modifiedtripleset>
@@ -61,14 +61,12 @@
 			<originaltripleset>
 				<otriple>København_Tårn | architect | Lars Mikkelsen</otriple>
 				<otriple>København_Tårn | address | "Købmagergade 52"@da</otriple>
-				<otriple>København_Tårn | currentTenants | Danmarks Radio</otriple>
 				<otriple>København_Tårn | location | København</otriple>
 				<otriple>Danmarks Radio | country | Denmark</otriple>
 			</originaltripleset>
 			<modifiedtripleset>
 				<mtriple>København_Tårn | architect | Lars Mikkelsen</mtriple>
 				<mtriple>København_Tårn | address | "Købmagergade 52"</mtriple>
-				<mtriple>København_Tårn | currentTenants | Danmarks Radio</mtriple>
 				<mtriple>København_Tårn | location | København</mtriple>
 				<mtriple>Danmarks Radio | country | Denmark</mtriple>
 			</modifiedtripleset>

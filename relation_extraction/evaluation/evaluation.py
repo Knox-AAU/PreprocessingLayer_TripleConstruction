@@ -21,7 +21,7 @@ def printProgressBar (iteration, total, prefix = '', suffix = '', decimals = 3, 
 
 def convert_testdata_to_input_format():
     objs = []
-    tree = ET.parse('relation_extraction/Evaluation/testdataMini.xml')
+    tree = ET.parse('relation_extraction/evaluation/DanskEvaluering.xml')
     root = tree.getroot()
     for entry in root.findall('.//entry'):
         sentence = entry.findall('lex')[0].text
@@ -41,6 +41,12 @@ def calculate_metrics(data):
     TP = 0
     FP = 0
     FN = 0
+
+    data_without_duplicates = data.deepcopy()
+
+    for triples in data_without_duplicates["multilingual"]["triples"]:
+        triples["triples_from_solution"] = set(tuple(triple) for triple in triples["triples_from_solution"])
+        triples["triples_from_solution"] = list(list(triple) for triple in triples["triples_from_solution"])
 
     for element in data["triples"]:
         TP += element["contains_hits"]
@@ -116,15 +122,15 @@ def main():
             progress_suffix = f"Complete. Timeusage: {round((datetime.datetime.now()-dt).total_seconds()/60,5)} minutes. Eta {eta} minutes."
             printProgressBar(i + 1, len(input_objs), prefix = 'Progress:', suffix = progress_suffix, length = 50)
         
-        print(f"Solution {name} finished. Hit {hits}/{total_triples}. Hit percentage: {(hits/total_triples)*100}%")
-        evaluation_results[name] = {
-            "triples": evaluation_result_triples,
-            "result": {"total_expected_triples": total_triples, "hits": hits, "hit_percentage": hits/total_triples},
-            "score": calculate_metrics({"triples": evaluation_result_triples})
-        }
+            print(f"Solution {name} finished. Hit {hits}/{total_triples}. Hit percentage: {(hits/total_triples)*100}%")
+            evaluation_results[name] = {
+                "triples": evaluation_result_triples,
+                "result": {"total_expected_triples": total_triples, "hits": hits, "hit_percentage": hits/total_triples},
+                "score": calculate_metrics({"triples": evaluation_result_triples})
+            }
         
-    with open("relation_extraction/Evaluation/evaluation_results.json", "w") as f:
-        json.dump(evaluation_results, f, indent=4)
+            with open("relation_extraction/Evaluation/evaluation_results.json", "w") as f:
+                json.dump(evaluation_results, f, indent=4)
         
 
 

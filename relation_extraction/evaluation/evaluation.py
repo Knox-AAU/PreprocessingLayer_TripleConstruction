@@ -5,6 +5,7 @@ from relation_extraction.LessNaive.lessNaive import do_relation_extraction
 from relation_extraction.NaiveMVP.main import parse_data
 from relation_extraction.multilingual.llm_messenger import LLMMessenger
 import re
+import copy
 import datetime
 import json
 
@@ -21,7 +22,7 @@ def printProgressBar (iteration, total, prefix = '', suffix = '', decimals = 3, 
 
 def convert_testdata_to_input_format():
     objs = []
-    tree = ET.parse('relation_extraction/Evaluation/testdataMini.xml')
+    tree = ET.parse('relation_extraction/evaluation/DanskEvaluering.xml')
     root = tree.getroot()
     for entry in root.findall('.//entry'):
         sentence = entry.findall('lex')[0].text
@@ -42,7 +43,13 @@ def calculate_metrics(data):
     FP = 0
     FN = 0
 
-    for element in data["triples"]:
+    data_without_duplicates = copy.deepcopy(data)
+
+    for triples in data_without_duplicates["triples"]:
+        triples["triples_from_solution"] = set(tuple(triple) for triple in triples["triples_from_solution"])
+        triples["triples_from_solution"] = list(list(triple) for triple in triples["triples_from_solution"])
+
+    for element in data_without_duplicates["triples"]:
         TP += element["contains_hits"]
         FP += len(element["triples_from_solution"]) - element["contains_hits"]
         FN += len(element["expected_triples"]) - element["contains_hits"]
@@ -99,27 +106,32 @@ def main():
             split_relations = [ontology_relations[i:i + chunk_size] for i in range(0, len(ontology_relations), chunk_size)] #Split the relations into lists of size chunk_size
             res = []
             for split_relation in split_relations:
-                res.append(solution(input_obj, split_relation, ontology_relations))
+                part_res = solution(input_obj, split_relation, ontology_relations)
+                for triple in part_res:
+                    triple[1] = triple[1].replace("http://dbpedia.org/ontology/", "")
+                res.extend(part_res)
             res_hits = 0
-            for triple in res:
+            convert_to_set_res = set(tuple(triples) for triples in res)
+            removed_duplicates_res = list(list(triples) for triples in convert_to_set_res)
+            for triple in removed_duplicates_res:
                 if triple in expected_triples:
                     res_hits += 1
                     hits +=1
-
+            
             evaluation_result_triples.append({"sentence":sentence, "triples_from_solution": res, "expected_triples": expected_triples, "contains_hits": res_hits})
             eta = round((((datetime.datetime.now()-dt).total_seconds()/60)/((i+1)/len(input_objs)))*(1-((i+1)/len(input_objs))),5)
             progress_suffix = f"Complete. Timeusage: {round((datetime.datetime.now()-dt).total_seconds()/60,5)} minutes. Eta {eta} minutes."
             printProgressBar(i + 1, len(input_objs), prefix = 'Progress:', suffix = progress_suffix, length = 50)
         
-        print(f"Solution {name} finished. Hit {hits}/{total_triples}. Hit percentage: {(hits/total_triples)*100}%")
-        evaluation_results[name] = {
-            "triples": evaluation_result_triples,
-            "result": {"total_expected_triples": total_triples, "hits": hits, "hit_percentage": hits/total_triples},
-            "score": calculate_metrics({"triples": evaluation_result_triples})
-        }
+            print(f"Solution {name} finished. Hit {hits}/{total_triples}. Hit percentage: {(hits/total_triples)*100}%")
+            evaluation_results[name] = {
+                "triples": evaluation_result_triples,
+                "result": {"total_expected_triples": total_triples, "hits": hits, "hit_percentage": hits/total_triples},
+                "score": calculate_metrics({"triples": evaluation_result_triples})
+            }
         
-    with open("relation_extraction/Evaluation/evaluation_results.json", "w") as f:
-        json.dump(evaluation_results, f, indent=4)
+            with open("relation_extraction/Evaluation/evaluation_results.json", "w") as f:
+                json.dump(evaluation_results, f, indent=4)
         
 
 

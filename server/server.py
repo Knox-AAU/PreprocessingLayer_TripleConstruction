@@ -21,10 +21,10 @@ def do_triple_construction():
         post_data = request.get_data().decode('utf-8')
         post_json = json.loads(post_data)
 
-        RelationExtractor.begin_extraction(post_json)
-        entity_type_classification(post_json)
+        RelationExtractor.begin_extraction(post_json)   # Relation Extraction
+        entity_type_classification(post_json)           # Concept Linking
 
-        message = "Post request was successfully processed. Relation extraction and concept linking completed."
+        message = "Post request was successfully processed. Relation Extraction and Concept Linking completed."
         return jsonify(message=message), 200
 
     except Exception as e:

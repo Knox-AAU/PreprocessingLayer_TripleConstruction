@@ -22,3 +22,9 @@ The triples will be data stored in the form of a subject (entity IRI), predicate
 - Rasmus Rytter Sørensen <rasmus21@student.aau.dk>
 
 **Group D (Concept Linking)**
+- Caspar Emil Jensen <ceje22@student.aau.dk>
+- Gamma Ishimwe Ntakiyimana <gntaki22@student.aau.dk>
+- Lucas Pedersen <llhp21@student.aau.dk>
+- Mikkel Wissing <mwissi21@student.aau.dk>
+- Rune Eberhardt <reber21@student.aau.dk>
+- Vi Thien Le <vle21@student.aau.dk>

@@ -8,9 +8,16 @@ from rdflib.plugins.sparql import prepareQuery
 from relation_extraction.knowledge_graph_messenger import KnowledgeGraphMessenger
 from concept_linking.tools.triple_helper import *
 
-
+# Local API url python
 api_url = "http://127.0.0.1:5000/llama"
-headers = {"Content-Type": "application/json"}
+
+# Local API url docker
+# api_url = "http://llama-cpu-server:5000/llama"
+
+# Remote API url
+# api_url = "http://knox-proxy01.srv.aau.dk/llama-api/llama"
+
+headers = {"Access-Authorization": os.getenv("ACCESS_SECRET"), "Content-Type": "application/json"}
 
 PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../"))
 
@@ -58,6 +65,7 @@ def classify_entity_mentions(input_data, output_sentence_test_run):
 
             outer_while_retry_count = 0
             while outer_while_retry_count < max_outer_retries:  # Run until entity is mapped to a provided ontology class
+                found_classification = False
                 outer_while_retry_count += 1
                 print(f'--- RUN Count #{outer_while_retry_count} (Outer While loop) ---')
                 prompt = {key: value.format(
@@ -96,6 +104,7 @@ def classify_entity_mentions(input_data, output_sentence_test_run):
                     classification = match.group(1) if match and match.group(1) in ontology_classes_list else None
 
                     if classification:
+                        found_classification = True
                         # Generate triples if an entity was succesfully classified with the ontology
                         if output_sentence_test_run:
                             triples.append({sentence_key: (content_iri, "http://www.w3.org/1999/02/22-rdf-syntax-ns#type", "http://dbpedia.org/ontology/" + classification)})
@@ -103,7 +112,7 @@ def classify_entity_mentions(input_data, output_sentence_test_run):
                             triples.append((content_iri, "http://www.w3.org/1999/02/22-rdf-syntax-ns#type", "http://dbpedia.org/ontology/" + classification))
 
                         break  # Exit the while loop if entity is mapped to a provided ontology class
-            if outer_while_retry_count > max_outer_retries:
+            if not found_classification:
                 if output_sentence_test_run:
                     triples.append({sentence_key: (content_iri, "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
                                                    "http://dbpedia.org/ontology/unknown")})
@@ -175,7 +184,7 @@ def perform_entity_type_classification(post_json, output_file_path=None, output_
 
 
 if __name__ == '__main__':
-    input_file = os.path.join(PROJECT_ROOT, "data/files/EvaluationData/evaluationSet_EN.json")
+    input_file = os.path.join(PROJECT_ROOT, "data/files/EvaluationData/evaluationSet_EN_small.json")
     output_file = os.path.join(PROJECT_ROOT, "data/files/PromptEngineering/output.json")
 
     f = open(input_file,  encoding="utf-8")

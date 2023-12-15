@@ -1,0 +1,9 @@
+services:
+  llama-cpu-server:
+    build: .
+    container_name: llama-server
+    command: python -u -m llama_cpu_server --host 0.0.0.0 --port 5000 --reload
+    volumes:
+      - ./concept_linking/tools/LlamaServer/llama-2-7b-chat.Q2_K.gguf:/app/concept_linking/tools/LlamaServer/llama-2-7b-chat.Q2_K.gguf
+    ports:
+      - "5000:5000"

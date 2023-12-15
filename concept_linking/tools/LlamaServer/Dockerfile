@@ -1,25 +1,26 @@
-# Before you create the docker image from this file, you must have either downloaded the llama-2-7b-chat.Q2_K.gguf file
-# manually yourself, or run the server at least one time.
-
 # Use python as base image
-FROM python
-
+FROM python:3.11-slim
 # Set the working directory in the container
 WORKDIR /app
 
-# Copy the current directory contents into the container at /app
-COPY ./llama_cpu_server.py /app/llama_cpu_server.py
-COPY ./llama-2-7b-chat.Q2_K.gguf /app/llama-2-7b-chat.Q2_K.gguf
-COPY ./requirements.txt /app/requirements.txt
+# Copy only the necessary files
+COPY llama_cpu_server.py .
+COPY requirements.txt .
 
+#Install necessary build tools and dependencies for running C++(llama_cpp)
+# This can be removed when app is in production and remote llama api server is reliable and used instead of local llama
+# Install dependencies and curl
+RUN apt-get update && apt-get install -y build-essential cmake curl && rm -rf /var/lib/apt/lists/*
+
+
+# Install dependencies
 RUN pip install --no-cache-dir -r requirements.txt
+
+# Download the model file from the URL if it doesn't exist
+RUN test -e /app/llama-2-7b-chat.Q2_K.gguf || curl -o llama-2-7b-chat.Q2_K.gguf -LJO 'https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGUF/resolve/main/llama-2-7b-chat.Q2_K.gguf?download=true'
 
 # Expose port 5000 outside of the container
 EXPOSE 5000
 
 # Run llama_cpu_server.py when the container launches
-CMD ["python", "llama_cpu_server.py"]
-
-
-#run to build image
-#docker build -t llama-cpu-server .
+CMD ["python", "-u", "-m", "llama_cpu_server", "--host", "0.0.0.0", "--port", "5000", "--reload"]

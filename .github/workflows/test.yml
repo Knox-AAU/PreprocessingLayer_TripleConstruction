@@ -26,4 +26,4 @@ jobs:
       - name: Run tests
         run: |
           echo "Testing..."
-          python -m unittest || exit 1
+          python -m unittest -b || exit 1

@@ -64,6 +64,30 @@
         ]
     },
     {
+        "A few days after Martin Kjær had conducted a major interview with Nordjyske in early September, he wrote in an email to his employees that he was \"deeply personally affected\" and that it was the \"most disgusting thing I have ever experienced\".- I don't remember several parts of the interview at all, he writes in the email, which Nordjyske has seen." : [
+            "knox-kb01.srv.aau.dk/Martin_Kjær",
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+            "unknown",
+            0
+        ]
+    },
+    {
+        "A few days after Martin Kjær had conducted a major interview with Nordjyske in early September, he wrote in an email to his employees that he was \"deeply personally affected\" and that it was the \"most disgusting thing I have ever experienced\".- I don't remember several parts of the interview at all, he writes in the email, which Nordjyske has seen." : [
+            "knox-kb01.srv.aau.dk/Nordjyske",
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+            "unknown",
+            0
+        ]
+    },
+    {
+        "A few days after Martin Kjær had conducted a major interview with Nordjyske in early September, he wrote in an email to his employees that he was \"deeply personally affected\" and that it was the \"most disgusting thing I have ever experienced\".- I don't remember several parts of the interview at all, he writes in the email, which Nordjyske has seen." : [
+            "knox-kb01.srv.aau.dk/Nordjyske",
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+            "unknown",
+            0
+        ]
+    },
+    {
         "In the post on LinkedIn, he ends by denying that he is leaving a \"construction site in chaos\".- NAU (New Aalborg University Hospital, ed.) is in a good place today, and even though there are massive challenges, today there is a highly competent team of own/external resources.": [
             "knox-kb01.srv.aau.dk/LinkedIn",
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
@@ -172,6 +196,22 @@
             "knox-kb01.srv.aau.dk/New_Aalborg_University_Hospital",
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
             "http://dbpedia.org/ontology/TeamSport",
+            0
+        ]
+    },
+    {
+        "That statement is in sharp contrast to Martin Kjær's statements in Nordjyske earlier this month." : [
+            "knox-kb01.srv.aau.dk/Martin_Kjær",
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+            "unknown",
+            0
+        ]
+    },
+    {
+        "That statement is in sharp contrast to Martin Kjær's statements in Nordjyske earlier this month." : [
+            "knox-kb01.srv.aau.dk/Nordjyske",
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+            "unknown",
             0
         ]
     },
@@ -416,6 +456,14 @@
         ]
     },
     {
+        "Subsequently, he came under intense pressure internally after several highly sensational statements in North Jutland." : [
+            "knox-kb01.srv.aau.dk/North_Jutland",
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+            "unknown",
+            0
+        ]
+    },
+    {
         "Martin Kjær said, among other things, that the working environment could get even worse as more construction scandals came to light, and he started a public fight with the HR director in Region North Jutland, whom he accused of cutting him off from responding to the Norwegian Working Environment Authority.": [
             "knox-kb01.srv.aau.dk/Martin_Kjær",
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
@@ -536,6 +584,22 @@
         ]
     },
     {
+        "Accusations that HR director Mariane Therkelsen has rejected.": [
+            "knox-kb01.srv.aau.dk/Mariane_Therkelsen",
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+            "unknown",
+            0
+        ]
+    },
+    {
+        "But Martin Kjær believes he is a victim.": [
+            "knox-kb01.srv.aau.dk/Martin_Kjær",
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+            "unknown",
+            0
+        ]
+    },
+    {
         "Here he said that he was considering moving employees away because \"there are some employees who do not fit into a turnaround of what is now the biggest construction scandal in Danish history\".": [
             "knox-kb01.srv.aau.dk/Danish",
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
@@ -544,6 +608,22 @@
         ]
     },
     {
+        "Nordjyske has tried to get Martin Kjær to speak, but he has not responded to our inquiries.": [
+            "knox-kb01.srv.aau.dk/Nordjyske",
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+            "unknown",
+            0
+        ]
+    },
+    {
+        "Nordjyske has tried to get Martin Kjær to speak, but he has not responded to our inquiries.": [
+            "knox-kb01.srv.aau.dk/Martin_Kjær",
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+            "unknown",
+            0
+        ]
+    },
+    {
         "According to Nordjyske's information, the termination comes after several meetings with acting CEO Kim Mikkelsen.": [
             "knox-kb01.srv.aau.dk/Nordjyske",
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
@@ -572,6 +652,14 @@
             "knox-kb01.srv.aau.dk/Kim_Mikkelsen",
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
             "http://dbpedia.org/ontology/Meeting",
+            0
+        ]
+    },
+    {
+        "Kim Mikkelsen has refused to answer questions - both verbally and in writing.": [
+            "knox-kb01.srv.aau.dk/Kim_Mikkelsen",
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+            "unknown",
             0
         ]
     },

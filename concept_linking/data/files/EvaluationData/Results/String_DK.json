@@ -392,6 +392,14 @@
     ]
   },
   {
+    "Badmintonstjernen Viktor Axelsen annoncerede et partnerskab med et dansk sundhedsfirma for at fremme fitness og sund livsstil.":[
+      "knox-kb01.srv.aau.dk/Badmintonstjernen_Viktor_Axelsen",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "unknown",
+      0
+    ]
+  },
+  {
     "Universitetet i Aarhus introducerede et nyt forskningscenter dedikeret til b\u00e6redygtig energi og klimaforandringer under ledelse af professor Anne Larsen.": [
       "knox-kb01.srv.aau.dk/Aarhus",
       "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
@@ -420,6 +428,54 @@
       "knox-kb01.srv.aau.dk/Anders_Jensen",
       "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
       "http://dbpedia.org/ontology/Identifier",
+      0
+    ]
+  },
+  {
+    "Team Alpha sikrede sig en sejr mod Team Bravo med imponerende præstationer fra målscorerne Alex White og Chris Turner." : [
+      "knox-kb01.srv.aau.dk/Team_Alpha",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "unknown",
+      0
+    ]
+  },
+  {
+    "Team Alpha sikrede sig en sejr mod Team Bravo med imponerende præstationer fra målscorerne Alex White og Chris Turner." : [
+      "knox-kb01.srv.aau.dk/Team_Bravo",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "unknown",
+      0
+    ]
+  },
+  {
+    "Team Alpha sikrede sig en sejr mod Team Bravo med imponerende præstationer fra målscorerne Alex White og Chris Turner." : [
+      "knox-kb01.srv.aau.dk/målscorerne",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "unknown",
+      0
+    ]
+  },
+  {
+    "Team Alpha sikrede sig en sejr mod Team Bravo med imponerende præstationer fra målscorerne Alex White og Chris Turner." : [
+      "knox-kb01.srv.aau.dk/Alex_White",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "unknown",
+      0
+    ]
+  },
+  {
+    "Team Alpha sikrede sig en sejr mod Team Bravo med imponerende præstationer fra målscorerne Alex White og Chris Turner." : [
+      "knox-kb01.srv.aau.dk/Chris_Turner",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "unknown",
+      0
+    ]
+  },
+  {
+    "Regeringen annoncerede en ny miljøplan, der sigter mod at reducere CO2-udledningen med 30% inden 2030, ifølge klimaminister Karen Ellis." : [
+      "knox-kb01.srv.aau.dk/Karen_Ellis",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "unknown",
       0
     ]
   },

@@ -10,8 +10,8 @@ class TestServer(unittest.TestCase):
     # Valid: authorized and correct format
     @patch('os.getenv', return_value="some_api_secret")
     # @patch('concept_linking.main.stringComparisonSolution', return_value=Mock())
-    # @patch('concept_linking.main.untrainedSpacySolution', return_value=Mock())
-    @patch('concept_linking.main.perform_entity_type_classification', return_value=Mock())
+    @patch('concept_linking.main.untrainedSpacySolution', return_value=Mock())
+    # @patch('concept_linking.main.perform_entity_type_classification', return_value=Mock())
     # @patch('concept_linking.main.predict', return_value=Mock())
     @patch('relation_extraction.relation_extractor.RelationExtractor.begin_extraction', return_value=Mock())
 

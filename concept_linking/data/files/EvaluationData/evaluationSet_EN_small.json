@@ -19,17 +19,17 @@
                 ]
             },
             {
-                "sentence": "Michelle Obama is an person.",
+                "sentence": "Michelle Obama is a person.",
                 "sentenceStartIndex": 0,
-                "sentenceEndIndex": 24,
+                "sentenceEndIndex": 26,
                 "entityMentions": [
                     {
-                        "name": "Barack Obama",
+                        "name": "Michelle Obama",
                         "type": "Entity",
                         "label": "PERSON",
                         "startIndex": 0,
-                        "endIndex": 11,
-                        "iri": "knox-kb01.srv.aau.dk/Barack_Obama"
+                        "endIndex": 13,
+                        "iri": "knox-kb01.srv.aau.dk/Michelle_Obama"
                     }
                 ]
             }

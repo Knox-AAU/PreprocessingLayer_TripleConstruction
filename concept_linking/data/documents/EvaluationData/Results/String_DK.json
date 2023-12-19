@@ -1,0 +1,762 @@
+[
+  {
+    "En nylig unders\u00f8gelse afsl\u00f8rer, at virksomheder i Nordjylland og Aarhus intensiverer samarbejdet om b\u00e6redygtige energil\u00f8sninger for at im\u00f8dekomme stigende eftersp\u00f8rgsel. Kunstnere fra hele landet deltager i \u00e5rets kulturfestival i Aalborg.": [
+      "knox-kb01.srv.aau.dk/Nordjylland",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "http://dbpedia.org/ontology/Artist",
+      0
+    ]
+  },
+  {
+    "En nylig unders\u00f8gelse afsl\u00f8rer, at virksomheder i Nordjylland og Aarhus intensiverer samarbejdet om b\u00e6redygtige energil\u00f8sninger for at im\u00f8dekomme stigende eftersp\u00f8rgsel. Kunstnere fra hele landet deltager i \u00e5rets kulturfestival i Aalborg.": [
+      "knox-kb01.srv.aau.dk/Aarhus",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "http://dbpedia.org/ontology/Artist",
+      0
+    ]
+  },
+  {
+    "En nylig unders\u00f8gelse afsl\u00f8rer, at virksomheder i Nordjylland og Aarhus intensiverer samarbejdet om b\u00e6redygtige energil\u00f8sninger for at im\u00f8dekomme stigende eftersp\u00f8rgsel. Kunstnere fra hele landet deltager i \u00e5rets kulturfestival i Aalborg.": [
+      "knox-kb01.srv.aau.dk/Aalborg",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "http://dbpedia.org/ontology/Artist",
+      0
+    ]
+  },
+  {
+    "En nylig unders\u00f8gelse afsl\u00f8rer, at virksomheder i Nordjylland og Aarhus intensiverer samarbejdet om b\u00e6redygtige energil\u00f8sninger for at im\u00f8dekomme stigende eftersp\u00f8rgsel. Kunstnere fra hele landet deltager i \u00e5rets kulturfestival i Aalborg.": [
+      "knox-kb01.srv.aau.dk/Nordjylland",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "http://dbpedia.org/ontology/ArtistDiscography",
+      0
+    ]
+  },
+  {
+    "En nylig unders\u00f8gelse afsl\u00f8rer, at virksomheder i Nordjylland og Aarhus intensiverer samarbejdet om b\u00e6redygtige energil\u00f8sninger for at im\u00f8dekomme stigende eftersp\u00f8rgsel. Kunstnere fra hele landet deltager i \u00e5rets kulturfestival i Aalborg.": [
+      "knox-kb01.srv.aau.dk/Aarhus",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "http://dbpedia.org/ontology/ArtistDiscography",
+      0
+    ]
+  },
+  {
+    "En nylig unders\u00f8gelse afsl\u00f8rer, at virksomheder i Nordjylland og Aarhus intensiverer samarbejdet om b\u00e6redygtige energil\u00f8sninger for at im\u00f8dekomme stigende eftersp\u00f8rgsel. Kunstnere fra hele landet deltager i \u00e5rets kulturfestival i Aalborg.": [
+      "knox-kb01.srv.aau.dk/Aalborg",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "http://dbpedia.org/ontology/ArtistDiscography",
+      0
+    ]
+  },
+  {
+    "Byr\u00e5det godkender ambiti\u00f8se planer for b\u00e6redygtig byudvikling i Aalborgs centrum. Lokale landm\u00e6nd i Hj\u00f8rring og Frederikshavn rapporterer om udfordringer med klimaforandringer, der p\u00e5virker b\u00e5de afgr\u00f8der og dyrebestande.": [
+      "knox-kb01.srv.aau.dk/ByrÃ¥det",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "http://dbpedia.org/ontology/Farmer",
+      0
+    ]
+  },
+  {
+    "Byr\u00e5det godkender ambiti\u00f8se planer for b\u00e6redygtig byudvikling i Aalborgs centrum. Lokale landm\u00e6nd i Hj\u00f8rring og Frederikshavn rapporterer om udfordringer med klimaforandringer, der p\u00e5virker b\u00e5de afgr\u00f8der og dyrebestande.": [
+      "knox-kb01.srv.aau.dk/Aalborgs",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "http://dbpedia.org/ontology/Farmer",
+      0
+    ]
+  },
+  {
+    "Byr\u00e5det godkender ambiti\u00f8se planer for b\u00e6redygtig byudvikling i Aalborgs centrum. Lokale landm\u00e6nd i Hj\u00f8rring og Frederikshavn rapporterer om udfordringer med klimaforandringer, der p\u00e5virker b\u00e5de afgr\u00f8der og dyrebestande.": [
+      "knox-kb01.srv.aau.dk/Frederikshavn",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "http://dbpedia.org/ontology/Farmer",
+      0
+    ]
+  },
+  {
+    "Kulturhuset lancerer et varieret program af aktiviteter for b\u00f8rn og unge i vinterferien.": [
+      "knox-kb01.srv.aau.dk/Kulturhuset",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "http://dbpedia.org/ontology/Activity",
+      0
+    ]
+  },
+  {
+    "I et nyt initiativ samarbejder Aalborg Kommune, Aalborg Universitet og lokale erhvervsliv om en ambiti\u00f8s plan for at tiltr\u00e6kke innovative startups til omr\u00e5det.": [
+      "knox-kb01.srv.aau.dk/Aalborg_Kommune",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "http://dbpedia.org/ontology/University",
+      0.2
+    ]
+  },
+  {
+    "I et nyt initiativ samarbejder Aalborg Kommune, Aalborg Universitet og lokale erhvervsliv om en ambiti\u00f8s plan for at tiltr\u00e6kke innovative startups til omr\u00e5det.": [
+      "knox-kb01.srv.aau.dk/Aalborg_Universitet",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "http://dbpedia.org/ontology/University",
+      1
+    ]
+  },
+  {
+    "Et sp\u00e6ndende kunstprojekt, st\u00f8ttet af Kulturministeriet, samler kunstnere fra K\u00f8benhavn, Aalborg og Aarhus for at udforske kreative udtryk og lokale identiteter .Regionens politi, skoler og sundhedsmyndigheder g\u00f8r sammen om at tackle ungdomskriminalitet og skabe bedre forhold for unge i udsatte omr\u00e5der.": [
+      "knox-kb01.srv.aau.dk/Kulturministeriet",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "http://dbpedia.org/ontology/Artist",
+      0
+    ]
+  },
+  {
+    "Et sp\u00e6ndende kunstprojekt, st\u00f8ttet af Kulturministeriet, samler kunstnere fra K\u00f8benhavn, Aalborg og Aarhus for at udforske kreative udtryk og lokale identiteter .Regionens politi, skoler og sundhedsmyndigheder g\u00f8r sammen om at tackle ungdomskriminalitet og skabe bedre forhold for unge i udsatte omr\u00e5der.": [
+      "knox-kb01.srv.aau.dk/K\u00f8benhavn",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "http://dbpedia.org/ontology/Artist",
+      0
+    ]
+  },
+  {
+    "Et sp\u00e6ndende kunstprojekt, st\u00f8ttet af Kulturministeriet, samler kunstnere fra K\u00f8benhavn, Aalborg og Aarhus for at udforske kreative udtryk og lokale identiteter .Regionens politi, skoler og sundhedsmyndigheder g\u00f8r sammen om at tackle ungdomskriminalitet og skabe bedre forhold for unge i udsatte omr\u00e5der.": [
+      "knox-kb01.srv.aau.dk/Aalborg",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "http://dbpedia.org/ontology/Artist",
+      0
+    ]
+  },
+  {
+    "Et sp\u00e6ndende kunstprojekt, st\u00f8ttet af Kulturministeriet, samler kunstnere fra K\u00f8benhavn, Aalborg og Aarhus for at udforske kreative udtryk og lokale identiteter .Regionens politi, skoler og sundhedsmyndigheder g\u00f8r sammen om at tackle ungdomskriminalitet og skabe bedre forhold for unge i udsatte omr\u00e5der.": [
+      "knox-kb01.srv.aau.dk/Aarhus",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "http://dbpedia.org/ontology/Artist",
+      0
+    ]
+  },
+  {
+    "Et sp\u00e6ndende kunstprojekt, st\u00f8ttet af Kulturministeriet, samler kunstnere fra K\u00f8benhavn, Aalborg og Aarhus for at udforske kreative udtryk og lokale identiteter .Regionens politi, skoler og sundhedsmyndigheder g\u00f8r sammen om at tackle ungdomskriminalitet og skabe bedre forhold for unge i udsatte omr\u00e5der.": [
+      "knox-kb01.srv.aau.dk/sundhedsmyndigheder",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "http://dbpedia.org/ontology/Artist",
+      0
+    ]
+  },
+  {
+    "Et sp\u00e6ndende kunstprojekt, st\u00f8ttet af Kulturministeriet, samler kunstnere fra K\u00f8benhavn, Aalborg og Aarhus for at udforske kreative udtryk og lokale identiteter .Regionens politi, skoler og sundhedsmyndigheder g\u00f8r sammen om at tackle ungdomskriminalitet og skabe bedre forhold for unge i udsatte omr\u00e5der.": [
+      "knox-kb01.srv.aau.dk/Kulturministeriet",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "http://dbpedia.org/ontology/ArtistDiscography",
+      0
+    ]
+  },
+  {
+    "Et sp\u00e6ndende kunstprojekt, st\u00f8ttet af Kulturministeriet, samler kunstnere fra K\u00f8benhavn, Aalborg og Aarhus for at udforske kreative udtryk og lokale identiteter .Regionens politi, skoler og sundhedsmyndigheder g\u00f8r sammen om at tackle ungdomskriminalitet og skabe bedre forhold for unge i udsatte omr\u00e5der.": [
+      "knox-kb01.srv.aau.dk/K\u00f8benhavn",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "http://dbpedia.org/ontology/ArtistDiscography",
+      0
+    ]
+  },
+  {
+    "Et sp\u00e6ndende kunstprojekt, st\u00f8ttet af Kulturministeriet, samler kunstnere fra K\u00f8benhavn, Aalborg og Aarhus for at udforske kreative udtryk og lokale identiteter .Regionens politi, skoler og sundhedsmyndigheder g\u00f8r sammen om at tackle ungdomskriminalitet og skabe bedre forhold for unge i udsatte omr\u00e5der.": [
+      "knox-kb01.srv.aau.dk/Aalborg",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "http://dbpedia.org/ontology/ArtistDiscography",
+      0
+    ]
+  },
+  {
+    "Et sp\u00e6ndende kunstprojekt, st\u00f8ttet af Kulturministeriet, samler kunstnere fra K\u00f8benhavn, Aalborg og Aarhus for at udforske kreative udtryk og lokale identiteter .Regionens politi, skoler og sundhedsmyndigheder g\u00f8r sammen om at tackle ungdomskriminalitet og skabe bedre forhold for unge i udsatte omr\u00e5der.": [
+      "knox-kb01.srv.aau.dk/Aarhus",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "http://dbpedia.org/ontology/ArtistDiscography",
+      0
+    ]
+  },
+  {
+    "Et sp\u00e6ndende kunstprojekt, st\u00f8ttet af Kulturministeriet, samler kunstnere fra K\u00f8benhavn, Aalborg og Aarhus for at udforske kreative udtryk og lokale identiteter .Regionens politi, skoler og sundhedsmyndigheder g\u00f8r sammen om at tackle ungdomskriminalitet og skabe bedre forhold for unge i udsatte omr\u00e5der.": [
+      "knox-kb01.srv.aau.dk/sundhedsmyndigheder",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "http://dbpedia.org/ontology/ArtistDiscography",
+      0
+    ]
+  },
+  {
+    "Et sp\u00e6ndende kunstprojekt, st\u00f8ttet af Kulturministeriet, samler kunstnere fra K\u00f8benhavn, Aalborg og Aarhus for at udforske kreative udtryk og lokale identiteter .Regionens politi, skoler og sundhedsmyndigheder g\u00f8r sammen om at tackle ungdomskriminalitet og skabe bedre forhold for unge i udsatte omr\u00e5der.": [
+      "knox-kb01.srv.aau.dk/Kulturministeriet",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "http://dbpedia.org/ontology/PoliceOfficer",
+      0
+    ]
+  },
+  {
+    "Et sp\u00e6ndende kunstprojekt, st\u00f8ttet af Kulturministeriet, samler kunstnere fra K\u00f8benhavn, Aalborg og Aarhus for at udforske kreative udtryk og lokale identiteter .Regionens politi, skoler og sundhedsmyndigheder g\u00f8r sammen om at tackle ungdomskriminalitet og skabe bedre forhold for unge i udsatte omr\u00e5der.": [
+      "knox-kb01.srv.aau.dk/K\u00f8benhavn",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "http://dbpedia.org/ontology/PoliceOfficer",
+      0
+    ]
+  },
+  {
+    "Et sp\u00e6ndende kunstprojekt, st\u00f8ttet af Kulturministeriet, samler kunstnere fra K\u00f8benhavn, Aalborg og Aarhus for at udforske kreative udtryk og lokale identiteter .Regionens politi, skoler og sundhedsmyndigheder g\u00f8r sammen om at tackle ungdomskriminalitet og skabe bedre forhold for unge i udsatte omr\u00e5der.": [
+      "knox-kb01.srv.aau.dk/Aalborg",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "http://dbpedia.org/ontology/PoliceOfficer",
+      0
+    ]
+  },
+  {
+    "Et sp\u00e6ndende kunstprojekt, st\u00f8ttet af Kulturministeriet, samler kunstnere fra K\u00f8benhavn, Aalborg og Aarhus for at udforske kreative udtryk og lokale identiteter .Regionens politi, skoler og sundhedsmyndigheder g\u00f8r sammen om at tackle ungdomskriminalitet og skabe bedre forhold for unge i udsatte omr\u00e5der.": [
+      "knox-kb01.srv.aau.dk/Aarhus",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "http://dbpedia.org/ontology/PoliceOfficer",
+      0
+    ]
+  },
+  {
+    "Et sp\u00e6ndende kunstprojekt, st\u00f8ttet af Kulturministeriet, samler kunstnere fra K\u00f8benhavn, Aalborg og Aarhus for at udforske kreative udtryk og lokale identiteter .Regionens politi, skoler og sundhedsmyndigheder g\u00f8r sammen om at tackle ungdomskriminalitet og skabe bedre forhold for unge i udsatte omr\u00e5der.": [
+      "knox-kb01.srv.aau.dk/sundhedsmyndigheder",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "http://dbpedia.org/ontology/PoliceOfficer",
+      0
+    ]
+  },
+  {
+    "Et sp\u00e6ndende kunstprojekt, st\u00f8ttet af Kulturministeriet, samler kunstnere fra K\u00f8benhavn, Aalborg og Aarhus for at udforske kreative udtryk og lokale identiteter .Regionens politi, skoler og sundhedsmyndigheder g\u00f8r sammen om at tackle ungdomskriminalitet og skabe bedre forhold for unge i udsatte omr\u00e5der.": [
+      "knox-kb01.srv.aau.dk/Kulturministeriet",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "http://dbpedia.org/ontology/School",
+      0.2
+    ]
+  },
+  {
+    "Et sp\u00e6ndende kunstprojekt, st\u00f8ttet af Kulturministeriet, samler kunstnere fra K\u00f8benhavn, Aalborg og Aarhus for at udforske kreative udtryk og lokale identiteter .Regionens politi, skoler og sundhedsmyndigheder g\u00f8r sammen om at tackle ungdomskriminalitet og skabe bedre forhold for unge i udsatte omr\u00e5der.": [
+      "knox-kb01.srv.aau.dk/K\u00f8benhavn",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "http://dbpedia.org/ontology/School",
+      0
+    ]
+  },
+  {
+    "Et sp\u00e6ndende kunstprojekt, st\u00f8ttet af Kulturministeriet, samler kunstnere fra K\u00f8benhavn, Aalborg og Aarhus for at udforske kreative udtryk og lokale identiteter .Regionens politi, skoler og sundhedsmyndigheder g\u00f8r sammen om at tackle ungdomskriminalitet og skabe bedre forhold for unge i udsatte omr\u00e5der.": [
+      "knox-kb01.srv.aau.dk/Aalborg",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "http://dbpedia.org/ontology/School",
+      0
+    ]
+  },
+  {
+    "Et sp\u00e6ndende kunstprojekt, st\u00f8ttet af Kulturministeriet, samler kunstnere fra K\u00f8benhavn, Aalborg og Aarhus for at udforske kreative udtryk og lokale identiteter .Regionens politi, skoler og sundhedsmyndigheder g\u00f8r sammen om at tackle ungdomskriminalitet og skabe bedre forhold for unge i udsatte omr\u00e5der.": [
+      "knox-kb01.srv.aau.dk/Aarhus",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "http://dbpedia.org/ontology/School",
+      0
+    ]
+  },
+  {
+    "Et sp\u00e6ndende kunstprojekt, st\u00f8ttet af Kulturministeriet, samler kunstnere fra K\u00f8benhavn, Aalborg og Aarhus for at udforske kreative udtryk og lokale identiteter .Regionens politi, skoler og sundhedsmyndigheder g\u00f8r sammen om at tackle ungdomskriminalitet og skabe bedre forhold for unge i udsatte omr\u00e5der.": [
+      "knox-kb01.srv.aau.dk/sundhedsmyndigheder",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "http://dbpedia.org/ontology/School",
+      0.2
+    ]
+  },
+  {
+    "Et sp\u00e6ndende kunstprojekt, st\u00f8ttet af Kulturministeriet, samler kunstnere fra K\u00f8benhavn, Aalborg og Aarhus for at udforske kreative udtryk og lokale identiteter .Regionens politi, skoler og sundhedsmyndigheder g\u00f8r sammen om at tackle ungdomskriminalitet og skabe bedre forhold for unge i udsatte omr\u00e5der.": [
+      "knox-kb01.srv.aau.dk/Kulturministeriet",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "http://dbpedia.org/ontology/Relationship",
+      0
+    ]
+  },
+  {
+    "Et sp\u00e6ndende kunstprojekt, st\u00f8ttet af Kulturministeriet, samler kunstnere fra K\u00f8benhavn, Aalborg og Aarhus for at udforske kreative udtryk og lokale identiteter .Regionens politi, skoler og sundhedsmyndigheder g\u00f8r sammen om at tackle ungdomskriminalitet og skabe bedre forhold for unge i udsatte omr\u00e5der.": [
+      "knox-kb01.srv.aau.dk/K\u00f8benhavn",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "http://dbpedia.org/ontology/Relationship",
+      0
+    ]
+  },
+  {
+    "Et sp\u00e6ndende kunstprojekt, st\u00f8ttet af Kulturministeriet, samler kunstnere fra K\u00f8benhavn, Aalborg og Aarhus for at udforske kreative udtryk og lokale identiteter .Regionens politi, skoler og sundhedsmyndigheder g\u00f8r sammen om at tackle ungdomskriminalitet og skabe bedre forhold for unge i udsatte omr\u00e5der.": [
+      "knox-kb01.srv.aau.dk/Aalborg",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "http://dbpedia.org/ontology/Relationship",
+      0
+    ]
+  },
+  {
+    "Et sp\u00e6ndende kunstprojekt, st\u00f8ttet af Kulturministeriet, samler kunstnere fra K\u00f8benhavn, Aalborg og Aarhus for at udforske kreative udtryk og lokale identiteter .Regionens politi, skoler og sundhedsmyndigheder g\u00f8r sammen om at tackle ungdomskriminalitet og skabe bedre forhold for unge i udsatte omr\u00e5der.": [
+      "knox-kb01.srv.aau.dk/Aarhus",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "http://dbpedia.org/ontology/Relationship",
+      0
+    ]
+  },
+  {
+    "Et sp\u00e6ndende kunstprojekt, st\u00f8ttet af Kulturministeriet, samler kunstnere fra K\u00f8benhavn, Aalborg og Aarhus for at udforske kreative udtryk og lokale identiteter .Regionens politi, skoler og sundhedsmyndigheder g\u00f8r sammen om at tackle ungdomskriminalitet og skabe bedre forhold for unge i udsatte omr\u00e5der.": [
+      "knox-kb01.srv.aau.dk/sundhedsmyndigheder",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "http://dbpedia.org/ontology/Relationship",
+      0
+    ]
+  },
+  {
+    "FC K\u00f8benhavn sikrede sig sejren mod Br\u00f8ndby IF, da m\u00e5lscorerne Jonas Wind og Kasper Kusk viste imponerende pr\u00e6stationer.": [
+      "knox-kb01.srv.aau.dk/FC_K\u00f8benhavn",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "http://dbpedia.org/ontology/WindMotor",
+      0
+    ]
+  },
+  {
+    "FC K\u00f8benhavn sikrede sig sejren mod Br\u00f8ndby IF, da m\u00e5lscorerne Jonas Wind og Kasper Kusk viste imponerende pr\u00e6stationer.": [
+      "knox-kb01.srv.aau.dk/Br\u00f8ndby_IF",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "http://dbpedia.org/ontology/WindMotor",
+      0
+    ]
+  },
+  {
+    "FC K\u00f8benhavn sikrede sig sejren mod Br\u00f8ndby IF, da m\u00e5lscorerne Jonas Wind og Kasper Kusk viste imponerende pr\u00e6stationer.": [
+      "knox-kb01.srv.aau.dk/m\u00c3\u00a5lscorerne",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "http://dbpedia.org/ontology/WindMotor",
+      0
+    ]
+  },
+  {
+    "FC K\u00f8benhavn sikrede sig sejren mod Br\u00f8ndby IF, da m\u00e5lscorerne Jonas Wind og Kasper Kusk viste imponerende pr\u00e6stationer.": [
+      "knox-kb01.srv.aau.dk/Jonas_Wind",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "http://dbpedia.org/ontology/WindMotor",
+      0
+    ]
+  },
+  {
+    "FC K\u00f8benhavn sikrede sig sejren mod Br\u00f8ndby IF, da m\u00e5lscorerne Jonas Wind og Kasper Kusk viste imponerende pr\u00e6stationer.": [
+      "knox-kb01.srv.aau.dk/Kasper_Kusk",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "http://dbpedia.org/ontology/WindMotor",
+      0
+    ]
+  },
+  {
+    "Den danske regering annoncerede en ny milj\u00f8plan, der sigter mod at reducere CO2-udledningen med 30% inden 2030, if\u00f8lge klimaminister Karen Ellemann.": [
+      "knox-kb01.srv.aau.dk/Karen_Ellemann",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "http://dbpedia.org/ontology/GovernmentAgency",
+      0
+    ]
+  },
+  {
+    "Den danske regering annoncerede en ny milj\u00f8plan, der sigter mod at reducere CO2-udledningen med 30% inden 2030, if\u00f8lge klimaminister Karen Ellemann.": [
+      "knox-kb01.srv.aau.dk/Karen_Ellemann",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "http://dbpedia.org/ontology/GovernmentType",
+      0
+    ]
+  },
+  {
+    "Den danske regering annoncerede en ny milj\u00f8plan, der sigter mod at reducere CO2-udledningen med 30% inden 2030, if\u00f8lge klimaminister Karen Ellemann.": [
+      "knox-kb01.srv.aau.dk/Karen_Ellemann",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "http://dbpedia.org/ontology/GovernmentalAdministrativeRegion",
+      0
+    ]
+  },
+  {
+    "Skuespillerinden Sofie Gr\u00e5b\u00f8l vil optr\u00e6de i den kommende danske film, der udforsker historien om en ber\u00f8mt dansk forfatter.": [
+      "knox-kb01.srv.aau.dk/Sofie_Gr\u00e5b\u00f8l",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "http://dbpedia.org/ontology/Film",
+      0
+    ]
+  },
+  {
+    "Skuespillerinden Sofie Gr\u00e5b\u00f8l vil optr\u00e6de i den kommende danske film, der udforsker historien om en ber\u00f8mt dansk forfatter.": [
+      "knox-kb01.srv.aau.dk/Sofie_Gr\u00e5b\u00f8l",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "http://dbpedia.org/ontology/MovieDirector",
+      0.3
+    ]
+  },
+  {
+    "Skuespillerinden Sofie Gr\u00e5b\u00f8l vil optr\u00e6de i den kommende danske film, der udforsker historien om en ber\u00f8mt dansk forfatter.": [
+      "knox-kb01.srv.aau.dk/Sofie_Gr\u00e5b\u00f8l",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "http://dbpedia.org/ontology/MovieGenre",
+      0
+    ]
+  },
+  {
+    "Skuespillerinden Sofie Gr\u00e5b\u00f8l vil optr\u00e6de i den kommende danske film, der udforsker historien om en ber\u00f8mt dansk forfatter.": [
+      "knox-kb01.srv.aau.dk/Sofie_Gr\u00e5b\u00f8l",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "http://dbpedia.org/ontology/Writer",
+      0.3
+    ]
+  },
+  {
+    "Badmintonstjernen Viktor Axelsen annoncerede et partnerskab med et dansk sundhedsfirma for at fremme fitness og sund livsstil.":[
+      "knox-kb01.srv.aau.dk/Badmintonstjernen_Viktor_Axelsen",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "unknown",
+      0
+    ]
+  },
+  {
+    "Universitetet i Aarhus introducerede et nyt forskningscenter dedikeret til b\u00e6redygtig energi og klimaforandringer under ledelse af professor Anne Larsen.": [
+      "knox-kb01.srv.aau.dk/Aarhus",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "http://dbpedia.org/ontology/Professor",
+      0
+    ]
+  },
+  {
+    "Universitetet i Aarhus introducerede et nyt forskningscenter dedikeret til b\u00e6redygtig energi og klimaforandringer under ledelse af professor Anne Larsen.": [
+      "knox-kb01.srv.aau.dk/Anne_Larsen",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "http://dbpedia.org/ontology/Professor",
+      1
+    ]
+  },
+  {
+    "En nylig medicinsk unders\u00f8gelse ledet af Dr. Anders Jensen identificerede en ny genetisk mark\u00f8r forbundet med arvelig hjertesygdom.": [
+      "knox-kb01.srv.aau.dk/Anders_Jensen",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "http://dbpedia.org/ontology/MedicalSpecialty",
+      0
+    ]
+  },
+  {
+    "En nylig medicinsk unders\u00f8gelse ledet af Dr. Anders Jensen identificerede en ny genetisk mark\u00f8r forbundet med arvelig hjertesygdom.": [
+      "knox-kb01.srv.aau.dk/Anders_Jensen",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "http://dbpedia.org/ontology/Identifier",
+      0
+    ]
+  },
+  {
+    "Team Alpha sikrede sig en sejr mod Team Bravo med imponerende præstationer fra målscorerne Alex White og Chris Turner." : [
+      "knox-kb01.srv.aau.dk/Team_Alpha",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "unknown",
+      0
+    ]
+  },
+  {
+    "Team Alpha sikrede sig en sejr mod Team Bravo med imponerende præstationer fra målscorerne Alex White og Chris Turner." : [
+      "knox-kb01.srv.aau.dk/Team_Bravo",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "unknown",
+      0
+    ]
+  },
+  {
+    "Team Alpha sikrede sig en sejr mod Team Bravo med imponerende præstationer fra målscorerne Alex White og Chris Turner." : [
+      "knox-kb01.srv.aau.dk/målscorerne",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "unknown",
+      0
+    ]
+  },
+  {
+    "Team Alpha sikrede sig en sejr mod Team Bravo med imponerende præstationer fra målscorerne Alex White og Chris Turner." : [
+      "knox-kb01.srv.aau.dk/Alex_White",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "unknown",
+      0
+    ]
+  },
+  {
+    "Team Alpha sikrede sig en sejr mod Team Bravo med imponerende præstationer fra målscorerne Alex White og Chris Turner." : [
+      "knox-kb01.srv.aau.dk/Chris_Turner",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "unknown",
+      0
+    ]
+  },
+  {
+    "Regeringen annoncerede en ny miljøplan, der sigter mod at reducere CO2-udledningen med 30% inden 2030, ifølge klimaminister Karen Ellis." : [
+      "knox-kb01.srv.aau.dk/Karen_Ellis",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "unknown",
+      0
+    ]
+  },
+  {
+    "Skuespiller Sarah Miller vil spille hovedrollen i den kommende internationale film, der udforsker livet af en ber\u00f8mt forfatter.": [
+      "knox-kb01.srv.aau.dk/Sarah_Miller",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "http://dbpedia.org/ontology/Actor",
+      1
+    ]
+  },
+  {
+    "Skuespiller Sarah Miller vil spille hovedrollen i den kommende internationale film, der udforsker livet af en ber\u00f8mt forfatter.": [
+      "knox-kb01.srv.aau.dk/Sarah_Miller",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "http://dbpedia.org/ontology/Play",
+      0
+    ]
+  },
+  {
+    "Skuespiller Sarah Miller vil spille hovedrollen i den kommende internationale film, der udforsker livet af en ber\u00f8mt forfatter.": [
+      "knox-kb01.srv.aau.dk/Sarah_Miller",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "http://dbpedia.org/ontology/InternationalFootballLeagueEvent",
+      0
+    ]
+  },
+  {
+    "Skuespiller Sarah Miller vil spille hovedrollen i den kommende internationale film, der udforsker livet af en ber\u00f8mt forfatter.": [
+      "knox-kb01.srv.aau.dk/Sarah_Miller",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "http://dbpedia.org/ontology/InternationalOrganisation",
+      0
+    ]
+  },
+  {
+    "Skuespiller Sarah Miller vil spille hovedrollen i den kommende internationale film, der udforsker livet af en ber\u00f8mt forfatter.": [
+      "knox-kb01.srv.aau.dk/Sarah_Miller",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "http://dbpedia.org/ontology/Film",
+      0
+    ]
+  },
+  {
+    "Skuespiller Sarah Miller vil spille hovedrollen i den kommende internationale film, der udforsker livet af en ber\u00f8mt forfatter.": [
+      "knox-kb01.srv.aau.dk/Sarah_Miller",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "http://dbpedia.org/ontology/MovieDirector",
+      0.3
+    ]
+  },
+  {
+    "Skuespiller Sarah Miller vil spille hovedrollen i den kommende internationale film, der udforsker livet af en ber\u00f8mt forfatter.": [
+      "knox-kb01.srv.aau.dk/Sarah_Miller",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "http://dbpedia.org/ontology/MovieGenre",
+      0
+    ]
+  },
+  {
+    "Skuespiller Sarah Miller vil spille hovedrollen i den kommende internationale film, der udforsker livet af en ber\u00f8mt forfatter.": [
+      "knox-kb01.srv.aau.dk/Sarah_Miller",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "http://dbpedia.org/ontology/LifeCycleEvent",
+      0
+    ]
+  },
+  {
+    "Skuespiller Sarah Miller vil spille hovedrollen i den kommende internationale film, der udforsker livet af en ber\u00f8mt forfatter.": [
+      "knox-kb01.srv.aau.dk/Sarah_Miller",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "http://dbpedia.org/ontology/Writer",
+      0.3
+    ]
+  },
+  {
+    "Harvard University introducerede et nyt forskningscenter dedikeret til b\u00e6redygtig energi og klima\u00e6ndringer under ledelse af professor David Foster.": [
+      "knox-kb01.srv.aau.dk/Harvard_University",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "http://dbpedia.org/ontology/University",
+      1
+    ]
+  },
+  {
+    "Harvard University introducerede et nyt forskningscenter dedikeret til b\u00e6redygtig energi og klima\u00e6ndringer under ledelse af professor David Foster.": [
+      "knox-kb01.srv.aau.dk/David_Foster",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "http://dbpedia.org/ontology/University",
+      0
+    ]
+  },
+  {
+    "Harvard University introducerede et nyt forskningscenter dedikeret til b\u00e6redygtig energi og klima\u00e6ndringer under ledelse af professor David Foster.": [
+      "knox-kb01.srv.aau.dk/Harvard_University",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "http://dbpedia.org/ontology/Professor",
+      0
+    ]
+  },
+  {
+    "Harvard University introducerede et nyt forskningscenter dedikeret til b\u00e6redygtig energi og klima\u00e6ndringer under ledelse af professor David Foster.": [
+      "knox-kb01.srv.aau.dk/David_Foster",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "http://dbpedia.org/ontology/Professor",
+      1
+    ]
+  },
+  {
+    "Bier i bymilj\u00f8er st\u00e5r over for udfordringer p\u00c3\u00a5 grund af klima\u00e6ndringer, advarer biolog Emma Johnson og opfordrer til \u00f8get opm\u00e6rksomhed om biodiversitet.": [
+      "knox-kb01.srv.aau.dk/Emma_Johnson",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "http://dbpedia.org/ontology/Biologist",
+      1
+    ]
+  },
+  {
+    "En nylig medicinsk unders\u00f8gelse ledet af Dr. Jessica Anderson identificerede en ny genetisk mark\u00f8r forbundet med arvelig hjertesygdom.": [
+      "knox-kb01.srv.aau.dk/Dr._Jessica_Anderson",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "http://dbpedia.org/ontology/MedicalSpecialty",
+      0
+    ]
+  },
+  {
+    "En nylig medicinsk unders\u00f8gelse ledet af Dr. Jessica Anderson identificerede en ny genetisk mark\u00f8r forbundet med arvelig hjertesygdom.": [
+      "knox-kb01.srv.aau.dk/Dr._Jessica_Anderson",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "http://dbpedia.org/ontology/Identifier",
+      0
+    ]
+  },
+  {
+    "Den futuristiske skyskraber, designet af arkitekt James Walker, er sat til at omdefinere byens skyline.": [
+      "knox-kb01.srv.aau.dk/James_Walker",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "http://dbpedia.org/ontology/Skyscraper",
+      0
+    ]
+  },
+  {
+    "Den futuristiske skyskraber, designet af arkitekt James Walker, er sat til at omdefinere byens skyline.": [
+      "knox-kb01.srv.aau.dk/James_Walker",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "http://dbpedia.org/ontology/Architect",
+      1
+    ]
+  },
+  {
+    "Mode designer Lily Evans pr\u00e6senterede sin seneste kollektion og trak inspiration fra naturen og b\u00e6redygtighed.": [
+      "knox-kb01.srv.aau.dk/Lily_Evans",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "http://dbpedia.org/ontology/Fashion",
+      0
+    ]
+  },
+  {
+    "Mode designer Lily Evans pr\u00e6senterede sin seneste kollektion og trak inspiration fra naturen og b\u00e6redygtighed.": [
+      "knox-kb01.srv.aau.dk/Lily_Evans",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "http://dbpedia.org/ontology/FashionDesigner",
+      1
+    ]
+  },
+  {
+    "Mode designer Lily Evans pr\u00e6senterede sin seneste kollektion og trak inspiration fra naturen og b\u00e6redygtighed.": [
+      "knox-kb01.srv.aau.dk/Lily_Evans",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "http://dbpedia.org/ontology/CollectionOfValuables",
+      0
+    ]
+  },
+  {
+    "Marinbiolog Mark Taylor opdagede en ny art af dybhavsdyr under en ekspedition i Stillehavet.": [
+      "knox-kb01.srv.aau.dk/Marinbiolog_Mark_Taylor",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "http://dbpedia.org/ontology/FieldHockeyLeague",
+      0
+    ]
+  },
+  {
+    "Marinbiolog Mark Taylor opdagede en ny art af dybhavsdyr under en ekspedition i Stillehavet.": [
+      "knox-kb01.srv.aau.dk/Stillehavet",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "http://dbpedia.org/ontology/FieldHockeyLeague",
+      0
+    ]
+  },
+  {
+    "NASAs seneste satellitmission sigter mod at udforske fjerne galakser og indsamle data om kosmiske f\u00e6nomener.": [
+      "knox-kb01.srv.aau.dk/NASAs",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "http://dbpedia.org/ontology/Galaxy",
+      0
+    ]
+  },
+  {
+    "NASAs seneste satellitmission sigter mod at udforske fjerne galakser og indsamle data om kosmiske f\u00e6nomener.": [
+      "knox-kb01.srv.aau.dk/NASAs",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "http://dbpedia.org/ontology/Comic",
+      0
+    ]
+  },
+  {
+    "NASAs seneste satellitmission sigter mod at udforske fjerne galakser og indsamle data om kosmiske f\u00e6nomener.": [
+      "knox-kb01.srv.aau.dk/NASAs",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "http://dbpedia.org/ontology/ComicStrip",
+      0
+    ]
+  },
+  {
+    "Bilproducent Delta Motors afsl\u00f8rede en revolutionerende hybridbil med avanceret br\u00e6ndstofeffektivitet og topmoderne teknologi.": [
+      "knox-kb01.srv.aau.dk/Bilproducent_Delta_Motors",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "http://dbpedia.org/ontology/MotorRace",
+      0
+    ]
+  },
+  {
+    "Forskere har identificeret en ny art af tropiske sommerfugle i Amazonas regnskov, som nu er under kategorisering.": [
+      "knox-kb01.srv.aau.dk/Amazonas",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "http://dbpedia.org/ontology/Identifier",
+      0
+    ]
+  },
+  {
+    "Forskere har identificeret en ny art af tropiske sommerfugle i Amazonas regnskov, som nu er under kategorisering.": [
+      "knox-kb01.srv.aau.dk/Amazonas",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "http://dbpedia.org/ontology/TopicalConcept",
+      0
+    ]
+  },
+  {
+    "Forfatteren Emma Jensen annoncerede udgivelsen af hendes seneste roman, der udforsker temaet k\u00e6rlighed og tab.": [
+      "knox-kb01.srv.aau.dk/Emma_Jensen",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "http://dbpedia.org/ontology/Writer",
+      1
+    ]
+  },
+  {
+    "Forfatteren Emma Jensen annoncerede udgivelsen af hendes seneste roman, der udforsker temaet k\u00e6rlighed og tab.": [
+      "knox-kb01.srv.aau.dk/Emma_Jensen",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "http://dbpedia.org/ontology/Novel",
+      0
+    ]
+  },
+  {
+    "WHO rapporterer stigning i tilf\u00e6lde af en ny smitsom sygdom, og internationale eksperter arbejder p\u00c3\u00a5 at identificere smittekilden.": [
+      "knox-kb01.srv.aau.dk/WHO",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "http://dbpedia.org/ontology/Disease",
+      0
+    ]
+  },
+  {
+    "WHO rapporterer stigning i tilf\u00e6lde af en ny smitsom sygdom, og internationale eksperter arbejder p\u00c3\u00a5 at identificere smittekilden.": [
+      "knox-kb01.srv.aau.dk/WHO",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "http://dbpedia.org/ontology/InternationalFootballLeagueEvent",
+      0
+    ]
+  },
+  {
+    "WHO rapporterer stigning i tilf\u00e6lde af en ny smitsom sygdom, og internationale eksperter arbejder p\u00c3\u00a5 at identificere smittekilden.": [
+      "knox-kb01.srv.aau.dk/WHO",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "http://dbpedia.org/ontology/InternationalOrganisation",
+      1
+    ]
+  },
+  {
+    "WHO rapporterer stigning i tilf\u00e6lde af en ny smitsom sygdom, og internationale eksperter arbejder p\u00c3\u00a5 at identificere smittekilden.": [
+      "knox-kb01.srv.aau.dk/WHO",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "http://dbpedia.org/ontology/Work",
+      0
+    ]
+  }
+]

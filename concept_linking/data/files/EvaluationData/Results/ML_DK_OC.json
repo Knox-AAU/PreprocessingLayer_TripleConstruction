@@ -132,7 +132,7 @@
             "knox-kb01.srv.aau.dk/mÃ¥lscorerne",
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
             "http://dbpedia.org/ontology/Organisation",
-            0.3
+            0
         ]
     },
     {
@@ -140,7 +140,7 @@
             "knox-kb01.srv.aau.dk/Jonas_Wind",
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
             "http://dbpedia.org/ontology/Organisation",
-            0.3
+            0
         ]
     },
     {
@@ -148,7 +148,7 @@
             "knox-kb01.srv.aau.dk/Kasper_Kusk",
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
             "http://dbpedia.org/ontology/Organisation",
-            0.3
+            0
         ]
     },
     {
@@ -156,7 +156,7 @@
             "knox-kb01.srv.aau.dk/Karen_Ellemann",
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
             "http://dbpedia.org/ontology/Organisation",
-            0.3
+            0
         ]
     },
     {
@@ -172,7 +172,7 @@
             "knox-kb01.srv.aau.dk/Badmintonstjernen_Viktor_Axelsen",
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
             "http://dbpedia.org/ontology/Organisation",
-            0.3
+            0
         ]
     },
     {
@@ -188,7 +188,7 @@
             "knox-kb01.srv.aau.dk/Anne_Larsen",
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
             "http://dbpedia.org/ontology/Organisation",
-            0.3
+            0
         ]
     },
     {
@@ -220,7 +220,7 @@
             "knox-kb01.srv.aau.dk/målscorerne",
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
             "http://dbpedia.org/ontology/Organisation",
-            0.3
+            0
         ]
     },
     {
@@ -228,7 +228,7 @@
             "knox-kb01.srv.aau.dk/Alex_White",
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
             "http://dbpedia.org/ontology/Organisation",
-            0.3
+            0
         ]
     },
     {
@@ -236,7 +236,7 @@
             "knox-kb01.srv.aau.dk/Chris_Turner",
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
             "http://dbpedia.org/ontology/Organisation",
-            0.3
+            0
         ]
     },
     {
@@ -284,7 +284,7 @@
             "knox-kb01.srv.aau.dk/Dr._Jessica_Anderson",
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
             "http://dbpedia.org/ontology/Organisation",
-            0.3
+            0
         ]
     },
     {
@@ -292,7 +292,7 @@
             "knox-kb01.srv.aau.dk/James_Walker",
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
             "http://dbpedia.org/ontology/Organisation",
-            0.3
+            0
         ]
     },
     {

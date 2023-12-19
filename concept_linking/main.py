@@ -14,10 +14,10 @@ def entity_type_classification(input_data):
     #stringComparisonSolution(input_data)
 
     # Untrained Spacy
-    #untrainedSpacySolution(input_data)
+    untrainedSpacySolution(input_data)
 
     # PromptEngineering
-    perform_entity_type_classification(input_data)
+    #perform_entity_type_classification(input_data)
 
     # Machine Learning
     #predict(input_data)

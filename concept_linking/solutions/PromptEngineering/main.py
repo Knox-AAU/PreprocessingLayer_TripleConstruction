@@ -14,6 +14,8 @@ api_url = "http://127.0.0.1:5000/llama"
 # Local API url docker
 # api_url = "http://llama-cpu-server:5000/llama"
 
+
+
 # Remote API url
 # api_url = "http://knox-proxy01.srv.aau.dk/llama-api/llama"
 

@@ -2,6 +2,7 @@ from relation_extraction.API_handler import APIHandler
 import requests
 import re
 import os
+from llama_cpp import Llama
 
 class LLMMessenger(APIHandler):
 
@@ -9,9 +10,21 @@ class LLMMessenger(APIHandler):
         return "http://knox-proxy01.srv.aau.dk/llama-api/llama"
 
     def send_request(request):
-        HEADERS = {"Access-Authorization": os.getenv("ACCESS_SECRET")}
-        response = requests.post(url=LLMMessenger.API_endpoint(), json=request, headers=HEADERS)
-        return response
+        # Put the location of the GGUF model that you've download from HuggingFace here
+        model_path = "relation_extraction\multilingual\llama-2-7b-chat.Q2_K.gguf"
+
+        # Create a llama model
+        model = Llama(model_path=model_path, n_ctx=4096)
+
+        prompt = f"""<s>[INST] <<SYS>>
+        {request["system_message"]}
+        <</SYS>>
+        {request["user_message"]} [/INST]"""
+
+        # Run the model
+        output = model(prompt, max_tokens=request["max_tokens"], echo=True)
+
+        return output
 
     def process_message(response):
         print("Recieved response from Llama2...")
